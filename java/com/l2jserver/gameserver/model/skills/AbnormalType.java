@@ -376,6 +376,7 @@ public enum AbnormalType
         SPEED_OF_SAHA, 
         RESISTANCE_OF_SAHA,
         CLARITY_OF_SAHA,
+        BLESSING_OF_SAHA,
 	PREV_SONATA,
 	DARING_SONATA,
 	REF_SONATA,

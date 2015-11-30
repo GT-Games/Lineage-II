@@ -671,10 +671,10 @@
 				<mul stat="mDef" val="#mDef" />
 			</effect>
 			<effect name="DispelBySlotProbability">
-				<param dispel="PA_UP;PD_UP;MA_UP;MD_UP;IMPROVE_MA_MD_UP;IMPROVE_PA_PD_UP" rate="100" />
+				<param dispel="PA_UP;PD_UP;MA_UP;MD_UP;IMPROVE_MA_MD_UP;IMPROVE_PA_PD_UP;POWER_OF_SAHA" rate="100" />
 			</effect>
 			<effect name="BlockBuffSlot">
-				<param slot="PA_UP;PD_UP;MA_UP;MD_UP;IMPROVE_MA_MD_UP;IMPROVE_PA_PD_UP" />
+				<param slot="PA_UP;PD_UP;MA_UP;MD_UP;IMPROVE_MA_MD_UP;IMPROVE_PA_PD_UP;POWER_OF_SAHA" />
 			</effect>
 		</for>
 	</skill>
@@ -689,7 +689,7 @@
 		<table name="#magicLvl"> 85 90 95 99 </table>
 		<table name="#maxMp"> 1.20 1.20 1.20 1.20 </table>
 		<table name="#regHp"> 1.20 1.20 1.20 1.20 </table>
-		<table name="#mCritRate"> 20 20 20 20 </table>
+		<table name="#mCritRate"> 1.20 1.20 1.20 1.20 </table>
 		<table name="#cAtk"> 1.20 1.20 1.20 1.20 </table>
 		<table name="#pAtk"> 1.10 1.10 1.10 1.10 </table>
 		<table name="#pDef"> 1.20 1.20 1.20 1.20 </table>
@@ -743,10 +743,10 @@
 				<param allowWeapons="SWORD,BLUNT,DAGGER,DUALDAGGER,DUAL,DUALFIST,POLE,ANCIENTSWORD,RAPIER,BOW,CROSSBOW,DUALBLUNT" />
 			</effect>
 			<effect name="DispelBySlotProbability">
-				<param dispel="MAX_MP_UP;HP_REGEN_UP;MAGIC_CRITICAL_UP;PA_UP;PD_UP;ATTACK_TIME_DOWN;MA_UP;MD_UP;CASTING_TIME_DOWN;SPEED_UP;IMPROVE_MA_MD_UP;IMPROVE_PA_PD_UP;COUNTER_CRITICAL" rate="100" />
+				<param dispel="MAX_MP_UP;HP_REGEN_UP;MAGIC_CRITICAL_UP;PA_UP;PD_UP;ATTACK_TIME_DOWN;MA_UP;MD_UP;CASTING_TIME_DOWN;SPEED_UP;IMPROVE_MA_MD_UP;IMPROVE_PA_PD_UP;COUNTER_CRITICAL;MULTI_BUFF" rate="100" />
 			</effect>
 			<effect name="BlockBuffSlot">
-				<param slot="MAX_MP_UP;HP_REGEN_UP;MAGIC_CRITICAL_UP;PA_UP;PD_UP;ATTACK_TIME_DOWN;MA_UP;MD_UP;CASTING_TIME_DOWN;SPEED_UP;IMPROVE_MA_MD_UP;IMPROVE_PA_PD_UP;COUNTER_CRITICAL" />
+				<param slot="MAX_MP_UP;HP_REGEN_UP;MAGIC_CRITICAL_UP;PA_UP;PD_UP;ATTACK_TIME_DOWN;MA_UP;MD_UP;CASTING_TIME_DOWN;SPEED_UP;IMPROVE_MA_MD_UP;IMPROVE_PA_PD_UP;COUNTER_CRITICAL;MULTI_BUFF" />
 			</effect>
 		</for>
 	</skill>
@@ -807,7 +807,7 @@
 		<table name="#magicLvl"> 85 90 95 99 </table>
 		<table name="#rCrit"> 1.32 1.34 1.36 1.38 </table>
 		<table name="#cAtk"> 1.35 1.35 1.35 1.35 </table>
-		<table name="#mCritRate"> 20 20 20 20 </table>
+		<table name="#mCritRate"> 1.20 1.20 1.20 1.20 </table>
 		<table name="#magicMpConsumeRate"> 0.90 0.90 0.90 0.90 </table>
 		<table name="#physMpConsumeRate"> 0.80 0.80 0.80 0.80 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
@@ -840,10 +840,10 @@
 				</mul>
 			</effect>
 			<effect name="DispelBySlotProbability">
-				<param dispel="CRITICAL_DMG_UP;CRITICAL_PROB_UP;MAGIC_CRITICAL_UP;CHEAP_MAGIC;IMPROVE_HIT_DEFENCE_CRT_RATE_UP;IMPROVE_CRT_RATE_DMG_UP" rate="100" />
+				<param dispel="CRITICAL_DMG_UP;CRITICAL_PROB_UP;MAGIC_CRITICAL_UP;CHEAP_MAGIC;IMPROVE_HIT_DEFENCE_CRT_RATE_UP;IMPROVE_CRT_RATE_DMG_UP;CRITICAL_OF_SAHA" rate="100" />
 			</effect>
 			<effect name="BlockBuffSlot">
-				<param slot="CRITICAL_DMG_UP;CRITICAL_PROB_UP;MAGIC_CRITICAL_UP;CHEAP_MAGIC;IMPROVE_HIT_DEFENCE_CRT_RATE_UP;IMPROVE_CRT_RATE_DMG_UP" />
+				<param slot="CRITICAL_DMG_UP;CRITICAL_PROB_UP;MAGIC_CRITICAL_UP;CHEAP_MAGIC;IMPROVE_HIT_DEFENCE_CRT_RATE_UP;IMPROVE_CRT_RATE_DMG_UP;CRITICAL_OF_SAHA" />
 			</effect>
 		</for>
 	</skill>
@@ -888,10 +888,10 @@
 				<mul stat="defCritDamage" val="#defCritDamage" />
 			</effect>
 			<effect name="DispelBySlotProbability">
-				<param dispel="AVOID_UP;HIT_UP;SPEED_UP;CRITICAL_DMG_DOWN;IMPROVE_SPEED_AVOID_UP;IMPROVE_VAMPIRIC_HASTE" rate="100" />
+				<param dispel="AVOID_UP;HIT_UP;SPEED_UP;CRITICAL_DMG_DOWN;IMPROVE_SPEED_AVOID_UP;IMPROVE_VAMPIRIC_HASTE;SPEED_OF_SAHA" rate="100" />
 			</effect>
 			<effect name="BlockBuffSlot">
-				<param slot="AVOID_UP;HIT_UP;SPEED_UP;CRITICAL_DMG_DOWN;IMPROVE_SPEED_AVOID_UP;IMPROVE_VAMPIRIC_HASTE" />
+				<param slot="AVOID_UP;HIT_UP;SPEED_UP;CRITICAL_DMG_DOWN;IMPROVE_SPEED_AVOID_UP;IMPROVE_VAMPIRIC_HASTE;SPEED_OF_SAHA" />
 			</effect>
 		</for>
 	</skill>
@@ -932,10 +932,10 @@
 				<add stat="absorbDam" val="#absorbDam" />
 			</effect>
 			<effect name="DispelBySlotProbability">
-				<param dispel="ATTACK_TIME_DOWN;CASTING_TIME_DOWN;VAMPIRIC_ATTACK;IMPROVE_VAMPIRIC_HASTE" rate="100" />
+				<param dispel="ATTACK_TIME_DOWN;CASTING_TIME_DOWN;VAMPIRIC_ATTACK;IMPROVE_VAMPIRIC_HASTE;FORCE_OF_SAHA" rate="100" />
 			</effect>
 			<effect name="BlockBuffSlot">
-				<param dispel="ATTACK_TIME_DOWN;CASTING_TIME_DOWN;VAMPIRIC_ATTACK;IMPROVE_VAMPIRIC_HASTE" />
+				<param dispel="ATTACK_TIME_DOWN;CASTING_TIME_DOWN;VAMPIRIC_ATTACK;IMPROVE_VAMPIRIC_HASTE;FORCE_OF_SAHA" />
 			</effect>
 		</for>
 	</skill>
@@ -2416,10 +2416,10 @@
 				<param POISON="50" />
 			</effect>
 			<effect name="DispelBySlotProbability">
-				<param dispel="SONG_OF_INVOCATION;ARMOR_HOLY;ARMOR_UNHOLY;RESIST_POISON;DANCE_OF_ALIGNMENT;DANCE_OF_LIGHT;RESIST_BLEEDING" rate="100" />
+				<param dispel="SONG_OF_INVOCATION;ARMOR_HOLY;ARMOR_UNHOLY;RESIST_POISON;DANCE_OF_ALIGNMENT;DANCE_OF_LIGHT;RESIST_BLEEDING;RESISTANCE_OF_SAHA" rate="100" />
 			</effect>
 			<effect name="BlockBuffSlot">
-				<param slot="SONG_OF_INVOCATION;ARMOR_HOLY;ARMOR_UNHOLY;RESIST_POISON;DANCE_OF_ALIGNMENT;DANCE_OF_LIGHT;RESIST_BLEEDING" />
+				<param slot="SONG_OF_INVOCATION;ARMOR_HOLY;ARMOR_UNHOLY;RESIST_POISON;DANCE_OF_ALIGNMENT;DANCE_OF_LIGHT;RESIST_BLEEDING;RESISTANCE_OF_SAHA" />
 			</effect>
 		</for>
 	</skill>
@@ -2459,10 +2459,10 @@
 				<param DERANGEMENT="50" />
 			</effect>
 			<effect name="DispelBySlotProbability">
-				<param dispel="RESIST_DERANGEMENT;RESIST_DEBUFF_DISPEL;RESIST_DEBUFF_DISPEL;DANCE_OF_PROTECTION" rate="100" />
+				<param dispel="RESIST_DERANGEMENT;RESIST_DEBUFF_DISPEL;RESIST_DEBUFF_DISPEL;DANCE_OF_PROTECTION;CLARITY_OF_SAHA" rate="100" />
 			</effect>
 			<effect name="BlockBuffSlot">
-				<param slot="RESIST_DERANGEMENT;RESIST_DEBUFF_DISPEL;RESIST_DEBUFF_DISPEL;DANCE_OF_PROTECTION" />
+				<param slot="RESIST_DERANGEMENT;RESIST_DEBUFF_DISPEL;RESIST_DEBUFF_DISPEL;DANCE_OF_PROTECTION;CLARITY_OF_SAHA" />
 			</effect>
 		</for>
 	</skill>
@@ -2747,10 +2747,10 @@
 				<mul stat="mDef" val="#mDef" />
 			</effect>
 			<effect name="DispelBySlotProbability">
-				<param dispel="PA_UP;PD_UP;MA_UP;MD_UP;IMPROVE_MA_MD_UP;IMPROVE_PA_PD_UP" rate="100" />
+				<param dispel="PA_UP;PD_UP;MA_UP;MD_UP;IMPROVE_MA_MD_UP;IMPROVE_PA_PD_UP;POWER_OF_SAHA" rate="100" />
 			</effect>
 			<effect name="BlockBuffSlot">
-				<param slot="PA_UP;PD_UP;MA_UP;MD_UP;IMPROVE_MA_MD_UP;IMPROVE_PA_PD_UP" />
+				<param slot="PA_UP;PD_UP;MA_UP;MD_UP;IMPROVE_MA_MD_UP;IMPROVE_PA_PD_UP;POWER_OF_SAHA" />
 			</effect>
 		</for>
 	</skill>
@@ -2913,10 +2913,10 @@
 				<mul stat="physicalMpConsumeRate" val="#physMpConsumeRate" />
 			</effect>
 			<effect name="DispelBySlotProbability">
-				<param dispel="CRITICAL_DMG_UP;CRITICAL_PROB_UP;MAGIC_CRITICAL_UP;CHEAP_MAGIC;IMPROVE_HIT_DEFENCE_CRT_RATE_UP;IMPROVE_CRT_RATE_DMG_UP" rate="100" />
+				<param dispel="CRITICAL_DMG_UP;CRITICAL_PROB_UP;MAGIC_CRITICAL_UP;CHEAP_MAGIC;IMPROVE_HIT_DEFENCE_CRT_RATE_UP;IMPROVE_CRT_RATE_DMG_UP;CRITICAL_OF_SAHA" rate="100" />
 			</effect>
 			<effect name="BlockBuffSlot">
-				<param slot="CRITICAL_DMG_UP;CRITICAL_PROB_UP;MAGIC_CRITICAL_UP;CHEAP_MAGIC;IMPROVE_HIT_DEFENCE_CRT_RATE_UP;IMPROVE_CRT_RATE_DMG_UP" />
+				<param slot="CRITICAL_DMG_UP;CRITICAL_PROB_UP;MAGIC_CRITICAL_UP;CHEAP_MAGIC;IMPROVE_HIT_DEFENCE_CRT_RATE_UP;IMPROVE_CRT_RATE_DMG_UP;CRITICAL_OF_SAHA" />
 			</effect>
 		</for>
 	</skill>
@@ -2961,10 +2961,10 @@
 				<mul stat="defCritDamage" val="#defCritDamage" />
 			</effect>
 			<effect name="DispelBySlotProbability">
-				<param dispel="AVOID_UP;HIT_UP;SPEED_UP;CRITICAL_DMG_DOWN;IMPROVE_SPEED_AVOID_UP;IMPROVE_VAMPIRIC_HASTE" rate="100" />
+				<param dispel="AVOID_UP;HIT_UP;SPEED_UP;CRITICAL_DMG_DOWN;IMPROVE_SPEED_AVOID_UP;IMPROVE_VAMPIRIC_HASTE;SPEED_OF_SAHA" rate="100" />
 			</effect>
 			<effect name="BlockBuffSlot">
-				<param slot="AVOID_UP;HIT_UP;SPEED_UP;CRITICAL_DMG_DOWN;IMPROVE_SPEED_AVOID_UP;IMPROVE_VAMPIRIC_HASTE" />
+				<param slot="AVOID_UP;HIT_UP;SPEED_UP;CRITICAL_DMG_DOWN;IMPROVE_SPEED_AVOID_UP;IMPROVE_VAMPIRIC_HASTE;SPEED_OF_SAHA" />
 			</effect>
 		</for>
 	</skill>
@@ -3005,10 +3005,10 @@
 				<add stat="absorbDam" val="9" />
 			</effect>
 			<effect name="DispelBySlotProbability">
-				<param dispel="ATTACK_TIME_DOWN;CASTING_TIME_DOWN;VAMPIRIC_ATTACK;IMPROVE_VAMPIRIC_HASTE" rate="100" />
+				<param dispel="ATTACK_TIME_DOWN;CASTING_TIME_DOWN;VAMPIRIC_ATTACK;IMPROVE_VAMPIRIC_HASTE;FORCE_OF_SAHA" rate="100" />
 			</effect>
 			<effect name="BlockBuffSlot">
-				<param dispel="ATTACK_TIME_DOWN;CASTING_TIME_DOWN;VAMPIRIC_ATTACK;IMPROVE_VAMPIRIC_HASTE" />
+				<param dispel="ATTACK_TIME_DOWN;CASTING_TIME_DOWN;VAMPIRIC_ATTACK;IMPROVE_VAMPIRIC_HASTE;FORCE_OF_SAHA" />
 			</effect>
 		</for>
 	</skill>
