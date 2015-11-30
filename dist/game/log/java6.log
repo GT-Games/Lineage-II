@@ -1,0 +1,7 @@
+2015.11.21 22:24:12,735	INFO	1	com.l2jserver.gameserver.GameServer	-----------------------------------=[ Network Configuration ]
+2015.11.21 22:24:12,764	INFO	1	com.l2jserver.util.data.xml.IXmlReader	Using automatic network configuration.
+2015.11.21 22:24:13,542	INFO	1	com.l2jserver.util.data.xml.IXmlReader	Adding new subnet: 127.0.0.0/8 address: 127.0.0.1
+2015.11.21 22:24:13,553	INFO	1	com.l2jserver.util.data.xml.IXmlReader	Adding new subnet: 192.168.1.0/24 address: 192.168.1.110
+2015.11.21 22:24:13,572	INFO	1	com.l2jserver.util.data.xml.IXmlReader	Adding new subnet: 0.0.0.0/0 address: 2.236.77.146
+2015.11.21 22:24:13,686	INFO	1	com.l2jserver.Config	Loaded 6 Filter Words.
+2015.11.21 22:24:13,688	INFO	1	com.l2jserver.gameserver.GameServer	------------------------------------------------=[ Database ]

@@ -1,0 +1,29 @@
+2015.11.26 10:48:53,192	INFO	1	com.l2jserver.loginserver.LoginController	Loading LoginController...
+2015.11.26 10:48:54,038	INFO	1	com.l2jserver.loginserver.LoginController	Cached 10 KeyPairs for RSA communication
+2015.11.26 10:48:56,205	INFO	1	com.l2jserver.loginserver.LoginController	Stored 20 keys for Blowfish communication
+2015.11.26 10:48:59,376	INFO	1	com.l2jserver.util.data.xml.IXmlReader	GameServerTable: Loaded 127 server names.
+2015.11.26 10:48:59,495	INFO	1	com.l2jserver.util.data.xml.IXmlReader	GameServerTable: Loaded 1 registered Game Servers.
+2015.11.26 10:48:59,615	INFO	1	com.l2jserver.util.data.xml.IXmlReader	GameServerTable: Cached 10 RSA keys for Game Server communication.
+2015.11.26 10:49:00,414	INFO	1	com.l2jserver.loginserver.L2LoginServer	Loaded 2 IP Bans.
+2015.11.26 10:49:00,415	INFO	1	com.l2jserver.loginserver.L2LoginServer	Scheduled LS restart after 24 hours
+2015.11.26 10:49:00,727	INFO	1	com.l2jserver.loginserver.L2LoginServer	Listening for GameServers on 127.0.0.1:9014
+2015.11.26 10:49:00,728	INFO	1	com.l2jserver.loginserver.L2LoginServer	Telnet server is currently disabled.
+2015.11.26 10:49:00,728	INFO	1	com.l2jserver.loginserver.L2LoginServer	L2LoginServer: is now listening on: *:2106
+2015.11.26 10:53:49,554	INFO	25	com.l2jserver.loginserver.GameServerThread	Updated Gameserver [14] Phoenix IP's:
+2015.11.26 10:53:49,555	INFO	25	com.l2jserver.loginserver.GameServerThread	127.0.0.1/127.0.0.0/8
+2015.11.26 10:53:49,555	INFO	25	com.l2jserver.loginserver.GameServerThread	10.13.187.252/10.13.0.0/16
+2015.11.26 10:53:49,556	INFO	25	com.l2jserver.loginserver.GameServerThread	93.51.71.216/0.0.0.0/0
+2015.11.26 11:29:00,386	INFO	25	com.l2jserver.loginserver.GameServerThread	GameServer [14] Phoenix: Connection lost: Connection reset
+2015.11.26 11:29:00,389	INFO	25	com.l2jserver.loginserver.GameServerThread	Server [14] Phoenix is now set as disconnected
+2015.11.26 11:33:06,993	INFO	30	com.l2jserver.loginserver.GameServerThread	Updated Gameserver [14] Phoenix IP's:
+2015.11.26 11:33:06,994	INFO	30	com.l2jserver.loginserver.GameServerThread	127.0.0.1/127.0.0.0/8
+2015.11.26 11:33:06,994	INFO	30	com.l2jserver.loginserver.GameServerThread	10.13.187.252/10.13.0.0/16
+2015.11.26 11:33:06,994	INFO	30	com.l2jserver.loginserver.GameServerThread	93.51.71.216/0.0.0.0/0
+2015.11.26 11:43:35,947	INFO	30	com.l2jserver.loginserver.GameServerThread	GameServer [14] Phoenix: Connection lost: Connection reset
+2015.11.26 11:43:35,955	INFO	30	com.l2jserver.loginserver.GameServerThread	Server [14] Phoenix is now set as disconnected
+2015.11.26 11:47:02,511	INFO	31	com.l2jserver.loginserver.GameServerThread	Updated Gameserver [14] Phoenix IP's:
+2015.11.26 11:47:02,512	INFO	31	com.l2jserver.loginserver.GameServerThread	127.0.0.1/127.0.0.0/8
+2015.11.26 11:47:02,513	INFO	31	com.l2jserver.loginserver.GameServerThread	10.13.187.252/10.13.0.0/16
+2015.11.26 11:47:02,513	INFO	31	com.l2jserver.loginserver.GameServerThread	93.51.71.216/0.0.0.0/0
+2015.11.26 12:05:39,013	INFO	31	com.l2jserver.loginserver.GameServerThread	GameServer [14] Phoenix: Connection lost: Connection reset
+2015.11.26 12:05:39,017	INFO	31	com.l2jserver.loginserver.GameServerThread	Server [14] Phoenix is now set as disconnected

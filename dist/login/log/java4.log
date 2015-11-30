@@ -1,0 +1,17 @@
+2015.11.28 09:15:08,129	INFO	1	com.l2jserver.loginserver.LoginController	Loading LoginController...
+2015.11.28 09:15:08,839	INFO	1	com.l2jserver.loginserver.LoginController	Cached 10 KeyPairs for RSA communication
+2015.11.28 09:15:10,425	INFO	1	com.l2jserver.loginserver.LoginController	Stored 20 keys for Blowfish communication
+2015.11.28 09:15:11,882	INFO	1	com.l2jserver.util.data.xml.IXmlReader	GameServerTable: Loaded 127 server names.
+2015.11.28 09:15:11,887	INFO	1	com.l2jserver.util.data.xml.IXmlReader	GameServerTable: Loaded 1 registered Game Servers.
+2015.11.28 09:15:12,030	INFO	1	com.l2jserver.util.data.xml.IXmlReader	GameServerTable: Cached 10 RSA keys for Game Server communication.
+2015.11.28 09:15:13,005	INFO	1	com.l2jserver.loginserver.L2LoginServer	Loaded 2 IP Bans.
+2015.11.28 09:15:13,006	INFO	1	com.l2jserver.loginserver.L2LoginServer	Scheduled LS restart after 24 hours
+2015.11.28 09:15:13,209	INFO	1	com.l2jserver.loginserver.L2LoginServer	Listening for GameServers on 127.0.0.1:9014
+2015.11.28 09:15:13,210	INFO	1	com.l2jserver.loginserver.L2LoginServer	Telnet server is currently disabled.
+2015.11.28 09:15:13,210	INFO	1	com.l2jserver.loginserver.L2LoginServer	L2LoginServer: is now listening on: *:2106
+2015.11.28 09:17:49,910	INFO	25	com.l2jserver.loginserver.GameServerThread	Updated Gameserver [14] Phoenix IP's:
+2015.11.28 09:17:49,912	INFO	25	com.l2jserver.loginserver.GameServerThread	127.0.0.1/127.0.0.0/8
+2015.11.28 09:17:49,912	INFO	25	com.l2jserver.loginserver.GameServerThread	10.13.187.253/10.13.0.0/16
+2015.11.28 09:17:49,912	INFO	25	com.l2jserver.loginserver.GameServerThread	93.51.71.216/0.0.0.0/0
+2015.11.28 11:19:32,100	INFO	25	com.l2jserver.loginserver.GameServerThread	GameServer [14] Phoenix: Connection lost: Connection reset
+2015.11.28 11:19:32,110	INFO	25	com.l2jserver.loginserver.GameServerThread	Server [14] Phoenix is now set as disconnected

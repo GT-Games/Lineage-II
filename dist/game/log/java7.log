@@ -1,0 +1,166 @@
+2015.11.21 22:21:29,186	INFO	1	com.l2jserver.gameserver.GameServer	-----------------------------------=[ Network Configuration ]
+2015.11.21 22:21:29,221	INFO	1	com.l2jserver.util.data.xml.IXmlReader	Using automatic network configuration.
+2015.11.21 22:21:29,872	INFO	1	com.l2jserver.util.data.xml.IXmlReader	Adding new subnet: 127.0.0.0/8 address: 127.0.0.1
+2015.11.21 22:21:29,883	INFO	1	com.l2jserver.util.data.xml.IXmlReader	Adding new subnet: 192.168.1.0/24 address: 192.168.1.110
+2015.11.21 22:21:29,902	INFO	1	com.l2jserver.util.data.xml.IXmlReader	Adding new subnet: 0.0.0.0/0 address: 2.236.77.146
+2015.11.21 22:21:29,981	INFO	1	com.l2jserver.Config	Loaded 6 Filter Words.
+2015.11.21 22:21:29,983	INFO	1	com.l2jserver.gameserver.GameServer	------------------------------------------------=[ Database ]
+2015.11.21 22:21:31,438	INFO	1	com.l2jserver.gameserver.idfactory.BitSetIDFactory	Updated characters online status.
+2015.11.21 22:21:34,088	INFO	1	com.l2jserver.gameserver.idfactory.BitSetIDFactory	Cleaned 0 elements from database in 2 s
+2015.11.21 22:21:34,103	INFO	1	com.l2jserver.gameserver.idfactory.BitSetIDFactory	Cleaned 0 expired timestamps from database.
+2015.11.21 22:21:34,198	INFO	1	com.l2jserver.gameserver.idfactory.BitSetIDFactory	BitSetIDFactory: 102912 id's available.
+2015.11.21 22:21:34,200	INFO	1	com.l2jserver.gameserver.GameServer	-------------------------------------------------=[ Engines ]
+2015.11.21 22:21:34,223	INFO	1	com.l2jserver.gameserver.scripting.L2ScriptEngineManager	Script Engine: java 1.8 - Language: java - Language Version: 1.8
+2015.11.21 22:21:34,223	INFO	1	com.l2jserver.gameserver.GameServer	---------------------------------------------------=[ World ]
+2015.11.21 22:21:34,225	CONFIG	23	com.l2jserver.gameserver.GameTimeController	GameTimeController: Started.
+2015.11.21 22:21:34,232	INFO	1	com.l2jserver.util.data.xml.IXmlReader	InstanceManager: Multiverse Instance created.
+2015.11.21 22:21:34,232	INFO	1	com.l2jserver.util.data.xml.IXmlReader	InstanceManager: Universe Instance created.
+2015.11.21 22:21:34,308	INFO	1	com.l2jserver.util.data.xml.IXmlReader	InstanceManager: Loaded 263 instance names.
+2015.11.21 22:21:34,412	INFO	1	com.l2jserver.gameserver.model.L2World	L2World: (144 by 136) World Region Grid set up.
+2015.11.21 22:21:34,595	INFO	1	com.l2jserver.util.data.xml.IXmlReader	MapRegionManager: Loaded 59 map regions.
+2015.11.21 22:21:34,965	INFO	1	com.l2jserver.gameserver.instancemanager.GlobalVariablesManager	GlobalVariablesManager: Loaded 5 variables.
+2015.11.21 22:21:34,965	INFO	1	com.l2jserver.gameserver.GameServer	----------------------------------------------------=[ Data ]
+2015.11.21 22:21:34,990	INFO	1	com.l2jserver.gameserver.data.xml.impl.CategoryData	CategoryData: Loaded 142 Categories.
+2015.11.21 22:21:34,997	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SecondaryAuthData: Loaded 328 forbidden passwords.
+2015.11.21 22:21:35,003	INFO	1	com.l2jserver.util.data.xml.IXmlReader	AbilityPointsData: Loaded: 4 range fees.
+2015.11.21 22:21:35,003	INFO	1	com.l2jserver.gameserver.GameServer	-------------------------------------------------=[ Effects ]
+2015.11.21 22:21:37,203	INFO	1	handlers.EffectMasterHandler	EffectMasterHandler: Loaded 173 effect handlers.
+2015.11.21 22:21:37,203	INFO	1	com.l2jserver.gameserver.GameServer	------------------------------------=[ Enchant Skill Groups ]
+2015.11.21 22:21:37,225	INFO	1	com.l2jserver.util.data.xml.IXmlReader	EnchantSkillGroupsData: Loaded 5 groups and 100 routes.
+2015.11.21 22:21:37,225	INFO	1	com.l2jserver.gameserver.GameServer	---------------------------------------------=[ Skill Trees ]
+2015.11.21 22:21:38,247	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.21 22:21:38,248	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.21 22:21:38,248	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.21 22:21:38,248	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.21 22:21:38,248	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.21 22:21:38,248	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.21 22:21:38,248	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.21 22:21:38,248	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.21 22:21:38,249	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.21 22:21:38,249	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.21 22:21:38,249	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.21 22:21:38,249	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.21 22:21:38,249	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.21 22:21:38,250	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.21 22:21:38,250	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.21 22:21:38,250	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.21 22:21:38,250	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.21 22:21:38,250	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.21 22:21:38,250	INFO	1	com.l2jserver.gameserver.GameServer	--------------------------------------------------=[ Skills ]
+2015.11.21 22:21:45,213	INFO	1	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89567 Skill templates from XML files.
+2015.11.21 22:21:45,796	INFO	1	com.l2jserver.gameserver.data.sql.impl.SummonSkillsTable	SummonSkillsTable: Loaded 2674 skills.
+2015.11.21 22:21:45,796	INFO	1	com.l2jserver.gameserver.GameServer	---------------------------------------------------=[ Items ]
+2015.11.21 22:21:47,287	INFO	1	com.l2jserver.gameserver.datatables.ItemTable	ItemTable: Highest item id used:46692
+2015.11.21 22:21:47,293	INFO	1	com.l2jserver.gameserver.datatables.ItemTable	ItemTable: Loaded: 20025 Etc Items
+2015.11.21 22:21:47,293	INFO	1	com.l2jserver.gameserver.datatables.ItemTable	ItemTable: Loaded: 10168 Armor Items
+2015.11.21 22:21:47,293	INFO	1	com.l2jserver.gameserver.datatables.ItemTable	ItemTable: Loaded: 8490 Weapon Items
+2015.11.21 22:21:47,293	INFO	1	com.l2jserver.gameserver.datatables.ItemTable	ItemTable: Loaded: 38683 Items in total.
+2015.11.21 22:21:47,298	INFO	1	com.l2jserver.util.data.xml.IXmlReader	EnchantItemGroupsData: Loaded: 4 item group templates.
+2015.11.21 22:21:47,298	INFO	1	com.l2jserver.util.data.xml.IXmlReader	EnchantItemGroupsData: Loaded: 1 scroll group templates.
+2015.11.21 22:21:47,310	INFO	1	com.l2jserver.util.data.xml.IXmlReader	EnchantItemData: Loaded 251 Enchant Scrolls.
+2015.11.21 22:21:47,310	INFO	1	com.l2jserver.util.data.xml.IXmlReader	EnchantItemData: Loaded 97 Support Items.
+2015.11.21 22:21:47,326	INFO	1	com.l2jserver.util.data.xml.IXmlReader	EnchantItemOptionsData: Loaded: 24 Items and 1107 Options.
+2015.11.21 22:21:47,339	INFO	1	com.l2jserver.util.data.xml.IXmlReader	ItemCrystalizationData: Loaded: 170 Items
+2015.11.21 22:21:48,187	INFO	1	com.l2jserver.util.data.xml.IXmlReader	OptionData: Loaded: 25035 Options.
+2015.11.21 22:21:48,199	INFO	1	com.l2jserver.util.data.xml.IXmlReader	EnchantItemHPBonusData: Loaded 11 Enchant HP Bonuses.
+2015.11.21 22:21:48,204	INFO	1	com.l2jserver.gameserver.datatables.MerchantPriceConfigTable	MerchantPriceConfigTable: Loaded 28 merchant price configs.
+2015.11.21 22:21:49,512	INFO	1	com.l2jserver.util.data.xml.IXmlReader	BuyListData: Loaded 847 BuyLists.
+2015.11.21 22:21:50,259	INFO	1	com.l2jserver.util.data.xml.IXmlReader	MultisellData: Loaded 325 multisell lists.
+2015.11.21 22:21:50,315	INFO	1	com.l2jserver.util.data.xml.IXmlReader	RecipeData: Loaded 1611 recipes.
+2015.11.21 22:21:50,425	INFO	1	com.l2jserver.util.data.xml.IXmlReader	ArmorSetsData: Loaded 297 Armor sets.
+2015.11.21 22:21:50,466	INFO	1	com.l2jserver.util.data.xml.IXmlReader	HennaData: Loaded 440 Henna data.
+2015.11.21 22:21:50,479	INFO	1	com.l2jserver.util.data.xml.IXmlReader	FishData: Loaded 321 Fishes.
+2015.11.21 22:21:50,483	INFO	1	com.l2jserver.util.data.xml.IXmlReader	FishingMonstersData: Loaded 8 Fishing Monsters.
+2015.11.21 22:21:50,526	INFO	1	com.l2jserver.util.data.xml.IXmlReader	FishingRodsData: Loaded 8 Fishing Rods.
+2015.11.21 22:21:50,626	INFO	1	com.l2jserver.util.data.xml.IXmlReader	PrimeShopData: Loaded 194 items
+2015.11.21 22:21:50,634	INFO	1	com.l2jserver.util.data.xml.IXmlReader	AppearanceItemData: Loaded: 241 Stones
+2015.11.21 22:21:50,634	INFO	1	com.l2jserver.gameserver.GameServer	----------------------------------------------=[ Characters ]
+2015.11.21 22:21:50,637	INFO	1	com.l2jserver.util.data.xml.IXmlReader	ClassListData: Loaded 157 Class data.
+2015.11.21 22:21:50,640	INFO	1	com.l2jserver.util.data.xml.IXmlReader	InitialEquipmentData: Loaded 13 Initial Equipment data.
+2015.11.21 22:21:50,643	INFO	1	com.l2jserver.util.data.xml.IXmlReader	InitialShortcutData: Loaded 5 Initial Global Shortcuts data.
+2015.11.21 22:21:50,643	INFO	1	com.l2jserver.util.data.xml.IXmlReader	InitialShortcutData: Loaded 5 Initial Shortcuts data.
+2015.11.21 22:21:50,643	INFO	1	com.l2jserver.util.data.xml.IXmlReader	InitialShortcutData: Loaded 0 Macros presets.
+2015.11.21 22:21:50,649	INFO	1	com.l2jserver.util.data.xml.IXmlReader	ExperienceData: Loaded 107 levels.
+2015.11.21 22:21:50,649	INFO	1	com.l2jserver.util.data.xml.IXmlReader	ExperienceData: Max Player Level is: 107
+2015.11.21 22:21:50,649	INFO	1	com.l2jserver.util.data.xml.IXmlReader	ExperienceData: Max Pet Level is: 107
+2015.11.21 22:21:50,653	INFO	1	com.l2jserver.util.data.xml.IXmlReader	KarmaData: Loaded 107 karma modifiers.
+2015.11.21 22:21:50,655	INFO	1	com.l2jserver.util.data.xml.IXmlReader	HitConditionBonusData: Loaded Hit Condition bonuses.
+2015.11.21 22:21:51,218	INFO	1	com.l2jserver.gameserver.data.xml.impl.PlayerTemplateData	PlayerTemplateData: Loaded 145 character templates.
+2015.11.21 22:21:51,218	INFO	1	com.l2jserver.gameserver.data.xml.impl.PlayerTemplateData	PlayerTemplateData: Loaded 93090 level up gain records.
+2015.11.21 22:21:51,222	INFO	1	com.l2jserver.gameserver.data.sql.impl.CharNameTable	CharNameTable: Loaded 22 char names.
+2015.11.21 22:21:51,264	INFO	1	com.l2jserver.util.data.xml.IXmlReader	AdminData: Loaded: 10 Access Levels.
+2015.11.21 22:21:51,268	INFO	1	com.l2jserver.util.data.xml.IXmlReader	AdminData: Loaded: 439 Access Commands.
+2015.11.21 22:21:51,688	INFO	1	com.l2jserver.util.data.xml.IXmlReader	PetDataTable: Loaded 49 Pets.
+2015.11.21 22:21:51,751	INFO	1	com.l2jserver.gameserver.GameServer	---------------------------------------------------=[ Clans ]
+2015.11.21 22:21:51,763	INFO	1	com.l2jserver.gameserver.communitybbs.Manager.ForumsBBSManager	Loaded 4 forums. Last forum id used: 4
+2015.11.21 22:21:51,764	INFO	1	com.l2jserver.gameserver.data.sql.impl.ClanTable	ClanTable: Restored 0 clans from the database.
+2015.11.21 22:21:51,814	INFO	1	com.l2jserver.gameserver.instancemanager.CHSiegeManager	CHSiegeManager: Loaded 6 conquerable clan halls.
+2015.11.21 22:21:53,206	INFO	1	com.l2jserver.gameserver.instancemanager.ClanHallAuctionManager	ClanHallAuctionManager: Loaded: 38 auction(s)
+2015.11.21 22:21:53,207	INFO	1	com.l2jserver.gameserver.instancemanager.ClanHallManager	ClanHallManager: Loaded: 0 clan halls
+2015.11.21 22:21:53,207	INFO	1	com.l2jserver.gameserver.instancemanager.ClanHallManager	ClanHallManager: Loaded: 38 free clan halls
+2015.11.21 22:21:53,272	INFO	1	com.l2jserver.gameserver.instancemanager.ClanEntryManager	ClanEntryManager: Loaded: 0 clan entry
+2015.11.21 22:21:53,309	INFO	1	com.l2jserver.gameserver.instancemanager.ClanEntryManager	ClanEntryManager: Loaded: 0 player in waiting list
+2015.11.21 22:21:53,345	INFO	1	com.l2jserver.gameserver.instancemanager.ClanEntryManager	ClanEntryManager: Loaded: 0 player application
+2015.11.21 22:21:53,345	INFO	1	com.l2jserver.gameserver.GameServer	-------------------------------------------------=[ Geodata ]
+2015.11.21 22:21:53,426	INFO	1	com.l2jserver.gameserver.GeoData	GeoData: Loaded 0 regions.
+2015.11.21 22:21:53,426	INFO	1	com.l2jserver.gameserver.GameServer	----------------------------------------------------=[ NPCs ]
+2015.11.21 22:21:53,432	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillLearnData: Loaded 256 Skill Learn data.
+2015.11.21 22:21:53,461	INFO	1	com.l2jserver.util.data.xml.IXmlReader	MinionData: Loaded 128 minions data.
+2015.11.21 22:21:56,037	INFO	1	com.l2jserver.util.data.xml.IXmlReader	NpcData: Loaded 13833 NPCs.
+2015.11.21 22:21:56,039	INFO	1	com.l2jserver.util.data.xml.IXmlReader	NpcData: Loaded 8 Custom NPCs.
+2015.11.21 22:21:56,488	INFO	1	com.l2jserver.util.data.xml.IXmlReader	WalkingManager: Loaded 141 walking routes.
+2015.11.21 22:21:56,618	INFO	1	com.l2jserver.util.data.xml.IXmlReader	StaticObjectData: Loaded 51 static object templates.
+2015.11.21 22:21:57,081	INFO	1	com.l2jserver.gameserver.instancemanager.GrandBossManager	GrandBossManager: Gigantic Chaos Golem(25512) status is 0.
+2015.11.21 22:21:57,081	INFO	1	com.l2jserver.gameserver.instancemanager.GrandBossManager	GrandBossManager: Queen Ant(29001) status is 0.
+2015.11.21 22:21:57,082	INFO	1	com.l2jserver.gameserver.instancemanager.GrandBossManager	GrandBossManager: Core(29006) status is 0.
+2015.11.21 22:21:57,082	INFO	1	com.l2jserver.gameserver.instancemanager.GrandBossManager	GrandBossManager: Orfen(29014) status is 0.
+2015.11.21 22:21:57,082	INFO	1	com.l2jserver.gameserver.instancemanager.GrandBossManager	GrandBossManager: Baium(29020) status is 0.
+2015.11.21 22:21:57,082	INFO	1	com.l2jserver.gameserver.instancemanager.GrandBossManager	GrandBossManager: Valakas(29028) status is 0.
+2015.11.21 22:21:57,082	INFO	1	com.l2jserver.gameserver.instancemanager.GrandBossManager	GrandBossManager: Antharas(29068) status is 0.
+2015.11.21 22:21:57,082	INFO	1	com.l2jserver.gameserver.instancemanager.GrandBossManager	GrandBossManager: Beleth(29118) status is 0.
+2015.11.21 22:21:57,082	INFO	1	com.l2jserver.gameserver.instancemanager.GrandBossManager	GrandBossManager: Loaded 8 Instances
+2015.11.21 22:21:59,533	INFO	1	com.l2jserver.util.data.xml.IXmlReader	DoorData: Loaded 1428 Door Templates for 23 regions.
+2015.11.21 22:22:00,479	INFO	1	com.l2jserver.util.data.xml.IXmlReader	ZoneManager: Loaded 29 zone classes and 2886 zones.
+2015.11.21 22:22:00,479	INFO	1	com.l2jserver.util.data.xml.IXmlReader	ZoneManager: Loaded 0 NPC spawn territoriers.
+2015.11.21 22:22:00,589	INFO	1	com.l2jserver.gameserver.instancemanager.CastleManager	CastleManager: Loaded: 9 castles
+2015.11.21 22:22:00,692	INFO	1	com.l2jserver.gameserver.data.sql.impl.NpcBufferTable	NpcBufferTable: Loaded 2 buffers and 64 skills.
+2015.11.21 22:22:00,723	INFO	1	com.l2jserver.gameserver.instancemanager.GrandBossManager	GrandBossManager: Initialized 12 Grand Boss Zones
+2015.11.21 22:22:00,735	INFO	1	com.l2jserver.gameserver.GameServer	-----------------------------------------=[ Auction Manager ]
+2015.11.21 22:22:00,763	INFO	1	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ItemAuctionInstance: Clearing expired auction: 29
+2015.11.21 22:22:00,827	INFO	1	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ItemAuctionInstance: Loaded 82 item(s) and registered 1 auction(s) for instance 32320.
+2015.11.21 22:22:00,896	INFO	1	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ItemAuctionInstance: Schedule current auction 30 for instance 32320
+2015.11.21 22:22:00,939	INFO	61	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ScheduleAuctionTask: Auction 30 has started for instance 32320
+2015.11.21 22:22:00,972	INFO	61	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ItemAuctionInstance: Schedule current auction 30 for instance 32320
+2015.11.21 22:22:01,040	INFO	1	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ItemAuctionInstance: Clearing expired auction: 27
+2015.11.21 22:22:01,074	INFO	1	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ItemAuctionInstance: Loaded 82 item(s) and registered 1 auction(s) for instance 32321.
+2015.11.21 22:22:01,128	INFO	1	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ItemAuctionInstance: Schedule current auction 31 for instance 32321
+2015.11.21 22:22:01,129	INFO	1	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ItemAuctionInstance: Clearing expired auction: 28
+2015.11.21 22:22:01,172	INFO	59	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ScheduleAuctionTask: Auction 31 has started for instance 32321
+2015.11.21 22:22:01,172	INFO	59	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ItemAuctionInstance: Schedule current auction 31 for instance 32321
+2015.11.21 22:22:01,211	INFO	1	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ItemAuctionInstance: Loaded 82 item(s) and registered 2 auction(s) for instance 32322.
+2015.11.21 22:22:01,261	INFO	1	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ItemAuctionInstance: Schedule current auction 33 for instance 32322
+2015.11.21 22:22:01,261	INFO	1	com.l2jserver.gameserver.instancemanager.ItemAuctionManager	ItemAuctionManager: Loaded 3 instance(s).
+2015.11.21 22:22:01,261	INFO	1	com.l2jserver.gameserver.GameServer	------------------------------------------------=[ Olympiad ]
+2015.11.21 22:22:01,283	INFO	37	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ScheduleAuctionTask: Auction 33 has started for instance 32322
+2015.11.21 22:22:01,283	INFO	37	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ItemAuctionInstance: Schedule current auction 33 for instance 32322
+2015.11.21 22:22:01,382	INFO	1	com.l2jserver.gameserver.model.olympiad.Olympiad	Olympiad System: Loading Olympiad System....
+2015.11.21 22:22:01,382	INFO	1	com.l2jserver.gameserver.model.olympiad.Olympiad	Olympiad System: Currently in Olympiad Period
+2015.11.21 22:22:01,382	INFO	1	com.l2jserver.gameserver.model.olympiad.Olympiad	Olympiad System: 13777 minutes until period ends
+2015.11.21 22:22:01,382	INFO	1	com.l2jserver.gameserver.model.olympiad.Olympiad	Olympiad System: Next weekly change is in 0 minutes
+2015.11.21 22:22:01,382	INFO	1	com.l2jserver.gameserver.model.olympiad.Olympiad	Olympiad System: Loaded 0 Nobles
+2015.11.21 22:22:01,385	INFO	1	com.l2jserver.gameserver.model.olympiad.Olympiad	Olympiad System: Competition Period Starts in 0 days, 0 hours and 0 mins.
+2015.11.21 22:22:01,401	INFO	1	com.l2jserver.gameserver.model.olympiad.Olympiad	Olympiad System: Event starts/started : Sat Nov 21 18:00:01 CET 2015
+2015.11.21 22:22:01,401	INFO	35	com.l2jserver.gameserver.model.olympiad.Olympiad	Olympiad System: Added weekly points to nobles
+2015.11.21 22:22:01,402	INFO	35	com.l2jserver.gameserver.model.olympiad.Olympiad	Olympiad System: Reset weekly matches to nobles
+2015.11.21 22:22:01,407	INFO	1	com.l2jserver.gameserver.model.entity.Hero	Hero System: Loaded 0 Heroes.
+2015.11.21 22:22:01,407	INFO	1	com.l2jserver.gameserver.model.entity.Hero	Hero System: Loaded 0 all time Heroes.
+2015.11.21 22:22:01,407	INFO	1	com.l2jserver.gameserver.GameServer	---------------------------------------------------=[ Cache ]
+2015.11.21 22:22:01,409	INFO	1	com.l2jserver.gameserver.cache.HtmCache	Html cache start...
+2015.11.21 22:22:01,443	INFO	40	com.l2jserver.gameserver.model.olympiad.Olympiad	Olympiad System: Olympiad Game Started
+2015.11.21 22:22:01,443	INFO	62	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ItemAuctionInstance: Auction 30 has finished. There have not been any bid for instance 32320
+2015.11.21 22:22:01,443	INFO	49	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ItemAuctionInstance: Auction 31 has finished. There have not been any bid for instance 32321
+2015.11.21 22:22:01,443	INFO	31	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ItemAuctionInstance: Auction 33 has finished. There have not been any bid for instance 32322
+2015.11.21 22:22:01,444	INFO	62	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ItemAuctionInstance: Schedule next auction 34 on 17:00:00 27.11.15 for instance 32320
+2015.11.21 22:22:01,444	INFO	49	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ItemAuctionInstance: Schedule next auction 35 on 17:00:00 23.11.15 for instance 32321
+2015.11.21 22:22:01,444	INFO	31	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ItemAuctionInstance: Schedule next auction 36 on 17:00:00 25.11.15 for instance 32322
+2015.11.21 22:22:01,449	INFO	40	com.l2jserver.gameserver.model.olympiad.OlympiadGameManager	Olympiad System: Loaded 160 stadiums.

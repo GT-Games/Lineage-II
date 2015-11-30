@@ -1,0 +1,828 @@
+2015.11.28 21:48:22,823	INFO	1	com.l2jserver.gameserver.GameServer	-----------------------------------=[ Network Configuration ]
+2015.11.28 21:48:22,898	INFO	1	com.l2jserver.util.data.xml.IXmlReader	Using automatic network configuration.
+2015.11.28 21:48:23,570	INFO	1	com.l2jserver.util.data.xml.IXmlReader	Adding new subnet: 127.0.0.0/8 address: 127.0.0.1
+2015.11.28 21:48:23,580	INFO	1	com.l2jserver.util.data.xml.IXmlReader	Adding new subnet: 192.168.1.0/24 address: 192.168.1.110
+2015.11.28 21:48:23,597	INFO	1	com.l2jserver.util.data.xml.IXmlReader	Adding new subnet: 0.0.0.0/0 address: 2.236.77.146
+2015.11.28 21:48:23,883	INFO	1	com.l2jserver.Config	Loaded 6 Filter Words.
+2015.11.28 21:48:23,907	INFO	1	com.l2jserver.gameserver.GameServer	------------------------------------------------=[ Database ]
+2015.11.28 21:48:24,459	INFO	1	com.l2jserver.gameserver.idfactory.BitSetIDFactory	Updated characters online status.
+2015.11.28 21:48:24,551	INFO	1	com.l2jserver.gameserver.idfactory.BitSetIDFactory	Cleaned 0 elements from database in 0 s
+2015.11.28 21:48:24,555	INFO	1	com.l2jserver.gameserver.idfactory.BitSetIDFactory	Cleaned 0 expired timestamps from database.
+2015.11.28 21:48:24,836	INFO	1	com.l2jserver.gameserver.idfactory.BitSetIDFactory	BitSetIDFactory: 102912 id's available.
+2015.11.28 21:48:24,837	INFO	1	com.l2jserver.gameserver.GameServer	-------------------------------------------------=[ Engines ]
+2015.11.28 21:48:25,308	INFO	1	com.l2jserver.gameserver.scripting.L2ScriptEngineManager	Script Engine: java 1.8 - Language: java - Language Version: 1.8
+2015.11.28 21:48:25,309	INFO	1	com.l2jserver.gameserver.GameServer	---------------------------------------------------=[ World ]
+2015.11.28 21:48:25,310	CONFIG	21	com.l2jserver.gameserver.GameTimeController	GameTimeController: Started.
+2015.11.28 21:48:25,317	INFO	1	com.l2jserver.util.data.xml.IXmlReader	InstanceManager: Multiverse Instance created.
+2015.11.28 21:48:25,318	INFO	1	com.l2jserver.util.data.xml.IXmlReader	InstanceManager: Universe Instance created.
+2015.11.28 21:48:25,416	INFO	1	com.l2jserver.util.data.xml.IXmlReader	InstanceManager: Loaded 263 instance names.
+2015.11.28 21:48:25,465	INFO	1	com.l2jserver.gameserver.model.L2World	L2World: (144 by 136) World Region Grid set up.
+2015.11.28 21:48:25,771	INFO	1	com.l2jserver.util.data.xml.IXmlReader	MapRegionManager: Loaded 59 map regions.
+2015.11.28 21:48:25,796	INFO	1	com.l2jserver.gameserver.instancemanager.GlobalVariablesManager	GlobalVariablesManager: Loaded 5 variables.
+2015.11.28 21:48:25,797	INFO	1	com.l2jserver.gameserver.GameServer	----------------------------------------------------=[ Data ]
+2015.11.28 21:48:25,858	INFO	1	com.l2jserver.gameserver.data.xml.impl.CategoryData	CategoryData: Loaded 142 Categories.
+2015.11.28 21:48:25,899	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SecondaryAuthData: Loaded 328 forbidden passwords.
+2015.11.28 21:48:25,963	INFO	1	com.l2jserver.util.data.xml.IXmlReader	AbilityPointsData: Loaded: 4 range fees.
+2015.11.28 21:48:25,964	INFO	1	com.l2jserver.gameserver.GameServer	-------------------------------------------------=[ Effects ]
+2015.11.28 21:48:31,600	INFO	1	handlers.EffectMasterHandler	EffectMasterHandler: Loaded 174 effect handlers.
+2015.11.28 21:48:31,601	INFO	1	com.l2jserver.gameserver.GameServer	------------------------------------=[ Enchant Skill Groups ]
+2015.11.28 21:48:31,675	INFO	1	com.l2jserver.util.data.xml.IXmlReader	EnchantSkillGroupsData: Loaded 5 groups and 100 routes.
+2015.11.28 21:48:31,675	INFO	1	com.l2jserver.gameserver.GameServer	---------------------------------------------=[ Skill Trees ]
+2015.11.28 21:48:33,151	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 21:48:33,152	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 21:48:33,152	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 21:48:33,153	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 21:48:33,154	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 21:48:33,155	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 21:48:33,155	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 21:48:33,156	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 21:48:33,157	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 21:48:33,158	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 21:48:33,158	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 21:48:33,159	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 21:48:33,160	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 21:48:33,161	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 21:48:33,161	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 21:48:33,162	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 21:48:33,163	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 21:48:33,164	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.28 21:48:33,164	INFO	1	com.l2jserver.gameserver.GameServer	--------------------------------------------------=[ Skills ]
+2015.11.28 21:48:40,208	INFO	1	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89703 Skill templates from XML files.
+2015.11.28 21:48:40,281	INFO	1	com.l2jserver.gameserver.data.sql.impl.SummonSkillsTable	SummonSkillsTable: Loaded 2674 skills.
+2015.11.28 21:48:40,281	INFO	1	com.l2jserver.gameserver.GameServer	---------------------------------------------------=[ Items ]
+2015.11.28 21:48:49,996	INFO	1	com.l2jserver.gameserver.datatables.ItemTable	ItemTable: Highest item id used:46692
+2015.11.28 21:48:50,001	INFO	1	com.l2jserver.gameserver.datatables.ItemTable	ItemTable: Loaded: 20025 Etc Items
+2015.11.28 21:48:50,001	INFO	1	com.l2jserver.gameserver.datatables.ItemTable	ItemTable: Loaded: 10168 Armor Items
+2015.11.28 21:48:50,001	INFO	1	com.l2jserver.gameserver.datatables.ItemTable	ItemTable: Loaded: 8490 Weapon Items
+2015.11.28 21:48:50,002	INFO	1	com.l2jserver.gameserver.datatables.ItemTable	ItemTable: Loaded: 38683 Items in total.
+2015.11.28 21:48:50,078	INFO	1	com.l2jserver.util.data.xml.IXmlReader	EnchantItemGroupsData: Loaded: 4 item group templates.
+2015.11.28 21:48:50,079	INFO	1	com.l2jserver.util.data.xml.IXmlReader	EnchantItemGroupsData: Loaded: 1 scroll group templates.
+2015.11.28 21:48:50,118	INFO	1	com.l2jserver.util.data.xml.IXmlReader	EnchantItemData: Loaded 251 Enchant Scrolls.
+2015.11.28 21:48:50,118	INFO	1	com.l2jserver.util.data.xml.IXmlReader	EnchantItemData: Loaded 97 Support Items.
+2015.11.28 21:48:50,188	INFO	1	com.l2jserver.util.data.xml.IXmlReader	EnchantItemOptionsData: Loaded: 24 Items and 1107 Options.
+2015.11.28 21:48:50,237	INFO	1	com.l2jserver.util.data.xml.IXmlReader	ItemCrystalizationData: Loaded: 170 Items
+2015.11.28 21:48:56,112	INFO	1	com.l2jserver.util.data.xml.IXmlReader	OptionData: Loaded: 25035 Options.
+2015.11.28 21:48:56,147	INFO	1	com.l2jserver.util.data.xml.IXmlReader	EnchantItemHPBonusData: Loaded 11 Enchant HP Bonuses.
+2015.11.28 21:48:56,194	INFO	1	com.l2jserver.gameserver.datatables.MerchantPriceConfigTable	MerchantPriceConfigTable: Loaded 28 merchant price configs.
+2015.11.28 21:49:10,503	INFO	1	com.l2jserver.util.data.xml.IXmlReader	BuyListData: Loaded 850 BuyLists.
+2015.11.28 21:49:16,757	INFO	1	com.l2jserver.util.data.xml.IXmlReader	MultisellData: Loaded 325 multisell lists.
+2015.11.28 21:49:16,889	INFO	1	com.l2jserver.util.data.xml.IXmlReader	RecipeData: Loaded 1611 recipes.
+2015.11.28 21:49:17,068	INFO	1	com.l2jserver.util.data.xml.IXmlReader	ArmorSetsData: Loaded 297 Armor sets.
+2015.11.28 21:49:17,193	INFO	1	com.l2jserver.util.data.xml.IXmlReader	HennaData: Loaded 440 Henna data.
+2015.11.28 21:49:17,253	INFO	1	com.l2jserver.util.data.xml.IXmlReader	FishData: Loaded 321 Fishes.
+2015.11.28 21:49:17,297	INFO	1	com.l2jserver.util.data.xml.IXmlReader	FishingMonstersData: Loaded 8 Fishing Monsters.
+2015.11.28 21:49:17,332	INFO	1	com.l2jserver.util.data.xml.IXmlReader	FishingRodsData: Loaded 8 Fishing Rods.
+2015.11.28 21:49:17,463	INFO	1	com.l2jserver.util.data.xml.IXmlReader	PrimeShopData: Loaded 194 items
+2015.11.28 21:49:17,520	INFO	1	com.l2jserver.util.data.xml.IXmlReader	AppearanceItemData: Loaded: 244 Stones
+2015.11.28 21:49:17,744	INFO	1	com.l2jserver.gameserver.GameServer	----------------------------------------------=[ Characters ]
+2015.11.28 21:49:17,828	INFO	1	com.l2jserver.util.data.xml.IXmlReader	ClassListData: Loaded 157 Class data.
+2015.11.28 21:49:17,907	INFO	1	com.l2jserver.util.data.xml.IXmlReader	InitialEquipmentData: Loaded 13 Initial Equipment data.
+2015.11.28 21:49:17,940	INFO	1	com.l2jserver.util.data.xml.IXmlReader	InitialShortcutData: Loaded 5 Initial Global Shortcuts data.
+2015.11.28 21:49:17,940	INFO	1	com.l2jserver.util.data.xml.IXmlReader	InitialShortcutData: Loaded 5 Initial Shortcuts data.
+2015.11.28 21:49:17,940	INFO	1	com.l2jserver.util.data.xml.IXmlReader	InitialShortcutData: Loaded 0 Macros presets.
+2015.11.28 21:49:18,035	INFO	1	com.l2jserver.util.data.xml.IXmlReader	ExperienceData: Loaded 107 levels.
+2015.11.28 21:49:18,036	INFO	1	com.l2jserver.util.data.xml.IXmlReader	ExperienceData: Max Player Level is: 107
+2015.11.28 21:49:18,036	INFO	1	com.l2jserver.util.data.xml.IXmlReader	ExperienceData: Max Pet Level is: 107
+2015.11.28 21:49:18,112	INFO	1	com.l2jserver.util.data.xml.IXmlReader	KarmaData: Loaded 107 karma modifiers.
+2015.11.28 21:49:18,145	INFO	1	com.l2jserver.util.data.xml.IXmlReader	HitConditionBonusData: Loaded Hit Condition bonuses.
+2015.11.28 21:49:21,134	INFO	1	com.l2jserver.gameserver.data.xml.impl.PlayerTemplateData	PlayerTemplateData: Loaded 145 character templates.
+2015.11.28 21:49:21,134	INFO	1	com.l2jserver.gameserver.data.xml.impl.PlayerTemplateData	PlayerTemplateData: Loaded 93090 level up gain records.
+2015.11.28 21:49:21,169	INFO	1	com.l2jserver.gameserver.data.sql.impl.CharNameTable	CharNameTable: Loaded 2 char names.
+2015.11.28 21:49:21,285	INFO	1	com.l2jserver.util.data.xml.IXmlReader	AdminData: Loaded: 10 Access Levels.
+2015.11.28 21:49:21,334	INFO	1	com.l2jserver.util.data.xml.IXmlReader	AdminData: Loaded: 439 Access Commands.
+2015.11.28 21:49:22,475	INFO	1	com.l2jserver.util.data.xml.IXmlReader	PetDataTable: Loaded 49 Pets.
+2015.11.28 21:49:22,493	INFO	1	com.l2jserver.gameserver.GameServer	---------------------------------------------------=[ Clans ]
+2015.11.28 21:49:22,554	INFO	1	com.l2jserver.gameserver.communitybbs.Manager.ForumsBBSManager	Loaded 4 forums. Last forum id used: 4
+2015.11.28 21:49:22,555	INFO	1	com.l2jserver.gameserver.data.sql.impl.ClanTable	ClanTable: Restored 0 clans from the database.
+2015.11.28 21:49:22,618	INFO	1	com.l2jserver.gameserver.instancemanager.CHSiegeManager	CHSiegeManager: Loaded 6 conquerable clan halls.
+2015.11.28 21:49:22,664	INFO	1	com.l2jserver.gameserver.instancemanager.ClanHallAuctionManager	ClanHallAuctionManager: Loaded: 38 auction(s)
+2015.11.28 21:49:22,666	INFO	1	com.l2jserver.gameserver.instancemanager.ClanHallManager	ClanHallManager: Loaded: 0 clan halls
+2015.11.28 21:49:22,666	INFO	1	com.l2jserver.gameserver.instancemanager.ClanHallManager	ClanHallManager: Loaded: 38 free clan halls
+2015.11.28 21:49:22,686	INFO	1	com.l2jserver.gameserver.instancemanager.ClanEntryManager	ClanEntryManager: Loaded: 0 clan entry
+2015.11.28 21:49:22,686	INFO	1	com.l2jserver.gameserver.instancemanager.ClanEntryManager	ClanEntryManager: Loaded: 0 player in waiting list
+2015.11.28 21:49:22,687	INFO	1	com.l2jserver.gameserver.instancemanager.ClanEntryManager	ClanEntryManager: Loaded: 0 player application
+2015.11.28 21:49:22,687	INFO	1	com.l2jserver.gameserver.GameServer	-------------------------------------------------=[ Geodata ]
+2015.11.28 21:49:22,769	INFO	1	com.l2jserver.gameserver.GeoData	GeoData: Loaded 0 regions.
+2015.11.28 21:49:22,769	INFO	1	com.l2jserver.gameserver.GameServer	----------------------------------------------------=[ NPCs ]
+2015.11.28 21:49:22,828	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SkillLearnData: Loaded 256 Skill Learn data.
+2015.11.28 21:49:22,898	INFO	1	com.l2jserver.util.data.xml.IXmlReader	MinionData: Loaded 128 minions data.
+2015.11.28 21:49:29,309	INFO	1	com.l2jserver.util.data.xml.IXmlReader	NpcData: Loaded 13834 NPCs.
+2015.11.28 21:49:29,324	INFO	1	com.l2jserver.util.data.xml.IXmlReader	NpcData: Loaded 8 Custom NPCs.
+2015.11.28 21:49:29,898	INFO	1	com.l2jserver.util.data.xml.IXmlReader	WalkingManager: Loaded 141 walking routes.
+2015.11.28 21:49:30,116	INFO	1	com.l2jserver.util.data.xml.IXmlReader	StaticObjectData: Loaded 51 static object templates.
+2015.11.28 21:49:30,651	INFO	1	com.l2jserver.gameserver.instancemanager.GrandBossManager	GrandBossManager: Queen Ant(29001) status is 0.
+2015.11.28 21:49:30,651	INFO	1	com.l2jserver.gameserver.instancemanager.GrandBossManager	GrandBossManager: Core(29006) status is 0.
+2015.11.28 21:49:30,651	INFO	1	com.l2jserver.gameserver.instancemanager.GrandBossManager	GrandBossManager: Orfen(29014) status is 0.
+2015.11.28 21:49:30,651	INFO	1	com.l2jserver.gameserver.instancemanager.GrandBossManager	GrandBossManager: Baium(29020) status is 0.
+2015.11.28 21:49:30,652	INFO	1	com.l2jserver.gameserver.instancemanager.GrandBossManager	GrandBossManager: Valakas(29028) status is 0.
+2015.11.28 21:49:30,652	INFO	1	com.l2jserver.gameserver.instancemanager.GrandBossManager	GrandBossManager: Antharas(29068) status is 0.
+2015.11.28 21:49:30,652	INFO	1	com.l2jserver.gameserver.instancemanager.GrandBossManager	GrandBossManager: Beleth(29118) status is 0.
+2015.11.28 21:49:30,652	INFO	1	com.l2jserver.gameserver.instancemanager.GrandBossManager	GrandBossManager: Loaded 7 Instances
+2015.11.28 21:49:32,025	INFO	1	com.l2jserver.util.data.xml.IXmlReader	DoorData: Loaded 1428 Door Templates for 23 regions.
+2015.11.28 21:49:33,055	INFO	1	com.l2jserver.util.data.xml.IXmlReader	ZoneManager: Loaded 29 zone classes and 2886 zones.
+2015.11.28 21:49:33,055	INFO	1	com.l2jserver.util.data.xml.IXmlReader	ZoneManager: Loaded 0 NPC spawn territoriers.
+2015.11.28 21:49:33,148	INFO	1	com.l2jserver.gameserver.instancemanager.CastleManager	CastleManager: Loaded: 9 castles
+2015.11.28 21:49:33,152	INFO	1	com.l2jserver.gameserver.data.sql.impl.NpcBufferTable	NpcBufferTable: Loaded 2 buffers and 64 skills.
+2015.11.28 21:49:33,152	INFO	1	com.l2jserver.gameserver.instancemanager.GrandBossManager	GrandBossManager: Initialized 12 Grand Boss Zones
+2015.11.28 21:49:33,181	INFO	1	com.l2jserver.gameserver.GameServer	-----------------------------------------=[ Auction Manager ]
+2015.11.28 21:49:33,254	INFO	1	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ItemAuctionInstance: Loaded 82 item(s) and registered 2 auction(s) for instance 32320.
+2015.11.28 21:49:33,256	INFO	1	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ItemAuctionInstance: Schedule next auction 6 on 17:00:00 04.12.15 for instance 32320
+2015.11.28 21:49:33,259	INFO	1	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ItemAuctionInstance: Loaded 82 item(s) and registered 2 auction(s) for instance 32321.
+2015.11.28 21:49:33,259	INFO	1	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ItemAuctionInstance: Schedule next auction 4 on 17:00:00 30.11.15 for instance 32321
+2015.11.28 21:49:33,262	INFO	1	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ItemAuctionInstance: Loaded 82 item(s) and registered 2 auction(s) for instance 32322.
+2015.11.28 21:49:33,262	INFO	1	com.l2jserver.gameserver.model.itemauction.ItemAuctionInstance	ItemAuctionInstance: Schedule next auction 5 on 17:00:00 02.12.15 for instance 32322
+2015.11.28 21:49:33,263	INFO	1	com.l2jserver.gameserver.instancemanager.ItemAuctionManager	ItemAuctionManager: Loaded 3 instance(s).
+2015.11.28 21:49:33,263	INFO	1	com.l2jserver.gameserver.GameServer	------------------------------------------------=[ Olympiad ]
+2015.11.28 21:49:33,270	INFO	1	com.l2jserver.gameserver.model.olympiad.Olympiad	Olympiad System: Loading Olympiad System....
+2015.11.28 21:49:33,270	INFO	1	com.l2jserver.gameserver.model.olympiad.Olympiad	Olympiad System: Currently in Olympiad Period
+2015.11.28 21:49:33,270	INFO	1	com.l2jserver.gameserver.model.olympiad.Olympiad	Olympiad System: 3730 minutes until period ends
+2015.11.28 21:49:33,270	INFO	1	com.l2jserver.gameserver.model.olympiad.Olympiad	Olympiad System: Next weekly change is in 51 minutes
+2015.11.28 21:49:33,270	INFO	1	com.l2jserver.gameserver.model.olympiad.Olympiad	Olympiad System: Loaded 0 Nobles
+2015.11.28 21:49:33,314	INFO	1	com.l2jserver.gameserver.model.olympiad.Olympiad	Olympiad System: Competition Period Starts in 0 days, 0 hours and 0 mins.
+2015.11.28 21:49:33,338	INFO	1	com.l2jserver.gameserver.model.olympiad.Olympiad	Olympiad System: Event starts/started : Sat Nov 28 18:00:33 CET 2015
+2015.11.28 21:49:33,343	INFO	1	com.l2jserver.gameserver.model.entity.Hero	Hero System: Loaded 0 Heroes.
+2015.11.28 21:49:33,343	INFO	1	com.l2jserver.gameserver.model.entity.Hero	Hero System: Loaded 0 all time Heroes.
+2015.11.28 21:49:33,344	INFO	1	com.l2jserver.gameserver.GameServer	---------------------------------------------------=[ Cache ]
+2015.11.28 21:49:33,357	INFO	1	com.l2jserver.gameserver.cache.HtmCache	Html cache start...
+2015.11.28 21:49:33,498	INFO	27	com.l2jserver.gameserver.model.olympiad.Olympiad	Olympiad System: Olympiad Game Started
+2015.11.28 21:49:33,502	INFO	27	com.l2jserver.gameserver.model.olympiad.OlympiadGameManager	Olympiad System: Loaded 160 stadiums.
+2015.11.28 21:50:26,724	INFO	1	com.l2jserver.gameserver.cache.HtmCache	Cache[HTML]: 5,715 megabytes on 10402 files loaded
+2015.11.28 21:50:26,742	INFO	1	com.l2jserver.gameserver.data.sql.impl.CrestTable	CrestTable: Loaded 0 Crests.
+2015.11.28 21:50:26,748	INFO	1	com.l2jserver.gameserver.data.sql.impl.TeleportLocationTable	TeleportLocationTable: Loaded 1010 Teleport Location Templates.
+2015.11.28 21:50:27,087	INFO	1	com.l2jserver.util.data.xml.IXmlReader	Loaded: 21 npc teleporters.
+2015.11.28 21:50:27,125	INFO	1	com.l2jserver.gameserver.data.xml.impl.UIData	UIData: Loaded 4 keys 5 categories.
+2015.11.28 21:50:27,377	INFO	1	com.l2jserver.gameserver.datatables.AugmentationData	AugmentationData: Loaded: 40756 augmentations.
+2015.11.28 21:50:27,377	INFO	1	com.l2jserver.gameserver.datatables.AugmentationData	AugmentationData: Loaded: 3060 accessory augmentations.
+2015.11.28 21:50:27,410	INFO	1	com.l2jserver.gameserver.instancemanager.CursedWeaponsManager	CursedWeaponsManager: Loaded : 2 cursed weapon(s).
+2015.11.28 21:50:29,458	INFO	1	com.l2jserver.util.data.xml.IXmlReader	TransformData: Loaded: 124 transform templates.
+2015.11.28 21:50:29,523	INFO	1	com.l2jserver.gameserver.datatables.BotReportTable	BotReportTable: Loaded 0 bot reports
+2015.11.28 21:50:29,594	INFO	1	com.l2jserver.util.data.xml.IXmlReader	DailyMissionData: Loaded 91 daily missions.
+2015.11.28 21:50:29,594	INFO	1	com.l2jserver.gameserver.GameServer	-------------------------------------------------=[ Scripts ]
+2015.11.28 21:50:29,616	INFO	1	com.l2jserver.gameserver.instancemanager.AirShipManager	AirShipManager: Loaded 0 private airships
+2015.11.28 21:50:29,714	INFO	1	com.l2jserver.util.data.xml.IXmlReader	ShuttleData: Loaded: 3 Shuttles.
+2015.11.28 21:50:29,768	INFO	1	com.l2jserver.gameserver.instancemanager.JumpManager	JumpManager: Loaded 32 Jump Routes.
+2015.11.28 21:50:29,769	INFO	1	com.l2jserver.gameserver.GameServer	GameServer: Loading server scripts:
+2015.11.28 21:50:35,516	INFO	1	handlers.MasterHandler	Loading Handlers...
+2015.11.28 21:50:35,632	INFO	1	handlers.MasterHandler	ActionHandler: Loaded 10 Handlers
+2015.11.28 21:50:35,633	INFO	1	handlers.MasterHandler	ActionShiftHandler: Loaded 6 Handlers
+2015.11.28 21:50:35,633	INFO	1	handlers.MasterHandler	AdminCommandHandler: Loaded 436 Handlers
+2015.11.28 21:50:35,634	INFO	1	handlers.MasterHandler	BypassHandler: Loaded 42 Handlers
+2015.11.28 21:50:35,634	INFO	1	handlers.MasterHandler	ChatHandler: Loaded 14 Handlers
+2015.11.28 21:50:35,634	INFO	1	handlers.MasterHandler	CommunityBoardHandler: Loaded 19 Handlers
+2015.11.28 21:50:35,634	INFO	1	handlers.MasterHandler	ItemHandler: Loaded 32 Handlers
+2015.11.28 21:50:35,634	INFO	1	handlers.MasterHandler	PunishmentHandler: Loaded 3 Handlers
+2015.11.28 21:50:35,635	INFO	1	handlers.MasterHandler	UserCommandHandler: Loaded 16 Handlers
+2015.11.28 21:50:35,635	INFO	1	handlers.MasterHandler	VoicedCommandHandler: Loaded 5 Handlers
+2015.11.28 21:50:35,635	INFO	1	handlers.MasterHandler	TargetHandler: Loaded 35 Handlers
+2015.11.28 21:50:35,635	INFO	1	handlers.MasterHandler	TelnetHandler: Loaded 20 Handlers
+2015.11.28 21:50:35,635	INFO	1	handlers.MasterHandler	Handlers Loaded...
+2015.11.28 21:50:42,762	INFO	1	com.l2jserver.util.data.xml.IXmlReader	MentorGuide: Loaded: 41 mentee coins
+2015.11.28 21:50:43,878	INFO	1	com.l2jserver.util.data.xml.IXmlReader	NpcBuffersData: Loaded: 40 buffers data.
+2015.11.28 21:50:52,124	INFO	1	com.l2jserver.gameserver.model.events.AbstractScript	Handy's Block Checker Event is enabled
+2015.11.28 21:50:52,292	INFO	1	com.l2jserver.gameserver.model.events.AbstractScript	Fantasy Isle: Parade starting at 2015/11/29 01:20 and is scheduled each next 1 hours.
+2015.11.28 21:51:11,075	INFO	1	instances.InstanceLoader	InstanceLoader: Loading Instances scripts.
+2015.11.28 21:51:11,817	INFO	1	gracia.GraciaLoader	GraciaLoader: Loading Gracia related scripts.
+2015.11.28 21:51:16,460	INFO	1	com.l2jserver.gameserver.model.events.AbstractScript	[EnhanceYourWeapon] Loaded 54 Soul Crystal data.
+2015.11.28 21:51:16,461	INFO	1	com.l2jserver.gameserver.model.events.AbstractScript	[EnhanceYourWeapon] Loaded 240 npc Leveling info data.
+2015.11.28 21:51:18,438	CONFIG	1	conquerablehalls.flagwar.BanditStronghold.BanditStronghold	Bandit StrongHold siege scheduled for Sat Dec 05 12:00:00 CET 2015.
+2015.11.28 21:51:18,586	CONFIG	1	conquerablehalls.flagwar.WildBeastReserve.WildBeastReserve	Beast Farm siege scheduled for Sat Dec 05 12:00:00 CET 2015.
+2015.11.28 21:51:18,741	CONFIG	1	conquerablehalls.DevastatedCastle.DevastatedCastle	Devastated Castle siege scheduled for Sat Dec 05 12:00:00 CET 2015.
+2015.11.28 21:51:18,875	CONFIG	1	conquerablehalls.FortressOfResistance.FortressOfResistance	Fortress of Resistance siege scheduled for Sat Dec 05 12:00:00 CET 2015.
+2015.11.28 21:51:19,033	CONFIG	1	conquerablehalls.FortressOfTheDead.FortressOfTheDead	Fortresss of the Dead siege scheduled for Sat Dec 05 12:00:00 CET 2015.
+2015.11.28 21:51:19,155	CONFIG	1	conquerablehalls.RainbowSpringsChateau.RainbowSpringsChateau	Rainbow Springs siege scheduled for Sat Dec 05 12:00:00 CET 2015.
+2015.11.28 21:51:20,649	INFO	1	com.l2jserver.gameserver.datatables.SpawnTable	SpawnTable: Loaded 3577 npc spawns.
+2015.11.28 21:51:20,661	INFO	1	com.l2jserver.gameserver.datatables.SpawnTable	SpawnTable: Loaded 16 custom npc spawns.
+2015.11.28 21:51:20,820	INFO	1	com.l2jserver.gameserver.datatables.SpawnTable	SpawnTable: Loaded 1190 npc spawns from XML.
+2015.11.28 21:51:20,821	INFO	1	com.l2jserver.gameserver.instancemanager.DayNightSpawnManager	DayNightSpawnManager: Removed 0 night creatures
+2015.11.28 21:51:20,825	INFO	1	com.l2jserver.gameserver.instancemanager.DayNightSpawnManager	DayNightSpawnManager: Spawned 726 day creatures
+2015.11.28 21:51:20,849	INFO	1	com.l2jserver.gameserver.instancemanager.RaidBossSpawnManager	RaidBossSpawnManager: Loaded 186 Instances
+2015.11.28 21:51:20,850	INFO	1	com.l2jserver.gameserver.instancemanager.RaidBossSpawnManager	RaidBossSpawnManager: Scheduled 0 Instances
+2015.11.28 21:51:20,856	INFO	1	com.l2jserver.gameserver.instancemanager.FourSepulchersManager	FourSepulchersManager: loaded 20 Mysterious-Box spawns.
+2015.11.28 21:51:20,894	INFO	1	com.l2jserver.gameserver.instancemanager.FourSepulchersManager	FourSepulchersManager: loaded 716 Physical type monsters spawns.
+2015.11.28 21:51:20,910	INFO	1	com.l2jserver.gameserver.instancemanager.FourSepulchersManager	FourSepulchersManager: loaded 716 Magical type monsters spawns.
+2015.11.28 21:51:20,914	INFO	1	com.l2jserver.gameserver.instancemanager.FourSepulchersManager	FourSepulchersManager: loaded 92 Church of duke monsters spawns.
+2015.11.28 21:51:20,917	INFO	1	com.l2jserver.gameserver.instancemanager.FourSepulchersManager	FourSepulchersManager: loaded 68 Emperor's grave NPC spawns.
+2015.11.28 21:51:20,918	INFO	1	com.l2jserver.gameserver.instancemanager.FourSepulchersManager	FourSepulchersManager: spawned Conquerors' Sepulcher Manager
+2015.11.28 21:51:20,918	INFO	1	com.l2jserver.gameserver.instancemanager.FourSepulchersManager	FourSepulchersManager: spawned Sepulcher of Rulers Manager
+2015.11.28 21:51:20,918	INFO	1	com.l2jserver.gameserver.instancemanager.FourSepulchersManager	FourSepulchersManager: spawned Great Sages' Sepulcher Manager
+2015.11.28 21:51:20,918	INFO	1	com.l2jserver.gameserver.instancemanager.FourSepulchersManager	FourSepulchersManager: spawned Judges' Sepulcher Manager
+2015.11.28 21:51:20,919	INFO	1	com.l2jserver.gameserver.instancemanager.FourSepulchersManager	FourSepulchersManager: Beginning in Cooldown time
+2015.11.28 21:51:20,919	INFO	1	com.l2jserver.gameserver.GameServer	---------------------------------------------------=[ Siege ]
+2015.11.28 21:51:20,959	INFO	1	com.l2jserver.gameserver.model.entity.Siege	Siege of Gludio: Sun Nov 29 16:00:00 CET 2015
+2015.11.28 21:51:20,960	INFO	1	com.l2jserver.gameserver.model.entity.Siege	Siege of Dion: Sun Nov 29 16:00:00 CET 2015
+2015.11.28 21:51:20,961	INFO	1	com.l2jserver.gameserver.model.entity.Siege	Siege of Giran: Sun Nov 29 16:00:00 CET 2015
+2015.11.28 21:51:20,961	INFO	1	com.l2jserver.gameserver.model.entity.Siege	Siege of Oren: Sun Nov 29 16:00:00 CET 2015
+2015.11.28 21:51:20,962	INFO	1	com.l2jserver.gameserver.model.entity.Siege	Siege of Aden: Sun Nov 29 16:00:00 CET 2015
+2015.11.28 21:51:20,962	INFO	1	com.l2jserver.gameserver.model.entity.Siege	Siege of Innadril: Sun Nov 29 20:00:00 CET 2015
+2015.11.28 21:51:20,963	INFO	1	com.l2jserver.gameserver.model.entity.Siege	Siege of Goddard: Sun Nov 29 20:00:00 CET 2015
+2015.11.28 21:51:20,963	INFO	1	com.l2jserver.gameserver.model.entity.Siege	Siege of Rune: Sun Nov 29 20:00:00 CET 2015
+2015.11.28 21:51:20,963	INFO	1	com.l2jserver.gameserver.model.entity.Siege	Siege of Schuttgart: Sun Nov 29 20:00:00 CET 2015
+2015.11.28 21:51:21,025	INFO	1	com.l2jserver.gameserver.instancemanager.FortManager	FortManager: Loaded: 20 fortress
+2015.11.28 21:51:21,846	INFO	1	com.l2jserver.util.data.xml.IXmlReader	SiegeScheduleData: Loaded: 2 siege schedulers.
+2015.11.28 21:51:21,907	INFO	1	com.l2jserver.util.data.xml.IXmlReader	CastleManorManager: Loaded 258 seeds.
+2015.11.28 21:51:21,913	INFO	1	com.l2jserver.util.data.xml.IXmlReader	CastleManorManager: Manor data loaded.
+2015.11.28 21:51:21,915	INFO	1	com.l2jserver.gameserver.instancemanager.MercTicketManager	MercTicketManager: Loaded: 0 Mercenary Tickets
+2015.11.28 21:51:21,916	INFO	1	com.l2jserver.gameserver.instancemanager.QuestManager	QuestManager: Loaded: 226 quests.
+2015.11.28 21:51:21,916	INFO	1	com.l2jserver.gameserver.instancemanager.QuestManager	QuestManager: Loaded: 260 scripts.
+2015.11.28 21:51:22,004	INFO	1	com.l2jserver.gameserver.script.faenor.FaenorEventParser	Event ID: (Valentines Event) has passed... Ignored.
+2015.11.28 21:51:22,004	INFO	1	com.l2jserver.gameserver.script.faenor.FaenorScriptEngine	FaenorScriptEngine: Loaded  Valentines.xml successfully.
+2015.11.28 21:51:22,004	INFO	1	com.l2jserver.gameserver.GameServer	AutoSpawnHandler: Loaded 6 handlers in total.
+2015.11.28 21:51:22,017	INFO	1	com.l2jserver.gameserver.taskmanager.TaskManager	TaskManager: Loaded: 12 Tasks
+2015.11.28 21:51:22,019	INFO	1	com.l2jserver.gameserver.instancemanager.MailManager	MailManager: Successfully loaded 0 messages.
+2015.11.28 21:51:22,022	INFO	1	com.l2jserver.gameserver.instancemanager.PunishmentManager	PunishmentManager: Loaded 0 active and 0 expired punishments.
+2015.11.28 21:51:22,023	INFO	1	com.l2jserver.gameserver.GameServer	IdFactory: Free ObjectID's remaining: 1878997718
+2015.11.28 21:51:22,024	INFO	1	com.l2jserver.gameserver.model.entity.TvTManager	TvTEventEngine[TvTManager.TvTManager()]: Engine is disabled.
+2015.11.28 21:51:22,027	INFO	1	com.l2jserver.gameserver.data.sql.impl.OfflineTradersTable	OfflineTradersTable: Loading offline traders...
+2015.11.28 21:51:22,028	INFO	1	com.l2jserver.gameserver.data.sql.impl.OfflineTradersTable	OfflineTradersTable: Loaded: 0 offline trader(s)
+2015.11.28 21:51:23,173	INFO	1	com.l2jserver.gameserver.GameServer	GameServer: Started, using 504 of 989 MB total memory.
+2015.11.28 21:51:23,174	INFO	1	com.l2jserver.gameserver.GameServer	GameServer: Geodata use 0 MB of memory.
+2015.11.28 21:51:23,175	INFO	1	com.l2jserver.gameserver.GameServer	GameServer: Maximum number of connected players is 2000.
+2015.11.28 21:51:23,175	INFO	1	com.l2jserver.gameserver.GameServer	GameServer: Server loaded in 178 seconds.
+2015.11.28 21:51:23,341	INFO	1	com.l2jserver.gameserver.GameServer	GameServer: is now listening on: *:7777
+2015.11.28 21:51:23,385	INFO	428	com.l2jserver.gameserver.LoginServerThread	Connecting to login on 127.0.0.1:9014
+2015.11.28 21:51:24,370	INFO	428	com.l2jserver.gameserver.LoginServerThread	Registered on login as Server 14 : Phoenix
+2015.11.28 22:06:22,019	INFO	53	com.l2jserver.gameserver.taskmanager.tasks.TaskOlympiadSave	Olympiad System: Data updated.
+2015.11.28 22:09:04,940	WARNING	455	com.l2jserver.gameserver.model.actor.L2Character	Master access level set for character Helius! Just a warning to be careful ;)
+2015.11.28 22:10:09,529	WARNING	458	com.l2jserver.gameserver.network.clientpackets.L2GameClientPacket	No handler registered for admin command 'admin_VIS'
+2015.11.28 22:26:53,136	INFO	440	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89703 Skill templates from XML files.
+2015.11.28 22:26:54,191	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 22:26:54,191	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 22:26:54,191	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 22:26:54,192	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 22:26:54,192	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 22:26:54,192	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 22:26:54,192	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 22:26:54,193	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 22:26:54,193	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 22:26:54,193	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 22:26:54,193	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 22:26:54,193	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 22:26:54,193	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 22:26:54,194	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 22:26:54,194	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 22:26:54,194	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 22:26:54,194	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 22:26:54,194	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.28 22:26:57,919	WARNING	441	com.l2jserver.gameserver.model.actor.L2Character	Master access level set for character Helius! Just a warning to be careful ;)
+2015.11.28 22:36:22,019	INFO	23	com.l2jserver.gameserver.taskmanager.tasks.TaskOlympiadSave	Olympiad System: Data updated.
+2015.11.28 22:36:54,836	INFO	443	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89703 Skill templates from XML files.
+2015.11.28 22:36:55,330	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 22:36:55,330	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 22:36:55,330	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 22:36:55,330	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 22:36:55,331	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 22:36:55,331	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 22:36:55,331	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 22:36:55,331	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 22:36:55,332	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 22:36:55,332	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 22:36:55,332	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 22:36:55,333	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 22:36:55,333	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 22:36:55,333	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 22:36:55,333	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 22:36:55,334	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 22:36:55,334	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 22:36:55,334	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.28 22:37:41,423	WARNING	440	com.l2jserver.gameserver.model.actor.L2Character	Master access level set for character Helius! Just a warning to be careful ;)
+2015.11.28 22:40:36,069	INFO	69	com.l2jserver.gameserver.model.olympiad.Olympiad	Olympiad System: Added weekly points to nobles
+2015.11.28 22:40:36,069	INFO	69	com.l2jserver.gameserver.model.olympiad.Olympiad	Olympiad System: Reset weekly matches to nobles
+2015.11.28 22:48:30,165	WARNING	438	com.l2jserver.gameserver.model.skills.Skill	Invalid AbnormalVisualEffect(ABNORMAL_INVINCIBILITY) found for Skill(Skill Celestial Party Protection(11759,1))
+2015.11.28 22:48:30,194	SEVERE	438	com.l2jserver.gameserver.engines.skills.DocumentSkill	Error loading file C:\Users\Anthony\Desktop\Source\dist\game\data\stats\skills\11800-11899.xml
+2015.11.28 22:48:30,710	INFO	438	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89661 Skill templates from XML files.
+2015.11.28 22:48:31,024	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 22:48:31,024	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 22:48:31,025	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 22:48:31,025	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 22:48:31,025	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 22:48:31,025	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 22:48:31,025	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 22:48:31,025	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 22:48:31,025	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 22:48:31,026	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 22:48:31,026	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 22:48:31,026	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 22:48:31,026	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 22:48:31,026	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 22:48:31,026	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 22:48:31,026	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 22:48:31,026	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 22:48:31,027	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.28 22:48:39,128	WARNING	449	com.l2jserver.gameserver.model.actor.L2Character	Master access level set for character Helius! Just a warning to be careful ;)
+2015.11.28 22:48:39,160	WARNING	449	com.l2jserver.gameserver.datatables.SkillData	SkillData: No skill info found for skill id 11852 and skill level 4.
+2015.11.28 22:48:39,160	WARNING	449	com.l2jserver.gameserver.model.actor.L2Character	Skipped null skill Id: 11852 Level: 4 while restoring player skills for playerObjId: 268485995
+2015.11.28 22:48:39,161	WARNING	449	com.l2jserver.gameserver.datatables.SkillData	SkillData: No skill info found for skill id 11853 and skill level 4.
+2015.11.28 22:48:39,161	WARNING	449	com.l2jserver.gameserver.model.actor.L2Character	Skipped null skill Id: 11853 Level: 4 while restoring player skills for playerObjId: 268485995
+2015.11.28 22:48:39,161	WARNING	449	com.l2jserver.gameserver.datatables.SkillData	SkillData: No skill info found for skill id 11862 and skill level 1.
+2015.11.28 22:48:39,161	WARNING	449	com.l2jserver.gameserver.model.actor.L2Character	Skipped null skill Id: 11862 Level: 1 while restoring player skills for playerObjId: 268485995
+2015.11.28 22:50:14,269	WARNING	446	com.l2jserver.gameserver.model.skills.Skill	Invalid AbnormalVisualEffect(ABNORMAL_INVINCIBILITY) found for Skill(Skill Celestial Party Protection(11759,1))
+2015.11.28 22:50:14,300	SEVERE	446	com.l2jserver.gameserver.engines.skills.DocumentSkill	Error loading file C:\Users\Anthony\Desktop\Source\dist\game\data\stats\skills\11800-11899.xml
+2015.11.28 22:50:14,646	INFO	446	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89661 Skill templates from XML files.
+2015.11.28 22:50:15,027	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 22:50:15,027	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 22:50:15,027	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 22:50:15,028	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 22:50:15,028	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 22:50:15,028	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 22:50:15,028	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 22:50:15,028	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 22:50:15,028	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 22:50:15,029	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 22:50:15,029	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 22:50:15,029	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 22:50:15,029	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 22:50:15,029	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 22:50:15,029	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 22:50:15,029	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 22:50:15,029	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 22:50:15,029	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.28 22:50:27,631	WARNING	448	com.l2jserver.gameserver.model.actor.L2Character	Master access level set for character Helius! Just a warning to be careful ;)
+2015.11.28 22:50:27,656	WARNING	448	com.l2jserver.gameserver.datatables.SkillData	SkillData: No skill info found for skill id 11852 and skill level 4.
+2015.11.28 22:50:27,657	WARNING	448	com.l2jserver.gameserver.model.actor.L2Character	Skipped null skill Id: 11852 Level: 4 while restoring player skills for playerObjId: 268485995
+2015.11.28 22:50:27,657	WARNING	448	com.l2jserver.gameserver.datatables.SkillData	SkillData: No skill info found for skill id 11853 and skill level 4.
+2015.11.28 22:50:27,657	WARNING	448	com.l2jserver.gameserver.model.actor.L2Character	Skipped null skill Id: 11853 Level: 4 while restoring player skills for playerObjId: 268485995
+2015.11.28 22:50:27,657	WARNING	448	com.l2jserver.gameserver.datatables.SkillData	SkillData: No skill info found for skill id 11862 and skill level 1.
+2015.11.28 22:50:27,658	WARNING	448	com.l2jserver.gameserver.model.actor.L2Character	Skipped null skill Id: 11862 Level: 1 while restoring player skills for playerObjId: 268485995
+2015.11.28 22:51:12,560	SEVERE	438	com.l2jserver.gameserver.engines.skills.DocumentSkill	Error loading file C:\Users\Anthony\Desktop\Source\dist\game\data\stats\skills\11800-11899.xml
+2015.11.28 22:51:12,985	INFO	438	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89661 Skill templates from XML files.
+2015.11.28 22:51:13,299	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 22:51:13,299	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 22:51:13,299	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 22:51:13,299	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 22:51:13,300	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 22:51:13,300	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 22:51:13,300	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 22:51:13,300	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 22:51:13,300	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 22:51:13,300	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 22:51:13,301	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 22:51:13,301	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 22:51:13,301	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 22:51:13,301	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 22:51:13,301	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 22:51:13,301	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 22:51:13,302	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 22:51:13,302	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.28 22:51:19,948	WARNING	449	com.l2jserver.gameserver.model.actor.L2Character	Master access level set for character Helius! Just a warning to be careful ;)
+2015.11.28 22:51:19,970	WARNING	449	com.l2jserver.gameserver.datatables.SkillData	SkillData: No skill info found for skill id 11852 and skill level 4.
+2015.11.28 22:51:19,970	WARNING	449	com.l2jserver.gameserver.model.actor.L2Character	Skipped null skill Id: 11852 Level: 4 while restoring player skills for playerObjId: 268485995
+2015.11.28 22:51:19,971	WARNING	449	com.l2jserver.gameserver.datatables.SkillData	SkillData: No skill info found for skill id 11853 and skill level 4.
+2015.11.28 22:51:19,971	WARNING	449	com.l2jserver.gameserver.model.actor.L2Character	Skipped null skill Id: 11853 Level: 4 while restoring player skills for playerObjId: 268485995
+2015.11.28 22:51:19,971	WARNING	449	com.l2jserver.gameserver.datatables.SkillData	SkillData: No skill info found for skill id 11862 and skill level 1.
+2015.11.28 22:51:19,971	WARNING	449	com.l2jserver.gameserver.model.actor.L2Character	Skipped null skill Id: 11862 Level: 1 while restoring player skills for playerObjId: 268485995
+2015.11.28 22:52:50,082	SEVERE	457	com.l2jserver.gameserver.engines.skills.DocumentSkill	Error loading file C:\Users\Anthony\Desktop\Source\dist\game\data\stats\skills\11800-11899.xml
+2015.11.28 22:52:50,424	INFO	457	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89660 Skill templates from XML files.
+2015.11.28 22:52:50,780	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 22:52:50,780	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 22:52:50,780	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 22:52:50,781	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 22:52:50,781	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 22:52:50,781	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 22:52:50,781	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 22:52:50,781	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 22:52:50,782	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 22:52:50,782	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 22:52:50,782	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 22:52:50,782	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 22:52:50,782	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 22:52:50,782	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 22:52:50,782	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 22:52:50,783	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 22:52:50,783	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 22:52:50,783	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.28 22:52:59,713	WARNING	448	com.l2jserver.gameserver.model.actor.L2Character	Master access level set for character Helius! Just a warning to be careful ;)
+2015.11.28 22:52:59,736	WARNING	448	com.l2jserver.gameserver.datatables.SkillData	SkillData: No skill info found for skill id 11852 and skill level 4.
+2015.11.28 22:52:59,736	WARNING	448	com.l2jserver.gameserver.model.actor.L2Character	Skipped null skill Id: 11852 Level: 4 while restoring player skills for playerObjId: 268485995
+2015.11.28 22:52:59,736	WARNING	448	com.l2jserver.gameserver.datatables.SkillData	SkillData: No skill info found for skill id 11853 and skill level 4.
+2015.11.28 22:52:59,736	WARNING	448	com.l2jserver.gameserver.model.actor.L2Character	Skipped null skill Id: 11853 Level: 4 while restoring player skills for playerObjId: 268485995
+2015.11.28 22:52:59,737	WARNING	448	com.l2jserver.gameserver.datatables.SkillData	SkillData: No skill info found for skill id 11862 and skill level 1.
+2015.11.28 22:52:59,737	WARNING	448	com.l2jserver.gameserver.model.actor.L2Character	Skipped null skill Id: 11862 Level: 1 while restoring player skills for playerObjId: 268485995
+2015.11.28 22:55:30,899	SEVERE	445	com.l2jserver.gameserver.engines.skills.DocumentSkill	Error loading file C:\Users\Anthony\Desktop\Source\dist\game\data\stats\skills\11800-11899.xml
+2015.11.28 22:55:31,269	INFO	445	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89660 Skill templates from XML files.
+2015.11.28 22:55:31,586	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 22:55:31,587	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 22:55:31,587	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 22:55:31,587	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 22:55:31,587	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 22:55:31,587	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 22:55:31,587	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 22:55:31,587	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 22:55:31,588	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 22:55:31,588	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 22:55:31,588	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 22:55:31,588	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 22:55:31,588	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 22:55:31,588	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 22:55:31,588	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 22:55:31,588	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 22:55:31,588	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 22:55:31,588	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.28 22:55:34,764	WARNING	449	com.l2jserver.gameserver.model.actor.L2Character	Master access level set for character Helius! Just a warning to be careful ;)
+2015.11.28 22:55:34,785	WARNING	449	com.l2jserver.gameserver.datatables.SkillData	SkillData: No skill info found for skill id 11852 and skill level 4.
+2015.11.28 22:55:34,786	WARNING	449	com.l2jserver.gameserver.model.actor.L2Character	Skipped null skill Id: 11852 Level: 4 while restoring player skills for playerObjId: 268485995
+2015.11.28 22:55:34,786	WARNING	449	com.l2jserver.gameserver.datatables.SkillData	SkillData: No skill info found for skill id 11853 and skill level 4.
+2015.11.28 22:55:34,786	WARNING	449	com.l2jserver.gameserver.model.actor.L2Character	Skipped null skill Id: 11853 Level: 4 while restoring player skills for playerObjId: 268485995
+2015.11.28 22:55:34,786	WARNING	449	com.l2jserver.gameserver.datatables.SkillData	SkillData: No skill info found for skill id 11862 and skill level 1.
+2015.11.28 22:55:34,786	WARNING	449	com.l2jserver.gameserver.model.actor.L2Character	Skipped null skill Id: 11862 Level: 1 while restoring player skills for playerObjId: 268485995
+2015.11.28 23:00:34,753	WARNING	447	com.l2jserver.gameserver.model.skills.Skill	Invalid AbnormalVisualEffect(ABNORMAL_INVINCIBILITY) found for Skill(Skill Celestial Protection(11758,1))
+2015.11.28 23:00:34,754	WARNING	447	com.l2jserver.gameserver.model.skills.Skill	Invalid AbnormalVisualEffect(ABNORMAL_INVINCIBILITY) found for Skill(Skill Celestial Party Protection(11759,1))
+2015.11.28 23:00:34,783	SEVERE	447	com.l2jserver.gameserver.engines.skills.DocumentSkill	Error loading file C:\Users\Anthony\Desktop\Source\dist\game\data\stats\skills\11800-11899.xml
+2015.11.28 23:00:35,114	INFO	447	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89660 Skill templates from XML files.
+2015.11.28 23:00:35,495	INFO	447	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 23:00:35,495	INFO	447	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 23:00:35,496	INFO	447	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 23:00:35,496	INFO	447	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 23:00:35,496	INFO	447	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 23:00:35,496	INFO	447	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 23:00:35,496	INFO	447	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 23:00:35,496	INFO	447	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 23:00:35,497	INFO	447	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 23:00:35,497	INFO	447	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 23:00:35,497	INFO	447	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 23:00:35,497	INFO	447	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 23:00:35,497	INFO	447	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 23:00:35,497	INFO	447	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 23:00:35,497	INFO	447	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 23:00:35,498	INFO	447	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 23:00:35,498	INFO	447	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 23:00:35,498	INFO	447	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.28 23:01:59,075	WARNING	457	com.l2jserver.gameserver.model.skills.Skill	Invalid AbnormalVisualEffect(ABNORMAL_INVINCIBILITY) found for Skill(Skill Celestial Protection(11758,1))
+2015.11.28 23:01:59,075	WARNING	457	com.l2jserver.gameserver.model.skills.Skill	Invalid AbnormalVisualEffect(ABNORMAL_INVINCIBILITY) found for Skill(Skill Celestial Party Protection(11759,1))
+2015.11.28 23:01:59,105	SEVERE	457	com.l2jserver.gameserver.engines.skills.DocumentSkill	Error loading file C:\Users\Anthony\Desktop\Source\dist\game\data\stats\skills\11800-11899.xml
+2015.11.28 23:01:59,446	INFO	457	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89660 Skill templates from XML files.
+2015.11.28 23:01:59,748	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 23:01:59,748	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 23:01:59,748	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 23:01:59,749	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 23:01:59,749	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 23:01:59,749	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 23:01:59,749	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 23:01:59,749	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 23:01:59,749	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 23:01:59,749	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 23:01:59,749	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 23:01:59,749	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 23:01:59,749	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 23:01:59,750	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 23:01:59,750	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 23:01:59,750	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 23:01:59,750	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 23:01:59,750	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.28 23:02:11,654	WARNING	448	com.l2jserver.gameserver.model.actor.L2Character	Master access level set for character Helius! Just a warning to be careful ;)
+2015.11.28 23:02:11,679	WARNING	448	com.l2jserver.gameserver.datatables.SkillData	SkillData: No skill info found for skill id 11852 and skill level 4.
+2015.11.28 23:02:11,679	WARNING	448	com.l2jserver.gameserver.model.actor.L2Character	Skipped null skill Id: 11852 Level: 4 while restoring player skills for playerObjId: 268485995
+2015.11.28 23:02:11,680	WARNING	448	com.l2jserver.gameserver.datatables.SkillData	SkillData: No skill info found for skill id 11853 and skill level 4.
+2015.11.28 23:02:11,680	WARNING	448	com.l2jserver.gameserver.model.actor.L2Character	Skipped null skill Id: 11853 Level: 4 while restoring player skills for playerObjId: 268485995
+2015.11.28 23:02:11,680	WARNING	448	com.l2jserver.gameserver.datatables.SkillData	SkillData: No skill info found for skill id 11862 and skill level 1.
+2015.11.28 23:02:11,680	WARNING	448	com.l2jserver.gameserver.model.actor.L2Character	Skipped null skill Id: 11862 Level: 1 while restoring player skills for playerObjId: 268485995
+2015.11.28 23:04:55,405	WARNING	457	com.l2jserver.gameserver.model.skills.Skill	Invalid AbnormalVisualEffect(ABNORMAL_INVINCIBILITY) found for Skill(Skill Celestial Protection(11758,1))
+2015.11.28 23:04:55,405	WARNING	457	com.l2jserver.gameserver.model.skills.Skill	Invalid AbnormalVisualEffect(ABNORMAL_INVINCIBILITY) found for Skill(Skill Celestial Party Protection(11759,1))
+2015.11.28 23:04:55,434	SEVERE	457	com.l2jserver.gameserver.engines.skills.DocumentSkill	Error loading file C:\Users\Anthony\Desktop\Source\dist\game\data\stats\skills\11800-11899.xml
+2015.11.28 23:04:55,776	INFO	457	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89660 Skill templates from XML files.
+2015.11.28 23:04:56,063	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 23:04:56,063	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 23:04:56,063	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 23:04:56,063	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 23:04:56,064	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 23:04:56,064	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 23:04:56,064	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 23:04:56,064	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 23:04:56,064	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 23:04:56,064	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 23:04:56,064	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 23:04:56,064	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 23:04:56,064	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 23:04:56,065	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 23:04:56,065	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 23:04:56,065	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 23:04:56,065	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 23:04:56,065	INFO	457	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.28 23:05:05,364	WARNING	448	com.l2jserver.gameserver.model.actor.L2Character	Master access level set for character Helius! Just a warning to be careful ;)
+2015.11.28 23:05:05,386	WARNING	448	com.l2jserver.gameserver.datatables.SkillData	SkillData: No skill info found for skill id 11852 and skill level 4.
+2015.11.28 23:05:05,386	WARNING	448	com.l2jserver.gameserver.model.actor.L2Character	Skipped null skill Id: 11852 Level: 4 while restoring player skills for playerObjId: 268485995
+2015.11.28 23:05:05,386	WARNING	448	com.l2jserver.gameserver.datatables.SkillData	SkillData: No skill info found for skill id 11853 and skill level 4.
+2015.11.28 23:05:05,387	WARNING	448	com.l2jserver.gameserver.model.actor.L2Character	Skipped null skill Id: 11853 Level: 4 while restoring player skills for playerObjId: 268485995
+2015.11.28 23:05:05,387	WARNING	448	com.l2jserver.gameserver.datatables.SkillData	SkillData: No skill info found for skill id 11862 and skill level 1.
+2015.11.28 23:05:05,387	WARNING	448	com.l2jserver.gameserver.model.actor.L2Character	Skipped null skill Id: 11862 Level: 1 while restoring player skills for playerObjId: 268485995
+2015.11.28 23:06:22,303	INFO	23	com.l2jserver.gameserver.taskmanager.tasks.TaskOlympiadSave	Olympiad System: Data updated.
+2015.11.28 23:18:23,773	WARNING	441	com.l2jserver.gameserver.network.clientpackets.L2GameClientPacket	No handler registered for admin command 'admin_admikn'
+2015.11.28 23:24:03,677	WARNING	442	com.l2jserver.gameserver.datatables.SkillData	SkillData: No skill info found for skill id 11834 and skill level 1.
+2015.11.28 23:24:03,679	SEVERE	442	com.l2jserver.gameserver.network.clientpackets.L2GameClientPacket	Client: [Character: Helius[268485995] - Account: thonygez - IP: 127.0.0.1] - Failed running: [C] 74 SendBypassBuildCmd ; null
+2015.11.28 23:24:05,738	WARNING	458	com.l2jserver.gameserver.datatables.SkillData	SkillData: No skill info found for skill id 11833 and skill level 1.
+2015.11.28 23:24:05,738	SEVERE	458	com.l2jserver.gameserver.network.clientpackets.L2GameClientPacket	Client: [Character: Helius[268485995] - Account: thonygez - IP: 127.0.0.1] - Failed running: [C] 74 SendBypassBuildCmd ; null
+2015.11.28 23:24:12,145	WARNING	440	com.l2jserver.gameserver.datatables.SkillData	SkillData: No skill info found for skill id 11834 and skill level 1.
+2015.11.28 23:24:12,145	SEVERE	440	com.l2jserver.gameserver.network.clientpackets.L2GameClientPacket	Client: [Character: Helius[268485995] - Account: thonygez - IP: 127.0.0.1] - Failed running: [C] 74 SendBypassBuildCmd ; null
+2015.11.28 23:24:15,128	WARNING	447	com.l2jserver.gameserver.datatables.SkillData	SkillData: No skill info found for skill id 11833 and skill level 1.
+2015.11.28 23:24:15,128	SEVERE	447	com.l2jserver.gameserver.network.clientpackets.L2GameClientPacket	Client: [Character: Helius[268485995] - Account: thonygez - IP: 127.0.0.1] - Failed running: [C] 74 SendBypassBuildCmd ; null
+2015.11.28 23:24:33,945	SEVERE	443	com.l2jserver.gameserver.engines.skills.DocumentSkill	Error loading file C:\Users\Anthony\Desktop\Source\dist\game\data\stats\skills\11800-11899.xml
+2015.11.28 23:24:34,267	INFO	443	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89660 Skill templates from XML files.
+2015.11.28 23:24:34,660	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 23:24:34,661	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 23:24:34,661	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 23:24:34,661	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 23:24:34,661	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 23:24:34,661	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 23:24:34,661	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 23:24:34,661	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 23:24:34,662	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 23:24:34,662	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 23:24:34,662	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 23:24:34,662	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 23:24:34,662	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 23:24:34,662	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 23:24:34,662	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 23:24:34,662	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 23:24:34,663	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 23:24:34,663	INFO	443	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.28 23:24:55,510	SEVERE	446	com.l2jserver.gameserver.engines.skills.DocumentSkill	Error loading file C:\Users\Anthony\Desktop\Source\dist\game\data\stats\skills\11800-11899.xml
+2015.11.28 23:25:04,388	INFO	446	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89660 Skill templates from XML files.
+2015.11.28 23:25:04,648	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 23:25:04,649	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 23:25:04,649	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 23:25:04,649	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 23:25:04,649	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 23:25:04,649	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 23:25:04,649	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 23:25:04,649	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 23:25:04,650	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 23:25:04,650	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 23:25:04,650	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 23:25:04,650	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 23:25:04,650	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 23:25:04,650	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 23:25:04,650	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 23:25:04,650	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 23:25:04,650	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 23:25:04,650	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.28 23:25:37,522	SEVERE	441	com.l2jserver.gameserver.engines.skills.DocumentSkill	Error loading file C:\Users\Anthony\Desktop\Source\dist\game\data\stats\skills\11800-11899.xml
+2015.11.28 23:25:45,762	INFO	441	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89660 Skill templates from XML files.
+2015.11.28 23:25:46,079	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 23:25:46,079	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 23:25:46,079	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 23:25:46,080	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 23:25:46,080	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 23:25:46,080	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 23:25:46,080	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 23:25:46,080	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 23:25:46,080	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 23:25:46,080	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 23:25:46,080	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 23:25:46,080	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 23:25:46,080	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 23:25:46,081	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 23:25:46,081	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 23:25:46,081	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 23:25:46,081	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 23:25:46,081	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.28 23:26:11,381	INFO	449	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89703 Skill templates from XML files.
+2015.11.28 23:26:12,861	INFO	449	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 23:26:12,862	INFO	449	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 23:26:12,862	INFO	449	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 23:26:12,862	INFO	449	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 23:26:12,862	INFO	449	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 23:26:12,862	INFO	449	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 23:26:12,862	INFO	449	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 23:26:12,862	INFO	449	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 23:26:12,863	INFO	449	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 23:26:12,863	INFO	449	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 23:26:12,863	INFO	449	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 23:26:12,863	INFO	449	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 23:26:12,863	INFO	449	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 23:26:12,863	INFO	449	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 23:26:12,863	INFO	449	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 23:26:12,863	INFO	449	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 23:26:12,864	INFO	449	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 23:26:12,864	INFO	449	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.28 23:26:26,061	INFO	455	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89703 Skill templates from XML files.
+2015.11.28 23:26:26,316	INFO	455	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 23:26:26,316	INFO	455	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 23:26:26,316	INFO	455	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 23:26:26,316	INFO	455	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 23:26:26,317	INFO	455	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 23:26:26,317	INFO	455	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 23:26:26,317	INFO	455	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 23:26:26,317	INFO	455	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 23:26:26,317	INFO	455	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 23:26:26,317	INFO	455	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 23:26:26,317	INFO	455	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 23:26:26,317	INFO	455	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 23:26:26,318	INFO	455	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 23:26:26,318	INFO	455	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 23:26:26,318	INFO	455	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 23:26:26,318	INFO	455	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 23:26:26,318	INFO	455	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 23:26:26,318	INFO	455	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.28 23:26:42,213	WARNING	442	com.l2jserver.gameserver.model.actor.L2Character	Master access level set for character Helius! Just a warning to be careful ;)
+2015.11.28 23:27:39,393	INFO	445	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89703 Skill templates from XML files.
+2015.11.28 23:27:39,662	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 23:27:39,662	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 23:27:39,662	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 23:27:39,662	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 23:27:39,662	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 23:27:39,662	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 23:27:39,663	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 23:27:39,663	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 23:27:39,663	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 23:27:39,663	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 23:27:39,663	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 23:27:39,663	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 23:27:39,663	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 23:27:39,663	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 23:27:39,663	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 23:27:39,663	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 23:27:39,664	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 23:27:39,664	INFO	445	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.28 23:28:07,494	WARNING	443	com.l2jserver.gameserver.model.actor.L2Character	Master access level set for character Helius! Just a warning to be careful ;)
+2015.11.28 23:30:21,431	INFO	440	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89703 Skill templates from XML files.
+2015.11.28 23:30:21,733	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 23:30:21,734	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 23:30:21,734	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 23:30:21,734	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 23:30:21,734	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 23:30:21,734	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 23:30:21,734	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 23:30:21,734	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 23:30:21,735	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 23:30:21,735	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 23:30:21,735	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 23:30:21,735	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 23:30:21,735	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 23:30:21,735	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 23:30:21,735	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 23:30:21,735	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 23:30:21,736	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 23:30:21,736	INFO	440	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.28 23:30:25,234	WARNING	447	com.l2jserver.gameserver.model.actor.L2Character	Master access level set for character Helius! Just a warning to be careful ;)
+2015.11.28 23:31:02,414	INFO	458	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89703 Skill templates from XML files.
+2015.11.28 23:31:02,822	INFO	458	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 23:31:02,823	INFO	458	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 23:31:02,823	INFO	458	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 23:31:02,823	INFO	458	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 23:31:02,823	INFO	458	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 23:31:02,823	INFO	458	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 23:31:02,824	INFO	458	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 23:31:02,824	INFO	458	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 23:31:02,824	INFO	458	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 23:31:02,824	INFO	458	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 23:31:02,824	INFO	458	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 23:31:02,824	INFO	458	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 23:31:02,824	INFO	458	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 23:31:02,825	INFO	458	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 23:31:02,825	INFO	458	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 23:31:02,825	INFO	458	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 23:31:02,825	INFO	458	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 23:31:02,825	INFO	458	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.28 23:31:13,097	WARNING	449	com.l2jserver.gameserver.model.actor.L2Character	Master access level set for character Helius! Just a warning to be careful ;)
+2015.11.28 23:33:33,724	WARNING	441	com.l2jserver.gameserver.model.effects.AbstractEffect	AbstractEffect: Requested unexistent effect handler: Invulnerable
+2015.11.28 23:33:33,725	WARNING	441	com.l2jserver.gameserver.model.effects.AbstractEffect	AbstractEffect: Requested unexistent effect handler: Invulnerable
+2015.11.28 23:33:34,140	INFO	441	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89703 Skill templates from XML files.
+2015.11.28 23:33:34,539	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 23:33:34,540	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 23:33:34,540	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 23:33:34,540	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 23:33:34,540	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 23:33:34,540	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 23:33:34,540	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 23:33:34,540	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 23:33:34,540	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 23:33:34,541	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 23:33:34,541	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 23:33:34,541	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 23:33:34,541	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 23:33:34,541	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 23:33:34,541	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 23:33:34,541	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 23:33:34,541	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 23:33:34,541	INFO	441	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.28 23:33:36,230	WARNING	457	com.l2jserver.gameserver.model.actor.L2Character	Master access level set for character Helius! Just a warning to be careful ;)
+2015.11.28 23:34:21,739	WARNING	456	com.l2jserver.gameserver.model.effects.AbstractEffect	AbstractEffect: Requested unexistent effect handler: Invulnerable
+2015.11.28 23:34:21,740	WARNING	456	com.l2jserver.gameserver.model.effects.AbstractEffect	AbstractEffect: Requested unexistent effect handler: Invulnerable
+2015.11.28 23:34:22,107	INFO	456	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89703 Skill templates from XML files.
+2015.11.28 23:34:22,562	INFO	456	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 23:34:22,562	INFO	456	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 23:34:22,563	INFO	456	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 23:34:22,563	INFO	456	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 23:34:22,563	INFO	456	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 23:34:22,563	INFO	456	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 23:34:22,563	INFO	456	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 23:34:22,563	INFO	456	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 23:34:22,564	INFO	456	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 23:34:22,564	INFO	456	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 23:34:22,564	INFO	456	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 23:34:22,564	INFO	456	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 23:34:22,564	INFO	456	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 23:34:22,564	INFO	456	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 23:34:22,564	INFO	456	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 23:34:22,565	INFO	456	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 23:34:22,565	INFO	456	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 23:34:22,565	INFO	456	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.28 23:36:22,018	INFO	50	com.l2jserver.gameserver.taskmanager.tasks.TaskOlympiadSave	Olympiad System: Data updated.
+2015.11.28 23:38:06,315	WARNING	446	com.l2jserver.gameserver.model.effects.AbstractEffect	AbstractEffect: Requested unexistent effect handler: Invulnerable
+2015.11.28 23:38:06,315	WARNING	446	com.l2jserver.gameserver.model.effects.AbstractEffect	AbstractEffect: Requested unexistent effect handler: Invulnerable
+2015.11.28 23:38:06,720	INFO	446	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89703 Skill templates from XML files.
+2015.11.28 23:38:07,140	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 23:38:07,141	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 23:38:07,141	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 23:38:07,141	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 23:38:07,141	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 23:38:07,141	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 23:38:07,141	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 23:38:07,141	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 23:38:07,141	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 23:38:07,142	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 23:38:07,142	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 23:38:07,142	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 23:38:07,142	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 23:38:07,142	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 23:38:07,142	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 23:38:07,142	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 23:38:07,142	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 23:38:07,142	INFO	446	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.28 23:38:13,021	WARNING	455	com.l2jserver.gameserver.model.actor.L2Character	Master access level set for character Helius! Just a warning to be careful ;)
+2015.11.28 23:44:06,396	WARNING	438	com.l2jserver.gameserver.model.effects.AbstractEffect	AbstractEffect: Requested unexistent effect handler: Invulnerable
+2015.11.28 23:44:06,396	WARNING	438	com.l2jserver.gameserver.model.effects.AbstractEffect	AbstractEffect: Requested unexistent effect handler: Invulnerable
+2015.11.28 23:44:06,806	INFO	438	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89703 Skill templates from XML files.
+2015.11.28 23:44:07,211	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 23:44:07,211	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 23:44:07,212	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 23:44:07,212	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 23:44:07,212	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 23:44:07,212	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 23:44:07,212	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 23:44:07,212	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 23:44:07,212	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 23:44:07,212	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 23:44:07,212	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 23:44:07,212	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 23:44:07,212	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 23:44:07,212	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 23:44:07,212	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 23:44:07,212	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 23:44:07,212	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 23:44:07,212	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.28 23:45:42,700	WARNING	445	com.l2jserver.gameserver.model.actor.L2Character	Master access level set for character Helius! Just a warning to be careful ;)
+2015.11.28 23:49:14,460	WARNING	442	com.l2jserver.gameserver.model.effects.AbstractEffect	AbstractEffect: Requested unexistent effect handler: Invulnerable
+2015.11.28 23:49:14,460	WARNING	442	com.l2jserver.gameserver.model.effects.AbstractEffect	AbstractEffect: Requested unexistent effect handler: Invulnerable
+2015.11.28 23:49:14,901	INFO	442	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89703 Skill templates from XML files.
+2015.11.28 23:49:15,409	INFO	442	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 23:49:15,409	INFO	442	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 23:49:15,409	INFO	442	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 23:49:15,409	INFO	442	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 23:49:15,409	INFO	442	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 23:49:15,409	INFO	442	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 23:49:15,409	INFO	442	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 23:49:15,409	INFO	442	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 23:49:15,409	INFO	442	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 23:49:15,409	INFO	442	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 23:49:15,409	INFO	442	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 23:49:15,409	INFO	442	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 23:49:15,409	INFO	442	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 23:49:15,409	INFO	442	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 23:49:15,409	INFO	442	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 23:49:15,409	INFO	442	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 23:49:15,409	INFO	442	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 23:49:15,409	INFO	442	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.28 23:49:39,018	WARNING	446	com.l2jserver.gameserver.model.actor.L2Character	Master access level set for character Helius! Just a warning to be careful ;)
+2015.11.28 23:50:42,120	WARNING	448	com.l2jserver.gameserver.model.effects.AbstractEffect	AbstractEffect: Requested unexistent effect handler: Invulnerable
+2015.11.28 23:50:42,121	WARNING	448	com.l2jserver.gameserver.model.effects.AbstractEffect	AbstractEffect: Requested unexistent effect handler: Invulnerable
+2015.11.28 23:50:42,491	INFO	448	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89703 Skill templates from XML files.
+2015.11.28 23:50:42,764	INFO	448	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 23:50:42,764	INFO	448	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 23:50:42,764	INFO	448	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 23:50:42,764	INFO	448	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 23:50:42,764	INFO	448	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 23:50:42,764	INFO	448	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 23:50:42,765	INFO	448	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 23:50:42,765	INFO	448	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 23:50:42,765	INFO	448	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 23:50:42,765	INFO	448	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 23:50:42,765	INFO	448	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 23:50:42,765	INFO	448	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 23:50:42,765	INFO	448	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 23:50:42,765	INFO	448	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 23:50:42,765	INFO	448	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 23:50:42,765	INFO	448	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 23:50:42,766	INFO	448	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 23:50:42,766	INFO	448	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.
+2015.11.28 23:51:37,155	WARNING	438	com.l2jserver.gameserver.model.actor.L2Character	Master access level set for character Helius! Just a warning to be careful ;)
+2015.11.28 23:57:10,513	WARNING	438	com.l2jserver.gameserver.model.effects.AbstractEffect	AbstractEffect: Requested unexistent effect handler: Invulnerable
+2015.11.28 23:57:11,172	WARNING	438	com.l2jserver.gameserver.model.effects.AbstractEffect	AbstractEffect: Requested unexistent effect handler: Invulnerable
+2015.11.28 23:57:11,541	INFO	438	com.l2jserver.gameserver.engines.DocumentEngine	DocumentEngine: Loaded 89703 Skill templates from XML files.
+2015.11.28 23:57:11,915	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 27675 Class Skills for 145 Class Skill Trees.
+2015.11.28 23:57:11,916	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 24 Sub-Class Skills.
+2015.11.28 23:57:11,916	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 38 Dual-Class Skills.
+2015.11.28 23:57:11,916	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 105 Transfer Skills for 3 Transfer Skill Trees.
+2015.11.28 23:57:11,916	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 14 Race skills for 6 Race Skill Trees.
+2015.11.28 23:57:11,916	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 35 Fishing Skills, 8 Dwarven only Fishing Skills.
+2015.11.28 23:57:11,916	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 3 Collect Skills.
+2015.11.28 23:57:11,916	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 172 Pledge Skills, 142 for Pledge and 30 Residential.
+2015.11.28 23:57:11,917	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 18 Sub-Pledge Skills.
+2015.11.28 23:57:11,917	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 32 Transform Skills.
+2015.11.28 23:57:11,917	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 8 Noble Skills.
+2015.11.28 23:57:11,917	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 5 Hero Skills.
+2015.11.28 23:57:11,917	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Skills.
+2015.11.28 23:57:11,917	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 46 Game Master Aura Skills.
+2015.11.28 23:57:11,917	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 138 Ability Skills.
+2015.11.28 23:57:11,917	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 120 Alchemy Skills.
+2015.11.28 23:57:11,918	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 20 Revelation Skills.
+2015.11.28 23:57:11,918	INFO	438	com.l2jserver.util.data.xml.IXmlReader	SkillTreesData: Loaded 4 Subclass change Skills.

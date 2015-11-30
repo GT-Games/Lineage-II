@@ -1,0 +1,9 @@
+2015.11.21 22:26:37,143	INFO	1	com.l2jserver.loginserver.LoginController	Loading LoginController...
+2015.11.21 22:26:37,627	INFO	1	com.l2jserver.loginserver.LoginController	Cached 10 KeyPairs for RSA communication
+2015.11.21 22:27:04,656	INFO	1	com.l2jserver.loginserver.LoginController	Stored 20 keys for Blowfish communication
+2015.11.21 22:27:04,799	INFO	1	com.l2jserver.util.data.xml.IXmlReader	GameServerTable: Loaded 127 server names.
+2015.11.21 22:27:04,901	INFO	1	com.l2jserver.util.data.xml.IXmlReader	GameServerTable: Loaded 1 registered Game Servers.
+2015.11.21 22:27:05,012	INFO	1	com.l2jserver.util.data.xml.IXmlReader	GameServerTable: Cached 10 RSA keys for Game Server communication.
+2015.11.21 22:27:05,066	INFO	1	com.l2jserver.loginserver.L2LoginServer	Loaded 2 IP Bans.
+2015.11.21 22:27:05,066	INFO	1	com.l2jserver.loginserver.L2LoginServer	Scheduled LS restart after 24 hours
+2015.11.21 22:27:05,109	SEVERE	1	com.l2jserver.loginserver.L2LoginServer	FATAL: Failed to start the Game Server Listener. Reason: Address already in use: JVM_Bind
