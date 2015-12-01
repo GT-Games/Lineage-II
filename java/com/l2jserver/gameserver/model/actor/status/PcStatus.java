@@ -64,12 +64,14 @@ public class PcStatus extends PlayableStatus
 		reduceHp(value, attacker, true, false, false, false);
 	}
 	
+        //This is used to make Active Skills DOT Works (Going Directly Into HP Ignoring CP) Properly - tmp fix added by Thonygez
 	@Override
 	public final void reduceHp(double value, L2Character attacker, boolean awake, boolean isDOT, boolean isHPConsumption)
 	{
 		reduceHp(value, attacker, awake, isDOT, isHPConsumption, false);
 	}
 	
+        @Override
 	public final void reduceHp(double value, L2Character attacker, boolean awake, boolean isDOT, boolean isHPConsumption, boolean ignoreCP)
 	{
 		if (getActiveChar().isDead())

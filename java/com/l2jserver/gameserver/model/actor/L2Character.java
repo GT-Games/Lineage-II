@@ -6433,11 +6433,18 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 		reduceCurrentHp(i, attacker, true, false, skill);
 	}
 	
+        //Works for Toggle Skills
 	public void reduceCurrentHpByDOT(double i, L2Character attacker, Skill skill)
 	{
 		reduceCurrentHp(i, attacker, !skill.isToggle(), true, skill);
 	}
 	
+        //Works for Active Skills Added By Thonygez
+        public void reduceCurrentHpByDOT(double value, L2Character attacker, boolean awake, boolean isDOT, boolean isHPConsumption, boolean ignoreCP)
+	{
+		getStatus().reduceHp(value, attacker, awake, isDOT, isHPConsumption, ignoreCP);
+	}
+        
 	public void reduceCurrentHp(double i, L2Character attacker, boolean awake, boolean isDOT, Skill skill)
 	{
 		// Damage modifier
