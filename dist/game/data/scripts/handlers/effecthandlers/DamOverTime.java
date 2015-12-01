@@ -88,7 +88,7 @@ public final class DamOverTime extends AbstractEffect
 			info.getEffected().getActingPlayer().increaseCharges(1, _charge);
 		}
 		
-		info.getEffected().reduceCurrentHpByDOT(damage, info.getEffector(), info.getSkill());
+		info.getEffected().reduceCurrentHpByDOT(damage, info.getEffector(), true, true, true, true);
 		info.getEffected().notifyDamageReceived(damage, info.getEffector(), info.getSkill(), false, true);
 		return info.getSkill().isToggle();
 	}

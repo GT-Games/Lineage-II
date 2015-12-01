@@ -849,8 +849,7 @@
 		<table name="#dmg">113 118 123 128 134 134 134 134</table>
 		<set name="abnormalTime" val="60" />
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
-		<set name="mpConsume" val="#mpConsume" />
-		<set name="power" val="134" />
+		<set name="mpConsume" val="#mpConsume" /> 
 		<set name="element" val="5" />
 		<set name="elementPower" val="20" />
 		<set name="isDebuff" val="true" />
