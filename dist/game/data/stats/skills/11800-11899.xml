@@ -408,7 +408,7 @@
 			</effect>
 		</for>
 	</skill>
-	<skill id="11823" levels="1" name="Speed of Saha" enchantGroup1="10">
+	<skill id="11823" levels="1" name="Speed of Saha" enchantGroup1="1">
 		<!-- Currently Working, Status: Beta Test - Fixed By Thonygez -->
 		<set name="icon" val="icon.skill11823" />
 		<set name="magicLvl" val="85" />
@@ -955,6 +955,7 @@
 		<set name="icon" val="icon.skill11861" />
 		<set name="magicLvl" val="99" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="1800" />
 		<set name="mpConsume" val="82" />
 		<set name="effectRange" val="900" />
 		<set name="hitTime" val="1000" />
@@ -980,6 +981,7 @@
 		<set name="icon" val="icon.skill11862" />
 		<set name="magicLvl" val="99" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="1800" />
 		<set name="mpConsume" val="82" />
 		<set name="effectRange" val="900" />
 		<set name="hitTime" val="1000" />
@@ -1000,6 +1002,7 @@
 		<set name="icon" val="icon.skill11863" />
 		<set name="magicLvl" val="99" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="1800" />
 		<set name="mpConsume" val="82" />
 		<set name="effectRange" val="900" />
 		<set name="hitTime" val="1000" />

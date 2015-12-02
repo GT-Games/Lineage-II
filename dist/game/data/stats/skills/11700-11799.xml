@@ -672,7 +672,7 @@
 		<set name="magicLvl" val="85" />
 		<set name="power" val="90" />
 		<set name="abnormalTime" val="15" />
-		<set name="targetType" val="AURA" />
+		<set name="targetType" val="SELF" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
 		<for>
 			<effect name="Buff">
