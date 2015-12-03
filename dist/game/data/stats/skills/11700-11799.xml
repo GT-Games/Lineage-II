@@ -133,13 +133,14 @@
 		<table name="#ench2Time"> 66 72 78 84 90 96 102 108 114 120 </table>
 		<set name="icon" val="icon.skill11754" />
 		<set name="magicLvl" val="#magicLvl" />
-		<set name="operateType" val="ACTIVE_INSTANT" />
+		<set name="operateType" val="ACTIVE_CONTINUOUS" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="effectRange" val="600" />
 		<set name="hitTime" val="2200" />
 		<set name="coolTime" val="300" />
 		<set name="reuseDelay" val="15000" />
 		<set name="isMagic" val="1" />
+		<set name="abnormalTime" val="60" />
 		<set name="targetType" val="PARTY_MEMBER" />
 		<enchant1 name="magicLvl" val="99" />
 		<enchant2 name="magicLvl" val="99" />
@@ -763,21 +764,21 @@
 		<cond>
 			<and>
 				<player canSummonServitor="true" />
-				<player hasFreeSummonPoints="2" />
+				<player hasFreeSummonPoints="4" />
 			</and>
 		</cond>
 		<for>
 			<effect name="Summon">
 				<param npcId="#npcIds" />
 				<param lifeTime="3600" />
-				<param summonPoints="2" />
+				<param summonPoints="4" />
 			</effect>
 		</for>
 		<enchant1for>
 			<effect name="Summon">
 				<param npcId="#ench1npcId" />
 				<param lifeTime="3600" />
-				<param summonPoints="2" />
+				<param summonPoints="4" />
 			</effect>
 		</enchant1for>
 	</skill>
@@ -813,21 +814,21 @@
 		<cond>
 			<and>
 				<player canSummonServitor="true" />
-				<player hasFreeSummonPoints="2" />
+				<player hasFreeSummonPoints="4" />
 			</and>
 		</cond>
 		<for>
 			<effect name="Summon">
 				<param npcId="#npcIds" />
 				<param lifeTime="3600" />
-				<param summonPoints="2" />
+				<param summonPoints="4" />
 			</effect>
 		</for>
 		<enchant1for>
 			<effect name="Summon">
 				<param npcId="#ench1npcId" />
 				<param lifeTime="3600" />
-				<param summonPoints="2" />
+				<param summonPoints="4" />
 			</effect>
 		</enchant1for>
 	</skill>
@@ -988,13 +989,15 @@
 		<set name="isMagic" val="1" />
 	</skill>
 	<skill id="11782" levels="2" name="Frantic Healing">
+		<!-- Currently Working, Status: Beta Test - Fixed By Thonygez -->
 		<table name="#mAtkSpd">1.3 1.5</table>
 		<set name="abnormalTime" val="3" />
 		<set name="magicLvl" val="85" />
 		<set name="targetType" val="SELF" />
 		<set name="operateType" val="TOGGLE" />
 		<for>
-			<effect name="DamOverTime">
+			<effect name="ManaDamOverTime" ticks="1">
+				<param power="100"/> 
 				<mul stat="mAtkSpd" val="#mAtkSpd">
 					<using kind="MAGIC,LIGHT" />
 				</mul>

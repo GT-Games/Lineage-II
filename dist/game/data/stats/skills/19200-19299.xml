@@ -71,12 +71,44 @@
 		<set name="operateType" val="ACTIVE_INSTANT" />
 		<set name="targetType" val="SELF" />
 	</skill>
-	<!-- Summons an Enchanted Tree of Life that cannot be targeted. The summoned tree heals nearby party members for $s1 and casts a debuff canceling blessing. Consumes $s2 Spirit Ores. --> 
-	<skill id="19210" levels="1" name="Summon Tree of Sephiroth">
-		<!-- AUTO GENERATED INFINITE ODYSSEY SKILL TODO: FIX IT -->
-		<set name="icon" val="icon.skill0000" />
-		<set name="operateType" val="ACTIVE_INSTANT" />
+	<skill id="19210" levels="4" name="Summon Tree of Sephiroth" enchantGroup1="10">
+		<!-- Summons an Enchanted Tree of Life that cannot be targeted. The summoned tree heals nearby party members for $s1 and casts a debuff canceling blessing. Consumes $s2 Spirit Ores. --> 
+		<table name="#magicLvl"> 85 90 95 99 </table>
+		<table name="#enchMagicLvl"> 90 91 92 93 94 95 96 97 98 99 </table>
+		<table name="#mpConsume"> 185 205 225 243 </table>
+		<table name="#npcIds"> 14933 14943 15010 15011 </table>
+		<table name="#ench1npcId"> 15012 15013 15014 15015 15016 15017 15018 15019 15020 15021 </table>
+		<set name="icon" val="icon.skill11774" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
+		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="SELF" />
+		<set name="hitTime" val="5000" />
+		<set name="coolTime" val="2000" />
+		<set name="reuseDelay" val="250000" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="operateType" val="ACTIVE_INSTANT" />
+		<enchant1 name="magicLvl" val="#enchMagicLvl" />
+		<cond>
+			<and>
+				<player canSummonServitor="true" />
+				<player hasFreeSummonPoints="4" />
+			</and>
+		</cond>
+		<for>
+			<effect name="Summon">
+				<param npcId="#npcIds" />
+				<param lifeTime="3600" />
+				<param summonPoints="4" />
+			</effect>
+		</for>
+		<enchant1for>
+			<effect name="Summon">
+				<param npcId="#ench1npcId" />
+				<param lifeTime="3600" />
+				<param summonPoints="4" />
+			</effect>
+		</enchant1for>
 	</skill>
 	<!-- For 1 min., puts a barrier around a party member. The barrier blocks 50000 damage. Consumes 5 Soulstones. --> 
 	<skill id="19211" levels="1" name="Barrer for Test">

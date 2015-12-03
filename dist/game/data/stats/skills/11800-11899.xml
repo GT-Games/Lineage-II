@@ -408,7 +408,7 @@
 			</effect>
 		</for>
 	</skill>
-	<skill id="11823" levels="1" name="Speed of Saha" enchantGroup1="1">
+	<skill id="11823" levels="1" name="Speed of Saha" enchantGroup1="10">
 		<!-- Currently Working, Status: Beta Test - Fixed By Thonygez -->
 		<set name="icon" val="icon.skill11823" />
 		<set name="magicLvl" val="85" />
