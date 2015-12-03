@@ -160,6 +160,9 @@
 		<skill skillName="Eminent Stability" skillId="30542" skillLvl="7" getLevel="99" levelUpSp="7500000" />
 		<skill skillName="Flying Knee Kick" skillId="30546" skillLvl="8" getLevel="99" levelUpSp="7500000" />
 		<skill skillName="Stamp Punch" skillId="30547" skillLvl="1" getLevel="99" levelUpSp="7500000" />
+        <skill skillName="Stamp Punch" skillId="30547" skillLvl="2" getLevel="101" levelUpSp="211440000" />
+        <skill skillName="Stamp Punch" skillId="30547" skillLvl="3" getLevel="103" levelUpSp="608946501" />
+        <skill skillName="Stamp Punch" skillId="30547" skillLvl="4" getLevel="105" levelUpSp="1753765925" />
 		<skill skillName="Eminent Fist Weapon Mastery" skillId="30540" skillLvl="12" getLevel="100" levelUpSp="88099899" />
 		<skill skillName="Eminent Light Armor Mastery" skillId="30541" skillLvl="12" getLevel="100" levelUpSp="88099899" />
 		<skill skillName="Eminent Stability" skillId="30542" skillLvl="8" getLevel="100" levelUpSp="88099899" />

@@ -590,10 +590,38 @@
 		<set name="targetType" val="SELF" />
 	</skill>
 	<!-- Throws a powerful punch to a fallen target with $s1 Power added to P. Atk. Ignores $s2 of target's P. Def. Fist weapon must be equipped. --> 
-	<skill id="30547" levels="1" name="Stamp Punch">
-		<!-- AUTO GENERATED INFINITE ODYSSEY SKILL TODO: FIX IT -->
-		<set name="icon" val="icon.skill0000" />
-		<set name="operateType" val="ACTIVE_INSTANT" />
-		<set name="targetType" val="SELF" />
-	</skill>
+	<skill id="30547" levels="4" name="Stamp Punch" enchantGroup1="5">
+      <!-- FIX to milton -->
+      <table name="#rCrit"> 1.01 1.02 1.03 1.04 1.05 1.06 1.07 1.08 1.09 1.10 1.11 1.12 1.13 1.14 1.15 1.16 1.17 1.18 1.19 1.20</table>
+      <table name="#mpConsumes"> 85 85 85 85</table>
+      <table name="#magicLevel">99 101 103 105</table>
+      <table name="#power">91570 95080 98736 102392</table>
+      <set name="icon" val="icon.skill0000" />      
+      <set name="operateType" val="ACTIVE_CONTINUOUS" />
+      <set name="targetType" val="ONE" />
+      <set name="castRange" val="80" />
+      <set name="effectRange" val="80" />
+      <set name="power" val="#power" />
+      <set name="magicLvl" val="#magicLevel" />
+      <set name="mpConsume" val="#mpConsumes" />
+      <set name="hitTime" val="2000" />
+      <set name="coolTime" val="500" />
+      <set name="reuseDelay" val="5000" />
+      <set name="isDebuff" val="true" />
+      <set name="abnormalTime" val="5" />
+      <enchant1 name="magicLvl" val="99" />
+      <for>
+         <effect name="PhysicalAttack" />
+      </for>
+      <enchant1for>
+         <effect name="PhysicalAttack" >
+            <add stat="critRate" val="#rCrit" >
+               <and>
+                  <player front="True" />
+                  <player behind="false" />
+               </and>
+            </add>
+         </effect>
+      </enchant1for>
+   </skill>
 </list>
