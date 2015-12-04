@@ -853,6 +853,7 @@
 		<set name="mpConsume" val="#mpConsume" /> 
 		<set name="element" val="5" />
 		<set name="elementPower" val="20" />
+		<set name="power" val="89" />
 		<set name="isDebuff" val="true" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="ONE" />
