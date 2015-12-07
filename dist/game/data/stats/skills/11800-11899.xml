@@ -160,15 +160,12 @@
 		<table name="#ench1MpInitialConsume"> 21 20 19 17 16 14 13 12 10 9 </table>
 		<table name="#ench2Power"> 116 117 119 120 121 123 124 125 127 128  </table>
 		<table name="#enchElementPower"> 30 33 36 40 43 46 50 53 56 60 </table>
-		<table name="#effectPoints"> -318 -432 -482 -511 -535 -535 -535 -535 -535 -535 -535 </table>
 		<set name="icon" val="icon.skill11814" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
 		<set name="power" val="#power" />
 		<set name="mpConsume" val="#mpConsume" />
-		<set name="mpInitialConsume" val="#mpInitialConsume" />
-		<set name="effectPoint" val="#effectPoints" />
-		<set name="effectRange" val="400" />
+		<set name="mpInitialConsume" val="#mpInitialConsume" /> 
 		<set name="hitTime" val="2779" />
 		<set name="coolTime" val="500" /> 
 		<set name="abnormalTime" val="1"/>

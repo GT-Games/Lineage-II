@@ -834,11 +834,6 @@
 	</skill>
 	<skill id="11777" levels="8" name="Mark of Lumi">
 		<!-- Currently Working, Status: Beta Test - Fixed By Helius -->
-		<set name="hitTime" val="1500" />
-		<set name="castRange" val="900" />
-		<set name="icon" val="icon.skill11777" />
-		<set name="reuseDelay" val="4000" />
-		<set name="effectPoint" val="-1" /> 
 		<table name="#mpConsume">40 42 45 47 32 52 54 57</table>
 		<table name="#mpInitialConsume">8 8 9 9 6 6 6 6</table>
 		<table name="#ench1count">66 72 78 84 90 96 102 108 118 120</table>
@@ -848,6 +843,13 @@
 		<table name="#mDef">0.9 0.85 0.8 0.75 0.70 0.70 0.70 0.70</table>
 		<table name="#magicLvl">85 88 91 94 97 101 103 105</table>
 		<table name="#dmg">113 118 123 128 134 134 134 134</table>
+		<table name="#effectPoints"> -360 -379 -399 -418 -438 -457 -477 -495 -514 -532 -541 -549 -558 -566 -574 -582 -590 -597 -604 -611 -617 -624 -630 -635 -641 -646 -650 -655 </table>
+		<set name="hitTime" val="1500" />
+		<set name="icon" val="icon.skill11777" />
+		<set name="reuseDelay" val="4000" />
+		<set name="castRange" val="900" />
+		<set name="effectPoint" val="#effectPoints" />
+		<set name="effectRange" val="1400" />
 		<set name="abnormalTime" val="60" />
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
 		<set name="mpConsume" val="#mpConsume" /> 
@@ -859,7 +861,6 @@
 		<set name="targetType" val="ONE" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
-		<set name="effectRange" val="900" />
 		<set name="trait" val="POISON" />
 		<for>
 			<effect name="DamOverTime" ticks="1">
@@ -896,26 +897,29 @@
     	<!-- Missing -> When Sleep ends, decreases Atk. Spd., Casting Spd., and Speed by 50%. -->
 		<table name="#magicLvl"> 85 86 89 92 95 98 101 103 105</table>
 		<table name="#mpConsume"> 26 26 27 30 31 33 34 35 37</table>
-		<set name="icon" val="icon.skill11778" />
+		<table name="#effectPoints"> 50 58 67 83 95 107 121 135 151</table>
+		<set name="abnormalTime" val="30" />
+		<set name="abnormalType" val="SLEEP" />
+		<set name="abnormalVisualEffect" val="SLEEP" />
+		<set name="basicProperty" val="MEN" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="-1" />
+		<set name="effectRange" val="1000" />
+		<set name="hitTime" val="4000" />
+		<set name="reuseDelay" val="30000" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
-		<set name="mpConsume" val="#mpConsume" />
-		<set name="effectRange" val="600" />
-		<set name="hitTime" val="1500" />
-		<set name="reuseDelay" val="30000" />
-		<set name="isMagic" val="1" />
-		<set name="isDebuff" val="true" />
-		<set name="effectPoint" val="-1" /> 
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
-		<set name="targetType" val="ONE" />
 		<set name="trait" val="SLEEP" />
-		<set name="abnormalTime" val="20" />
+		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Sleep" />
 			<effect name="DefenceTrait">
 				<param SLEEP="100" />
 			</effect>
-			<effect name="TriggerSkillByCast">
+			<effect name="TriggerSkillBySkill">
 				<mul stat="magicalMpConsumeRate" val="1.5" />
 				<mul stat="physicalMpConsumeRate" val="1.5" />
 				<mul stat="mAtkSpd" val="0.8" />

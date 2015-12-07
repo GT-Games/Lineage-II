@@ -133,12 +133,12 @@ public class CharStatus
 		reduceHp(value, attacker, true, false, isHpConsumption);
 	}
         
-        //This is used to make Active Skills DOT Works (Going Directly Into HP Ignoring CP) Properly - tmp fix added by Thonygez
+        //This is used to make Active Skills DOT Work Against Players (Going Directly Into HP Ignoring CP) Properly - added by Thonygez
         public void reduceHp(double value, L2Character attacker, boolean awake, boolean isDOT, boolean isHPConsumption, boolean ignoreCP)
         {
               PcStatus tmp = new PcStatus((L2PcInstance) attacker);
               
-              tmp.reduceHp(value, attacker, true, false, false, true);
+              tmp.reduceHp(value, attacker, awake, isDOT, isHPConsumption, ignoreCP);
         }
 	
 	public void reduceHp(double value, L2Character attacker, boolean awake, boolean isDOT, boolean isHPConsumption)

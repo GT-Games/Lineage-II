@@ -2309,7 +2309,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="BLOOD_STEEL" />
 		<set name="weight" val="1130" />
-
+		<cond msgId="1518">
+			<and>
+				<player pledgeClass="4" />
+			</and>
+		</cond>
 		<for>
 			<add order="0" stat="pDef" val="49" />
 			<enchant stat="pDef" val="0" />

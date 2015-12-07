@@ -190,62 +190,55 @@
 	<skill id="30507" levels="21" name="Left Sidestep"> 
 		<!-- Disables targeting and finds weakness to the enemy's left. Enemy is stunned for 5 sec. Requires a fist weapon. -->
 		<table name="#mpConsumes"> 13 14 16 18 19 21 23 24 26 27 28 28 29 29 29 30 30 30 30 30 30 </table>
+    	<table name="#magicLevel">79 81 83 85 87 89 91 93 95 97 99 101 103 105 105 105 105 105 105 105 105</table>
 		<set name="icon" val="icon.skill30507" />
-		<set name="operateType" val="ACTIVE_INSTANT" />
+		<set name="operateType" val="ACTIVE_INSTANT" /> 
+		<set name="abnormalTime" val="5" />
 		<set name="targetType" val="ONE" />
-		<set name="power" val="21581" />
+		<set name="effectPoint" val="-100" /> 
+		<set name="flyType" val="CHARGE" />
+		<set name="magicLvl" val="#magicLevel" />
 		<set name="mpConsume" val="#mpConsumes" />
+		<set name="effectRange" val="300" />
+		<set name="hitTime" val="800" />
+		<set name="coolTime" val="1000" />
 		<set name="castRange" val="300" />
-		<set name="hitTime" val="100" />
-		<set name="coolTime" val="300" />
-		<set name="reuseDelay" val="7000" />
+		<set name="reuseDelay" val="300" />
+		<set name="isDebuff" val="true" />
+		<set name="nextActionAttack" val="true" />
+		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<cond msgId="113" addName="1">
 			<using kind="FIST,DUALFIST" />
 		</cond>
 		<for>
-			<effect name="Stun" />
+			<effect name="Stun"/> <!-- need Disables targeting -->
 		</for>
 	</skill>
-	<!-- Level 1 : Disables targeting and finds weakness to the enemy's right. Decreases enemy's resistance to Fist Weapons by 10%. Requires a fist weapon. -->
-	<!-- Level 2 : Disables targeting and finds weakness to the enemy's right. Decreases enemy's resistance to Fist Weapons by 10%. Requires a fist weapon. -->
-	<!-- Level 3 : Disables targeting and finds weakness to the enemy's right. Decreases enemy's resistance to Fist Weapons by 10%. Requires a fist weapon. -->
-	<!-- Level 4 : Disables targeting and finds weakness to the enemy's right. Decreases enemy's resistance to Fist Weapons by 10%. Requires a fist weapon. -->
-	<!-- Level 5 : Disables targeting and finds weakness to the enemy's right. Decreases enemy's resistance to Fist Weapons by 10%. Requires a fist weapon. -->
-	<!-- Level 6 : Disables targeting and finds weakness to the enemy's right. Decreases enemy's resistance to Fist Weapons by 10%. Requires a fist weapon. -->
-	<!-- Level 7 : Disables targeting and finds weakness to the enemy's right. Decreases enemy's resistance to Fist Weapons by 10%. Requires a fist weapon. -->
-	<!-- Level 8 : Disables targeting and finds weakness to the enemy's right. Decreases enemy's resistance to Fist Weapons by 10%. Requires a fist weapon. -->
-	<!-- Level 9 : Disables targeting and finds weakness to the enemy's right. Decreases enemy's resistance to Fist Weapons by 10%. Requires a fist weapon. -->
-	<!-- Level 10 : Disables targeting and finds weakness to the enemy's right. Decreases enemy's resistance to Fist Weapons by 10%. Requires a fist weapon. -->
-	<!-- Level 11 : Disables targeting and finds weakness to the enemy's right. Decreases enemy's resistance to Fist Weapons by 10%. Requires a fist weapon. -->
-	<!-- Level 12 : Disables targeting and finds weakness to the enemy's right. Decreases enemy's resistance to Fist Weapons by 10%. Requires a fist weapon. -->
-	<!-- Level 13 : Disables targeting and finds weakness to the enemy's right. Decreases enemy's resistance to Fist Weapons by 10%. Requires a fist weapon. -->
-	<!-- Level 14 : Disables targeting and finds weakness to the enemy's right. Decreases enemy's resistance to Fist Weapons by 10%. Requires a fist weapon. -->
-	<!-- Level 15 : Disables targeting and finds weakness to the enemy's right. Decreases enemy's resistance to Fist Weapons by 10%. Requires a fist weapon. -->
-	<!-- Level 16 : Disables targeting and finds weakness to the enemy's right. Decreases enemy's resistance to Fist Weapons by 10%. Requires a fist weapon. -->
-	<!-- Level 17 : Disables targeting and finds weakness to the enemy's right. Decreases enemy's resistance to Fist Weapons by 30%. Requires a fist weapon. -->
-	<!-- Level 18 : Disables targeting and finds weakness to the enemy's right. Decreases enemy's resistance to Fist Weapons by 30%. Requires a fist weapon. -->
-	<!-- Level 19 : Disables targeting and finds weakness to the enemy's right. Decreases enemy's resistance to Fist Weapons by 30%. Requires a fist weapon. -->
-	<!-- Level 20 : Disables targeting and finds weakness to the enemy's right. Decreases enemy's resistance to Fist Weapons by 30%. Requires a fist weapon. -->
-	<!-- Level 21 : Disables targeting and finds weakness to the enemy's right. Decreases enemy's resistance to Fist Weapons by 30%. Requires a fist weapon. -->
-	<!-- Level 22 : Disables targeting and finds weakness to the enemy's right. Decreases enemy's resistance to Fist Weapons by 30%. Requires a fist weapon. -->
-	<!-- Level 23 : Disables targeting and finds weakness to the enemy's right. Decreases enemy's resistance to Fist Weapons by 30%. Requires a fist weapon. -->
-	<!-- Level 24 : Disables targeting and finds weakness to the enemy's right. Decreases enemy's resistance to Fist Weapons by 30%. Requires a fist weapon. -->
-	<skill id="30508" levels="24" name="Right Sidestep">
-		<table name="#magicLvl"> 20 28 36 42 46 50 54 58 62 66 70 74 77 79 81 83 85 87 89 91 93 95 97 99 </table>
-		<table name="#mpConsume"> 7 9 11 14 15 17 19 20 22 23 25 26 27 28 28 29 29 29 30 30 30 30 30 31 </table>
+    <skill id="30508" levels="24" name="Right Sidestep">
+		<table name="#mpConsumes"> 13 14 16 18 19 21 23 24 26 27 28 28 29 29 29 30 30 30 30 30 30 30 30 30 </table>
+    	<table name="#magicLevel">79 81 83 85 87 89 91 93 95 97 99 101 103 105 105 105 105 105 105 105 105 105 105 105</table>
 		<set name="icon" val="icon.skill30508" />
-		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_INSTANT" />
-		<set name="mpConsume" val="#mpConsume" />
-		<set name="effectRange" val="300" />
-		<set name="hitTime" val="100" />
-		<set name="coolTime" val="300" />
-		<set name="reuseDelay" val="7000" />
-		<set name="isDebuff" val="true" />
+		<set name="abnormalTime" val="5" />
 		<set name="targetType" val="ONE" />
+		<set name="effectPoint" val="-100" /> 
+		<set name="flyType" val="CHARGE" />
+		<set name="magicLvl" val="#magicLevel" />
+		<set name="mpConsume" val="#mpConsumes" />
+		<set name="effectRange" val="300" />
+		<set name="hitTime" val="800" />
+		<set name="coolTime" val="1000" />
+		<set name="castRange" val="300" />
+		<set name="reuseDelay" val="300" />
+		<set name="isDebuff" val="true" />
+		<set name="nextActionAttack" val="true" />
+		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<cond msgId="113" addName="1">
 			<using kind="FIST,DUALFIST" />
 		</cond>
+		<for>
+			<effect name="Stun"/> <!-- need Disables targeting & Decreases enemy's resistance to Fist Weapons by 30% instead of Stun effect -->
+		</for>
 	</skill>
 	<!-- Level 1 : Disables targeting and retreats backwards, recovering 10% HP. Requires a Fist Weapon. -->
 	<!-- Level 2 : Disables targeting and retreats backwards, recovering 20% HP. Requires a Fist Weapon. -->
@@ -274,17 +267,16 @@
 		<set name="targetType" val="ONE" />
 	</skill>
 	<skill id="30511" levels="3" name="Air Light">
-		<!-- AUTO GENERATED SKILL -->
 		<!-- For 10 min., you're less bound by gravity and P. Atk. + 10%. -->
 		<table name="#abnormalLvls"> 1 2 3 </table>
 		<table name="#mpConsumes"> 20 44 45 </table>
 		<table name="#pAtk"> 1.1 1.15 1.2 </table>
 		<set name="icon" val="icon.skill30511" />
+		<set name="abnormalTime" val="1800" />
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
 		<set name="targetType" val="SELF" />
-		<set name="mpConsume" val="#mpConsumes" />
-		<set name="abnormalTime" val="600" />		
+		<set name="mpConsume" val="#mpConsumes" /> 
 		<set name="hitTime" val="1500" />
 		<set name="coolTime" val="500" />
 		<set name="reuseDelay" val="30000" />
@@ -303,6 +295,7 @@
 		<set name="icon" val="icon.skill30512" />
 		<set name="magicLvl" val="76" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="60" />
 		<set name="mpConsume" val="41" />
 		<set name="hitTime" val="1500" />
 		<set name="coolTime" val="500" />
@@ -322,6 +315,7 @@
 		<table name="#pSkillEvas"> 50 70 </table>
 		<set name="icon" val="icon.skill30514" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="3" />
 		<set name="targetType" val="SELF" />
 		<set name="mpConsume" val="#mpConsumes" />
 		<set name="abnormalTime" val="3" />
@@ -341,6 +335,7 @@
 		<set name="icon" val="icon.skill30515" />
 		<set name="magicLvl" val="99" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="30" />
 		<set name="mpConsume" val="31" />
 		<set name="hitTime" val="1500" />
 		<set name="coolTime" val="500" />
@@ -355,6 +350,7 @@
 		<set name="icon" val="icon.skill30516" />
 		<set name="magicLvl" val="93" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="30" />
 		<set name="mpConsume" val="30" />
 		<set name="hitTime" val="200" />
 		<set name="reuseDelay" val="300000" />
@@ -384,32 +380,39 @@
 			<using kind="FIST,DUALFIST" />
 		</cond>
 	</skill>
-	<!-- Level 1 : Attacks nearby enemies with 19693 Power added to P. Atk. and knocks them down. Damage increases with the number of enemies affected. Requires a fist weapon. -->
-	<!-- Level 2 : Attacks nearby enemies with 20582 Power added to P. Atk. and knocks them down. Damage increases with the number of enemies affected. Requires a fist weapon. -->
-	<!-- Level 3 : Attacks nearby enemies with 22701 Power added to P. Atk. and knocks them down. Damage increases with the number of enemies affected. Requires a fist weapon. -->
-	<!-- Level 4 : Attacks nearby enemies with 25350 Power added to P. Atk. and knocks them down. Damage increases with the number of enemies affected. Requires a fist weapon. -->
-	<!-- Level 5 : Attacks nearby enemies with 28648 Power added to P. Atk. and knocks them down. Damage increases with the number of enemies affected. Requires a fist weapon. -->
-	<!-- Level 6 : Attacks nearby enemies with 32757 Power added to P. Atk. and knocks them down. Damage increases with the number of enemies affected. Requires a fist weapon. -->
-	<!-- Level 7 : Attacks nearby enemies with 37894 Power added to P. Atk. and knocks them down. Damage increases with the number of enemies affected. Requires a fist weapon. -->
-	<!-- Level 8 : Attacks nearby enemies with 44352 Power added to P. Atk. and knocks them down. Damage increases with the number of enemies affected. Requires a fist weapon. -->
 	<skill id="30518" levels="8" name="Reverse Weight">
+		<!-- Level 1 : Attacks nearby enemies with 19693 Power added to P. Atk. and knocks them down. Damage increases with the number of enemies affected. Requires a fist weapon. -->
 		<table name="#power"> 19693 20582 22701 25350 28648 32757 37894 44352 </table>
 		<table name="#magicLvl"> 85 86 88 90 92 94 96 98 </table>
 		<table name="#mpConsume"> 1479 1487 1500 1510 1516 1523 1532 1544 </table>
+		<table name="#effectPoints"> -318 -432 -482 -511 -535 -535 -535 -535 -535 -535 -535 </table>
 		<set name="icon" val="icon.skill30518" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="1" />
+		<set name="abnormalType" val="KNOCK_DOWN" />
+        <set name="abnormalVisualEffect" val="KNOCK_DOWN" />
+        <set name="effectPoint" val="-1" />
 		<set name="power" val="#power" />
 		<set name="mpConsume" val="#mpConsume" />
+		<set name="effectRange" val="600" />
 		<set name="hitTime" val="2500" />
 		<set name="coolTime" val="500" />
-		<set name="reuseDelay" val="30000" />
-		<set name="isMagic" val="6" />
+		<set name="reuseDelay" val="300" />
 		<set name="isDebuff" val="true" />
 		<set name="targetType" val="AREA" />
+		<set name="fanRange" val="0,0,200,180" />
+		<set name="affectLimit" val="5-12" />
+		<set name="affectRange" val="200" />
+		<set name="trait" val="KNOCKDOWN" />
 		<cond msgId="113" addName="1">
 			<using kind="FIST,DUALFIST" />
 		</cond>
+		<for>
+			<effect name="KnockDown">
+				<param speed="700" distance="50" />
+			</effect>
+		</for>
 	</skill>
 	<!-- Level 1 : Creates a warped space where the enemy is trapped and their abilities are decreased. Requires a fist weapon. -->
 	<skill id="30519" levels="1" name="Warped Space">
@@ -434,6 +437,7 @@
 		<table name="#mpConsumes"> 221 232 </table>
 		<set name="icon" val="icon.skill30520" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="30" />
 		<set name="targetType" val="SELF" />
 		<set name="mpConsume" val="#mpConsumes" />
 		<set name="abnormalTime" val="30" />
@@ -525,6 +529,7 @@
 		<set name="icon" val="icon.skill30530" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="1" />
 		<set name="targetType" val="ONE" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="effectRange" val="600" />
@@ -697,9 +702,8 @@
 			</effect>
 		</for>
 	</skill>
-	<!-- Throws a powerful punch to a fallen target with $s1 Power added to P. Atk. Ignores $s2 of target's P. Def. Fist weapon must be equipped. --> 
 	<skill id="30547" levels="4" name="Stamp Punch" enchantGroup1="5">
-      <!-- FIX to milton -->
+	<!-- Throws a powerful punch to a fallen target with $s1 Power added to P. Atk. Ignores $s2 of target's P. Def. Fist weapon must be equipped. --> 
       <table name="#rCrit"> 1.01 1.02 1.03 1.04 1.05 1.06 1.07 1.08 1.09 1.10 1.11 1.12 1.13 1.14 1.15 1.16 1.17 1.18 1.19 1.20</table> 
       <table name="#mpConsumes"> 85 85 85 85</table>
       <table name="#magicLevel">99 101 103 105</table>
@@ -707,9 +711,7 @@
       <set name="icon" val="icon.skill0000" />      
       <set name="operateType" val="ACTIVE_CONTINUOUS" />
       <set name="targetType" val="ONE" />
-      <set name="abnormalTime" val="1" />
-      <set name="abnormalType" val="KNOCK_DOWN" />
-      <set name="abnormalVisualEffect" val="KNOCK_DOWN" />
+      <set name="abnormalTime" val="1" />>
       <set name="castRange" val="100" /> 
       <set name="effectRange" val="100" />
       <set name="effectPoint" val="-1" />
