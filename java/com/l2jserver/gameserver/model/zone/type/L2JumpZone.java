@@ -32,113 +32,115 @@ import com.l2jserver.gameserver.network.serverpackets.ExNotifyFlyMoveStart;
 
 /**
  * L2JumpZone zones
- * @author ALF (r2max)
+ * @author ALF (r2max), Thonygez
  */
 public class L2JumpZone extends L2ZoneType
 {
-	private final Map<Integer, Future<?>> _task = new HashMap<>();
-	private final int _startTask;
-	private final int _reuseTask;
-	private int _trackId;
-	
-	public L2JumpZone(int id)
-	{
-		super(id);
-		
-		_startTask = 10;
-		_reuseTask = 500;
-		_trackId = -1;
-	}
-	
-	@Override
-	public void setParameter(String name, String value)
-	{
-		if (name.equals("trackId"))
-		{
-			_trackId = Integer.parseInt(value);
-		}
-		else
-		{
-			super.setParameter(name, value);
-		}
-	}
-	
-	public int getTrackId()
-	{
-		return _trackId;
-	}
-	
-	@Override
-	protected void onEnter(L2Character character)
-	{
-		if (!isInsideZone(character))
-		{
-			return;
-		}
-		
-		if (character.isPlayer())
-		{
-			character.setInsideZone(ZoneId.JUMP, true);
-		}
-		
-		if (character instanceof L2PcInstance)
-		{
-			L2PcInstance plr = (L2PcInstance) character;
-			if (!plr.isAwaken() && !Config.FREE_JUMPS_FOR_ALL)
-			{
-				return;
-			}
-			stopTask(plr);
-			_task.put(plr.getObjectId(), ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(new JumpReq(plr), _startTask, _reuseTask));
-		}
-	}
-	
-	@Override
-	protected void onExit(L2Character character)
-	{
-		if (character.isPlayer())
-		{
-			character.setInsideZone(ZoneId.JUMP, false);
-		}
-		stopTask(character);
-	}
-	
-	@Override
-	public void onDieInside(L2Character character)
-	{
-		onExit(character);
-	}
-	
-	@Override
-	public void onReviveInside(L2Character character)
-	{
-		onEnter(character);
-	}
-	
-	protected void stopTask(L2Character character)
-	{
-		int poid = character.getObjectId();
-		Future<?> t = _task.get(poid);
-		_task.remove(poid);
-		if (t != null)
-		{
-			t.cancel(false);
-		}
-	}
-	
-	class JumpReq implements Runnable
-	{
-		private final L2PcInstance player;
-		
-		JumpReq(L2PcInstance pl)
-		{
-			player = pl;
-		}
-		
-		@Override
-		public void run()
-		{
-			player.sendPacket(new ExNotifyFlyMoveStart());
-		}
-	}
+    private final Map<Integer, Future<?>> _task = new HashMap<>();
+    private final int _startTask;
+    private final int _reuseTask;
+    private int _trackId;
+
+    public L2JumpZone(int id)
+    {
+        super(id);
+
+        _startTask = 10;
+        _reuseTask = 500;
+        _trackId = -1;
+    }
+
+    @Override
+    public void setParameter(String name, String value)
+    {
+        if (name.equals("trackId"))
+        {
+                _trackId = Integer.parseInt(value);
+        }
+        else
+        {
+                super.setParameter(name, value);
+        }
+    }
+
+    public int getTrackId()
+    {
+        return _trackId;
+    }
+
+    @Override
+    protected void onEnter(L2Character character)
+    {
+        if (!isInsideZone(character))
+        {
+            stopTask(character);
+            return;
+        }
+
+        if (character.isPlayer() && character instanceof L2PcInstance)
+        {
+            character.setInsideZone(ZoneId.JUMP, true);
+
+            L2PcInstance player = (L2PcInstance) character;
+
+            if (!player.isAwaken() && !Config.FREE_JUMPS_FOR_ALL)
+            {
+                return;
+            }
+            _task.put(player.getObjectId(), ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(new JumpReq(player), _startTask, _reuseTask));            
+        }
+    }
+
+    @Override
+    protected void onExit(L2Character character)
+    {
+        if (character.isPlayer())
+        {
+            character.setInsideZone(ZoneId.JUMP, false);
+        }
+        stopTask(character);
+    }
+
+    @Override
+    public void onDieInside(L2Character character)
+    {
+        onExit(character);
+    }
+
+    @Override
+    public void onReviveInside(L2Character character)
+    {
+        onEnter(character);
+    }
+
+    protected void stopTask(L2Character character)
+    {
+        int playerObjectId = character.getObjectId();
+
+        Future<?> t = _task.get(playerObjectId);
+
+        _task.remove(playerObjectId);
+
+        if (t != null)
+        {
+            t.cancel(false);
+        }
+    }
+
+    class JumpReq implements Runnable
+    {
+        private final L2PcInstance _player;
+
+        JumpReq(L2PcInstance player)
+        {
+            _player = player;
+        }
+
+        @Override
+        public void run()
+        {
+            _player.sendPacket(new ExNotifyFlyMoveStart());
+            stopTask(_player);
+        }
+    }
 }

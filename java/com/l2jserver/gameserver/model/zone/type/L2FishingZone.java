@@ -32,89 +32,100 @@ import com.l2jserver.gameserver.network.serverpackets.ExAutoFishAvailable;
 
 /**
  * A fishing zone
- * @author durgus, Darky999
+ * @author durgus, Darky999, Thonygez
  */
 public class L2FishingZone extends L2ZoneType
 {
-	private final Map<Integer, Future<?>> _task = new HashMap<>();
-	int _fishx = 0;
-	int _fishy = 0;
-	int _fishz = 0;
-	
-	public L2FishingZone(int id)
-	{
-		super(id);
-	}
-	
-	@Override
-	protected void onEnter(L2Character character)
-	{
-		if (character.isPlayable() || (character.getLevel() > 85))
-		{
-			character.setInsideZone(ZoneId.FISHING, true);
-		}
-		
-		if (character.isPlayer())
-		{
-			final L2PcInstance plr = (L2PcInstance) character;
-			if (!_task.containsKey(plr.getObjectId()))
-			{
-				_task.put(plr.getObjectId(), ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(new fishingAvailable(plr), 500, 2000));
-			}
-		}
-	}
-	
-	@Override
-	protected void onExit(L2Character character)
-	{
-		if (character.isPlayer())
-		{
-			character.setInsideZone(ZoneId.FISHING, false);
-		}
-		_task.remove(character.getObjectId());
-		Future<?> t = _task.get(character.getObjectId());
-		if (t != null)
-		{
-			t.cancel(false);
-		}
-	}
-	
-	@Override
-	public void onDieInside(L2Character character)
-	{
-		onExit(character);
-	}
-	
-	@Override
-	public void onReviveInside(L2Character character)
-	{
-		onEnter(character);
-	}
-	
-	/*
-	 * getWaterZ() this added function returns the Z value for the water surface. In effect this simply returns the upper Z value of the zone. This required some modification of L2ZoneForm, and zone form extentions.
-	 */
-	public int getWaterZ()
-	{
-		return getZone().getHighZ();
-	}
-	
-	class fishingAvailable implements Runnable
-	{
-		private final L2PcInstance player;
-		
-		fishingAvailable(L2PcInstance pl)
-		{
-			player = pl;
-		}
-		
-		@Override
-		public void run()
-		{
-			if (Config.ALLOWFISHING && player.isInsideZone(ZoneId.FISHING) && !player.isInsideZone(ZoneId.WATER) && !player.isInBoat() && !player.isInCraftMode() && !player.isInStoreMode() && !player.isTransformed())
-			{
-				player.sendPacket(new ExAutoFishAvailable(player));
-			}
-		}
-	}
+    private final Map<Integer, Future<?>> _task = new HashMap<>();
+    int _fishx = 0;
+    int _fishy = 0;
+    int _fishz = 0;
+
+    public L2FishingZone(int id)
+    {
+        super(id);
+    }
+
+    @Override
+    protected void onEnter(L2Character character)
+    {
+        if (!isInsideZone(character))
+        {
+           stopTask(character);
+           return;
+        }
+
+        final L2PcInstance player = (L2PcInstance) character;
+
+        if(player.isPlayable() || player.getLevel() > 85 && player.isPlayer())
+        {
+           character.setInsideZone(ZoneId.FISHING, true);
+
+           _task.put(player.getObjectId(), ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(new fishingAvailable(player), 500, 2000));
+        }
+    }
+
+    @Override
+    protected void onExit(L2Character character)
+    {
+        if (character.isPlayer())
+        {
+            character.setInsideZone(ZoneId.FISHING, false);
+        }
+        stopTask(character);
+    }
+
+    @Override
+    public void onDieInside(L2Character character)
+    {
+        onExit(character);
+    }
+
+    @Override
+    public void onReviveInside(L2Character character)
+    {
+        onEnter(character);
+    }
+
+    /*
+     * getWaterZ() this added function returns the Z value for the water surface. In effect this simply returns the upper Z value of the zone. This required some modification of L2ZoneForm, and zone form extentions.
+     */
+    public int getWaterZ()
+    {
+        return getZone().getHighZ();
+    }
+
+    protected void stopTask(L2Character character)
+    {
+        int playerObjectId = character.getObjectId();
+
+        Future<?> t = _task.get(playerObjectId);
+
+        _task.remove(playerObjectId);
+
+        if (t != null)
+        {
+            t.cancel(false);
+        }
+    }
+
+    class fishingAvailable implements Runnable
+    {
+        private final L2PcInstance _player;
+
+        fishingAvailable(L2PcInstance player)
+        {
+            _player = player;
+        }
+
+        @Override
+        public void run()
+        {
+            if (Config.ALLOWFISHING && _player.isInsideZone(ZoneId.FISHING) && !_player.isInsideZone(ZoneId.WATER) && !_player.isInBoat() && !_player.isInCraftMode() && !_player.isInStoreMode() && !_player.isTransformed())
+            {
+                _player.sendPacket(new ExAutoFishAvailable(_player));
+                stopTask(_player);
+            }
+        }
+    }
 }

@@ -23,14 +23,12 @@ package com.l2jserver.gameserver.network.serverpackets;
  */
 public final class ExNotifyFlyMoveStart extends L2GameServerPacket
 {
-	public ExNotifyFlyMoveStart()
-	{
-	}
+	public ExNotifyFlyMoveStart(){}
 	
 	@Override
 	protected void writeImpl()
 	{
-		writeC(0xFE);
-		writeH(0x110);
+	    writeC(0xFE);
+	    writeH(0x110);
 	}
 }
