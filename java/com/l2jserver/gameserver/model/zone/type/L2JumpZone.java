@@ -88,7 +88,7 @@ public class L2JumpZone extends L2ZoneType
                 return;
             }
             _task.put(player.getObjectId(), ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(new JumpReq(player), _startTask, _reuseTask));            
-        }
+        } 
     }
 
     @Override

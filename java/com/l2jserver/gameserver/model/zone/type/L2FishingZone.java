@@ -49,19 +49,18 @@ public class L2FishingZone extends L2ZoneType
     @Override
     protected void onEnter(L2Character character)
     {
-        if (!isInsideZone(character))
+        if (character.isPlayable() || (character.getLevel() > 85))
         {
-           stopTask(character);
-           return;
+                character.setInsideZone(ZoneId.FISHING, true);
         }
 
-        final L2PcInstance player = (L2PcInstance) character;
-
-        if(player.isPlayable() || player.getLevel() > 85 && player.isPlayer())
+        if (character.isPlayer())
         {
-           character.setInsideZone(ZoneId.FISHING, true);
-
-           _task.put(player.getObjectId(), ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(new fishingAvailable(player), 500, 2000));
+            final L2PcInstance plr = (L2PcInstance) character;
+            if (!_task.containsKey(plr.getObjectId()))
+            {
+                    _task.put(plr.getObjectId(), ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(new fishingAvailable(plr), 500, 2000));
+            }
         }
     }
 
