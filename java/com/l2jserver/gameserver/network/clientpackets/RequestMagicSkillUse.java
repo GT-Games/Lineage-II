@@ -125,8 +125,21 @@ public final class RequestMagicSkillUse extends L2GameClientPacket
 		{
 			activeChar.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, activeChar.getLocation());
 		}
-		
-		activeChar.useMagic(skill, _ctrlPressed, _shiftPressed);
+   
+                // Assign Player's Stance Id Active 
+                int StanceId = activeChar.getEffectList().FeohStanceToggleId(activeChar);              
+                
+                // Assign an Elemental Skill To Be Cast
+                int ElementSkillId = activeChar.getEffectList().getCastElementSkill(StanceId, activeChar, skill); 
+                
+                // Manage Feoh Wizard's Element Stance Skills.
+                if(StanceId > 0 && ElementSkillId > 0) 
+                {  
+                   activeChar.useMagic(SkillData.getInstance().getSkill(ElementSkillId, skill.getLevel()), _ctrlPressed, _shiftPressed);
+                   return;
+                }
+                
+                activeChar.useMagic(skill, _ctrlPressed, _shiftPressed);
 	}
 	
 	@Override

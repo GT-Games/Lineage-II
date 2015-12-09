@@ -45,6 +45,57 @@ public final class Elementals
 	public static final byte HOLY = 4;
 	public static final byte DARK = 5;
 	
+        	
+        //Feoh Wizard's Element Stance Ids
+        public static final int FIRE_STANCE  = 11007;
+        public static final int WATER_STANCE = 11008;
+        public static final int WIND_STANCE  = 11009;
+        public static final int EARTH_STANCE = 11010;
+        
+        public static final int ELEMENTAL_SPIKE = 11011;
+        public static final int ELEMENTAL_CRASH = 11017;
+        public static final int ELEMENTAL_DESTRUCTION = 11023;
+        public static final int ELEMENTAL_BLAST = 11034;
+        public static final int ELEMENTAL_STORM = 11040;
+ 
+        //Fire Stance
+        public static final int ELEMENTAL_SPIKE_FIRE = 11012;
+        public static final int ELEMENTAL_CRASH_FIRE = 11018;
+        public static final int ELEMENTAL_DESTRUCTION_FIRE = 11024;
+        public static final int ELEMENTAL_BLAST_FIRE = 11035;
+        public static final int ELEMENTAL_STORM_FIRE = 11041;
+   
+        //Water Stance
+        public static final int ELEMENTAL_SPIKE_WATER = 11013;
+        public static final int ELEMENTAL_CRASH_WATER = 11019;
+        public static final int ELEMENTAL_DESTRUCTION_WATER = 11025;
+        public static final int ELEMENTAL_BLAST_WATER = 11036;
+        public static final int ELEMENTAL_STORM_WATER = 11042;
+        
+        //Wind Stance
+        public static final int ELEMENTAL_SPIKE_WIND = 11013;
+        public static final int ELEMENTAL_CRASH_WIND = 11019;
+        public static final int ELEMENTAL_DESTRUCTION_WIND = 11025;
+        public static final int ELEMENTAL_BLAST_WIND = 11036;
+        public static final int ELEMENTAL_STORM_WIND = 11042;
+        
+        //Earth Stance
+        public static final int ELEMENTAL_SPIKE_EARTH = 11013;
+        public static final int ELEMENTAL_CRASH_EARTH = 11019;
+        public static final int ELEMENTAL_DESTRUCTION_EARTH = 11025;
+        public static final int ELEMENTAL_BLAST_EARTH = 11036;
+        public static final int ELEMENTAL_STORM_EARTH = 11042;
+        
+        
+        //Feoh Element Stance Ids List
+        public static int StanceList[] = 
+        {
+            FIRE_STANCE,
+            WATER_STANCE,
+            WIND_STANCE,
+            EARTH_STANCE,
+        };
+        
 	public static final int FIRST_WEAPON_BONUS = 20;
 	public static final int NEXT_WEAPON_BONUS = 5;
 	public static final int ARMOR_BONUS = 6;

@@ -853,7 +853,7 @@
 		<set name="abnormalType" val="BR_EVENT_BUF5" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="abnormalTime" val="300" />
-		<set name="targetType" val="SELF" />
+		<set name="targetType" val="PARTY" />
 		<set name="hitTime" val="3000" />
 		<set name="reuseDelay" val="600000" />
 		<for>

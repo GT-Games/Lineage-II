@@ -97,7 +97,8 @@ public final class CharEffectList
 	private final L2Character _owner;
 	/** Hidden buffs count, prevents iterations. */
 	private final AtomicInteger _hiddenBuffs = new AtomicInteger();
-	
+
+             
 	private ScheduledFuture<?> _effectIconsUpdate;
 	
 	/**
@@ -313,89 +314,89 @@ public final class CharEffectList
 	{
 		if (hasBuffs())
 		{
-			for (BuffInfo info : getBuffs())
-			{
-				if (info != null)
-				{
-					for (AbstractEffect effect : info.getEffects())
-					{
-						if ((effect != null) && (effect.getEffectType() == type))
-						{
-							return info;
-						}
-					}
-				}
-			}
+                    for (BuffInfo info : getBuffs())
+                    {
+                        if (info != null)
+                        {
+                            for (AbstractEffect effect : info.getEffects())
+                            {
+                                if ((effect != null) && (effect.getEffectType() == type))
+                                {
+                                    return info;
+                                }
+                            }
+                        }
+                    }
 		}
 		
 		if (hasTriggered())
 		{
-			for (BuffInfo info : getTriggered())
-			{
-				if (info != null)
-				{
-					for (AbstractEffect effect : info.getEffects())
-					{
-						if ((effect != null) && (effect.getEffectType() == type))
-						{
-							return info;
-						}
-					}
-				}
-			}
+                    for (BuffInfo info : getTriggered())
+                    {
+                        if (info != null)
+                        {
+                            for (AbstractEffect effect : info.getEffects())
+                            {
+                                if ((effect != null) && (effect.getEffectType() == type))
+                                {
+                                    return info;
+                                }
+                            }
+                        }
+                    }
 		}
 		
 		if (hasDances())
 		{
-			for (BuffInfo info : getDances())
-			{
-				if (info != null)
-				{
-					for (AbstractEffect effect : info.getEffects())
-					{
-						if ((effect != null) && (effect.getEffectType() == type))
-						{
-							return info;
-						}
-					}
-				}
-			}
+                    for (BuffInfo info : getDances())
+                    {
+                        if (info != null)
+                        {
+                            for (AbstractEffect effect : info.getEffects())
+                            {
+                                if ((effect != null) && (effect.getEffectType() == type))
+                                {
+                                    return info;
+                                }
+                            }
+                        }
+                    }
 		}
 		
 		if (hasToggles())
 		{
-			for (BuffInfo info : getToggles())
-			{
-				if (info != null)
-				{
-					for (AbstractEffect effect : info.getEffects())
-					{
-						if ((effect != null) && (effect.getEffectType() == type))
-						{
-							return info;
-						}
-					}
-				}
-			}
+                    for (BuffInfo info : getToggles())
+                    {
+                        if (info != null)
+                        {
+                            for (AbstractEffect effect : info.getEffects())
+                            {
+                                if ((effect != null) && (effect.getEffectType() == type))
+                                {
+                                    return info;
+                                }
+                            }
+                        }
+                    }
 		}
 		
 		if (hasDebuffs())
 		{
-			for (BuffInfo info : getDebuffs())
-			{
-				if (info != null)
-				{
-					for (AbstractEffect effect : info.getEffects())
-					{
-						if ((effect != null) && (effect.getEffectType() == type))
-						{
-							return info;
-						}
-					}
-				}
-			}
+                    for (BuffInfo info : getDebuffs())
+                    {
+                        if (info != null)
+                        {
+                            for (AbstractEffect effect : info.getEffects())
+                            {
+                                if ((effect != null) && (effect.getEffectType() == type))
+                                {
+                                        return info;
+                                }
+                            }
+                        }
+                    }
 		}
-		return null;
+	    return null;
 	}
 	
 	/**
@@ -406,8 +407,177 @@ public final class CharEffectList
 	 */
 	public boolean isAffectedBySkill(int skillId)
 	{
-		return getBuffInfoBySkillId(skillId) != null;
+	    return getBuffInfoBySkillId(skillId) != null;
 	}
+        
+        /**
+         * Verifies if a Toggle Skill is being used by the Player
+         * @author Thonygez
+         * @param skillid
+         * @return 
+         */
+        public boolean isSkillToggleActive(int skillid)
+        {
+            return getToggleInfoBySkillId(skillid) != null;
+        }
+        
+        /**
+         * @author Thonygez
+         * @param tmp
+         * @return 
+         */
+               
+        public BuffInfo getToggleInfoBySkillId(int tmp)
+        {
+            BuffInfo info = null;
+		
+            if (hasToggles() && info == null)
+	    {
+                info = getToggles().stream().filter(b -> b.getSkill().getId() == tmp).findFirst().orElse(null);
+	    }
+            
+            return info;
+        }
+        
+        /**
+         * Returns Id of Element Stance of a player whose class is Feoh Wizard is currently active
+         * e.g Water Stance is in use by the player, so Element Stance's id will be 11008
+         * @author Thonygez
+         * @param activeChar
+         * @return 
+         */
+        public int FeohStanceToggleId(L2PcInstance activeChar)
+        { 
+            for(int tmp : Elementals.StanceList)
+            {
+                if(activeChar.getEffectList().isSkillToggleActive(tmp))
+                {
+                    return tmp;
+                }
+            }
+            return 0;
+        }
+        
+        /**
+         * Returns Which ElementSkill must be cast by the player once tt's element stance is decided.
+         * @author Thonygez
+         * @param StanceId
+         * @param activeChar
+         * @param skill
+         * @return 
+         */
+        public int getCastElementSkill(int StanceId, L2PcInstance activeChar, Skill skill)
+        {
+             switch(StanceId)
+             {
+                case Elementals.FIRE_STANCE:
+                {
+                    switch(skill.getId())
+                    {
+                        case (Elementals.ELEMENTAL_SPIKE): //Elemental Spike Works
+                        { 
+                           return Elementals.ELEMENTAL_SPIKE_FIRE;
+                        }
+                        case (Elementals.ELEMENTAL_CRASH): //Elemental Crash Works
+                        { 
+                           return Elementals.ELEMENTAL_CRASH_FIRE;
+                        }
+                        case (Elementals.ELEMENTAL_DESTRUCTION): //Elemental Destruction Works
+                        {
+                           return Elementals.ELEMENTAL_DESTRUCTION_FIRE;
+                        }
+                        case (Elementals.ELEMENTAL_BLAST): //Elemental Blast Works
+                        {
+                           return Elementals.ELEMENTAL_BLAST_FIRE;
+                        }
+                        case (Elementals.ELEMENTAL_STORM): //Elemental Storm Works
+                        {
+                           return Elementals.ELEMENTAL_STORM_FIRE;
+                        }
+                    }  
+                }
+                case Elementals.WATER_STANCE:
+                {
+                    switch(skill.getId())
+                    {
+                        case (Elementals.ELEMENTAL_SPIKE): //Elemental Spike Works
+                        { 
+                           return Elementals.ELEMENTAL_SPIKE_WATER;
+                        }
+                        case (Elementals.ELEMENTAL_CRASH): //Elemental Crash Works
+                        { 
+                           return Elementals.ELEMENTAL_CRASH_WATER;
+                        }
+                        case (Elementals.ELEMENTAL_DESTRUCTION): //Elemental Destruction Works
+                        {
+                           return Elementals.ELEMENTAL_DESTRUCTION_WATER;
+                        }
+                        case (Elementals.ELEMENTAL_BLAST): //Elemental Blast Works
+                        {
+                           return Elementals.ELEMENTAL_BLAST_WATER;
+                        }
+                        case (Elementals.ELEMENTAL_STORM): //Elemental Storm Works
+                        {
+                           return Elementals.ELEMENTAL_STORM_WATER;
+                        }
+                    }  
+                }
+                case Elementals.WIND_STANCE:
+                {
+                    switch(skill.getId())
+                    {
+                        case (Elementals.ELEMENTAL_SPIKE): //Elemental Spike Works
+                        { 
+                           return Elementals.ELEMENTAL_SPIKE_WIND;
+                        }
+                        case (Elementals.ELEMENTAL_CRASH): //Elemental Crash Works
+                        { 
+                           return Elementals.ELEMENTAL_CRASH_WIND;
+                        }
+                        case (Elementals.ELEMENTAL_DESTRUCTION): //Elemental Destruction Works
+                        {
+                           return Elementals.ELEMENTAL_DESTRUCTION_WIND;
+                        }
+                        case (Elementals.ELEMENTAL_BLAST): //Elemental Blast Works
+                        {
+                           return Elementals.ELEMENTAL_BLAST_WIND;
+                        }
+                        case (Elementals.ELEMENTAL_STORM): //Elemental Storm Works
+                        {
+                           return Elementals.ELEMENTAL_STORM_WIND;
+                        }
+                    }  
+                }
+                case Elementals.EARTH_STANCE:
+                {
+                    switch(skill.getId())
+                    {
+                        case (Elementals.ELEMENTAL_SPIKE): //Elemental Spike Works
+                        { 
+                           return Elementals.ELEMENTAL_SPIKE_EARTH;
+                        }
+                        case (Elementals.ELEMENTAL_CRASH): //Elemental Crash Works
+                        { 
+                           return Elementals.ELEMENTAL_CRASH_EARTH;
+                        }
+                        case (Elementals.ELEMENTAL_DESTRUCTION): //Elemental Destruction Works
+                        {
+                           return Elementals.ELEMENTAL_DESTRUCTION_EARTH;
+                        }
+                        case (Elementals.ELEMENTAL_BLAST): //Elemental Blast Works
+                        {
+                           return Elementals.ELEMENTAL_BLAST_EARTH;
+                        }
+                        case (Elementals.ELEMENTAL_STORM): //Elemental Storm Works
+                        {
+                           return Elementals.ELEMENTAL_STORM_EARTH;
+                        }
+                    }  
+                }
+            }
+             return 0;
+        }
+ 
 	
 	/**
 	 * Gets the buff info by skill ID.<br>
@@ -1764,4 +1934,5 @@ public final class CharEffectList
 	{
 		return (_effectFlags & flag.getMask()) != 0;
 	}
+       
 }

@@ -263,6 +263,7 @@
 		<set name="overHit" val="true" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="power" val="#power" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
@@ -295,6 +296,7 @@
 		<set name="overHit" val="true" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="power" val="#power" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
@@ -312,7 +314,7 @@
 			</effect>
 		</for>
 	</skill>
-	<skill id="11013" levels="8" name="Elemental Spike (Fire)">
+	<skill id="11013" levels="8" name="Elemental Spike (Water)">
 		<table name="#mpConsume">36 37 38 48 41 43 45 47</table>
 		<table name="#mpInitialConsume">9 9 9 12 10 10 11 11</table>
 		<table name="#ench1MpConsume">45 43 41 39 37 35 33 31 30 28</table>
@@ -334,6 +336,7 @@
 		<set name="overHit" val="true" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="power" val="#power" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
@@ -373,6 +376,7 @@
 		<set name="overHit" val="true" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="power" val="#power" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
@@ -412,6 +416,7 @@
 		<set name="overHit" val="true" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="power" val="#power" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
@@ -449,6 +454,7 @@
 		<set name="overHit" val="true" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="power" val="#power" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
@@ -485,6 +491,7 @@
 		<set name="overHit" val="true" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="power" val="#power" />
 		<set name="targetType" val="ONE" />
 		<set name="flyRadius" val="200" />
@@ -520,6 +527,7 @@
 		<set name="overHit" val="true" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="power" val="#power" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
@@ -560,6 +568,7 @@
 		<set name="overHit" val="true" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="power" val="#power" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
@@ -600,6 +609,7 @@
 		<set name="elementPower" val="80" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="power" val="#power" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
@@ -640,6 +650,7 @@
 		<set name="elementPower" val="80" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="power" val="#power" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
@@ -678,6 +689,7 @@
 		<set name="effectRange" val="1100" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="power" val="#power" />
 		<set name="targetType" val="ONE" />
 		<set name="overHit" val="true" />
@@ -697,7 +709,7 @@
 			</effect>
 		</for>
 	</skill>
-	<skill id="11023" levels="8" name="Elemental Crash" >
+	<skill id="11023" levels="8" name="Elemental Destruction" >
 		<table name="#mpConsume">100 104 108 112 117 121 126 131</table>
 		<table name="#mpInitialConsume">25 26 27 28 29 30 31 32</table>
 		<table name="#ench1MpConsume">125 120 115 110 104 99 94 89 83 78</table>
@@ -717,6 +729,7 @@
 		<set name="targetType" val="AREA" />
 		<set name="overHit" val="true" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="effectRange" val="1100" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
 		<enchant1 name="mpInitialConsume" val="#ench1MpInitialConsume" />
@@ -748,12 +761,16 @@
 		<set name="elementPower" val="100" />
 		<set name="overHit" val="true" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="effectRange" val="1100" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
 		<enchant1 name="mpInitialConsume" val="#ench1MpInitialConsume" />
 		<enchant1 name="power" val="#enchPower" />
 		<enchant2 name="pvpPower" val="#enchPower" />
 		<for>
+			<effect name="FeohStance">
+			   <param skillId="11024" skillLevel="1" />
+		    </effect>
 			<effect name="MagicalAttack" />
 		</for>
 	</skill>
@@ -779,6 +796,7 @@
 		<set name="elementPower" val="100" />
 		<set name="overHit" val="true" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="effectRange" val="1100" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
 		<enchant1 name="mpInitialConsume" val="#ench1MpInitialConsume" />
@@ -810,6 +828,7 @@
 		<set name="elementPower" val="100" />
 		<set name="overHit" val="true" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="effectRange" val="1100" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
 		<enchant1 name="mpInitialConsume" val="#ench1MpInitialConsume" />
@@ -840,6 +859,7 @@
 		<set name="elementPower" val="100" />
 		<set name="overHit" val="true" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="effectRange" val="1100" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
 		<enchant1 name="mpInitialConsume" val="#ench1MpInitialConsume" />
@@ -868,6 +888,7 @@
 		<set name="targetType" val="ONE" />
 		<set name="overHit" val="true" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="effectRange" val="1100" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
 		<enchant1 name="mpInitialConsume" val="#ench1MpInitialConsume" />
@@ -1027,6 +1048,7 @@
 		<set name="power" val="#power" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
 		<enchant1 name="mpInitialConsume" val="#ench1MpInitialConsume" />
 		<enchant1 name="power" val="#enchPower" />
@@ -1057,6 +1079,7 @@
 		<set name="isDebuff" val="true" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="power" val="#power" />
 		<set name="trait" val="DERANGEMENT" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
@@ -1090,6 +1113,7 @@
 		<set name="overHit" val="true" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="power" val="#power" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
 		<enchant1 name="mpInitialConsume" val="#ench1MpInitialConsume" />
@@ -1122,6 +1146,7 @@
 		<set name="overHit" val="true" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="power" val="#power" />
 		<set name="trait" val="KNOCKBACK" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
@@ -1155,6 +1180,7 @@
 		<set name="isDebuff" val="true" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="power" val="#power" />
 		<set name="trait" val="HOLD" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
@@ -1186,6 +1212,7 @@
 		<set name="isDebuff" val="true" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="power" val="#power" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
 		<enchant1 name="mpInitialConsume" val="#ench1MpInitialConsume" />
@@ -1216,6 +1243,7 @@
 		<set name="overHit" val="true" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="power" val="#power" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
 		<enchant1 name="mpInitialConsume" val="#ench1MpInitialConsume" />
@@ -1246,6 +1274,7 @@
 		<set name="isDebuff" val="true" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="power" val="#power" />
 		<set name="targetType" val="AREA" />
 		<set name="overHit" val="true" />
@@ -1280,6 +1309,7 @@
 		<set name="overHit" val="true" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="power" val="#power" />
 		<set name="targetType" val="AREA" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
@@ -1312,6 +1342,7 @@
 		<set name="overHit" val="true" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="power" val="#power" />
 		<set name="targetType" val="AREA" />
 		<set name="trait" val="KNOCKBACK" />
@@ -1345,6 +1376,7 @@
 		<set name="overHit" val="true" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="power" val="#power" />
 		<set name="targetType" val="AREA" />
 		<set name="trait" val="HOLD" />
@@ -1374,6 +1406,7 @@
 		<set name="effectRange" val="1100" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="5" />
 		<set name="power" val="#power" />
 		<set name="targetType" val="AREA" />
 		<set name="overHit" val="true" />
