@@ -73,18 +73,18 @@ public final class Elementals
         public static final int ELEMENTAL_STORM_WATER = 11042;
         
         //Wind Stance
-        public static final int ELEMENTAL_SPIKE_WIND = 11013;
-        public static final int ELEMENTAL_CRASH_WIND = 11019;
-        public static final int ELEMENTAL_DESTRUCTION_WIND = 11025;
-        public static final int ELEMENTAL_BLAST_WIND = 11036;
-        public static final int ELEMENTAL_STORM_WIND = 11042;
+        public static final int ELEMENTAL_SPIKE_WIND = 11014;
+        public static final int ELEMENTAL_CRASH_WIND = 11020;
+        public static final int ELEMENTAL_DESTRUCTION_WIND = 11026;
+        public static final int ELEMENTAL_BLAST_WIND = 11037;
+        public static final int ELEMENTAL_STORM_WIND = 11043;
         
         //Earth Stance
-        public static final int ELEMENTAL_SPIKE_EARTH = 11013;
-        public static final int ELEMENTAL_CRASH_EARTH = 11019;
-        public static final int ELEMENTAL_DESTRUCTION_EARTH = 11025;
-        public static final int ELEMENTAL_BLAST_EARTH = 11036;
-        public static final int ELEMENTAL_STORM_EARTH = 11042;
+        public static final int ELEMENTAL_SPIKE_EARTH = 11015;
+        public static final int ELEMENTAL_CRASH_EARTH = 11021;
+        public static final int ELEMENTAL_DESTRUCTION_EARTH = 11027;
+        public static final int ELEMENTAL_BLAST_EARTH = 11038;
+        public static final int ELEMENTAL_STORM_EARTH = 11044;
         
         
         //Feoh Element Stance Ids List
