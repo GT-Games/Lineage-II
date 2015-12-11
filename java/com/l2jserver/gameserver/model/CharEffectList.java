@@ -418,24 +418,22 @@ public final class CharEffectList
          */
         public boolean isSkillToggleActive(int skillid)
         {
-            return getToggleInfoBySkillId(skillid) != null;
+            return getFeohStanceInfoBySkillId(skillid) != null;
         }
         
         /**
          * @author Thonygez
          * @param tmp
          * @return 
-         */
-               
-        public BuffInfo getToggleInfoBySkillId(int tmp)
+         */ 
+        public BuffInfo getFeohStanceInfoBySkillId(int tmp)
         {
             BuffInfo info = null;
 		
             if (hasToggles() && info == null)
 	    {
                 info = getToggles().stream().filter(b -> b.getSkill().getId() == tmp).findFirst().orElse(null);
-	    }
-            
+	    } 
             return info;
         }
         
@@ -446,16 +444,28 @@ public final class CharEffectList
          * @param activeChar
          * @return 
          */
-        public int FeohStanceToggleId(L2PcInstance activeChar)
-        { 
-            for(int tmp : Elementals.StanceList)
-            {
+        public int FeohStanceId(L2PcInstance activeChar)
+        {   
+           for(int tmp : Elementals.StanceList)
+           {
                 if(activeChar.getEffectList().isSkillToggleActive(tmp))
                 {
                     return tmp;
                 }
-            }
-            return 0;
+           } 
+            return 0; 
+        }
+        
+        /**
+         * Verifies if Player is Under Double Cast Effect
+         * @param activeChar
+         * @return 
+         */
+        public boolean isDoubleCasting(L2PcInstance activeChar)
+        {
+            boolean tmp = activeChar.getEffectList().isAffectedBySkill(Elementals.DOUBLE_CAST);
+            
+            return tmp;
         }
         
         /**
@@ -468,8 +478,35 @@ public final class CharEffectList
          */
         public int getCastElementSkill(int StanceId, L2PcInstance activeChar, Skill skill)
         {
+            if(isDoubleCasting(activeChar))
+            { 
+                switch(skill.getId())
+                {
+                    case (Elementals.ELEMENTAL_SPIKE): //Elemental Spike Works
+                    {  
+                       return 11016;
+                    }
+                    case (Elementals.ELEMENTAL_CRASH): //Elemental Crash Works
+                    { 
+                       return 11022;
+                    }
+                    case (Elementals.ELEMENTAL_DESTRUCTION): //Elemental Destruction Works
+                    {
+                       return 11028;
+                    }
+                    case (Elementals.ELEMENTAL_BLAST): //Elemental Blast Works
+                    {
+                       return 11039;
+                    }
+                    case (Elementals.ELEMENTAL_STORM): //Elemental Storm Works
+                    {
+                       return 11045;
+                    }
+                } 
+            }
+            else
              switch(StanceId)
-             {
+             {  
                 case Elementals.FIRE_STANCE:
                 {
                     switch(skill.getId())

@@ -51,6 +51,7 @@ public final class Elementals
         public static final int WATER_STANCE = 11008;
         public static final int WIND_STANCE  = 11009;
         public static final int EARTH_STANCE = 11010;
+        public static final int DOUBLE_CAST = 11068;
         
         public static final int ELEMENTAL_SPIKE = 11011;
         public static final int ELEMENTAL_CRASH = 11017;
@@ -93,7 +94,7 @@ public final class Elementals
             FIRE_STANCE,
             WATER_STANCE,
             WIND_STANCE,
-            EARTH_STANCE,
+            EARTH_STANCE, 
         };
         
 	public static final int FIRST_WEAPON_BONUS = 20;

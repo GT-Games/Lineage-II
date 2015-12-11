@@ -127,17 +127,20 @@ public final class RequestMagicSkillUse extends L2GameClientPacket
 		}
    
                 // Assign Player's Stance Id Active 
-                int StanceId = activeChar.getEffectList().FeohStanceToggleId(activeChar);              
+                int StanceId = activeChar.getEffectList().FeohStanceId(activeChar);              
                 
                 // Assign an Elemental Skill To Be Cast
                 int ElementSkillId = activeChar.getEffectList().getCastElementSkill(StanceId, activeChar, skill); 
-                
+       
                 // Manage Feoh Wizard's Element Stance Skills.
                 if(StanceId > 0 && ElementSkillId > 0) 
-                {  
-                   activeChar.useMagic(SkillData.getInstance().getSkill(ElementSkillId, skill.getLevel()), _ctrlPressed, _shiftPressed);
-                   return;
-                }
+                {   
+                    activeChar.useMagic(SkillData.getInstance().getSkill(skill.getId(), skill.getLevel()), _ctrlPressed, _shiftPressed);
+                    activeChar.abortCast(); // Don't remove it
+                    activeChar.sendPacket(ActionFailed.STATIC_PACKET); // Don't remove it
+                    activeChar.useMagic(SkillData.getInstance().getSkill(ElementSkillId, skill.getLevel()), _ctrlPressed, _shiftPressed);
+                    return;
+                } 
                 
                 activeChar.useMagic(skill, _ctrlPressed, _shiftPressed);
 	}

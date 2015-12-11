@@ -185,8 +185,8 @@
 		<set name="magicLvl" val="85" />
 		<set name="targetType" val="SELF" />
 		<set name="operateType" val="TOGGLE" />
-		<set name="element" val="0" />
 		<set name="abnormalType" val="FEOH_STANCE" />
+		<set name="element" val="0" /> 
 		<set name="abnormalTime" val="3" />
 		<set name="canBeDispeled" val="false" />
 		<set name="stayAfterDeath" val="true" />
@@ -201,8 +201,8 @@
 		<set name="magicLvl" val="85" />
 		<set name="targetType" val="SELF" />
 		<set name="operateType" val="TOGGLE" />
-		<set name="element" val="1" />
 		<set name="abnormalType" val="FEOH_STANCE" />
+		<set name="element" val="1" /> 
 		<set name="abnormalTime" val="3" />
 		<set name="canBeDispeled" val="false" />
 		<set name="stayAfterDeath" val="true" />
@@ -217,8 +217,8 @@
 		<set name="magicLvl" val="85" />
 		<set name="targetType" val="SELF" />
 		<set name="operateType" val="TOGGLE" />
-		<set name="element" val="2" />
 		<set name="abnormalType" val="FEOH_STANCE" />
+		<set name="element" val="2" /> 
 		<set name="abnormalTime" val="3" />
 		<set name="canBeDispeled" val="false" />
 		<set name="stayAfterDeath" val="true" />
@@ -233,8 +233,8 @@
 		<set name="magicLvl" val="85" />
 		<set name="targetType" val="SELF" />
 		<set name="operateType" val="TOGGLE" />
-		<set name="element" val="3" />
 		<set name="abnormalType" val="FEOH_STANCE" />
+		<set name="element" val="3" />
 		<set name="abnormalTime" val="3" />
 		<set name="canBeDispeled" val="false" />
 		<set name="stayAfterDeath" val="true" />
@@ -258,7 +258,7 @@
 		<set name="effectPoint" val="-1" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
-		<set name="reuseDelay" val="0" />
+		<set name="reuseDelay" val="2800" />
 		<set name="effectRange" val="1100" />
 		<set name="overHit" val="true" />
 		<set name="magicLvl" val="#magicLvl" />
@@ -288,7 +288,7 @@
 		<set name="castRange" val="1100" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
-		<set name="reuseDelay" val="2000" />
+		<set name="reuseDelay" val="240" />
 		<set name="effectRange" val="1100" />
 		<set name="effectPoint" val="-1" />
 		<set name="element" val="0" />
@@ -329,7 +329,7 @@
 		<set name="effectPoint" val="-1" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
-		<set name="reuseDelay" val="2000" />
+		<set name="reuseDelay" val="2800" />
 		<set name="effectRange" val="1100" />
 		<set name="element" val="1" />
 		<set name="elementPower" val="50" />
@@ -369,7 +369,7 @@
 		<set name="effectPoint" val="-1" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
-		<set name="reuseDelay" val="2000" />
+		<set name="reuseDelay" val="2800" />
 		<set name="effectRange" val="1100" />
 		<set name="element" val="2" />
 		<set name="elementPower" val="50" />
@@ -409,7 +409,7 @@
 		<set name="effectPoint" val="-1" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
-		<set name="reuseDelay" val="2000" />
+		<set name="reuseDelay" val="2800" />
 		<set name="effectRange" val="1100" />
 		<set name="element" val="3" />
 		<set name="elementPower" val="50" />
@@ -449,7 +449,7 @@
 		<set name="effectPoint" val="-1" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
-		<set name="reuseDelay" val="2000" />
+		<set name="reuseDelay" val="2800" />
 		<set name="effectRange" val="1100" />
 		<set name="overHit" val="true" />
 		<set name="magicLvl" val="#magicLvl" />
@@ -483,7 +483,7 @@
 		<set name="hitTime" val="2780" />
 		<set name="coolTime" val="300" />
 		<set name="castRange" val="1100" />
-		<set name="reuseDelay" val="2400" />
+		<set name="reuseDelay" val="2800" />
 		<set name="effectPoint" val="-1" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
@@ -517,7 +517,7 @@
 		<set name="hitTime" val="2780" />
 		<set name="coolTime" val="300" />
 		<set name="castRange" val="1100" />
-		<set name="reuseDelay" val="2400" />
+		<set name="reuseDelay" val="2800" />
 		<set name="effectPoint" val="-1" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
@@ -558,7 +558,7 @@
 		<set name="hitTime" val="2780" />
 		<set name="coolTime" val="300" />
 		<set name="castRange" val="1100" />
-		<set name="reuseDelay" val="2400" />
+		<set name="reuseDelay" val="2800" />
 		<set name="effectPoint" val="-1" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
@@ -599,7 +599,7 @@
 		<set name="hitTime" val="2780" />
 		<set name="coolTime" val="300" />
 		<set name="castRange" val="1100" />
-		<set name="reuseDelay" val="2400" />
+		<set name="reuseDelay" val="2800" />
 		<set name="effectPoint" val="-1" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
@@ -640,7 +640,7 @@
 		<set name="hitTime" val="2780" />
 		<set name="coolTime" val="300" />
 		<set name="castRange" val="1100" />
-		<set name="reuseDelay" val="2400" />
+		<set name="reuseDelay" val="2800" />
 		<set name="effectPoint" val="-1" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
@@ -682,7 +682,7 @@
 		<set name="hitTime" val="2780" />
 		<set name="coolTime" val="300" />
 		<set name="castRange" val="1100" />
-		<set name="reuseDelay" val="2400" />
+		<set name="reuseDelay" val="2800" />
 		<set name="effectPoint" val="-1" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
@@ -768,9 +768,6 @@
 		<enchant1 name="power" val="#enchPower" />
 		<enchant2 name="pvpPower" val="#enchPower" />
 		<for>
-			<effect name="FeohStance">
-			   <param skillId="11024" skillLevel="1" />
-		    </effect>
 			<effect name="MagicalAttack" />
 		</for>
 	</skill>
@@ -2214,12 +2211,14 @@
 		<set name="icon" val="icon.skill11068" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalType" val="DOUBLE_CAST" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="hitTime" val="4000" />
 		<set name="coolTime" val="500" />
 		<set name="reuseDelay" val="180000" />
 		<set name="isMagic" val="1" />
 		<set name="targetType" val="SELF" />
+		<set name="abnormalTime" val="30" />
 	</skill>
 	<skill id="11072" levels="1" name="Fire - Elemental Spike">
 		<!-- AUTO GENERATED SKILL -->
