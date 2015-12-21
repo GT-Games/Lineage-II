@@ -42,6 +42,7 @@ import instances.JiniaGuildHideout3.JiniaGuildHideout3;
 import instances.JiniaGuildHideout4.JiniaGuildHideout4;
 import instances.Kamaloka.Kamaloka;
 import instances.KaraphonHabitat.KaraphonHabitat;
+import instances.KartiasLabyrinth.KartiasLabyrinth;
 import instances.LabyrinthOfBelis.LabyrinthOfBelis;
 import instances.LibraryOfSages.LibraryOfSages;
 import instances.MithrilMine.MithrilMine;
