@@ -245,7 +245,7 @@
 		<set name="time" val="21600" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="62" />
+			<add stat="mDef" val="62" order="0" />
 			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
@@ -264,7 +264,8 @@
 		<set name="time" val="21600" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="92" />
+			<add stat="mDef" val="92" order="0" />
+			<mul stat="mAtkSpd" val="1.04" />
 			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
@@ -363,6 +364,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="SOULSHOT" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="1350000" />
@@ -373,6 +375,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="SPIRITSHOT" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="1350000" />
@@ -383,6 +386,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="SPIRITSHOT" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="1350000" />
@@ -531,7 +535,6 @@
 		<set name="item_skill" val="13378-1" /> <!-- Enhanced Istina's Bracelet -->
 		<set name="material" val="SILVER" />
 		<set name="weight" val="150" />
-		<for/>
 	</item>
 	<item id="34860" name="Enhanced Octavis' Bracelet" type="Armor">
 		<!-- Octavis' Bracelet with refined abilities. Activates 5 talisman slots when equipped. MP + 216, Dex + 1, and Wit + 1. -->
@@ -548,7 +551,6 @@
 		<set name="item_skill" val="13379-1" /> <!-- Enhanced Octavis' Bracelet -->
 		<set name="material" val="SILVER" />
 		<set name="weight" val="150" />
-		<for/>
 	</item>
 	<item id="34861" name="Ingredient and Hardener Pouch (R-grade)" type="EtcItem">
 		<!-- Pouch containing R-grade rafting ingredients and hardener -->
@@ -661,7 +663,7 @@
 		<set name="material" val="CLOTH" />
 		<set name="weight" val="440" />
 		<for>
-			<add order="0" stat="pDef" val="19" />
+			<add stat="pDef" val="19" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -677,7 +679,7 @@
 		<set name="material" val="CLOTH" />
 		<set name="weight" val="440" />
 		<for>
-			<add order="0" stat="pDef" val="19" />
+			<add stat="pDef" val="19" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -693,7 +695,7 @@
 		<set name="material" val="CLOTH" />
 		<set name="weight" val="440" />
 		<for>
-			<add order="0" stat="pDef" val="19" />
+			<add stat="pDef" val="19" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -709,7 +711,7 @@
 		<set name="material" val="CLOTH" />
 		<set name="weight" val="440" />
 		<for>
-			<add order="0" stat="pDef" val="19" />
+			<add stat="pDef" val="19" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -725,7 +727,7 @@
 		<set name="material" val="CLOTH" />
 		<set name="weight" val="440" />
 		<for>
-			<add order="0" stat="pDef" val="19" />
+			<add stat="pDef" val="19" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -741,7 +743,7 @@
 		<set name="material" val="CLOTH" />
 		<set name="weight" val="440" />
 		<for>
-			<add order="0" stat="pDef" val="19" />
+			<add stat="pDef" val="19" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -757,7 +759,7 @@
 		<set name="material" val="CLOTH" />
 		<set name="weight" val="440" />
 		<for>
-			<add order="0" stat="pDef" val="19" />
+			<add stat="pDef" val="19" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -773,7 +775,7 @@
 		<set name="material" val="CLOTH" />
 		<set name="weight" val="440" />
 		<for>
-			<add order="0" stat="pDef" val="19" />
+			<add stat="pDef" val="19" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -973,6 +975,7 @@
 	<item id="34896" name="Rabbit Ears" additionalName="Campaign" type="Armor">
 		<!-- When equipped, STR + 3, DEX + 1, CON + 1, P. Evasion + 1, and M. Evasion + 1. -->
 		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="bodypart" val="hairall" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
@@ -981,6 +984,12 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="WOOD" />
 		<set name="weight" val="10" />
+		<for>
+			<add stat="STR" val="3" />
+			<add stat="DEX" val="1" />
+			<add stat="CON" val="1" />
+			<add stat="pSkillEvas" val="1" />
+		</for>
 	</item>
 	<item id="34897" name="Angel Circlet" additionalName="Campaign" type="Armor">
 		<!-- Increases INT + 3, WIT + 1, MEN + 1, Physical Attack Resistance + 1, and Mental Attack Resistance + 1. -->
@@ -994,6 +1003,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="STEEL" />
 		<set name="weight" val="10" />
+		<for>
+			<add stat="INT" val="3" />
+			<add stat="WIT" val="1" />
+			<add stat="MEN" val="1" />
+		</for>
 	</item>
 	<item id="34898" name="Proof of Survival" type="EtcItem">
 		<!-- Someone who possesses the Proof of Survival can be suddenly challenged by the rare monster Scaldisect of Hellfire. Always be prepared for the attack. -->

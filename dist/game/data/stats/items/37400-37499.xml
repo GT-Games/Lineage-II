@@ -902,6 +902,7 @@
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_dropable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="item_skill" val="3036-1" /> <!-- Special Ability: Haste -->
@@ -913,9 +914,9 @@
 		<set name="weight" val="1300" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="189" />
 			<set stat="pAtk" val="435" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="37477" name="Awakened Warrior's Cleaver" additionalName="Haste" type="Weapon">
@@ -926,6 +927,7 @@
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_dropable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="item_skill" val="3036-1" /> <!-- Special Ability: Haste -->
@@ -937,9 +939,9 @@
 		<set name="weight" val="1300" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="189" />
 			<set stat="pAtk" val="529" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="37478" name="Awakened Warrior's Axe" additionalName="Haste" type="Weapon">
@@ -950,6 +952,7 @@
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_dropable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="item_skill" val="3036-1" /> <!-- Special Ability: Haste -->
@@ -962,9 +965,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="189" />
 			<set stat="pAtk" val="435" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="37479" name="Awakened Warrior's Rod" additionalName="Acumen" type="Weapon">
@@ -975,6 +978,7 @@
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_dropable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="item_skill" val="3047-1" /> <!-- Special Ability: Acumen -->
@@ -987,9 +991,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="252" />
 			<set stat="pAtk" val="348" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="37480" name="Awakened Warrior's Crusher" additionalName="Haste" type="Weapon">
@@ -1000,6 +1004,7 @@
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_dropable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="item_skill" val="3036-1" /> <!-- Special Ability: Haste -->
@@ -1012,9 +1017,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="230" />
 			<set stat="pAtk" val="643" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="37481" name="Awakened Warrior's Scepter" additionalName="Acumen" type="Weapon">
@@ -1025,6 +1030,7 @@
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_dropable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="item_skill" val="3047-1" /> <!-- Special Ability: Acumen -->
@@ -1037,9 +1043,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="278" />
 			<set stat="pAtk" val="423" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="37482" name="Awakened Warrior's Stinger" additionalName="Haste" type="Weapon">
@@ -1050,6 +1056,7 @@
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_dropable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="item_skill" val="3036-1" /> <!-- Special Ability: Haste -->
@@ -1060,11 +1067,11 @@
 		<set name="weapon_type" val="DAGGER" />
 		<set name="weight" val="1300" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="189" />
-			<set stat="pAtk" val="380" />
 			<set stat="pAtkSpd" val="433" />
+			<set stat="pAtk" val="380" />
+			<set stat="mAtk" val="189" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="37483" name="Awakened Warrior's Fang" additionalName="Haste" type="Weapon">
@@ -1075,6 +1082,7 @@
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_dropable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="item_skill" val="3036-1" /> <!-- Special Ability: Haste -->
@@ -1087,9 +1095,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="189" />
 			<set stat="pAtk" val="529" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="37484" name="Awakened Warrior's Bow" additionalName="Haste" type="Weapon">
@@ -1100,6 +1108,7 @@
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_dropable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="item_skill" val="3036-1" /> <!-- Special Ability: Haste -->
@@ -1111,11 +1120,11 @@
 		<set name="weapon_type" val="BOW" />
 		<set name="weight" val="1300" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="189" />
-			<set stat="pAtk" val="856" />
 			<set stat="pAtkSpd" val="293" />
+			<set stat="pAtk" val="856" />
+			<set stat="mAtk" val="189" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="37485" name="Awakened Warrior's Wing" additionalName="Haste" type="Weapon">
@@ -1126,6 +1135,7 @@
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_dropable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="item_skill" val="3036-1" /> <!-- Special Ability: Haste -->
@@ -1137,9 +1147,9 @@
 		<set name="weight" val="1300" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="189" />
 			<set stat="pAtk" val="529" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="37486" name="Awakened Warrior's Spear" additionalName="Haste" type="Weapon">
@@ -1150,6 +1160,7 @@
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_dropable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="item_skill" val="3036-1" /> <!-- Special Ability: Haste -->
@@ -1160,11 +1171,11 @@
 		<set name="weapon_type" val="POLE" />
 		<set name="weight" val="1300" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="8" />
-			<set stat="mAtk" val="189" />
-			<set stat="pAtk" val="435" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="435" />
+			<set stat="mAtk" val="189" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="37487" name="Awakened Warrior's Rapier" additionalName="Haste" type="Weapon">
@@ -1175,6 +1186,7 @@
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_dropable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="item_skill" val="3036-1" /> <!-- Special Ability: Haste -->
@@ -1185,11 +1197,11 @@
 		<set name="weapon_type" val="RAPIER" />
 		<set name="weight" val="1300" />
 		<for>
-			<add stat="accCombat" val="-1.5" />
 			<add stat="critRate" val="10" />
-			<set stat="mAtk" val="230" />
-			<set stat="pAtk" val="479" />
 			<set stat="pAtkSpd" val="406" />
+			<set stat="pAtk" val="479" />
+			<set stat="mAtk" val="230" />
+			<sub stat="accCombat" val="1.5" />
 		</for>
 	</item>
 	<item id="37488" name="Awakened Warrior's Sword" additionalName="Haste" type="Weapon">
@@ -1200,6 +1212,7 @@
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_dropable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="item_skill" val="3036-1" /> <!-- Special Ability: Haste -->
@@ -1212,9 +1225,9 @@
 		<for>
 			<add stat="accCombat" val="2" />
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="350" />
 			<set stat="mAtk" val="230" />
 			<set stat="pAtk" val="572" />
-			<set stat="pAtkSpd" val="350" />
 		</for>
 	</item>
 	<item id="37489" name="Awakened Warrior's Shooter" additionalName="Haste" type="Weapon">
@@ -1225,6 +1238,7 @@
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_dropable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="item_skill" val="3036-1" /> <!-- Special Ability: Haste -->
@@ -1235,11 +1249,11 @@
 		<set name="weapon_type" val="CROSSBOW" />
 		<set name="weight" val="1300" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="189" />
-			<set stat="pAtk" val="771" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="771" />
+			<set stat="mAtk" val="189" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="37490" name="Awakened Warrior's Weapon Ticket" type="EtcItem">
@@ -1261,6 +1275,7 @@
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
 		<set name="is_dropable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
@@ -1274,6 +1289,7 @@
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
 		<set name="is_dropable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
@@ -1339,6 +1355,7 @@
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
 		<set name="is_dropable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />

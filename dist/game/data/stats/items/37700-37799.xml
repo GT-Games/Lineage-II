@@ -17,11 +17,11 @@
 		<set name="weapon_type" val="DUALDAGGER" />
 		<set name="weight" val="500" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="414" />
-			<set stat="pAtk" val="752" />
 			<set stat="pAtkSpd" val="433" />
+			<set stat="pAtk" val="752" />
+			<set stat="mAtk" val="414" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="37701" name="Valentine Dual Blunt Weapon" type="Weapon">
@@ -43,9 +43,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="414" />
 			<set stat="pAtk" val="916" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="37702" name="Valentine Shield" type="Armor">
@@ -59,9 +59,9 @@
 		<set name="price" val="88681000" />
 		<set name="weight" val="1130" />
 		<for>
-			<sub stat="rEvas" val="-8" />
 			<set stat="rShld" val="20" />
 			<set stat="sDef" val="546" />
+			<sub stat="rEvas" val="8" />
 			<enchant stat="sDef" val="0" />
 		</for>
 	</item>
@@ -77,7 +77,7 @@
 		<set name="price" val="88681000" />
 		<set name="weight" val="920" />
 		<for>
-			<add order="0" stat="pDef" val="150" />
+			<add stat="pDef" val="150" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -251,59 +251,55 @@
 		<set name="material" val="CRYSTAL" />
 		<set name="weight" val="130" />
 		<for>
-			<add order="0" stat="pDef" val="28" />
+			<add stat="pDef" val="28" order="0" />
 		</for>
 	</item>
 	<item id="37719" name="Pa'agrio's Special Pack" type="EtcItem">
 		<!-- Wrapped Pack containing Pa'agrio's Shirt. There is also a low chance or acquiring a Shiny Elemental Shirt. . . Warning: The shirt acquired after opening the box is restored to the character and cannot be moved. -->
 		<set name="icon" val="icon.shirt_special_box_i02" />
+		<set name="capsuled_items" val="34623,1,1,100;37718,1,1,5" /> <!-- Pa'agrio's Shirt, Shiny Elemental Shirt -->
 		<set name="default_action" val="CAPSULE" />
-		<set name="capsuled_items" val="34623,1,1,100;37718,1,1,5" />
 		<set name="handler" val="ExtractableItems" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="is_tradable" val="false" />
 		<set name="material" val="FISH" />
 	</item>
 	<item id="37720" name="Maphr's Special Pack" type="EtcItem">
 		<!-- Wrapped Pack containing Maphr's Shirt. There is also a low chance or acquiring a Shiny Elemental Shirt. . . Warning: The shirt acquired after opening the box is restored to the character and cannot be moved. -->
 		<set name="icon" val="icon.shirt_special_box_i01" />
+		<set name="capsuled_items" val="34626,1,1,100;37718,1,1,5" /> <!-- Maphr's Shirt, Shiny Elemental Shirt -->
 		<set name="default_action" val="CAPSULE" />
-		<set name="capsuled_items" val="34626,1,1,100;37718,1,1,5" />
 		<set name="handler" val="ExtractableItems" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="is_tradable" val="false" />
 		<set name="material" val="FISH" />
 	</item>
 	<item id="37721" name="Sayha's Special Pack" type="EtcItem">
 		<!-- Wrapped Pack containing Sayha's Shirt. There is also a low chance or acquiring a Shiny Elemental Shirt. . . Warning: The shirt acquired after opening the box is restored to the character and cannot be moved. -->
 		<set name="icon" val="icon.shirt_special_box_i03" />
+		<set name="capsuled_items" val="34624,1,1,100;37718,1,1,5" /> <!-- Sayha's Shirt, Shiny Elemental Shirt -->
 		<set name="default_action" val="CAPSULE" />
-		<set name="capsuled_items" val="34624,1,1,100;37718,1,1,5" />
 		<set name="handler" val="ExtractableItems" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="is_tradable" val="false" />
 		<set name="material" val="FISH" />
 	</item>
 	<item id="37722" name="Eva's Special Pack" type="EtcItem">
 		<!-- Wrapped Pack containing Eva's Shirt. There is also a low chance or acquiring a Shiny Elemental Shirt. . . Warning: The shirt acquired after opening the box is restored to the character and cannot be moved. -->
 		<set name="icon" val="icon.shirt_special_box_i00" />
+		<set name="capsuled_items" val="34625,1,1,100;37718,1,1,5" /> <!-- Eva's Shirt, Shiny Elemental Shirt -->
 		<set name="default_action" val="CAPSULE" />
-		<set name="capsuled_items" val="34625,1,1,100;37718,1,1,5" />
 		<set name="handler" val="ExtractableItems" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="is_tradable" val="false" />
 		<set name="material" val="FISH" />
 	</item>
 	<item id="37723" name="Shiny Elemental Shirt Exchange Stone" type="EtcItem">
@@ -413,8 +409,8 @@
 		<set name="time" val="10080" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="170" />
 			<add stat="maxMp" val="59" />
+			<add stat="mDef" val="170" order="0" />
 		</for>
 	</item>
 	<item id="37733" name="Blessed Valakas' Necklace" additionalName="7-day" type="Armor">
@@ -431,8 +427,13 @@
 		<set name="time" val="10080" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="226" />
+			<add stat="INT" val="3" />
+			<add stat="STR" val="3" />
+			<add stat="fireRes" val="30" />
+			<add stat="darkRes" val="20" />
+			<add stat="maxHp" val="625" />
 			<add stat="maxMp" val="79" />
+			<add stat="mDef" val="226" order="0" />
 		</for>
 	</item>
 	<item id="37734" name="Tauti's Ring" additionalName="7-day" type="Armor">
@@ -449,7 +450,8 @@
 		<set name="time" val="10080" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="108" />
+			<add stat="darkRes" val="25" />
+			<add stat="mDef" val="108" order="0" />
 		</for>
 	</item>
 	<item id="37735" name="Earth Wyrm Heart Ring" additionalName="7-day" type="Armor">
@@ -466,7 +468,7 @@
 		<set name="time" val="10080" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="108" />
+			<add stat="mDef" val="108" order="0" />
 		</for>
 	</item>
 	<item id="37736" name="Blessed Zaken's Earring" additionalName="7-day" type="Armor">
@@ -483,8 +485,9 @@
 		<set name="time" val="10080" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="94" />
+			<add stat="darkRes" val="15" />
 			<add stat="maxMp" val="37" />
+			<add stat="mDef" val="94" order="0" />
 		</for>
 	</item>
 	<item id="37737" name="Ruler's Authority" additionalName="7-day" type="Armor">
@@ -500,7 +503,8 @@
 		<set name="time" val="10080" />
 		<set name="weight" val="440" />
 		<for>
-			<add order="0" stat="pDef" val="50" />
+			<add stat="pDef" val="50" order="0" />
+			<mul stat="receivedDamageModifier" val="0.91" />
 		</for>
 	</item>
 	<item id="37738" name="Test Soulshot (D-grade)" additionalName="Not in Use" type="EtcItem">
@@ -762,7 +766,7 @@
 		<!-- A cloak that symbolizes the Exalted status. STR/DEX/CON/INT/WIT/MEN/LUC/CHA +1. -->
 		<set name="icon" val="icon.cloak_noblesse2_i00" />
 		<set name="bodypart" val="back" />
-		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="commissionItemType" val="CLOAK" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -772,8 +776,16 @@
 		<set name="material" val="CLOTH" />
 		<set name="weight" val="220" />
 		<for>
-			<add stat="mDef" val="40" />
-			<add order="0" stat="pDef" val="50" />
+			<add stat="CHA" val="1" />
+			<add stat="CON" val="1" />
+			<add stat="DEX" val="1" />
+			<add stat="INT" val="1" />
+			<add stat="LUC" val="1" />
+			<add stat="MEN" val="1" />
+			<add stat="STR" val="1" />
+			<add stat="WIT" val="1" />
+			<add stat="pDef" val="50" order="0" />
+			<add stat="mDef" val="40" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -879,6 +891,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="526757" />
@@ -889,6 +902,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="7063796" />
@@ -899,6 +913,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="15565904" />
@@ -963,6 +978,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="137185" />
@@ -973,6 +989,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="1916298" />
@@ -983,6 +1000,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="4222784" />
@@ -1065,6 +1083,7 @@
 		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i01" />
 		<set name="commissionItemType" val="POTION" />
 		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="10" />
@@ -1074,6 +1093,7 @@
 		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i06" />
 		<set name="commissionItemType" val="POTION" />
 		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="10" />
@@ -1083,6 +1103,7 @@
 		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i00" />
 		<set name="commissionItemType" val="POTION" />
 		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="10" />
@@ -1092,6 +1113,7 @@
 		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i07" />
 		<set name="commissionItemType" val="POTION" />
 		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="10" />
@@ -1101,6 +1123,7 @@
 		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i04" />
 		<set name="commissionItemType" val="POTION" />
 		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="10" />
@@ -1110,6 +1133,7 @@
 		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i05" />
 		<set name="commissionItemType" val="POTION" />
 		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="10" />
@@ -1119,6 +1143,7 @@
 		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i02" />
 		<set name="commissionItemType" val="POTION" />
 		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="10" />
@@ -1128,6 +1153,7 @@
 		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i10" />
 		<set name="commissionItemType" val="POTION" />
 		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="10" />

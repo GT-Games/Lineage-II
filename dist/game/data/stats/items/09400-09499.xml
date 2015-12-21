@@ -260,7 +260,7 @@
 		<set name="price" val="24398000" />
 		<set name="weight" val="7570" />
 		<for>
-			<add order="0" stat="pDef" val="226" />
+			<add stat="pDef" val="226" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -285,7 +285,7 @@
 			</and>
 		</cond>
 		<for>
-			<add order="0" stat="pDef" val="226" />
+			<add stat="pDef" val="226" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -310,7 +310,7 @@
 			</and>
 		</cond>
 		<for>
-			<add order="0" stat="pDef" val="226" />
+			<add stat="pDef" val="226" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -335,7 +335,7 @@
 			</and>
 		</cond>
 		<for>
-			<add order="0" stat="pDef" val="226" />
+			<add stat="pDef" val="226" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -360,7 +360,7 @@
 			</and>
 		</cond>
 		<for>
-			<add order="0" stat="pDef" val="226" />
+			<add stat="pDef" val="226" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -379,7 +379,7 @@
 		<set name="price" val="15248000" />
 		<set name="weight" val="3210" />
 		<for>
-			<add order="0" stat="pDef" val="141" />
+			<add stat="pDef" val="141" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -397,7 +397,7 @@
 		<set name="price" val="9149000" />
 		<set name="weight" val="530" />
 		<for>
-			<add order="0" stat="pDef" val="92" />
+			<add stat="pDef" val="92" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -415,7 +415,7 @@
 		<set name="price" val="6099000" />
 		<set name="weight" val="520" />
 		<for>
-			<add order="0" stat="pDef" val="61" />
+			<add stat="pDef" val="61" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -433,7 +433,7 @@
 		<set name="price" val="6099000" />
 		<set name="weight" val="1090" />
 		<for>
-			<add order="0" stat="pDef" val="61" />
+			<add stat="pDef" val="61" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -452,7 +452,7 @@
 		<set name="price" val="18298000" />
 		<set name="weight" val="4180" />
 		<for>
-			<add order="0" stat="pDef" val="170" />
+			<add stat="pDef" val="170" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -475,7 +475,7 @@
 			<player categoryType="DAGGER_MASTER" />
 		</cond>
 		<for>
-			<add order="0" stat="pDef" val="170" />
+			<add stat="pDef" val="170" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -498,7 +498,7 @@
 			<player categoryType="BOW_MASTER" />
 		</cond>
 		<for>
-			<add order="0" stat="pDef" val="170" />
+			<add stat="pDef" val="170" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -517,7 +517,7 @@
 		<set name="price" val="11436000" />
 		<set name="weight" val="1370" />
 		<for>
-			<add order="0" stat="pDef" val="106" />
+			<add stat="pDef" val="106" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -535,7 +535,7 @@
 		<set name="price" val="9149000" />
 		<set name="weight" val="530" />
 		<for>
-			<add order="0" stat="pDef" val="92" />
+			<add stat="pDef" val="92" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -553,7 +553,7 @@
 		<set name="price" val="6099000" />
 		<set name="weight" val="520" />
 		<for>
-			<add order="0" stat="pDef" val="61" />
+			<add stat="pDef" val="61" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -571,7 +571,7 @@
 		<set name="price" val="6099000" />
 		<set name="weight" val="1090" />
 		<for>
-			<add order="0" stat="pDef" val="61" />
+			<add stat="pDef" val="61" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -590,7 +590,7 @@
 		<set name="price" val="18298000" />
 		<set name="weight" val="1780" />
 		<for>
-			<add order="0" stat="pDef" val="113" />
+			<add stat="pDef" val="113" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -615,7 +615,7 @@
 			</and>
 		</cond>
 		<for>
-			<add order="0" stat="pDef" val="113" />
+			<add stat="pDef" val="113" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -640,7 +640,7 @@
 			</and>
 		</cond>
 		<for>
-			<add order="0" stat="pDef" val="113" />
+			<add stat="pDef" val="113" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -665,7 +665,7 @@
 			</and>
 		</cond>
 		<for>
-			<add order="0" stat="pDef" val="113" />
+			<add stat="pDef" val="113" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -690,7 +690,7 @@
 			</and>
 		</cond>
 		<for>
-			<add order="0" stat="pDef" val="113" />
+			<add stat="pDef" val="113" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -709,7 +709,7 @@
 		<set name="price" val="11436000" />
 		<set name="weight" val="860" />
 		<for>
-			<add order="0" stat="pDef" val="71" />
+			<add stat="pDef" val="71" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -727,7 +727,7 @@
 		<set name="price" val="9149000" />
 		<set name="weight" val="530" />
 		<for>
-			<add order="0" stat="pDef" val="92" />
+			<add stat="pDef" val="92" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -745,7 +745,7 @@
 		<set name="price" val="6099000" />
 		<set name="weight" val="520" />
 		<for>
-			<add order="0" stat="pDef" val="61" />
+			<add stat="pDef" val="61" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -763,7 +763,7 @@
 		<set name="price" val="6099000" />
 		<set name="weight" val="1090" />
 		<for>
-			<add order="0" stat="pDef" val="61" />
+			<add stat="pDef" val="61" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -779,10 +779,10 @@
 		<set name="price" val="6404000" />
 		<set name="weight" val="1150" />
 		<for>
-			<sub stat="rEvas" val="-8" />
 			<set stat="rShld" val="20" />
 			<set stat="sDef" val="321" />
-			<enchant val="0" stat="sDef" />
+			<sub stat="rEvas" val="8" />
+			<enchant stat="sDef" val="0" />
 		</for>
 	</item>
 	<item id="9442" name="Dynasty Sword" type="Weapon">
@@ -808,11 +808,11 @@
 		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
-			<enchant val="0" stat="mAtk" />
-			<set stat="mAtk" val="151" />
-			<enchant val="0" stat="pAtk" />
-			<set stat="pAtk" val="333" />
 			<set stat="pAtkSpd" val="379" />
+			<set stat="mAtk" val="151" />
+			<set stat="pAtk" val="333" />
+			<enchant stat="mAtk" val="0" />
+			<enchant stat="pAtk" val="0" />
 		</for>
 	</item>
 	<item id="9443" name="Dynasty Blade" type="Weapon">
@@ -838,11 +838,11 @@
 		<set name="weight" val="1740" />
 		<for>
 			<add stat="critRate" val="8" />
-			<enchant val="0" stat="mAtk" />
-			<set stat="mAtk" val="151" />
-			<enchant val="0" stat="pAtk" />
-			<set stat="pAtk" val="405" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="mAtk" val="151" />
+			<set stat="pAtk" val="405" />
+			<enchant stat="mAtk" val="0" />
+			<enchant stat="pAtk" val="0" />
 		</for>
 	</item>
 	<item id="9444" name="Dynasty Phantom" type="Weapon">
@@ -868,11 +868,11 @@
 		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
-			<enchant val="0" stat="mAtk" />
-			<set stat="mAtk" val="202" />
-			<enchant val="0" stat="pAtk" />
-			<set stat="pAtk" val="267" />
 			<set stat="pAtkSpd" val="379" />
+			<set stat="mAtk" val="202" />
+			<set stat="pAtk" val="267" />
+			<enchant stat="mAtk" val="0" />
+			<enchant stat="pAtk" val="0" />
 		</for>
 	</item>
 	<item id="9445" name="Dynasty Bow" type="Weapon">
@@ -899,13 +899,13 @@
 		<set name="weapon_type" val="BOW" />
 		<set name="weight" val="1520" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<enchant val="0" stat="mAtk" />
-			<set stat="mAtk" val="151" />
-			<enchant val="0" stat="pAtk" />
-			<set stat="pAtk" val="654" />
 			<set stat="pAtkSpd" val="293" />
+			<set stat="pAtk" val="654" />
+			<set stat="mAtk" val="151" />
+			<sub stat="accCombat" val="3.75" />
+			<enchant stat="mAtk" val="0" />
+			<enchant stat="pAtk" val="0" />
 		</for>
 	</item>
 	<item id="9446" name="Dynasty Knife" type="Weapon">
@@ -929,13 +929,13 @@
 		<set name="weapon_type" val="DAGGER" />
 		<set name="weight" val="1520" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<enchant val="0" stat="mAtk" />
-			<set stat="mAtk" val="151" />
-			<enchant val="0" stat="pAtk" />
-			<set stat="pAtk" val="291" />
 			<set stat="pAtkSpd" val="433" />
+			<set stat="pAtk" val="291" />
+			<set stat="mAtk" val="151" />
+			<sub stat="accCombat" val="3.75" />
+			<enchant stat="mAtk" val="0" />
+			<enchant stat="pAtk" val="0" />
 		</for>
 	</item>
 	<item id="9447" name="Dynasty Halberd" type="Weapon">
@@ -960,13 +960,13 @@
 		<set name="weapon_type" val="POLE" />
 		<set name="weight" val="2010" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="8" />
-			<enchant val="0" stat="mAtk" />
-			<set stat="mAtk" val="151" />
-			<enchant val="0" stat="pAtk" />
-			<set stat="pAtk" val="333" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="333" />
+			<set stat="mAtk" val="151" />
+			<sub stat="accCombat" val="3.75" />
+			<enchant stat="mAtk" val="0" />
+			<enchant stat="pAtk" val="0" />
 		</for>
 	</item>
 	<item id="9448" name="Dynasty Cudgel" type="Weapon">
@@ -992,11 +992,11 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
-			<enchant val="0" stat="mAtk" />
-			<set stat="mAtk" val="151" />
-			<enchant val="0" stat="pAtk" />
-			<set stat="pAtk" val="333" />
 			<set stat="pAtkSpd" val="379" />
+			<set stat="mAtk" val="151" />
+			<set stat="pAtk" val="333" />
+			<enchant stat="mAtk" val="0" />
+			<enchant stat="pAtk" val="0" />
 		</for>
 	</item>
 	<item id="9449" name="Dynasty Mace" type="Weapon">
@@ -1023,11 +1023,11 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
-			<enchant val="0" stat="mAtk" />
-			<set stat="mAtk" val="202" />
-			<enchant val="0" stat="pAtk" />
-			<set stat="pAtk" val="267" />
 			<set stat="pAtkSpd" val="379" />
+			<set stat="mAtk" val="202" />
+			<set stat="pAtk" val="267" />
+			<enchant stat="mAtk" val="0" />
+			<enchant stat="pAtk" val="0" />
 		</for>
 	</item>
 	<item id="9450" name="Dynasty Bagh-Nakh" type="Weapon">
@@ -1053,11 +1053,11 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
-			<enchant val="0" stat="mAtk" />
-			<set stat="mAtk" val="151" />
-			<enchant val="0" stat="pAtk" />
-			<set stat="pAtk" val="405" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="mAtk" val="151" />
+			<set stat="pAtk" val="405" />
+			<enchant stat="mAtk" val="0" />
+			<enchant stat="pAtk" val="0" />
 		</for>
 	</item>
 	<item id="9451" name="Dynastic Essence" type="EtcItem">
@@ -1084,9 +1084,9 @@
 		<set name="price" val="4032000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="71" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="50" />
+			<add stat="mDef" val="71" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="9453" name="Sealed Dynasty Necklace" type="Armor">
@@ -1103,9 +1103,9 @@
 		<set name="price" val="5376000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="95" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="46" />
+			<add stat="mDef" val="95" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="9454" name="Sealed Dynasty Ring" type="Armor">
@@ -1122,7 +1122,7 @@
 		<set name="price" val="2688000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="53" />
+			<add stat="mDef" val="53" order="0" />
 			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
@@ -1140,9 +1140,9 @@
 		<set name="price" val="5956000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="79" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="35" />
+			<add stat="mDef" val="79" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="9456" name="Dynasty Necklace" type="Armor">
@@ -1159,9 +1159,9 @@
 		<set name="price" val="7942000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="106" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="46" />
+			<add stat="mDef" val="106" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="9457" name="Dynasty Ring" type="Armor">
@@ -1178,7 +1178,7 @@
 		<set name="price" val="3971000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="60" />
+			<add stat="mDef" val="60" order="0" />
 			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
@@ -1197,9 +1197,9 @@
 		<set name="price" val="5956000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="27" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="35" />
+			<add stat="mDef" val="27" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="9459" name="Dynasty Necklace" additionalName="Stun Resistance" type="Armor">
@@ -1217,9 +1217,9 @@
 		<set name="price" val="7942000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="36" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="46" />
+			<add stat="mDef" val="36" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="9460" name="Dynasty Ring" additionalName="Stun Resistance" type="Armor">
@@ -1237,7 +1237,7 @@
 		<set name="price" val="3971000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="18" />
+			<add stat="mDef" val="18" order="0" />
 			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
@@ -1256,9 +1256,9 @@
 		<set name="price" val="5956000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="27" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="35" />
+			<add stat="mDef" val="27" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="9462" name="Dynasty Necklace" additionalName="Poison Resistance" type="Armor">
@@ -1276,9 +1276,9 @@
 		<set name="price" val="7942000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="36" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="46" />
+			<add stat="mDef" val="36" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="9463" name="Dynasty Ring" additionalName="Poison Resistance" type="Armor">
@@ -1296,7 +1296,7 @@
 		<set name="price" val="3971000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="18" />
+			<add stat="mDef" val="18" order="0" />
 			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
@@ -1315,9 +1315,9 @@
 		<set name="price" val="5956000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="27" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="35" />
+			<add stat="mDef" val="27" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="9465" name="Dynasty Necklace" additionalName="Bleed Resistance" type="Armor">
@@ -1335,9 +1335,9 @@
 		<set name="price" val="7942000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="36" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="46" />
+			<add stat="mDef" val="36" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="9466" name="Dynasty Ring" additionalName="Bleed Resistance" type="Armor">
@@ -1355,7 +1355,7 @@
 		<set name="price" val="3971000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="18" />
+			<add stat="mDef" val="18" order="0" />
 			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
@@ -1374,9 +1374,9 @@
 		<set name="price" val="5956000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="27" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="35" />
+			<add stat="mDef" val="27" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="9468" name="Dynasty Necklace" additionalName="Sleep Resistance" type="Armor">
@@ -1394,9 +1394,9 @@
 		<set name="price" val="7942000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="36" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="46" />
+			<add stat="mDef" val="36" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="9469" name="Dynasty Ring" additionalName="Sleep Resistance" type="Armor">
@@ -1414,7 +1414,7 @@
 		<set name="price" val="3971000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="18" />
+			<add stat="mDef" val="18" order="0" />
 			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
@@ -1433,9 +1433,9 @@
 		<set name="price" val="5956000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="27" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="35" />
+			<add stat="mDef" val="27" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="9471" name="Dynasty Necklace" additionalName="Paralysis Resistance" type="Armor">
@@ -1453,9 +1453,9 @@
 		<set name="price" val="7942000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="36" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="46" />
+			<add stat="mDef" val="36" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="9472" name="Dynasty Ring" additionalName="Paralysis Resistance" type="Armor">
@@ -1473,7 +1473,7 @@
 		<set name="price" val="3971000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="18" />
+			<add stat="mDef" val="18" order="0" />
 			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
@@ -1492,9 +1492,9 @@
 		<set name="price" val="5956000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="27" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="35" />
+			<add stat="mDef" val="27" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="9474" name="Dynasty Necklace" additionalName="Hold Resistance" type="Armor">
@@ -1512,9 +1512,9 @@
 		<set name="price" val="7942000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="36" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="46" />
+			<add stat="mDef" val="36" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="9475" name="Dynasty Ring" additionalName="Hold Resistance" type="Armor">
@@ -1532,7 +1532,7 @@
 		<set name="price" val="3971000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="18" />
+			<add stat="mDef" val="18" order="0" />
 			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
@@ -1551,9 +1551,9 @@
 		<set name="price" val="5956000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="27" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="35" />
+			<add stat="mDef" val="27" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="9477" name="Dynasty Necklace" additionalName="Fear Resistance" type="Armor">
@@ -1571,9 +1571,9 @@
 		<set name="price" val="7942000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="36" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="46" />
+			<add stat="mDef" val="36" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="9478" name="Dynasty Ring" additionalName="Fear Resistance" type="Armor">
@@ -1591,7 +1591,7 @@
 		<set name="price" val="3971000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="18" />
+			<add stat="mDef" val="18" order="0" />
 			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
@@ -1609,9 +1609,10 @@
 		<set name="price" val="5956000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="27" />
-			<enchant stat="mDef" val="0" />
+			<add stat="darkRes" val="6" />
 			<add stat="maxMp" val="35" />
+			<add stat="mDef" val="27" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="9480" name="Dynasty Necklace (Not in Use)" additionalName="Dark Resistance" type="Armor">
@@ -1628,9 +1629,10 @@
 		<set name="price" val="7942000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="36" />
-			<enchant stat="mDef" val="0" />
+			<add stat="darkRes" val="7" />
 			<add stat="maxMp" val="46" />
+			<add stat="mDef" val="36" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="9481" name="Dynasty Ring (Not in Use)" additionalName="Dark Resistance" type="Armor">
@@ -1647,7 +1649,8 @@
 		<set name="price" val="3971000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="18" />
+			<add stat="darkRes" val="5" />
+			<add stat="mDef" val="18" order="0" />
 			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
@@ -1881,6 +1884,7 @@
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="immediate_effect" val="true" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
@@ -1894,6 +1898,7 @@
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="immediate_effect" val="true" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />

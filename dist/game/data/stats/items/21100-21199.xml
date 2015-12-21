@@ -109,9 +109,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="5" />
 			<set stat="pAtk" val="5" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="21111" name="Warm Bear Paws" additionalName="7-day" type="Weapon">
@@ -134,9 +134,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="5" />
 			<set stat="pAtk" val="5" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="21112" name="Stag Beetle Hat" type="Armor">
@@ -735,7 +735,7 @@
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="1" />
+			<add stat="mDef" val="1" order="0" />
 		</for>
 	</item>
 	<item id="21160" name="Wedding Ring - Female" type="Armor">
@@ -746,8 +746,11 @@
 		<set name="default_action" val="EQUIP" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
+		<cond msgId="1518">
+			<player sex="1" />
+		</cond>
 		<for>
-			<add order="0" stat="mDef" val="1" />
+			<add stat="mDef" val="1" order="0" />
 		</for>
 	</item>
 	<item id="21161" name="Wedding Cake Pack" type="EtcItem">
@@ -771,6 +774,9 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="WOOD" />
 		<set name="weight" val="10" />
+		<cond msgId="1518">
+			<player sex="1" />
+		</cond>
 	</item>
 	<item id="21163" name="Wedding Bouquet" type="Weapon">
 		<!-- Beautiful wedding bouquet. Female only. -->
@@ -788,11 +794,14 @@
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="ETC" />
 		<set name="weight" val="1600" />
+		<cond msgId="1518">
+			<player sex="1" />
+		</cond>
 		<for>
 			<add stat="critRate" val="1" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="1" />
 			<set stat="pAtk" val="1" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="21164" name="Honeymoon Ticket" additionalName="7-day" type="EtcItem">
@@ -868,7 +877,7 @@
 	<item id="21169" name="Birthday Present Pack" type="EtcItem">
 		<!-- Birthday present given to you by Alegria on your birthday. When used, you will obtain (1) Cake Topper hat, (1) Birthday Vitality Potion and (1) Birthday Cake. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
-		<set name="capsuled_items" val="21170,1,1,100;21595,1,1,100;21594,1,1,100" /> <!-- Birthday Vitality Potion -  -->
+		<set name="capsuled_items" val="21170,1,1,100;21595,1,1,100;21594,1,1,100" /> <!-- Birthday Vitality Potion, Birthday Cake, Birthday Hat -->
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<set name="immediate_effect" val="true" />
@@ -919,180 +928,260 @@
 		<set name="icon" val="icon.etc_trans_4f_s_b_01" />
 		<set name="commissionItemType" val="SCROLL_OTHER" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="22191-1" />
 	</item>
 	<item id="21173" name="Transformation Scroll: Doom Wraith" additionalName="Event" type="EtcItem">
 		<!-- Transforms you into a Doom Wraith for 30 min. No effect if used while transformed. -->
 		<set name="icon" val="icon.etc_trans_4f_s_b_01" />
 		<set name="commissionItemType" val="SCROLL_OTHER" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="22192-1" />
 	</item>
 	<item id="21174" name="Transformation Scroll: Grail Apostle" additionalName="Event" type="EtcItem">
 		<!-- Transforms you into a Grail Apostle for 30 min. No effect if used while transformed. -->
 		<set name="icon" val="icon.etc_trans_4f_s_b_01" />
 		<set name="commissionItemType" val="SCROLL_OTHER" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="22193-1" />
 	</item>
 	<item id="21175" name="Transformation Scroll: Unicorn" additionalName="Event" type="EtcItem">
 		<!-- Transforms you into a Unicorn for 30 min. No effect if used while transformed. -->
 		<set name="icon" val="icon.etc_trans_4f_s_b_01" />
 		<set name="commissionItemType" val="SCROLL_OTHER" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="22194-1" />
 	</item>
 	<item id="21176" name="Transformation Scroll: Lilim Knight" additionalName="Event" type="EtcItem">
 		<!-- Transforms you into a Lilim Knight for 30 min. No effect if used while transformed. -->
 		<set name="icon" val="icon.etc_trans_4f_s_b_01" />
 		<set name="commissionItemType" val="SCROLL_OTHER" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="22195-1" />
 	</item>
 	<item id="21177" name="Transformation Scroll: Golem Guardian" additionalName="Event" type="EtcItem">
 		<!-- Transforms you into a Golem Guardian for 30 min. No effect if used while transformed. -->
 		<set name="icon" val="icon.etc_trans_4f_s_b_01" />
 		<set name="commissionItemType" val="SCROLL_OTHER" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="22196-1" />
 	</item>
 	<item id="21178" name="Transformation Scroll: Inferno Drake" additionalName="Event" type="EtcItem">
 		<!-- Transforms you into an Inferno Drake for 30 min. No effect if used while transformed. -->
 		<set name="icon" val="icon.etc_trans_4f_s_b_01" />
 		<set name="commissionItemType" val="SCROLL_OTHER" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="22197-1" />
 	</item>
 	<item id="21179" name="Transformation Scroll: Dragon Bomber" additionalName="Event" type="EtcItem">
 		<!-- Transforms you into a Dragon Bomber for 30 min. No effect if used while transformed. -->
 		<set name="icon" val="icon.etc_trans_4f_s_b_01" />
 		<set name="commissionItemType" val="SCROLL_OTHER" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="22198-1" />
 	</item>
 	<item id="21180" name="Transformation Scroll: Heretic" additionalName="Event" type="EtcItem">
 		<!-- Transforms you into a Heretic for 30 min. No effect if used while transformed. -->
 		<set name="icon" val="icon.etc_trans_4f_s_b_01" />
 		<set name="commissionItemType" val="SCROLL_OTHER" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="22199-1" />
 	</item>
 	<item id="21181" name="Transformation Scroll: Veil Master" additionalName="Event" type="EtcItem">
 		<!-- Transforms you into a Veil Master for 30 min. No effect if used while transformed. -->
 		<set name="icon" val="icon.etc_trans_4f_s_b_01" />
 		<set name="commissionItemType" val="SCROLL_OTHER" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="22200-1" />
 	</item>
 	<item id="21182" name="Transformation Scroll: Saber Tooth Tiger" additionalName="Event" type="EtcItem">
 		<!-- Transforms you into a Saber Tooth Tiger for 30 min. No effect if used while transformed. -->
 		<set name="icon" val="icon.etc_trans_4f_s_b_01" />
 		<set name="commissionItemType" val="SCROLL_OTHER" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="22201-1" />
 	</item>
 	<item id="21183" name="Transformation Scroll: Oel Mahum" additionalName="Event" type="EtcItem">
 		<!-- Transforms you into an Ol Mahum for 30 min. No effect if used while transformed. -->
 		<set name="icon" val="icon.etc_trans_4f_s_b_01" />
 		<set name="commissionItemType" val="SCROLL_OTHER" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="22202-1" />
 	</item>
 	<item id="21184" name="Transformation Scroll: Doll Blader" additionalName="Event" type="EtcItem">
 		<!-- Transforms you into a Doll Blader for 30 min. No effect if used while transformed. -->
 		<set name="icon" val="icon.etc_trans_4f_s_b_01" />
 		<set name="commissionItemType" val="SCROLL_OTHER" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="22203-1" />
 	</item>
 	<item id="21185" name="Transformation Scroll: Zaken" additionalName="Event" type="EtcItem">
 		<!-- Transforms you into Zaken for 30 min. No effect if used while transformed. -->
 		<set name="icon" val="icon.etc_trans_4f_s_b_01" />
 		<set name="commissionItemType" val="SCROLL_OTHER" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="22204-1" />
 	</item>
 	<item id="21186" name="Transformation Scroll: Anakim" additionalName="Event" type="EtcItem">
 		<!-- Transforms you into Anakim for 30 min. No effect if used while transformed. -->
 		<set name="icon" val="icon.etc_trans_4f_s_b_01" />
 		<set name="commissionItemType" val="SCROLL_OTHER" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="22205-1" />
 	</item>
 	<item id="21187" name="Transformation Scroll: Venom" additionalName="Event" type="EtcItem">
 		<!-- Transforms you into a Venom for 30 min. No effect if used while transformed. -->
 		<set name="icon" val="icon.etc_trans_4f_s_b_01" />
 		<set name="commissionItemType" val="SCROLL_OTHER" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="22206-1" />
 	</item>
 	<item id="21188" name="Transformation Scroll: Gordon" additionalName="Event" type="EtcItem">
 		<!-- Transforms you into a Gordon for 30 min. No effect if used while transformed. -->
 		<set name="icon" val="icon.etc_trans_4f_s_b_01" />
 		<set name="commissionItemType" val="SCROLL_OTHER" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="22207-1" />
 	</item>
 	<item id="21189" name="Transformation Scroll: Ranku" additionalName="Event" type="EtcItem">
 		<!-- Transforms you into a Ranku for 30 min. No effect if used while transformed. -->
 		<set name="icon" val="icon.etc_trans_4f_s_b_01" />
 		<set name="commissionItemType" val="SCROLL_OTHER" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="22208-1" />
 	</item>
 	<item id="21190" name="Transformation Scroll: Kechi" additionalName="Event" type="EtcItem">
 		<!-- Transforms you into Kechi for 30 min. No effect if used while transformed. -->
 		<set name="icon" val="icon.etc_trans_4f_s_b_01" />
 		<set name="commissionItemType" val="SCROLL_OTHER" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="22209-1" />
 	</item>
 	<item id="21191" name="Transformation Scroll: Demon Prince" additionalName="Event" type="EtcItem">
 		<!-- Transforms you into a Demon Prince for 30 min. No effect if used while transformed. -->
 		<set name="icon" val="icon.etc_trans_4f_s_b_01" />
 		<set name="commissionItemType" val="SCROLL_OTHER" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="22210-1" />
 	</item>
 	<item id="21192" name="Dimensional Diamond Pack" type="EtcItem">
 		<!-- Wrapped Pack containing 50 Dimensional Diamonds. -->
@@ -1176,7 +1265,7 @@
 	<item id="21198" name="Mysterious Scroll: Drum Melody 2-unit Pack" type="EtcItem">
 		<!-- Wrapped Pack containing 2 Mysterious Scroll: Drum Melody. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
-		<set name="capsuled_items" val="21200,2,2,100" /> <!-- Mysterious Scroll: Drum Melody -  -->
+		<set name="capsuled_items" val="21200,2,2,100" /> <!-- Mysterious Scroll: Drum Melody -->
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<set name="is_auctionable" val="false" />
@@ -1191,7 +1280,7 @@
 	<item id="21199" name="Mysterious Scroll: Drum Melody 8-unit Pack" type="EtcItem">
 		<!-- Wrapped Pack containing 8 Mysterious Scroll: Drum Melody. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
-		<set name="capsuled_items" val="21200,8,8,100" /> <!-- Mysterious Scroll: Drum Melody -  -->
+		<set name="capsuled_items" val="21200,8,8,100" /> <!-- Mysterious Scroll: Drum Melody -->
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<set name="is_auctionable" val="false" />

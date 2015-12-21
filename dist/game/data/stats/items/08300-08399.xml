@@ -639,7 +639,7 @@
 		<set name="commissionItemType" val="DUALSWORD" />
 		<set name="damage_range" val="0;0;44;120" />
 		<set name="default_action" val="EQUIP" />
-		<set name="enchant4_skill" val="3045-14" />
+		<set name="enchant4_skill" val="3045-14" /> <!-- Special Ability: Haste -->
 		<set name="immediate_effect" val="true" />
 		<set name="is_dropable" val="false" />
 		<set name="material" val="FINE_STEEL" />
@@ -647,9 +647,9 @@
 		<set name="weapon_type" val="DUAL" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="1" />
 			<set stat="pAtk" val="1" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="8351" name="Corroded Black Fish Scale" type="EtcItem">

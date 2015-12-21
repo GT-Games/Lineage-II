@@ -416,7 +416,8 @@
 	<item id="23636" name="Cloak (Poland)" type="Armor">
 		<!-- Cloak for Poland only. Elaborately embroidered. -->
 		<set name="icon" val="BranchSys3.icon1.g_pl_cape" />
-		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="bodypart" val="back" />
+		<set name="commissionItemType" val="CLOAK" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_depositable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -425,7 +426,7 @@
 		<set name="material" val="CLOTH" />
 		<set name="weight" val="220" />
 		<for>
-			<add stat="pDef" val="25" />
+			<add stat="pDef" val="25" order="0" />
 		</for>
 	</item>
 	<item id="23637" name="Blessed Antharas' Earring" additionalName="3-day" type="Armor">
@@ -442,8 +443,10 @@
 		<set name="time" val="4320" />
 		<set name="weight" val="150" />
 		<for>
-			<add stat="mDef" val="170" />
+			<add stat="CON" val="3" />
+			<add stat="MEN" val="3" />
 			<add stat="maxMp" val="59" />
+			<add stat="mDef" val="170" order="0" />
 		</for>
 	</item>
 	<item id="23638" name="Blessed Antharas' Earring" additionalName="7-day" type="Armor">
@@ -460,8 +463,10 @@
 		<set name="time" val="10080" />
 		<set name="weight" val="150" />
 		<for>
-			<add stat="mDef" val="170" />
+			<add stat="CON" val="3" />
+			<add stat="MEN" val="3" />
 			<add stat="maxMp" val="59" />
+			<add stat="mDef" val="170" order="0" />
 		</for>
 	</item>
 	<item id="23639" name="Blessed Valakas' Necklace" additionalName="3-day" type="Armor">
@@ -478,8 +483,15 @@
 		<set name="time" val="4320" />
 		<set name="weight" val="150" />
 		<for>
-			<add stat="mDef" val="226" />
+			<add stat="INT" val="3" />
+			<add stat="STR" val="3" />
+			<add stat="darkRes" val="20" />
+			<add stat="maxHp" val="625" />
+			<add stat="mDef" val="226" order="0" />
 			<add stat="maxMp" val="79" />
+			<add stat="fireRes" val="30" />
+			<mul stat="pAtk" val="1.10" />
+			<mul stat="mAtk" val="1.20" />
 		</for>
 	</item>
 	<item id="23640" name="Blessed Valakas' Necklace" additionalName="7-day" type="Armor">
@@ -496,8 +508,15 @@
 		<set name="time" val="10080" />
 		<set name="weight" val="150" />
 		<for>
-			<add stat="mDef" val="226" />
+			<add stat="INT" val="3" />
+			<add stat="STR" val="3" />
+			<add stat="darkRes" val="20" />
+			<add stat="maxHp" val="625" />
+			<add stat="mDef" val="226" order="0" />
 			<add stat="maxMp" val="79" />
+			<add stat="fireRes" val="30" />
+			<mul stat="pAtk" val="1.10" />
+			<mul stat="mAtk" val="1.20" />
 		</for>
 	</item>
 	<item id="23641" name="Star Agathion Pack" type="EtcItem">

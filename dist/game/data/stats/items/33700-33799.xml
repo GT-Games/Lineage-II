@@ -145,7 +145,6 @@
 		<set name="damage_range" val="0;0;40;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -159,9 +158,9 @@
 		<set name="weapon_type" val="DUAL" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="33718" name="Legacy Dreadnought Spear" type="Weapon">
@@ -173,7 +172,6 @@
 		<set name="damage_range" val="0;0;66;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -186,11 +184,11 @@
 		<set name="spiritshots" val="6" />
 		<set name="weapon_type" val="POLE" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="8" />
-			<set stat="mAtk" val="30" />
-			<set stat="pAtk" val="30" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="30" />
+			<set stat="mAtk" val="30" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="33719" name="Legacy Phoenix Knight Sword" type="Weapon">
@@ -202,7 +200,6 @@
 		<set name="damage_range" val="0;0;40;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -216,9 +213,9 @@
 		<set name="weapon_type" val="SWORD" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33720" name="Legacy Hell Knight Sword" type="Weapon">
@@ -230,7 +227,6 @@
 		<set name="damage_range" val="0;0;40;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -244,9 +240,9 @@
 		<set name="weapon_type" val="SWORD" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33721" name="Legacy Sagittarius Bow" type="Weapon">
@@ -258,7 +254,6 @@
 		<set name="damage_range" val="0;0;10;0" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -273,11 +268,11 @@
 		<set name="spiritshots" val="6" />
 		<set name="weapon_type" val="BOW" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="30" />
-			<set stat="pAtk" val="30" />
 			<set stat="pAtkSpd" val="293" />
+			<set stat="pAtk" val="30" />
+			<set stat="mAtk" val="30" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="33722" name="Legacy Adventurer Dual Daggers" type="Weapon">
@@ -289,7 +284,6 @@
 		<set name="damage_range" val="0;0;40;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -302,11 +296,11 @@
 		<set name="spiritshots" val="6" />
 		<set name="weapon_type" val="DUALDAGGER" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="30" />
-			<set stat="pAtk" val="30" />
 			<set stat="pAtkSpd" val="433" />
+			<set stat="pAtk" val="30" />
+			<set stat="mAtk" val="30" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="33723" name="Legacy Archmage Sword" type="Weapon">
@@ -318,7 +312,6 @@
 		<set name="damage_range" val="0;0;40;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -332,9 +325,9 @@
 		<set name="weapon_type" val="SWORD" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33724" name="Legacy Soultaker Sword" type="Weapon">
@@ -346,7 +339,6 @@
 		<set name="damage_range" val="0;0;40;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -360,9 +352,9 @@
 		<set name="weapon_type" val="SWORD" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33725" name="Legacy Arcana Lord Blunt Weapon" type="Weapon">
@@ -374,7 +366,6 @@
 		<set name="damage_range" val="0;0;40;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -389,9 +380,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33726" name="Legacy Cardinal Staff" type="Weapon">
@@ -403,7 +394,6 @@
 		<set name="damage_range" val="0;0;40;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -418,9 +408,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="33727" name="Legacy Hierophant Staff" type="Weapon">
@@ -432,7 +422,6 @@
 		<set name="damage_range" val="0;0;40;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -447,9 +436,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="33728" name="Legacy Eva's Templar Sword" type="Weapon">
@@ -461,7 +450,6 @@
 		<set name="damage_range" val="0;0;40;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -475,9 +463,9 @@
 		<set name="weapon_type" val="SWORD" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33729" name="Legacy Sword Muse Sword" type="Weapon">
@@ -489,7 +477,6 @@
 		<set name="damage_range" val="0;0;40;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -503,9 +490,9 @@
 		<set name="weapon_type" val="SWORD" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33730" name="Legacy Wind Rider Dagger" type="Weapon">
@@ -517,7 +504,6 @@
 		<set name="damage_range" val="0;0;40;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -530,11 +516,11 @@
 		<set name="spiritshots" val="6" />
 		<set name="weapon_type" val="DAGGER" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="30" />
-			<set stat="pAtk" val="30" />
 			<set stat="pAtkSpd" val="433" />
+			<set stat="pAtk" val="30" />
+			<set stat="mAtk" val="30" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="33731" name="Legacy Moonlight Sentinel Bow" type="Weapon">
@@ -546,7 +532,6 @@
 		<set name="damage_range" val="0;0;10;0" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -561,11 +546,11 @@
 		<set name="spiritshots" val="6" />
 		<set name="weapon_type" val="BOW" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="30" />
-			<set stat="pAtk" val="30" />
 			<set stat="pAtkSpd" val="293" />
+			<set stat="pAtk" val="30" />
+			<set stat="mAtk" val="30" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="33732" name="Legacy Mystic Muse Sword" type="Weapon">
@@ -577,7 +562,6 @@
 		<set name="damage_range" val="0;0;40;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -591,9 +575,9 @@
 		<set name="weapon_type" val="SWORD" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33733" name="Legacy Elemental Master Blunt Weapon" type="Weapon">
@@ -605,7 +589,6 @@
 		<set name="damage_range" val="0;0;40;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -620,9 +603,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33734" name="Legacy Eva's Saint Blunt Weapon" type="Weapon">
@@ -634,7 +617,6 @@
 		<set name="damage_range" val="0;0;40;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -649,9 +631,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33735" name="Legacy Shillien Templar Sword" type="Weapon">
@@ -663,7 +645,6 @@
 		<set name="damage_range" val="0;0;40;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -677,9 +658,9 @@
 		<set name="weapon_type" val="SWORD" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33736" name="Legacy Spectral Dancer Dualsword" type="Weapon">
@@ -691,7 +672,6 @@
 		<set name="damage_range" val="0;0;40;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -705,9 +685,9 @@
 		<set name="weapon_type" val="DUAL" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="33737" name="Legacy Ghost Hunter Dagger" type="Weapon">
@@ -719,7 +699,6 @@
 		<set name="damage_range" val="0;0;40;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -732,11 +711,11 @@
 		<set name="spiritshots" val="6" />
 		<set name="weapon_type" val="DAGGER" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="30" />
-			<set stat="pAtk" val="30" />
 			<set stat="pAtkSpd" val="433" />
+			<set stat="pAtk" val="30" />
+			<set stat="mAtk" val="30" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="33738" name="Legacy Ghost Sentinel Bow" type="Weapon">
@@ -748,7 +727,6 @@
 		<set name="damage_range" val="0;0;10;0" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -763,11 +741,11 @@
 		<set name="spiritshots" val="6" />
 		<set name="weapon_type" val="BOW" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="30" />
-			<set stat="pAtk" val="30" />
 			<set stat="pAtkSpd" val="293" />
+			<set stat="pAtk" val="30" />
+			<set stat="mAtk" val="30" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="33739" name="Legacy Storm Screamer Sword" type="Weapon">
@@ -779,7 +757,6 @@
 		<set name="damage_range" val="0;0;40;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -793,9 +770,9 @@
 		<set name="weapon_type" val="SWORD" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33740" name="Legacy Spectral Master Sword" type="Weapon">
@@ -807,7 +784,6 @@
 		<set name="damage_range" val="0;0;40;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -821,9 +797,9 @@
 		<set name="weapon_type" val="SWORD" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33741" name="Legacy Shillien Saint Blunt Weapon" type="Weapon">
@@ -835,7 +811,6 @@
 		<set name="damage_range" val="0;0;40;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -850,9 +825,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33742" name="Legacy Titan Two-handed Sword" type="Weapon">
@@ -864,7 +839,6 @@
 		<set name="damage_range" val="0;0;40;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -878,9 +852,9 @@
 		<set name="weapon_type" val="SWORD" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="33743" name="Legacy Grand Khavatari Fist Weapon" type="Weapon">
@@ -892,7 +866,6 @@
 		<set name="damage_range" val="0;0;32;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -907,9 +880,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="33744" name="Legacy Dominator Sword" type="Weapon">
@@ -921,7 +894,6 @@
 		<set name="damage_range" val="0;0;40;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -935,9 +907,9 @@
 		<set name="weapon_type" val="SWORD" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33745" name="Legacy Doomcryer Dualsword" type="Weapon">
@@ -948,7 +920,6 @@
 		<set name="damage_range" val="0;0;40;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -962,9 +933,9 @@
 		<set name="weapon_type" val="DUAL" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="33746" name="Legacy Fortune Seeker Dagger" type="Weapon">
@@ -975,7 +946,6 @@
 		<set name="damage_range" val="0;0;40;120" />
 		<set name="default_action" val="EQUIP" />
 		<set name="element_enabled" val="false" />
-		<set name="enchant_enabled" val="0" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
@@ -988,11 +958,11 @@
 		<set name="spiritshots" val="6" />
 		<set name="weapon_type" val="DAGGER" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="30" />
-			<set stat="pAtk" val="30" />
 			<set stat="pAtkSpd" val="433" />
+			<set stat="pAtk" val="30" />
+			<set stat="mAtk" val="30" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="33747" name="Staff with Sealed Power of a Maestro" type="Weapon">
@@ -1016,9 +986,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="33748" name="Small Kukurin Pouch" type="EtcItem">
@@ -1064,9 +1034,9 @@
 		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="226" />
 			<set stat="pAtk" val="489" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33751" name="Test - color varying requiem weapon" type="Weapon">
@@ -1086,9 +1056,9 @@
 		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="226" />
 			<set stat="pAtk" val="489" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33752" name="Test - apo requiem weapon" type="Weapon">
@@ -1108,9 +1078,9 @@
 		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="226" />
 			<set stat="pAtk" val="489" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33753" name="Test - color varying apo weapon" type="Weapon">
@@ -1130,9 +1100,9 @@
 		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="226" />
 			<set stat="pAtk" val="489" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33754" name="Test - old fanta weapon" type="Weapon">
@@ -1152,9 +1122,9 @@
 		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="226" />
 			<set stat="pAtk" val="489" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33755" name="Test - color varying fanta weapon" type="Weapon">
@@ -1174,9 +1144,9 @@
 		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="226" />
 			<set stat="pAtk" val="489" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33756" name="Test - old heli weapon" type="Weapon">
@@ -1196,9 +1166,9 @@
 		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="226" />
 			<set stat="pAtk" val="489" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33757" name="Test - color varying heli weapon" type="Weapon">
@@ -1218,9 +1188,9 @@
 		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="226" />
 			<set stat="pAtk" val="489" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33758" name="Test - Old Celestial Weapon" type="Weapon">
@@ -1240,9 +1210,9 @@
 		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="226" />
 			<set stat="pAtk" val="489" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33759" name="Test - Color Varying Celestial Weapon" type="Weapon">
@@ -1262,9 +1232,9 @@
 		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="226" />
 			<set stat="pAtk" val="489" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33760" name="Legacy Fortune Seeker Dagger" type="Weapon">
@@ -1285,9 +1255,9 @@
 		<set name="weapon_type" val="SWORD" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33761" name="Legacy Doombringer Sword" type="Weapon">
@@ -1308,9 +1278,9 @@
 		<set name="weapon_type" val="SWORD" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33762" name="Legacy Soul Hound Sword (Male)" type="Weapon">
@@ -1331,9 +1301,9 @@
 		<set name="weapon_type" val="SWORD" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33763" name="Legacy Soul Hound Sword (Female)" type="Weapon">
@@ -1353,11 +1323,11 @@
 		<set name="spiritshots" val="6" />
 		<set name="weapon_type" val="CROSSBOW" />
 		<for>
-			<add stat="accCombat" val="-1.5" />
 			<add stat="critRate" val="10" />
-			<set stat="mAtk" val="30" />
-			<set stat="pAtk" val="30" />
 			<set stat="pAtkSpd" val="303" />
+			<set stat="pAtk" val="30" />
+			<set stat="mAtk" val="30" />
+			<sub stat="accCombat" val="1.5" />
 		</for>
 	</item>
 	<item id="33764" name="Legacy Trickster Crossbow" type="EtcItem">
@@ -1387,9 +1357,9 @@
 		<set name="weapon_type" val="SWORD" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="30" />
 			<set stat="pAtk" val="30" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="33766" name="Elixir of Blessing" type="EtcItem">

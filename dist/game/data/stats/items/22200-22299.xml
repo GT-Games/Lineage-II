@@ -116,8 +116,8 @@
 		<set name="time" val="10080" />
 		<set name="weight" val="30" />
 		<for>
-			<add order="0" stat="mDef" val="125" />
 			<add stat="maxMp" val="300" />
+			<add stat="mDef" val="125" order="0" />
 		</for>
 	</item>
 	<item id="22212" name="Bad Bunny's Earring" additionalName="7-day (Event)" type="Armor">
@@ -134,8 +134,8 @@
 		<set name="time" val="10080" />
 		<set name="weight" val="30" />
 		<for>
-			<add order="0" stat="mDef" val="94" />
 			<add stat="maxMp" val="37" />
+			<add stat="mDef" val="94" order="0" />
 		</for>
 	</item>
 	<item id="22213" name="Bad Bunny's Ring" additionalName="7-day (Event)" type="Armor">
@@ -152,7 +152,7 @@
 		<set name="time" val="10080" />
 		<set name="weight" val="30" />
 		<for>
-			<add order="0" stat="mDef" val="62" />
+			<add stat="mDef" val="62" order="0" />
 		</for>
 	</item>
 	<item id="22214" name="Bad Bunny's Necklace" additionalName="30-day (Event)" type="Armor">
@@ -169,8 +169,8 @@
 		<set name="time" val="43200" />
 		<set name="weight" val="30" />
 		<for>
-			<add order="0" stat="mDef" val="125" />
 			<add stat="maxMp" val="300" />
+			<add stat="mDef" val="125" order="0" />
 		</for>
 	</item>
 	<item id="22215" name="Bad Bunny's Earring" additionalName="30-day (Event)" type="Armor">
@@ -187,8 +187,8 @@
 		<set name="time" val="43200" />
 		<set name="weight" val="30" />
 		<for>
-			<add order="0" stat="mDef" val="94" />
 			<add stat="maxMp" val="37" />
+			<add stat="mDef" val="94" order="0" />
 		</for>
 	</item>
 	<item id="22216" name="Bad Bunny's Ring" additionalName="30-day (Event)" type="Armor">
@@ -205,7 +205,7 @@
 		<set name="time" val="43200" />
 		<set name="weight" val="30" />
 		<for>
-			<add order="0" stat="mDef" val="62" />
+			<add stat="mDef" val="62" order="0" />
 		</for>
 	</item>
 	<item id="22217" name="Lantern Agathion's Gift Set" additionalName="Event" type="EtcItem">
@@ -471,7 +471,6 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="GOLD" />
-		<for/>
 	</item>
 	<item id="22238" name="Scroll: Hair Accessory (Warrior)" type="EtcItem">
 		<!-- Scroll to add the options for a Warrior to a hair accessory. -->
@@ -505,7 +504,9 @@
 	<item id="22241" name="Sweet Chocolate Box" additionalName="Event" type="EtcItem">
 		<!-- Wrapped Pack containing 3 Sweet Chocolates and 1 Valentine's Day Love Pouch. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="capsuled_items" val="22242,1,1,100" /> <!-- Sweet Chocolate - Event -->
 		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -535,7 +536,6 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="GOLD" />
-		<for/>
 	</item>
 	<item id="22244" name="Mysterious Soulshot (C-grade)" type="EtcItem">
 		<!-- The power of a spirit is bestowed upon a weapon, momentarily increasing its P. Atk. significantly. Can be used with a C-grade weapon. -->
@@ -1018,9 +1018,9 @@
 		<set name="time" val="10080" />
 		<set name="weapon_type" val="SWORD" />
 		<for>
-			<set stat="mAtk" val="1" />
-			<set stat="pAtk" val="1" />
 			<set stat="pAtkSpd" val="379" />
+			<set stat="pAtk" val="1" />
+			<set stat="mAtk" val="1" />
 		</for>
 	</item>
 	<item id="22282" name="Sujin Transformation Stick Pack (7-day)" additionalName="Event" type="EtcItem">
@@ -1050,9 +1050,9 @@
 		<set name="time" val="10080" />
 		<set name="weapon_type" val="SWORD" />
 		<for>
-			<set stat="mAtk" val="1" />
-			<set stat="pAtk" val="1" />
 			<set stat="pAtkSpd" val="379" />
+			<set stat="pAtk" val="1" />
+			<set stat="mAtk" val="1" />
 		</for>
 	</item>
 	<item id="22284" name="Trejuo Transformation Stick Pack (7-day)" additionalName="Event" type="EtcItem">
@@ -1104,7 +1104,8 @@
 		<set name="material" val="SILVER" />
 		<set name="time" val="47520" />
 		<set name="unequip_skill" val="3267-1" /> <!-- Seal Agathion -->
-</item>
+		<set name="weight" val="150" />
+	</item>
 	<item id="22288" name="Agathion - Juju Pack" additionalName="Event" type="EtcItem">
 		<!-- Double-click to receive an Agathion - Juju. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i03" />
@@ -1130,6 +1131,7 @@
 		<!-- The recipe for Valentine Cake. -->
 		<set name="icon" val="BranchSys.icon.br_valentine_recipe_i00" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_dropable" val="false" />

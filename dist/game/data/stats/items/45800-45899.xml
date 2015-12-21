@@ -18,12 +18,14 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="BLUNT" />
+		<set name="weight" val="1740" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<mul stat="maxHp" val="1.25" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="151" />
 			<set stat="pAtk" val="333" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="45801" name="Dynasty Blade of Fortune" additionalName="30-day" type="Weapon">
@@ -44,11 +46,12 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="SWORD" />
+		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="151" />
 			<set stat="pAtk" val="333" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="45802" name="Dynasty Two Hand Sword of Fortune" additionalName="30-day" type="Weapon">
@@ -69,11 +72,12 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="SWORD" />
+		<set name="weight" val="1740" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="151" />
 			<set stat="pAtk" val="405" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="45803" name="Dynasty Bagh-Nakh of Fortune" additionalName="30-day" type="Weapon">
@@ -94,12 +98,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="DUALFIST" />
+		<set name="weight" val="1550" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="151" />
 			<set stat="pAtk" val="405" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="45804" name="Dynasty Dualsword of Fortune" additionalName="30-day" type="Weapon">
@@ -120,11 +125,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="DUAL" />
+		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
-			<set stat="mAtk" val="151" />
-			<set stat="pAtk" val="405" />
+			<mul stat="maxHp" val="1.10" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="405" />
+			<set stat="mAtk" val="151" />
 		</for>
 	</item>
 	<item id="45805" name="Dynasty Halberd of Fortune" additionalName="30-day" type="Weapon">
@@ -145,12 +152,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="POLE" />
+		<set name="weight" val="2010" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="8" />
-			<set stat="mAtk" val="151" />
-			<set stat="pAtk" val="333" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="333" />
+			<set stat="mAtk" val="151" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="45806" name="Dynasty Ancient Sword of Fortune" additionalName="30-day" type="Weapon">
@@ -171,12 +179,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="ANCIENTSWORD" />
+		<set name="weight" val="1800" />
 		<for>
 			<add stat="accCombat" val="2" />
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="350" />
 			<set stat="mAtk" val="151" />
 			<set stat="pAtk" val="361" />
-			<set stat="pAtkSpd" val="350" />
 		</for>
 	</item>
 	<item id="45807" name="Dynasty Rapier of Fortune" additionalName="30-day" type="Weapon">
@@ -197,12 +206,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="RAPIER" />
+		<set name="weight" val="1280" />
 		<for>
-			<add stat="accCombat" val="-1.5" />
 			<add stat="critRate" val="10" />
-			<set stat="mAtk" val="151" />
-			<set stat="pAtk" val="302" />
 			<set stat="pAtkSpd" val="406" />
+			<set stat="pAtk" val="302" />
+			<set stat="mAtk" val="151" />
+			<sub stat="accCombat" val="1.5" />
 		</for>
 	</item>
 	<item id="45808" name="Dynasty Crossbow of Fortune" additionalName="30-day" type="Weapon">
@@ -223,12 +233,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="CROSSBOW" />
+		<set name="weight" val="1580" />
 		<for>
-			<add stat="accCombat" val="-1.5" />
 			<add stat="critRate" val="10" />
-			<set stat="mAtk" val="151" />
-			<set stat="pAtk" val="401" />
 			<set stat="pAtkSpd" val="303" />
+			<set stat="pAtk" val="401" />
+			<set stat="mAtk" val="151" />
+			<sub stat="accCombat" val="1.5" />
 		</for>
 	</item>
 	<item id="45809" name="Returning Warrior's Soulshot Pack" additionalName="Event" type="EtcItem">
@@ -355,6 +366,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
 	</item>
 	<item id="45819" name="Player Commendation Points Coupon (720 Points)" type="EtcItem">
 		<!-- When double-clicked, 720 Player Commendation Points can be acquired. -->
@@ -368,6 +380,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
 	</item>
 	<item id="45820" name="Observation Report" type="EtcItem">
 		<!-- Research results received from Cardinal Seresin at the Town of Oren. It talks about the anomaly in the Dark Elf region after the appearance of Shilen and the epidemic. Double-click to read the details.  -->
@@ -430,12 +443,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="DAGGER" />
+		<set name="weight" val="1520" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="219" />
-			<set stat="pAtk" val="441" />
 			<set stat="pAtkSpd" val="433" />
+			<set stat="pAtk" val="441" />
+			<set stat="mAtk" val="219" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="45824" name="Apocalypse Cutter - Focus" additionalName="30-day" type="Weapon">
@@ -457,11 +471,12 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="SWORD" />
+		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="219" />
 			<set stat="pAtk" val="504" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="45825" name="Apocalypse Slasher - Focus" additionalName="30-day" type="Weapon">
@@ -483,11 +498,12 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="SWORD" />
+		<set name="weight" val="1740" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="219" />
 			<set stat="pAtk" val="613" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="45826" name="Apocalypse Avenger - Focus" additionalName="30-day" type="Weapon">
@@ -509,12 +525,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="BLUNT" />
+		<set name="weight" val="1740" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="219" />
 			<set stat="pAtk" val="504" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="45827" name="Apocalypse Fighter - Focus" additionalName="30-day" type="Weapon">
@@ -536,12 +553,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="DUALFIST" />
+		<set name="weight" val="1550" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="219" />
 			<set stat="pAtk" val="613" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="45828" name="Apocalypse Stormer - Damage Up" additionalName="30-day" type="Weapon">
@@ -563,12 +581,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="POLE" />
+		<set name="weight" val="2010" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="8" />
-			<set stat="mAtk" val="219" />
-			<set stat="pAtk" val="504" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="504" />
+			<set stat="mAtk" val="219" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="45829" name="Apocalypse Thrower - Focus" additionalName="30-day" type="Weapon">
@@ -590,12 +609,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="BOW" />
+		<set name="weight" val="1520" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="219" />
-			<set stat="pAtk" val="992" />
 			<set stat="pAtkSpd" val="293" />
+			<set stat="pAtk" val="992" />
+			<set stat="mAtk" val="219" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="45830" name="Apocalypse Shooter - Focus" additionalName="30-day" type="Weapon">
@@ -617,12 +637,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="CROSSBOW" />
+		<set name="weight" val="1580" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="219" />
-			<set stat="pAtk" val="894" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="894" />
+			<set stat="mAtk" val="219" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="45831" name="Apocalypse Buster - Acumen" additionalName="30-day" type="Weapon">
@@ -644,11 +665,12 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="SWORD" />
+		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="293" />
 			<set stat="pAtk" val="403" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="45832" name="Apocalypse Caster - Acumen" additionalName="30-day" type="Weapon">
@@ -670,12 +692,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="BLUNT" />
+		<set name="weight" val="1080" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="293" />
 			<set stat="pAtk" val="403" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="45833" name="Apocalypse Retributer - Acumen" additionalName="30-day" type="Weapon">
@@ -697,12 +720,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="BLUNT" />
+		<set name="weight" val="1080" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="322" />
 			<set stat="pAtk" val="491" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="45834" name="Apocalypse Dualsword - Damage Up" additionalName="30-day" type="Weapon">
@@ -724,11 +748,12 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="DUAL" />
+		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="219" />
 			<set stat="pAtk" val="613" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="45835" name="Apocalypse Dual Dagger - Focus" additionalName="30-day" type="Weapon">
@@ -750,12 +775,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="weight" val="2050" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="219" />
-			<set stat="pAtk" val="504" />
 			<set stat="pAtkSpd" val="433" />
+			<set stat="pAtk" val="504" />
+			<set stat="mAtk" val="219" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="45836" name="Apocalypse Dual Blunt Weapon - Damage Up" additionalName="30-day" type="Weapon">
@@ -777,12 +803,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="DUALBLUNT" />
+		<set name="weight" val="1740" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="219" />
 			<set stat="pAtk" val="613" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="45837" name="Sad Energy" type="EtcItem">
@@ -990,12 +1017,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="DAGGER" />
+		<set name="weight" val="1520" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="254" />
-			<set stat="pAtk" val="511" />
 			<set stat="pAtkSpd" val="433" />
+			<set stat="pAtk" val="511" />
+			<set stat="mAtk" val="254" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="45852" name="Specter Cutter - Focus" additionalName="30-day" type="Weapon">
@@ -1017,11 +1045,12 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="SWORD" />
+		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="254" />
 			<set stat="pAtk" val="584" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="45853" name="Specter Slasher - Focus" additionalName="30-day" type="Weapon">
@@ -1043,11 +1072,12 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="SWORD" />
+		<set name="weight" val="1740" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="254" />
 			<set stat="pAtk" val="711" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="45854" name="Specter Avenger - Focus" additionalName="30-day" type="Weapon">
@@ -1069,12 +1099,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="BLUNT" />
+		<set name="weight" val="1740" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="254" />
 			<set stat="pAtk" val="584" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="45855" name="Specter Fighter - Focus" additionalName="30-day" type="Weapon">
@@ -1096,12 +1127,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="DUALFIST" />
+		<set name="weight" val="1550" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="254" />
 			<set stat="pAtk" val="711" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="45856" name="Specter Stormer - Damage Up" additionalName="30-day" type="Weapon">
@@ -1123,12 +1155,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="POLE" />
+		<set name="weight" val="2010" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="8" />
-			<set stat="mAtk" val="254" />
-			<set stat="pAtk" val="584" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="584" />
+			<set stat="mAtk" val="254" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="45857" name="Specter Thrower - Focus" additionalName="30-day" type="Weapon">
@@ -1150,12 +1183,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="BOW" />
+		<set name="weight" val="1520" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="254" />
-			<set stat="pAtk" val="1151" />
 			<set stat="pAtkSpd" val="293" />
+			<set stat="pAtk" val="1151" />
+			<set stat="mAtk" val="254" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="45858" name="Specter Shooter - Focus" additionalName="30-day" type="Weapon">
@@ -1177,12 +1211,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="CROSSBOW" />
+		<set name="weight" val="1580" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="254" />
-			<set stat="pAtk" val="1036" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="1036" />
+			<set stat="mAtk" val="254" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="45859" name="Specter Buster - Acumen" additionalName="30-day" type="Weapon">
@@ -1204,11 +1239,12 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="SWORD" />
+		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="339" />
 			<set stat="pAtk" val="467" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="45860" name="Specter Caster - Acumen" additionalName="30-day" type="Weapon">
@@ -1230,12 +1266,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="BLUNT" />
+		<set name="weight" val="1080" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="339" />
 			<set stat="pAtk" val="467" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="45861" name="Specter Retributer - Acumen" additionalName="30-day" type="Weapon">
@@ -1257,12 +1294,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="BLUNT" />
+		<set name="weight" val="1080" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="373" />
 			<set stat="pAtk" val="569" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="45862" name="Specter Dualsword - Damage Up" additionalName="30-day" type="Weapon">
@@ -1284,11 +1322,12 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="DUAL" />
+		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="254" />
 			<set stat="pAtk" val="711" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="45863" name="Specter Dual Dagger - Focus" additionalName="30-day" type="Weapon">
@@ -1310,12 +1349,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="weight" val="2050" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="254" />
-			<set stat="pAtk" val="584" />
 			<set stat="pAtkSpd" val="433" />
+			<set stat="pAtk" val="584" />
+			<set stat="mAtk" val="254" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="45864" name="Specter Dual Blunt Weapon - Damage Up" additionalName="30-day" type="Weapon">
@@ -1337,12 +1377,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="DUALBLUNT" />
+		<set name="weight" val="1740" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="254" />
 			<set stat="pAtk" val="711" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="45865" name="Festival Coin" additionalName="Event" type="EtcItem">
@@ -1357,6 +1398,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
 	</item>
 	<item id="45866" name="Golden Festival Coin" additionalName="Event" type="EtcItem">
 		<!-- A golden festival coin that can be obtained from Kableon's game in the Talkity Talk Talk Troupe Festival. Take it to Nostra Gibbs to exchange for a Lucky Tarot Card. Will be deleted once the event ends. -->
@@ -1366,6 +1408,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
 	</item>
 	<item id="45867" name="Summon Scroll: Kableon" additionalName="Event" type="EtcItem">
 		<!-- Summon Kableon to get a star rating. If you get 5 stars, you'll receive a Golden Festival Coin. It can only be used in a Peaceful Zone. Will be deleted once the event ends. -->
@@ -1410,6 +1453,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="LEATHER" />
+		<set name="weight" val="20" />
 	</item>
 	<item id="45871" name="Proof of Disposal" type="EtcItem">
 		<!-- Item obtained from defeating the monsters that Elikia requested. Take it to Elikia in Heine. -->
@@ -1461,6 +1505,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
 	</item>
 	<item id="45875" name="Kokko's Fishing Rod Support Box" additionalName="Event" type="EtcItem">
 		<!-- Double-click to get a Normal Fishing Rod. -->
@@ -1474,6 +1519,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
 	</item>
 	<item id="45876" name="Kokko's Fishing Shot Support Box" additionalName="Event" type="EtcItem">
 		<!-- Double-click to get a Fishing Shot. Will be deleted once the event ends. -->
@@ -1487,6 +1533,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
 	</item>
 	<item id="45877" name="Kokko's Bait Pack" additionalName="Event" type="EtcItem">
 		<!-- Double-click to get bait to fish. Will be deleted once the event ends. -->
@@ -1500,6 +1547,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
 	</item>
 	<item id="45878" name="Mysterious Aid Pack" additionalName="Event" type="EtcItem">
 		<!-- A mysterious box with an unidentified item along with Tomas' Support Box. Double-click to find out what it is. Will be deleted once the event ends. -->
@@ -1513,6 +1561,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
 	</item>
 	<item id="45879" name="Amaranthine Shaper - Focus" additionalName="30-day" type="Weapon">
 		<!-- <Special Option>. Critical + 81.9. Increases damage inflicted during PvP. Increases P. Critical Damage when enchanted to + 4.. No Soul Crystal option. -->
@@ -1533,12 +1582,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="DAGGER" />
+		<set name="weight" val="1520" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="278" />
-			<set stat="pAtk" val="558" />
 			<set stat="pAtkSpd" val="433" />
+			<set stat="pAtk" val="558" />
+			<set stat="mAtk" val="278" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="45880" name="Amaranthine Cutter - Focus" additionalName="30-day" type="Weapon">
@@ -1560,11 +1610,12 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="SWORD" />
+		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="278" />
 			<set stat="pAtk" val="638" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="45881" name="Amaranthine Slasher - Focus" additionalName="30-day" type="Weapon">
@@ -1586,11 +1637,12 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="SWORD" />
+		<set name="weight" val="1740" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="278" />
 			<set stat="pAtk" val="777" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="45882" name="Amaranthine Avenger - Focus" additionalName="30-day" type="Weapon">
@@ -1612,12 +1664,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="BLUNT" />
+		<set name="weight" val="1740" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="278" />
 			<set stat="pAtk" val="638" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="45883" name="Amaranthine Fighter - Focus" additionalName="30-day" type="Weapon">
@@ -1639,12 +1692,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="DUALFIST" />
+		<set name="weight" val="1550" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="278" />
 			<set stat="pAtk" val="777" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="45884" name="Amaranthine Stormer - Damage Up" additionalName="30-day" type="Weapon">
@@ -1666,12 +1720,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="POLE" />
+		<set name="weight" val="2010" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="8" />
-			<set stat="mAtk" val="278" />
-			<set stat="pAtk" val="638" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="638" />
+			<set stat="mAtk" val="278" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="45885" name="Amaranthine Thrower - Focus" additionalName="30-day" type="Weapon">
@@ -1693,12 +1748,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="BOW" />
+		<set name="weight" val="1520" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="278" />
-			<set stat="pAtk" val="1257" />
 			<set stat="pAtkSpd" val="293" />
+			<set stat="pAtk" val="1257" />
+			<set stat="mAtk" val="278" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="45886" name="Amaranthine Shooter - Focus" additionalName="30-day" type="Weapon">
@@ -1720,12 +1776,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="CROSSBOW" />
+		<set name="weight" val="1580" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="278" />
-			<set stat="pAtk" val="1132" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="1132" />
+			<set stat="mAtk" val="278" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="45887" name="Amaranthine Buster - Acumen" additionalName="30-day" type="Weapon">
@@ -1747,11 +1804,12 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="SWORD" />
+		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="371" />
 			<set stat="pAtk" val="511" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="45888" name="Amaranthine Caster - Acumen" additionalName="30-day" type="Weapon">
@@ -1773,12 +1831,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="BLUNT" />
+		<set name="weight" val="1080" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="371" />
 			<set stat="pAtk" val="511" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="45889" name="Amaranthine Retributer - Acumen" additionalName="30-day" type="Weapon">
@@ -1800,12 +1859,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="BLUNT" />
+		<set name="weight" val="1080" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="408" />
 			<set stat="pAtk" val="622" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="45890" name="Amaranthine Dualsword - Damage Up" additionalName="30-day" type="Weapon">
@@ -1827,11 +1887,12 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="DUAL" />
+		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="278" />
 			<set stat="pAtk" val="777" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="45891" name="Amaranthine Dual Dagger - Focus" additionalName="30-day" type="Weapon">
@@ -1853,12 +1914,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="weight" val="2050" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="278" />
-			<set stat="pAtk" val="638" />
 			<set stat="pAtkSpd" val="433" />
+			<set stat="pAtk" val="638" />
+			<set stat="mAtk" val="278" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="45892" name="Amaranthine Dual Blunet Weapon - Damage Up" additionalName="30-day" type="Weapon">
@@ -1880,12 +1942,13 @@
 		<set name="spiritshots" val="1" />
 		<set name="time" val="43200" />
 		<set name="weapon_type" val="DUALBLUNT" />
+		<set name="weight" val="1740" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="278" />
 			<set stat="pAtk" val="777" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="45893" name="Magic Armor Set (R-grade) Pack" additionalName="30-day" type="EtcItem">
@@ -1914,9 +1977,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="GOLD" />
 		<set name="time" val="43200" />
+		<set name="weight" val="150" />
 		<for>
-			<add stat="mDef" val="125" />
+			<add stat="maxHp" val="445" />
 			<add stat="maxMp" val="62" />
+			<add stat="mDef" val="125" order="0" />
 		</for>
 	</item>
 	<item id="45895" name="Filled Necklace (Frintezza Energy)" additionalName="30-day" type="Armor">
@@ -1933,9 +1998,10 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="GOLD" />
 		<set name="time" val="43200" />
+		<set name="weight" val="150" />
 		<for>
-			<add stat="mDef" val="95" />
 			<add stat="maxMp" val="62" />
+			<add stat="mDef" val="95" order="0" />
 		</for>
 	</item>
 	<item id="45896" name="Filled Earring (Antharas Energy)" additionalName="30-day" type="Armor">
@@ -1952,9 +2018,10 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="GOLD" />
 		<set name="time" val="43200" />
+		<set name="weight" val="150" />
 		<for>
-			<add stat="mDef" val="94" />
 			<add stat="maxMp" val="46" />
+			<add stat="mDef" val="94" order="0" />
 		</for>
 	</item>
 	<item id="45897" name="Filled Earring (Zaken Energy)" additionalName="30-day" type="Armor">
@@ -1971,9 +2038,10 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="GOLD" />
 		<set name="time" val="43200" />
+		<set name="weight" val="150" />
 		<for>
-			<add stat="mDef" val="71" />
 			<add stat="maxMp" val="46" />
+			<add stat="mDef" val="71" order="0" />
 		</for>
 	</item>
 	<item id="45898" name="Filled Ring (Baium Energy)" additionalName="30-day" type="Armor">
@@ -1990,8 +2058,9 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="GOLD" />
 		<set name="time" val="43200" />
+		<set name="weight" val="150" />
 		<for>
-			<add stat="mDef" val="48" />
+			<add stat="mDef" val="48" order="0" />
 		</for>
 	</item>
 	<item id="45899" name="Filled Ring (Queen Ant Energy)" additionalName="30-day" type="Armor">
@@ -2008,8 +2077,9 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="GOLD" />
 		<set name="time" val="43200" />
+		<set name="weight" val="150" />
 		<for>
-			<add stat="mDef" val="48" />
+			<add stat="mDef" val="48" order="0" />
 		</for>
 	</item>
 </list>

@@ -242,9 +242,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="122" />
 			<set stat="pAtk" val="152" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="26225" name="Steel Spirit's Staff (60-day)" type="Weapon">
@@ -268,9 +268,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="134" />
 			<set stat="pAtk" val="170" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="26226" name="Steel Dasparion's Staff (60-day)" type="Weapon">
@@ -294,9 +294,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="157" />
 			<set stat="pAtk" val="207" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="26227" name="Steel Imperial Staff (60-day)" type="Weapon">
@@ -320,9 +320,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="193" />
 			<set stat="pAtk" val="274" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="26228" name="Steel Dynasty Staff (60-day)" type="Weapon">
@@ -346,15 +346,15 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="222" />
 			<set stat="pAtk" val="325" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="26229" name="Fated Support Box: Ertheia Wizard (C-grade)" type="EtcItem">
 		<!-- Double-click to receive C-grade equipment items necessary for Ertheia wizard-type characters. Can be used by characters Lv. 40 - 84. -->
 		<set name="icon" val="icon.etc_equip_item_box_i00" />
-		<set name="capsuled_items" val="11855,1,1,100;12097,1,1,100;12098,1,1,100;12099,1,1,100;12100,1,1,100;12145,1,1,100" /> <!-- Common Item - Demon's Staff -  -->
+		<set name="capsuled_items" val="11855,1,1,100;12097,1,1,100;12098,1,1,100;12099,1,1,100;12100,1,1,100;12145,1,1,100" /> <!-- Common Item - Demon's Staff, Common Item - Karmian Gloves, Common Item - Karmian Boots, Common Item - Karmian Tunic, Common Item - Karmian Stockings, Common Item - Full Plate Helmet -->
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<set name="is_auctionable" val="false" />
@@ -370,7 +370,7 @@
 	<item id="26230" name="Fated Support Box: Ertheia Fighter (C-grade)" type="EtcItem">
 		<!-- Double-click to receive C-grade equipment items necessary for Ertheia fighter-type characters. Can be used by characters Lv. 40 - 84. -->
 		<set name="icon" val="icon.etc_equip_item_box_i00" />
-		<set name="capsuled_items" val="11839,1,1,100;12135,1,1,100;12136,1,1,100;12137,1,1,100;12145,1,1,100" /> <!-- Common Item - Great Pata -  -->
+		<set name="capsuled_items" val="11839,1,1,100;12135,1,1,100;12136,1,1,100;12137,1,1,100;12145,1,1,100" /> <!-- Common Item - Great Pata, Common Item - Drake Leather Armor, Common Item - Drake Leather Boots, Common Item - Divine Gloves, Common Item - Full Plate Helmet -->
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<set name="is_auctionable" val="false" />
@@ -615,6 +615,7 @@
 	<item id="26249" name="Cloak of Light for the Chosen" type="Armor">
 		<!-- Cloak of Light for those who have proven themselves as testers in Lineage II. P. Def. + 100, M. Def. + 80, and STR/MEN/DEX/WIT/INT/CON +2. Damage received during PvP decreases by 5%. Can use Blessed Escape. -->
 		<set name="icon" val="icon.amor_goodness_cloak" />
+		<set name="bodypart" val="back" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
@@ -623,13 +624,20 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="LEATHER" />
 		<for>
-			<add stat="mDef" val="40" />
-			<add stat="pDef" val="50" />
+			<add stat="CON" val="2" />
+			<add stat="DEX" val="2" />
+			<add stat="INT" val="2" />
+			<add stat="MEN" val="2" />
+			<add stat="STR" val="2" />
+			<add stat="WIT" val="2" />
+			<add stat="pDef" val="50" order="0" />
+			<add stat="mDef" val="40" order="0" />
 		</for>
 	</item>
 	<item id="26250" name="Cloak of Darkness for the Chosen" type="Armor">
 		<!-- Cloak of Darkness for those who have proven themselves as testers in Lineage II. P. Def. + 100, M. Def. + 80, and STR/MEN/DEX/WIT/INT/CON +2. Damage received during PvP decreases by 5%. Can use Blessed Escape. -->
 		<set name="icon" val="icon.amor_evilness_cloak" />
+		<set name="bodypart" val="back" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
@@ -638,8 +646,14 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="LEATHER" />
 		<for>
-			<add stat="mDef" val="40" />
-			<add stat="pDef" val="50" />
+			<add stat="CON" val="2" />
+			<add stat="DEX" val="2" />
+			<add stat="INT" val="2" />
+			<add stat="MEN" val="2" />
+			<add stat="STR" val="2" />
+			<add stat="WIT" val="2" />
+			<add stat="pDef" val="50" order="0" />
+			<add stat="mDef" val="40" order="0" />
 		</for>
 	</item>
 	<item id="26251" name="Lilith Server Mask" type="Armor">
@@ -712,12 +726,13 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="DAGGER" />
+		<set name="weight" val="500" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="414" />
-			<set stat="pAtk" val="685" />
 			<set stat="pAtkSpd" val="433" />
+			<set stat="pAtk" val="685" />
+			<set stat="mAtk" val="414" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="26257" name="Halloween Cutter" type="Weapon">
@@ -735,11 +750,12 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="SWORD" />
+		<set name="weight" val="500" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="414" />
 			<set stat="pAtk" val="752" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="26258" name="Halloween Slasher" type="Weapon">
@@ -757,11 +773,12 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="SWORD" />
+		<set name="weight" val="500" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="414" />
 			<set stat="pAtk" val="916" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="26259" name="Halloween Avenger" type="Weapon">
@@ -779,12 +796,13 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="BLUNT" />
+		<set name="weight" val="500" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="414" />
 			<set stat="pAtk" val="752" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="26260" name="Halloween Fighter" type="Weapon">
@@ -802,12 +820,13 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="DUALFIST" />
+		<set name="weight" val="500" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="414" />
 			<set stat="pAtk" val="916" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="26261" name="Halloween Stormer" type="Weapon">
@@ -825,12 +844,13 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="POLE" />
+		<set name="weight" val="500" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="8" />
-			<set stat="mAtk" val="414" />
-			<set stat="pAtk" val="752" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="752" />
+			<set stat="mAtk" val="414" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="26262" name="Halloween Thrower" type="Weapon">
@@ -848,12 +868,13 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="BOW" />
+		<set name="weight" val="500" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="414" />
-			<set stat="pAtk" val="1481" />
 			<set stat="pAtkSpd" val="293" />
+			<set stat="pAtk" val="1481" />
+			<set stat="mAtk" val="414" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="26263" name="Halloween Shooter" type="Weapon">
@@ -871,12 +892,13 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="CROSSBOW" />
+		<set name="weight" val="500" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="414" />
-			<set stat="pAtk" val="1333" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="1333" />
+			<set stat="mAtk" val="414" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="26264" name="Halloween Buster" type="Weapon">
@@ -894,11 +916,12 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="SWORD" />
+		<set name="weight" val="500" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="486" />
 			<set stat="pAtk" val="602" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="26265" name="Halloween Caster" type="Weapon">
@@ -916,12 +939,13 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="BLUNT" />
+		<set name="weight" val="500" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="486" />
 			<set stat="pAtk" val="602" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="26266" name="Halloween Retributer" type="Weapon">
@@ -939,12 +963,13 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="BLUNT" />
+		<set name="weight" val="500" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="535" />
 			<set stat="pAtk" val="733" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="26267" name="Halloween Dualsword" type="Weapon">
@@ -962,11 +987,12 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="DUAL" />
+		<set name="weight" val="500" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="414" />
 			<set stat="pAtk" val="916" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="26268" name="Halloween Dual Dagger" type="Weapon">
@@ -984,12 +1010,13 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="weight" val="500" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="414" />
-			<set stat="pAtk" val="752" />
 			<set stat="pAtkSpd" val="433" />
+			<set stat="pAtk" val="752" />
+			<set stat="mAtk" val="414" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="26269" name="Halloween Dual Blunt Weapon" type="Weapon">
@@ -1007,12 +1034,13 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="DUALBLUNT" />
+		<set name="weight" val="500" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="414" />
 			<set stat="pAtk" val="916" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="26270" name="Halloween Shield" type="Armor">
@@ -1025,10 +1053,11 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="DAMASCUS" />
+		<set name="weight" val="1130" />
 		<for>
-			<sub stat="rEvas" val="-8" />
 			<set stat="rShld" val="20" />
 			<set stat="sDef" val="546" />
+			<sub stat="rEvas" val="8" />
 		</for>
 	</item>
 	<item id="26271" name="Halloween Sigil" type="Armor">
@@ -1043,7 +1072,7 @@
 		<set name="material" val="STEEL" />
 		<set name="weight" val="920" />
 		<for>
-			<add stat="pDef" val="150" />
+			<add stat="pDef" val="150" order="0" />
 		</for>
 	</item>
 	<item id="26272" name="Mysterious Halloween Potion" type="EtcItem">
@@ -1090,12 +1119,13 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="DAGGER" />
+		<set name="weight" val="500" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="414" />
-			<set stat="pAtk" val="685" />
 			<set stat="pAtkSpd" val="433" />
+			<set stat="pAtk" val="685" />
+			<set stat="mAtk" val="414" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="26276" name="Halloween Cutter" type="Weapon">
@@ -1113,11 +1143,12 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="SWORD" />
+		<set name="weight" val="500" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="414" />
 			<set stat="pAtk" val="752" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="26277" name="Halloween Slasher" type="Weapon">
@@ -1135,11 +1166,12 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="SWORD" />
+		<set name="weight" val="500" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="414" />
 			<set stat="pAtk" val="916" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="26278" name="Halloween Avenger" type="Weapon">
@@ -1157,12 +1189,13 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="BLUNT" />
+		<set name="weight" val="500" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="414" />
 			<set stat="pAtk" val="752" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="26279" name="Halloween Fighter" type="Weapon">
@@ -1180,12 +1213,13 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="DUALFIST" />
+		<set name="weight" val="500" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="414" />
 			<set stat="pAtk" val="916" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="26280" name="Halloween Stormer" type="Weapon">
@@ -1203,12 +1237,13 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="POLE" />
+		<set name="weight" val="500" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="8" />
-			<set stat="mAtk" val="414" />
-			<set stat="pAtk" val="752" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="752" />
+			<set stat="mAtk" val="414" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="26281" name="Halloween Thrower" type="Weapon">
@@ -1226,12 +1261,13 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="BOW" />
+		<set name="weight" val="500" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="414" />
-			<set stat="pAtk" val="1481" />
 			<set stat="pAtkSpd" val="293" />
+			<set stat="pAtk" val="1481" />
+			<set stat="mAtk" val="414" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="26282" name="Halloween Shooter" type="Weapon">
@@ -1249,12 +1285,13 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="CROSSBOW" />
+		<set name="weight" val="500" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="414" />
-			<set stat="pAtk" val="1333" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="1333" />
+			<set stat="mAtk" val="414" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="26283" name="Halloween Buster" type="Weapon">
@@ -1272,11 +1309,12 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="SWORD" />
+		<set name="weight" val="500" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="486" />
 			<set stat="pAtk" val="602" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="26284" name="Halloween Caster" type="Weapon">
@@ -1294,12 +1332,13 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="BLUNT" />
+		<set name="weight" val="500" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="486" />
 			<set stat="pAtk" val="602" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="26285" name="Halloween Retributer" type="Weapon">
@@ -1317,12 +1356,13 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="BLUNT" />
+		<set name="weight" val="500" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="535" />
 			<set stat="pAtk" val="733" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="26286" name="Halloween Dualsword" type="Weapon">
@@ -1340,11 +1380,12 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="DUAL" />
+		<set name="weight" val="500" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="414" />
 			<set stat="pAtk" val="916" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="26287" name="Halloween Dual Dagger" type="Weapon">
@@ -1362,12 +1403,13 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="weight" val="500" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="414" />
-			<set stat="pAtk" val="752" />
 			<set stat="pAtkSpd" val="433" />
+			<set stat="pAtk" val="752" />
+			<set stat="mAtk" val="414" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="26288" name="Halloween Dual Blunt Weapon" type="Weapon">
@@ -1385,12 +1427,13 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="DUALBLUNT" />
+		<set name="weight" val="500" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="414" />
 			<set stat="pAtk" val="916" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="26289" name="Halloween Shield" type="Armor">
@@ -1403,10 +1446,11 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="DAMASCUS" />
+		<set name="weight" val="1130" />
 		<for>
-			<sub stat="rEvas" val="-8" />
 			<set stat="rShld" val="20" />
 			<set stat="sDef" val="546" />
+			<sub stat="rEvas" val="8" />
 		</for>
 	</item>
 	<item id="26290" name="Halloween Sigil" type="Armor">
@@ -1421,7 +1465,7 @@
 		<set name="material" val="STEEL" />
 		<set name="weight" val="920" />
 		<for>
-			<add stat="pDef" val="150" />
+			<add stat="pDef" val="150" order="0" />
 		</for>
 	</item>
 	<item id="26291" name="Kaliel's Energy" additionalName="Longing" type="EtcItem">
@@ -1445,6 +1489,11 @@
 		<set name="material" val="SILVER" />
 		<set name="time" val="10080" />
 		<set name="weight" val="150" />
+		<for>
+			<add stat="CON" val="3" />
+			<add stat="MEN" val="3" />
+			<add stat="weightLimit" val="10000" />
+		</for>
 	</item>
 	<item id="26293" name="Agathion - Matryoshka" additionalName="7-day" type="Armor">
 		<!-- Can summon Agathion - Matryoshka.. Active Skill: Teleport to Talking Island Village / Aden / Ancient City Arcan / Keucereus Alliance Base . Matryoshka's Gift - Receive a special gift from matryoshka every 12 hours.. Matryoshka's Blessing - XP/SP + 30% for -->
@@ -1473,6 +1522,11 @@
 		<set name="material" val="SILVER" />
 		<set name="time" val="43200" />
 		<set name="weight" val="150" />
+		<for>
+			<add stat="CON" val="3" />
+			<add stat="MEN" val="3" />
+			<add stat="weightLimit" val="10000" />
+		</for>
 	</item>
 	<item id="26295" name="Agathion - Matryoshka" additionalName="30-day" type="Armor">
 		<!-- Can summon Agathion - Matryoshka.. Active Skill: Teleport to Talking Island Village / Aden / Ancient City Arcan / Keucereus Alliance Base . Matryoshka's Gift - Receive a special gift from matryoshka every 12 hours.. Matryoshka's Blessing - XP/SP + 30% for -->

@@ -13,6 +13,10 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="GOLD" />
 		<set name="time" val="60" />
+		<set name="weight" val="150" />
+		<for>
+			<mul stat="mDef" val="1.07" />
+		</for>
 	</item>
 	<item id="46301" name="Christmas Talisman: Attribute Defense" additionalName="1-hour" type="Armor">
 		<!-- Event item. All Attributes Defense + 30 when equipped. Effect does not stack with additional Talismans of the same type. 1-hour. -->
@@ -27,6 +31,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="GOLD" />
 		<set name="time" val="60" />
+		<set name="weight" val="150" />
 	</item>
 	<item id="46302" name="Christmas Talisman Pack" additionalName="P. Skill Critical Damage" type="EtcItem">
 		<!-- Double-click to get a Christmas Talisman: P. Skill Critical Damage (1-hour). Will be deleted after the event. -->
@@ -130,6 +135,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
 	</item>
 	<item id="46312" name="Emergency Whistle - Barton" type="EtcItem">
 		<!-- Send a signal to Barton, who will use the Berserker skill. Using the Berserker skill will increase Barton's Debuff Resistance/Speed/P. Atk./P. Accuracy/P. Def./Atk. Spd./Critical Damage. Recovre 20% of HP when killing the opponent. Additionally, P. Atk. + -->
@@ -143,6 +149,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
 	</item>
 	<item id="46313" name="Emergency Whistle - Hayuk" type="EtcItem">
 		<!-- Send a signal to Hayuk, who will use the Phoenix Arrow skill. The whistle disappears after 2 uses. -->
@@ -156,6 +163,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
 	</item>
 	<item id="46314" name="Emergency Whistle - Elise" type="EtcItem">
 		<!-- Send a signal to Elise, who will use the Celestial Party Protection skill. The whistle disappears after 2 uses. -->
@@ -169,6 +177,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
 	</item>
 	<item id="46315" name="Emergency Whistle - Eliyah" type="EtcItem">
 		<!-- Send a signal to Eliyah, who will use the Shadow Hell skill. The whistle disappears after 2 uses. -->
@@ -182,6 +191,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
 	</item>
 	<item id="46316" name="System Control Room Key" type="EtcItem">
 		<!-- Key to get to Core in the Cruma Tower. Key to the System Control Room. -->
@@ -192,6 +202,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
 	</item>
 	<item id="46317" name="Shadow Shaper" type="Weapon">
 		<!-- Weapon of the Ashen Shadow Revolutionaries. . Can only be enchanted up to + 10 with a Scroll: Enchant Shadow Weapon. . Soul Crystal enhancement, augmentation, crystallization, modification is impossible. -->
@@ -210,11 +221,11 @@
 		<set name="weapon_type" val="DAGGER" />
 		<set name="weight" val="1520" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="176" />
-			<set stat="pAtk" val="443" />
 			<set stat="pAtkSpd" val="433" />
+			<set stat="pAtk" val="443" />
+			<set stat="mAtk" val="176" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="46318" name="Shadow Cutter" type="Weapon">
@@ -235,9 +246,9 @@
 		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="176" />
 			<set stat="pAtk" val="526" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="46319" name="Shadow Slasher" type="Weapon">
@@ -258,9 +269,9 @@
 		<set name="weight" val="1740" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="176" />
 			<set stat="pAtk" val="646" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="46320" name="Shadow Fighter" type="Weapon">
@@ -282,9 +293,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="176" />
 			<set stat="pAtk" val="646" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="46321" name="Shadow Stormer" type="Weapon">
@@ -304,11 +315,11 @@
 		<set name="weapon_type" val="POLE" />
 		<set name="weight" val="2010" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="8" />
-			<set stat="mAtk" val="176" />
-			<set stat="pAtk" val="526" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="526" />
+			<set stat="mAtk" val="176" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="46322" name="Shadow Thrower" type="Weapon">
@@ -328,11 +339,11 @@
 		<set name="weapon_type" val="BOW" />
 		<set name="weight" val="1520" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="176" />
-			<set stat="pAtk" val="1031" />
 			<set stat="pAtkSpd" val="293" />
+			<set stat="pAtk" val="1031" />
+			<set stat="mAtk" val="176" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="46323" name="Shadow Shooter" type="Weapon">
@@ -352,11 +363,11 @@
 		<set name="weapon_type" val="CROSSBOW" />
 		<set name="weight" val="1580" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="176" />
-			<set stat="pAtk" val="1012" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="1012" />
+			<set stat="mAtk" val="176" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="46324" name="Shadow Buster" type="Weapon">
@@ -377,9 +388,9 @@
 		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="272" />
 			<set stat="pAtk" val="394" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="46325" name="Shadow Retributer" type="Weapon">
@@ -401,9 +412,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="310" />
 			<set stat="pAtk" val="486" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="46326" name="Shadow Dualsword" type="Weapon">
@@ -424,9 +435,9 @@
 		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="176" />
 			<set stat="pAtk" val="646" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="46327" name="Shadow Shaper" type="Weapon">
@@ -437,7 +448,7 @@
 		<set name="commissionItemType" val="DAGGER" />
 		<set name="crystal_type" val="R" />
 		<set name="default_action" val="EQUIP" />
-		<set name="item_skill" val="13842-12;13847-1" /> <!-- , PvE Damage Increase -->
+		<set name="item_skill" val="13842-12;13847-1" /> <!-- Shadow Shaper, PvE Damage Increase -->
 		<set name="material" val="STEEL" />
 		<set name="random_damage" val="5" />
 		<set name="soulshots" val="1" />
@@ -445,11 +456,11 @@
 		<set name="weapon_type" val="DAGGER" />
 		<set name="weight" val="1520" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="312" />
-			<set stat="pAtk" val="629" />
 			<set stat="pAtkSpd" val="433" />
+			<set stat="pAtk" val="629" />
+			<set stat="mAtk" val="312" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="46328" name="Shadow Cutter" type="Weapon">
@@ -460,7 +471,7 @@
 		<set name="commissionItemType" val="ONE_HAND_SWORD" />
 		<set name="crystal_type" val="R" />
 		<set name="default_action" val="EQUIP" />
-		<set name="item_skill" val="13837-12;13847-1" /> <!-- , PvE Damage Increase -->
+		<set name="item_skill" val="13837-12;13847-1" /> <!-- Shadow Cutter, PvE Damage Increase -->
 		<set name="material" val="STEEL" />
 		<set name="random_damage" val="10" />
 		<set name="soulshots" val="1" />
@@ -469,9 +480,9 @@
 		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="312" />
 			<set stat="pAtk" val="719" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="46329" name="Shadow Slasher" type="Weapon">
@@ -482,7 +493,7 @@
 		<set name="commissionItemType" val="ONE_HAND_SWORD" />
 		<set name="crystal_type" val="R" />
 		<set name="default_action" val="EQUIP" />
-		<set name="item_skill" val="13838-12;13847-1" /> <!-- , PvE Damage Increase -->
+		<set name="item_skill" val="13838-12;13847-1" /> <!-- Shadow Slasher, PvE Damage Increase -->
 		<set name="material" val="STEEL" />
 		<set name="random_damage" val="10" />
 		<set name="soulshots" val="1" />
@@ -491,9 +502,9 @@
 		<set name="weight" val="1740" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="312" />
 			<set stat="pAtk" val="875" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="46330" name="Shadow Fighter" type="Weapon">
@@ -504,7 +515,7 @@
 		<set name="commissionItemType" val="FIST_WEAPON" />
 		<set name="crystal_type" val="R" />
 		<set name="default_action" val="EQUIP" />
-		<set name="item_skill" val="13839-12;13847-1" /> <!-- , PvE Damage Increase -->
+		<set name="item_skill" val="13839-12;13847-1" /> <!-- Shadow Fighter, PvE Damage Increase -->
 		<set name="material" val="STEEL" />
 		<set name="random_damage" val="5" />
 		<set name="soulshots" val="1" />
@@ -514,9 +525,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="312" />
 			<set stat="pAtk" val="875" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="46331" name="Shadow Stormer" type="Weapon">
@@ -527,7 +538,7 @@
 		<set name="commissionItemType" val="SPEAR" />
 		<set name="crystal_type" val="R" />
 		<set name="default_action" val="EQUIP" />
-		<set name="item_skill" val="13840-12;13847-1" /> <!-- , PvE Damage Increase -->
+		<set name="item_skill" val="13840-12;13847-1" /> <!-- Shadow Stormer, PvE Damage Increase -->
 		<set name="material" val="BRONZE" />
 		<set name="random_damage" val="10" />
 		<set name="soulshots" val="1" />
@@ -535,11 +546,11 @@
 		<set name="weapon_type" val="POLE" />
 		<set name="weight" val="2010" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="8" />
-			<set stat="mAtk" val="312" />
-			<set stat="pAtk" val="719" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="719" />
+			<set stat="mAtk" val="312" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="46332" name="Shadow Thrower" type="Weapon">
@@ -550,7 +561,7 @@
 		<set name="commissionItemType" val="BOW" />
 		<set name="crystal_type" val="R" />
 		<set name="default_action" val="EQUIP" />
-		<set name="item_skill" val="13843-12;13847-1" /> <!-- , PvE Damage Increase -->
+		<set name="item_skill" val="13843-12;13847-1" /> <!-- Shadow Thrower, PvE Damage Increase -->
 		<set name="material" val="STEEL" />
 		<set name="random_damage" val="5" />
 		<set name="reuse_delay" val="1500" />
@@ -559,11 +570,11 @@
 		<set name="weapon_type" val="BOW" />
 		<set name="weight" val="1520" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="312" />
-			<set stat="pAtk" val="1415" />
 			<set stat="pAtkSpd" val="293" />
+			<set stat="pAtk" val="1415" />
+			<set stat="mAtk" val="312" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="46333" name="Shadow Shooter" type="Weapon">
@@ -574,7 +585,7 @@
 		<set name="commissionItemType" val="CROSSBOW" />
 		<set name="crystal_type" val="R" />
 		<set name="default_action" val="EQUIP" />
-		<set name="item_skill" val="13844-12;13847-1" /> <!-- , PvE Damage Increase -->
+		<set name="item_skill" val="13844-12;13847-1" /> <!-- Shadow Shooter, PvE Damage Increase -->
 		<set name="material" val="STEEL" />
 		<set name="random_damage" val="5" />
 		<set name="reuse_delay" val="400" />
@@ -586,11 +597,11 @@
 			<player races="KAMAEL" />
 		</cond>
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="312" />
-			<set stat="pAtk" val="1274" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="1274" />
+			<set stat="mAtk" val="312" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="46334" name="Shadow Buster" type="Weapon">
@@ -601,7 +612,7 @@
 		<set name="commissionItemType" val="ONE_HAND_MAGIC_SWORD" />
 		<set name="crystal_type" val="R" />
 		<set name="default_action" val="EQUIP" />
-		<set name="item_skill" val="13845-12;13847-1" /> <!-- , PvE Damage Increase -->
+		<set name="item_skill" val="13845-12;13847-1" /> <!-- Shadow Buster, PvE Damage Increase -->
 		<set name="material" val="STEEL" />
 		<set name="random_damage" val="10" />
 		<set name="soulshots" val="1" />
@@ -610,9 +621,9 @@
 		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="417" />
 			<set stat="pAtk" val="575" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="46335" name="Shadow Retributer" type="Weapon">
@@ -623,7 +634,7 @@
 		<set name="commissionItemType" val="TWO_HAND_MAGIC_BLUNT_WEAPON" />
 		<set name="crystal_type" val="R" />
 		<set name="default_action" val="EQUIP" />
-		<set name="item_skill" val="13846-12;13847-1" /> <!-- , PvE Damage Increase -->
+		<set name="item_skill" val="13846-12;13847-1" /> <!-- Shadow Retributer, PvE Damage Increase -->
 		<set name="material" val="WOOD" />
 		<set name="random_damage" val="20" />
 		<set name="soulshots" val="1" />
@@ -632,11 +643,11 @@
 		<set name="weight" val="1080" />
 		<for>
 			<add stat="accCombat" val="8" />
-			<add stat="accMagic" val="8.0" />
 			<add stat="critRate" val="6" />
+			<add stat="accMagic" val="8.0" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="458" />
 			<set stat="pAtk" val="700" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="46336" name="Shadow Dualsword" type="Weapon">
@@ -647,7 +658,7 @@
 		<set name="commissionItemType" val="DUALSWORD" />
 		<set name="crystal_type" val="R" />
 		<set name="default_action" val="EQUIP" />
-		<set name="item_skill" val="13841-12;13847-1" /> <!-- , PvE Damage Increase -->
+		<set name="item_skill" val="13841-12;13847-1" /> <!-- Shadow Dualsword, PvE Damage Increase -->
 		<set name="material" val="STEEL" />
 		<set name="random_damage" val="10" />
 		<set name="soulshots" val="1" />
@@ -656,9 +667,9 @@
 		<set name="weight" val="1520" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="312" />
 			<set stat="pAtk" val="875" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="46337" name="Scroll: Enchant Shadow Weapon" type="EtcItem">
@@ -669,6 +680,7 @@
 		<set name="immediate_effect" val="true" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
 	</item>
 	<item id="46338" name="Sigel Knight Transformation Appearance" type="Armor">
 		<!-- Sigel Knight Transformation appearance. -->
@@ -683,7 +695,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="BRONZE" />
 		<for>
-			<add stat="pDef" val="400" />
+			<add stat="pDef" val="400" order="0" />
 		</for>
 	</item>
 	<item id="46339" name="Tyrr Warrior Transformation Appearance" type="Armor">
@@ -699,7 +711,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="BRONZE" />
 		<for>
-			<add stat="pDef" val="400" />
+			<add stat="pDef" val="400" order="0" />
 		</for>
 	</item>
 	<item id="46340" name="Othell Rogue Transformation Appearance" type="Armor">
@@ -715,7 +727,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="BRONZE" />
 		<for>
-			<add stat="pDef" val="400" />
+			<add stat="pDef" val="400" order="0" />
 		</for>
 	</item>
 	<item id="46341" name="Yul Archer Transformation Appearance" type="Armor">
@@ -731,7 +743,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="BRONZE" />
 		<for>
-			<add stat="pDef" val="400" />
+			<add stat="pDef" val="400" order="0" />
 		</for>
 	</item>
 	<item id="46342" name="Feoh Wizard Transformation Appearance" type="Armor">
@@ -747,7 +759,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="BRONZE" />
 		<for>
-			<add stat="pDef" val="400" />
+			<add stat="pDef" val="400" order="0" />
 		</for>
 	</item>
 	<item id="46343" name="Iss Enchanter Transformation Appearance" type="Armor">
@@ -763,7 +775,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="BRONZE" />
 		<for>
-			<add stat="pDef" val="400" />
+			<add stat="pDef" val="400" order="0" />
 		</for>
 	</item>
 	<item id="46344" name="Wynn Summoner Transformation Appearance" type="Armor">
@@ -779,7 +791,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="BRONZE" />
 		<for>
-			<add stat="pDef" val="400" />
+			<add stat="pDef" val="400" order="0" />
 		</for>
 	</item>
 	<item id="46345" name="Aeore Healer Transformation Appearance" type="Armor">
@@ -795,7 +807,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="BRONZE" />
 		<for>
-			<add stat="pDef" val="400" />
+			<add stat="pDef" val="400" order="0" />
 		</for>
 	</item>
 	<item id="46346" name="Agathion - Blessed Virgo" additionalName="30-day" type="Armor">
@@ -811,6 +823,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="SILVER" />
 		<set name="time" val="43200" />
+		<set name="weight" val="150" />
 	</item>
 	<item id="46347" name="Agathion - Blessed Capricorn" additionalName="30-day" type="Armor">
 		<!-- Summons Capricorn.. . <Active Skill>. 1. Agathion Teleport: Town of Aden/Town of Rune/Town of Giran/Heine.(Cooldown is 30min.). . <Item Skill>. 1. Balanced Power: STR/INT/CON/DEX/WIT/MEN increases by 1.. 2. Attribute Enchant: Fire/ Water/ Earth/ Wind/ Dar -->
@@ -825,6 +838,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="SILVER" />
 		<set name="time" val="43200" />
+		<set name="weight" val="150" />
 	</item>
 	<item id="46348" name="Agathion - Blessed Libra" additionalName="30-day" type="Armor">
 		<!-- Summons Libra.. . <Active Skill>. 1. Agathion Teleport: Town of Aden/Town of Rune/Town of Giran/Heine.(Cooldown is 30min.). . <Item Skill>. 1. Balanced Power: STR/INT/CON/DEX/WIT/MEN increases by 1.. 2. Attribute Enchant: Fire/ Water/ Earth/ Wind/ Dark/ H -->
@@ -839,6 +853,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="SILVER" />
 		<set name="time" val="43200" />
+		<set name="weight" val="150" />
 	</item>
 	<item id="46349" name="Agathion - Blessed Aries" additionalName="30-day" type="Armor">
 		<!-- Summons Aries.. . <Active Skill>. 1. Agathion Teleport: Town of Aden/Town of Rune/Town of Giran/Heine.(Cooldown is 30min.). . <Item Skill>. 1. Balanced Power: STR/INT/CON/DEX/WIT/MEN increases by 1.. 2. Attribute Enchant: Fire/ Water/ Earth/ Wind/ Dark/ H -->
@@ -853,6 +868,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="SILVER" />
 		<set name="time" val="43200" />
+		<set name="weight" val="150" />
 	</item>
 	<item id="46350" name="Agathion - Blessed Taurus" additionalName="30-day" type="Armor">
 		<!-- Summons Taurus.. . <Active Skill>. 1. Agathion Teleport: Town of Aden/Town of Rune/Town of Giran/Heine.(Cooldown is 30min.). . <Item Skill>. 1. Balanced Power: STR/INT/CON/DEX/WIT/MEN increases by 1.. 2. Attribute Enchant: Fire/ Water/ Earth/ Wind/ Dark/  -->
@@ -867,6 +883,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="SILVER" />
 		<set name="time" val="43200" />
+		<set name="weight" val="150" />
 	</item>
 	<item id="46351" name="Agathion - Blessed Leo" additionalName="30-day" type="Armor">
 		<!-- Summons Leo.. . <Active Skill>. 1. Agathion Teleport: Town of Aden/Town of Rune/Town of Giran/Heine.(Cooldown is 30min.). . <Item Skill>. 1. Balanced Power: STR/INT/CON/DEX/WIT/MEN increases by 1.. 2. Attribute Enchant: Fire/ Water/ Earth/ Wind/ Dark/ Hol -->
@@ -881,6 +898,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="SILVER" />
 		<set name="time" val="43200" />
+		<set name="weight" val="150" />
 	</item>
 	<item id="46352" name="Agathion - Blessed Gemini" additionalName="30-day" type="Armor">
 		<!-- Summons Gemini.. . <Active Skill>. 1. Agathion Teleport: Town of Aden/Town of Rune/Town of Giran/Heine.(Cooldown is 30min.). . <Item Skill>. 1. Balanced Power: STR/INT/CON/DEX/WIT/MEN increases by 1.. 2. Attribute Enchant: Fire/ Water/ Earth/ Wind/ Dark/  -->
@@ -895,6 +913,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="SILVER" />
 		<set name="time" val="43200" />
+		<set name="weight" val="150" />
 	</item>
 	<item id="46353" name="Agathion - Blessed Scorpio" additionalName="30-day" type="Armor">
 		<!-- Summons Scorpio.. . <Active Skill>. 1. Agathion Teleport: Town of Aden/Town of Rune/Town of Giran/Heine.(Cooldown is 30min.). . <Item Skill>. 1. Balanced Power: STR/INT/CON/DEX/WIT/MEN increases by 1.. 2. Attribute Enchant: Fire/ Water/ Earth/ Wind/ Dark/ -->
@@ -909,6 +928,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="SILVER" />
 		<set name="time" val="43200" />
+		<set name="weight" val="150" />
 	</item>
 	<item id="46354" name="Agathion - Blessed Aquarius" additionalName="30-day" type="Armor">
 		<!-- Summons Aquarius.. . <Active Skill>. 1. Agathion Teleport: Town of Aden/Town of Rune/Town of Giran/Heine.(Cooldown is 30min.). . <Item Skill>. 1. Balanced Power: STR/INT/CON/DEX/WIT/MEN increases by 1.. 2. Attribute Enchant: Fire/ Water/ Earth/ Wind/ Dark -->
@@ -923,6 +943,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="SILVER" />
 		<set name="time" val="43200" />
+		<set name="weight" val="150" />
 	</item>
 	<item id="46355" name="Agathion - Blessed Sagittarius" additionalName="30-day" type="Armor">
 		<!-- Summons Sagittarius.. . <Active Skill>. 1. Agathion Teleport: Town of Aden/Town of Rune/Town of Giran/Heine.(Cooldown is 30min.). . <Item Skill>. 1. Balanced Power: STR/INT/CON/DEX/WIT/MEN increases by 1.. 2. Attribute Enchant: Fire/ Water/ Earth/ Wind/ D -->
@@ -937,6 +958,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="SILVER" />
 		<set name="time" val="43200" />
+		<set name="weight" val="150" />
 	</item>
 	<item id="46356" name="Agathion - Blessed Cancer" additionalName="30-day" type="Armor">
 		<!-- Summons Cancer.. . <Active Skill>. 1. Agathion Teleport: Town of Aden/Town of Rune/Town of Giran/Heine.(Cooldown is 30min.). . <Item Skill>. 1. Balanced Power: STR/INT/CON/DEX/WIT/MEN increases by 1.. 2. Attribute Enchant: Fire/ Water/ Earth/ Wind/ Dark/  -->
@@ -951,6 +973,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="SILVER" />
 		<set name="time" val="43200" />
+		<set name="weight" val="150" />
 	</item>
 	<item id="46357" name="Agathion - Blessed Virgo Pack" additionalName="30-day" type="EtcItem">
 		<!-- Wrapped Pack containing Agathion - Blessed Virgo (30-day). -->
@@ -963,6 +986,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
+		<set name="weight" val="10" />
 	</item>
 	<item id="46358" name="Agathion - Blessed Capricorn Pack" additionalName="30-day" type="EtcItem">
 		<!-- Wrapped Pack containing Agathion - Blessed Capricorn (30-day). -->
@@ -975,6 +999,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
+		<set name="weight" val="10" />
 	</item>
 	<item id="46359" name="Agathion - Blessed Libra Pack" additionalName="30-day" type="EtcItem">
 		<!-- Wrapped Pack containing Agathion - Blessed Libra (30-day). -->
@@ -987,6 +1012,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
+		<set name="weight" val="10" />
 	</item>
 	<item id="46360" name="Agathion - Blessed Aries Pack" additionalName="30-day" type="EtcItem">
 		<!-- Wrapped Pack containing Agathion - Blessed Aries (30-day). -->
@@ -999,6 +1025,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
+		<set name="weight" val="10" />
 	</item>
 	<item id="46361" name="Agathion - Blessed Taurus Pack" additionalName="30-day" type="EtcItem">
 		<!-- Wrapped Pack containing Agathion - Blessed Taurus (30-day). -->
@@ -1011,6 +1038,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
+		<set name="weight" val="10" />
 	</item>
 	<item id="46362" name="Agathion - Blessed Leo Pack" additionalName="30-day" type="EtcItem">
 		<!-- Wrapped Pack containing Agathion - Blessed Leo (30-day). -->
@@ -1023,6 +1051,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
+		<set name="weight" val="10" />
 	</item>
 	<item id="46363" name="Agathion - Blessed Gemini Pack" additionalName="30-day" type="EtcItem">
 		<!-- Wrapped Pack containing Agathion - Blessed Gemini (30-day). -->
@@ -1035,6 +1064,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
+		<set name="weight" val="10" />
 	</item>
 	<item id="46364" name="Agathion - Blessed Scorpio Pack" additionalName="30-day" type="EtcItem">
 		<!-- Wrapped Pack containing Agathion - Blessed Scorpio (30-day). -->
@@ -1047,6 +1077,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
+		<set name="weight" val="10" />
 	</item>
 	<item id="46365" name="Agathion - Blessed Aquarius Pack" additionalName="30-day" type="EtcItem">
 		<!-- Wrapped Pack containing Agathion - Blessed Aquarius (30-day). -->
@@ -1059,6 +1090,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
+		<set name="weight" val="10" />
 	</item>
 	<item id="46366" name="Agathion - Blessed Pisces Pack" additionalName="30-day" type="EtcItem">
 		<!-- Wrapped Pack containing Agathion - Blessed Pisces (30-day). -->
@@ -1071,6 +1103,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
+		<set name="weight" val="10" />
 	</item>
 	<item id="46367" name="Agathion - Blessed Sagittarius Pack" additionalName="30-day" type="EtcItem">
 		<!-- Wrapped Pack containing Agathion - Blessed Sagittarius (30-day). -->
@@ -1083,6 +1116,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
+		<set name="weight" val="10" />
 	</item>
 	<item id="46368" name="Agathion - Blessed Cancer Pack" additionalName="30-day" type="EtcItem">
 		<!-- Wrapped Pack containing Agathion - Blessed Cancer (30-day). -->
@@ -1095,6 +1129,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
+		<set name="weight" val="10" />
 	</item>
 	<item id="46369" name="Blessed Zodiac Agathion Pack (30-day)" type="EtcItem">
 		<!-- Wrapped Pack containing a Blessed Zodiac Agathion (30-day). -->
@@ -1107,6 +1142,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="FISH" />
+		<set name="weight" val="10" />
 	</item>
 	<item id="46370" name="Christmas Card" additionalName="Event" type="EtcItem">
 		<!-- Christmas Card given by Santa Claus. Only given to people who have been good for a year. Will be deleted after the event. -->
@@ -1120,6 +1156,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
 	</item>
 	<item id="46371" name="Ashen Certificate" type="EtcItem">
 		<!-- Certificate of the Revolutionaries that Refugee Neti has requested. -->
@@ -1219,11 +1256,12 @@
 		<set name="soulshots" val="3" />
 		<set name="spiritshots" val="3" />
 		<set name="weapon_type" val="SWORD" />
+		<set name="weight" val="144" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="54" />
 			<set stat="pAtk" val="92" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="46378" name="Frozen Dagger" type="Weapon">
@@ -1241,12 +1279,13 @@
 		<set name="soulshots" val="3" />
 		<set name="spiritshots" val="3" />
 		<set name="weapon_type" val="DAGGER" />
+		<set name="weight" val="106" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="54" />
-			<set stat="pAtk" val="80" />
 			<set stat="pAtkSpd" val="433" />
+			<set stat="pAtk" val="80" />
+			<set stat="mAtk" val="54" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="46379" name="Frozen Two-handed Sword" type="Weapon">
@@ -1264,11 +1303,12 @@
 		<set name="soulshots" val="3" />
 		<set name="spiritshots" val="3" />
 		<set name="weapon_type" val="SWORD" />
+		<set name="weight" val="209" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="54" />
 			<set stat="pAtk" val="112" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="46380" name="Frozen Fist Weapon" type="Weapon">
@@ -1286,12 +1326,13 @@
 		<set name="soulshots" val="3" />
 		<set name="spiritshots" val="3" />
 		<set name="weapon_type" val="DUALFIST" />
+		<set name="weight" val="152" />
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="54" />
 			<set stat="pAtk" val="112" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="46381" name="Frozen Spear" type="Weapon">
@@ -1309,12 +1350,13 @@
 		<set name="soulshots" val="3" />
 		<set name="spiritshots" val="3" />
 		<set name="weapon_type" val="POLE" />
+		<set name="weight" val="205" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="8" />
-			<set stat="mAtk" val="54" />
-			<set stat="pAtk" val="92" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="92" />
+			<set stat="mAtk" val="54" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="46382" name="Frozen Bow" type="Weapon">
@@ -1333,12 +1375,13 @@
 		<set name="soulshots" val="6" />
 		<set name="spiritshots" val="3" />
 		<set name="weapon_type" val="BOW" />
+		<set name="weight" val="181" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="54" />
-			<set stat="pAtk" val="191" />
 			<set stat="pAtkSpd" val="293" />
+			<set stat="pAtk" val="191" />
+			<set stat="mAtk" val="54" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="46383" name="Frozen Crossbow" type="Weapon">
@@ -1356,12 +1399,13 @@
 		<set name="soulshots" val="6" />
 		<set name="spiritshots" val="3" />
 		<set name="weapon_type" val="CROSSBOW" />
+		<set name="weight" val="181" />
 		<for>
-			<add stat="accCombat" val="-1.5" />
 			<add stat="critRate" val="10" />
-			<set stat="mAtk" val="54" />
-			<set stat="pAtk" val="117" />
 			<set stat="pAtkSpd" val="303" />
+			<set stat="pAtk" val="117" />
+			<set stat="mAtk" val="54" />
+			<sub stat="accCombat" val="1.5" />
 		</for>
 	</item>
 	<item id="46384" name="Frozen One-handed Blunt Weapon" type="Weapon">
@@ -1379,11 +1423,12 @@
 		<set name="soulshots" val="3" />
 		<set name="spiritshots" val="3" />
 		<set name="weapon_type" val="BLUNT" />
+		<set name="weight" val="172" />
 		<for>
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="54" />
 			<set stat="pAtk" val="92" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="46385" name="Frozen Two-handed Blunt Weapon" type="Weapon">
@@ -1401,11 +1446,12 @@
 		<set name="soulshots" val="3" />
 		<set name="spiritshots" val="3" />
 		<set name="weapon_type" val="SWORD" />
+		<set name="weight" val="101" />
 		<for>
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="79" />
 			<set stat="pAtk" val="90" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="46386" name="Frozen One-handed Magic Blunt Weapon" type="Weapon">
@@ -1423,11 +1469,12 @@
 		<set name="soulshots" val="3" />
 		<set name="spiritshots" val="3" />
 		<set name="weapon_type" val="BLUNT" />
+		<set name="weight" val="172" />
 		<for>
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="54" />
 			<set stat="pAtk" val="92" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="46387" name="Frozen Two-handed Magic Blunt Weapon" type="Weapon">
@@ -1445,11 +1492,12 @@
 		<set name="soulshots" val="3" />
 		<set name="spiritshots" val="3" />
 		<set name="weapon_type" val="BLUNT" />
+		<set name="weight" val="101" />
 		<for>
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="122" />
 			<set stat="pAtk" val="152" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="46388" name="Frozen Dualsword" type="Weapon">
@@ -1467,11 +1515,12 @@
 		<set name="soulshots" val="3" />
 		<set name="spiritshots" val="3" />
 		<set name="weapon_type" val="DUAL" />
+		<set name="weight" val="247" />
 		<for>
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="51" />
 			<set stat="pAtk" val="107" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="46389" name="Frozen Dual Dagger" type="Weapon">
@@ -1489,12 +1538,13 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="weight" val="205" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="181" />
-			<set stat="pAtk" val="107" />
 			<set stat="pAtkSpd" val="433" />
+			<set stat="pAtk" val="107" />
+			<set stat="mAtk" val="181" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="46390" name="Frozen Dual Blunt" type="Weapon">
@@ -1512,11 +1562,12 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="weapon_type" val="DUALBLUNT" />
+		<set name="weight" val="250" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="186" />
 			<set stat="pAtk" val="125" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="46391" name="Frozen Shield" type="Armor">
@@ -1529,8 +1580,9 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="material" val="STEEL" />
+		<set name="weight" val="200" />
 		<for>
-			<add stat="pDef" val="25" />
+			<add stat="pDef" val="25" order="0" />
 		</for>
 	</item>
 	<item id="46392" name="Frozen Sigil" type="Armor">
@@ -1544,15 +1596,22 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<for>
+			<sub stat="rEvas" val="8" />
+			<add stat="rShld" val="20" />
+			<add stat="sDef" val="47" />
+		</for>
 	</item>
 	<item id="46393" name="NPC Ashen Shadow Revolutionary Cloak" type="Armor">
 		<set name="icon" val="icon.armor_back04" />
-		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="bodypart" val="back" />
+		<set name="commissionItemType" val="CLOAK" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="CLOTH" />
 		<for>
-			<add stat="pDef" val="7" />
+			<add stat="pDef" val="7" order="0" />
 		</for>
 	</item>
 	<item id="46394" name="NPC Ashen Shadow Revolutionary Mask" type="Armor">
@@ -1578,38 +1637,45 @@
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="CLOTH" />
+		<set name="weight" val="240" />
 		<for>
-			<add stat="pDef" val="7" />
+			<add stat="pDef" val="7" order="0" />
 		</for>
 	</item>
 	<item id="46397" name="NPC Tyrr Warrior Transformation Cloak" type="Armor">
 		<set name="icon" val="icon.armor_back04" />
-		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="bodypart" val="back" />
+		<set name="commissionItemType" val="CLOAK" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="CLOTH" />
+		<set name="weight" val="240" />
 		<for>
-			<add stat="pDef" val="7" />
+			<add stat="pDef" val="7" order="0" />
 		</for>
 	</item>
 	<item id="46398" name="NPC Othell Rogue Transformation Cloak" type="Armor">
 		<set name="icon" val="icon.armor_back04" />
-		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="bodypart" val="back" />
+		<set name="commissionItemType" val="CLOAK" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="CLOTH" />
+		<set name="weight" val="240" />
 		<for>
-			<add stat="pDef" val="7" />
+			<add stat="pDef" val="7" order="0" />
 		</for>
 	</item>
 	<item id="46399" name="NPC Yul Archer Transformation Cloak" type="Armor">
 		<set name="icon" val="icon.armor_back04" />
-		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="bodypart" val="back" />
+		<set name="commissionItemType" val="CLOAK" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="CLOTH" />
+		<set name="weight" val="240" />
 		<for>
-			<add stat="pDef" val="7" />
+			<add stat="pDef" val="7" order="0" />
 		</for>
 	</item>
 </list>

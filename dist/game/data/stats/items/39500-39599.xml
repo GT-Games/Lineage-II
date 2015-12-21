@@ -819,6 +819,7 @@
 		<set name="icon" val="icon.etc_treasure_box_i03" />
 		<set name="commissionItemType" val="OTHER_ITEM" />
 		<set name="default_action" val="PEEL" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
 	</item>
@@ -827,6 +828,7 @@
 		<set name="icon" val="icon.etc_treasure_box_i03" />
 		<set name="commissionItemType" val="OTHER_ITEM" />
 		<set name="default_action" val="PEEL" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
 	</item>
@@ -835,6 +837,7 @@
 		<set name="icon" val="icon.etc_treasure_box_i01" />
 		<set name="commissionItemType" val="OTHER_ITEM" />
 		<set name="default_action" val="PEEL" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
 	</item>
@@ -843,6 +846,7 @@
 		<set name="icon" val="icon.etc_treasure_box_i01" />
 		<set name="commissionItemType" val="OTHER_ITEM" />
 		<set name="default_action" val="PEEL" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
 	</item>
@@ -923,12 +927,12 @@
 	<item id="39573" name="Sealed Talisman - Insanity" type="EtcItem">
 		<!-- Double-click to obtain a Talisman - Insanity. Cannot be exchanged, dropped, or sold in a private store once open. Lv. 85 or above. -->
 		<set name="icon" val="icon.accessory_punishment_talisman_i01" />
-		<set name="capsuled_items" val="39572,1,1,100" /> <!-- Talisman - Insanity -->
-		<set name="default_action" val="CAPSULE" />
-		<set name="handler" val="ExtractableItems" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="default_action" val="CALL_SKILL" />
 		<set name="handler" val="ItemSkills" />
 		<set name="immediate_effect" val="true" />
 		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="17980-1" /> <!-- Unseal Talisman - Insanity -->
 		<set name="material" val="FISH" />
 		<set name="weight" val="100" />
 	</item>
@@ -1121,6 +1125,7 @@
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_dropable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
@@ -1133,6 +1138,7 @@
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_dropable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />

@@ -21,9 +21,10 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<mul stat="mAtkSpd" val="1.15" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="252" />
 			<set stat="pAtk" val="348" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="37301" name="Steel Requiem Buster (30-day)" type="Weapon">
@@ -46,9 +47,10 @@
 		<set name="weight" val="510" />
 		<for>
 			<add stat="critRate" val="8" />
-			<set stat="mAtk" val="252" />
-			<set stat="pAtk" val="348" />
+			<mul stat="mAtkSpd" val="1.15" />
 			<set stat="pAtkSpd" val="379" />
+			<set stat="pAtk" val="348" />
+			<set stat="mAtk" val="252" />
 		</for>
 	</item>
 	<item id="37302" name="Steel Requiem Stormer (30-day)" type="Weapon">
@@ -70,11 +72,11 @@
 		<set name="weapon_type" val="POLE" />
 		<set name="weight" val="670" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="8" />
-			<set stat="mAtk" val="189" />
-			<set stat="pAtk" val="435" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="435" />
+			<set stat="mAtk" val="189" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="37303" name="Steel Requiem Slasher (30-day)" type="Weapon">
@@ -97,9 +99,9 @@
 		<set name="weight" val="580" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="189" />
 			<set stat="pAtk" val="529" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="37304" name="Steel Requiem Dualsword (30-day)" type="Weapon">
@@ -122,9 +124,9 @@
 		<set name="weight" val="510" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="189" />
 			<set stat="pAtk" val="529" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="37305" name="Steel Requiem Fighter (30-day)" type="Weapon">
@@ -148,9 +150,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="189" />
 			<set stat="pAtk" val="529" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="37306" name="Steel Requiem Dual Blunt (30-day)" type="Weapon">
@@ -174,9 +176,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="189" />
 			<set stat="pAtk" val="529" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="37307" name="Steel Requiem Shaper (30-day)" type="Weapon">
@@ -198,11 +200,11 @@
 		<set name="weapon_type" val="DAGGER" />
 		<set name="weight" val="510" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="189" />
-			<set stat="pAtk" val="380" />
 			<set stat="pAtkSpd" val="433" />
+			<set stat="pAtk" val="380" />
+			<set stat="mAtk" val="189" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="37308" name="Steel Requiem Dual Dagger (30-day)" type="Weapon">
@@ -224,11 +226,11 @@
 		<set name="weapon_type" val="DUALDAGGER" />
 		<set name="weight" val="680" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="189" />
-			<set stat="pAtk" val="435" />
 			<set stat="pAtkSpd" val="433" />
+			<set stat="pAtk" val="435" />
+			<set stat="mAtk" val="189" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="37309" name="Steel Requiem Thrower (30-day)" type="Weapon">
@@ -250,11 +252,11 @@
 		<set name="weapon_type" val="BOW" />
 		<set name="weight" val="510" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="189" />
-			<set stat="pAtk" val="856" />
 			<set stat="pAtkSpd" val="293" />
+			<set stat="pAtk" val="856" />
+			<set stat="mAtk" val="189" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="37310" name="Steel Requiem Shooter (30-day)" type="Weapon">
@@ -276,11 +278,11 @@
 		<set name="weapon_type" val="CROSSBOW" />
 		<set name="weight" val="530" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="189" />
-			<set stat="pAtk" val="771" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="771" />
+			<set stat="mAtk" val="189" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="37311" name="Steel Requiem Avenger (30-day)" type="Weapon">
@@ -304,9 +306,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="189" />
 			<set stat="pAtk" val="435" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="37312" name="Steel Requiem Retributer (30-day)" type="Weapon">
@@ -329,11 +331,12 @@
 		<set name="weight" val="360" />
 		<for>
 			<add stat="accCombat" val="8" />
-			<add stat="accMagic" val="8.0" />
 			<add stat="critRate" val="6" />
+			<add stat="accMagic" val="8.0" />
+			<mul stat="mAtkSpd" val="1.15" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="278" />
 			<set stat="pAtk" val="423" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="37313" name="Toma's Support Box" type="EtcItem">
@@ -366,7 +369,7 @@
 	<item id="37315" name="Fated Support Box: Fighter (C-grade)" type="EtcItem">
 		<!-- Double-click to receive C-grade equipment items necessary for fighter-type characters. Can be used by characters Lv. 40 - 84. -->
 		<set name="icon" val="icon.etc_equip_item_box_i00" />
-		<set name="capsuled_items" val="11853,1,1,100;12143,1,1,100;12144,1,1,100;12142,1,1,100;12141,1,1,100;12145,1,1,100" /> <!-- Common Item - Samurai Long Sword -  -->
+		<set name="capsuled_items" val="11853,1,1,100;12143,1,1,100;12144,1,1,100;12142,1,1,100;12141,1,1,100;12145,1,1,100" /> <!-- Common Item - Samurai Long Sword, Common Item - Full Plate Shield, Common Item - Full Plate Armor, Common Item - Full Plate Boots, Common Item - Full Plate Gauntlets, Common Item - Full Plate Helmet -->
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<set name="is_auctionable" val="false" />
@@ -382,7 +385,7 @@
 	<item id="37316" name="Fated Support Box: Wizard (C-grade)" type="EtcItem">
 		<!-- Double-click to receive C-grade equipment items necessary for wizard-type characters. Can be used by characters Lv. 40 - 84. -->
 		<set name="icon" val="icon.etc_equip_item_box_i00" />
-		<set name="capsuled_items" val="11855,1,1,100;12097,1,1,100;12098,1,1,100;12099,1,1,100;12100,1,1,100;12145,1,1,100" /> <!-- Common Item - Demon's Staff -  -->
+		<set name="capsuled_items" val="11855,1,1,100;12097,1,1,100;12098,1,1,100;12099,1,1,100;12100,1,1,100;12145,1,1,100" /> <!-- Common Item - Demon's Staff, Common Item - Karmian Gloves, Common Item - Karmian Boots, Common Item - Karmian Tunic, Common Item - Karmian Stockings, Common Item - Full Plate Helmet -->
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<set name="is_auctionable" val="false" />
@@ -398,7 +401,7 @@
 	<item id="37317" name="Fated Support Box: Warrior (C-grade)" type="EtcItem">
 		<!-- Double-click to receive C-grade equipment items necessary for warrior-type characters. Can be used by characters Lv. 40 - 84. -->
 		<set name="icon" val="icon.etc_equip_item_box_i00" />
-		<set name="capsuled_items" val="11843,1,1,100;11841,1,1,100;12144,1,1,100;12142,1,1,100;12141,1,1,100;12145,1,1,100" /> <!-- Common Item - Berserker Blade -  -->
+		<set name="capsuled_items" val="11843,1,1,100;11841,1,1,100;12144,1,1,100;12142,1,1,100;12141,1,1,100;12145,1,1,100" /> <!-- Common Item - Berserker Blade, Common Item - Raid Sword*Raid Sword, Common Item - Full Plate Armor, Common Item - Full Plate Boots, Common Item - Full Plate Gauntlets, Common Item - Full Plate Helmet -->
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<set name="is_auctionable" val="false" />
@@ -414,7 +417,7 @@
 	<item id="37318" name="Fated Support Box: Rogue (C-grade)" type="EtcItem">
 		<!-- Double-click to receive C-grade equipment items necessary for rogue-type characters. Can be used by characters Lv. 40 - 84. -->
 		<set name="icon" val="icon.etc_equip_item_box_i00" />
-		<set name="capsuled_items" val="11863,1,1,100;11857,1,1,100;12135,1,1,100;12136,1,1,100;12137,1,1,100;12145,1,1,100" /> <!-- Common Item - Crystal Dagger -  -->
+		<set name="capsuled_items" val="11863,1,1,100;11857,1,1,100;12135,1,1,100;12136,1,1,100;12137,1,1,100;12145,1,1,100" /> <!-- Common Item - Crystal Dagger, Common Item - Eminence Bow, Common Item - Drake Leather Armor, Common Item - Drake Leather Boots, Common Item - Divine Gloves, Common Item - Full Plate Helmet -->
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<set name="is_auctionable" val="false" />
@@ -430,7 +433,7 @@
 	<item id="37319" name="Fated Support Box: Kamael (C-grade)" type="EtcItem">
 		<!-- Double-click to receive C-grade equipment items necessary for Kamael-type characters. Can be used by characters Lv. 40 - 84. -->
 		<set name="icon" val="icon.etc_equip_item_box_i00" />
-		<set name="capsuled_items" val="11753,1,1,100;11754,1,1,100;11758,1,1,100;12135,1,1,100;12136,1,1,100;12137,1,1,100;12145,1,1,100" /> <!-- Common Item - Soldat Estoc -  -->
+		<set name="capsuled_items" val="11753,1,1,100;11754,1,1,100;11758,1,1,100;12135,1,1,100;12136,1,1,100;12137,1,1,100;12145,1,1,100" /> <!-- Common Item - Soldat Estoc, Common Item - Schlager, Common Item - Arbalest, Common Item - Drake Leather Armor, Common Item - Drake Leather Boots, Common Item - Divine Gloves, Common Item - Full Plate Helmet -->
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<set name="is_auctionable" val="false" />
@@ -446,7 +449,7 @@
 	<item id="37320" name="Fated Support Box: Orc Fighter (C-grade)" type="EtcItem">
 		<!-- Double-click to receive C-grade equipment items necessary for orc-fighter-type characters. Can be used by characters Lv. 40 - 84. -->
 		<set name="icon" val="icon.etc_equip_item_box_i00" />
-		<set name="capsuled_items" val="11843,1,1,100;11839,1,1,100;12135,1,1,100;12144,1,1,100;12142,1,1,100;12141,1,1,100;12145,1,1,100" /> <!-- Common Item - Berserker Blade -  -->
+		<set name="capsuled_items" val="11843,1,1,100;11839,1,1,100;12135,1,1,100;12144,1,1,100;12142,1,1,100;12141,1,1,100;12145,1,1,100" /> <!-- Common Item - Berserker Blade, Common Item - Great Pata, Common Item - Drake Leather Armor, Common Item - Full Plate Armor, Common Item - Full Plate Boots, Common Item - Full Plate Gauntlets, Common Item - Full Plate Helmet -->
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<set name="is_auctionable" val="false" />
@@ -462,7 +465,7 @@
 	<item id="37321" name="Fated Support Box: Orc Wizard (C-grade)" type="EtcItem">
 		<!-- Double-click to receive C-grade equipment items necessary for orc-wizard-type characters. Can be used by characters Lv. 40 - 84. -->
 		<set name="icon" val="icon.etc_equip_item_box_i00" />
-		<set name="capsuled_items" val="11855,1,1,100;12135,1,1,100;12136,1,1,100;12137,1,1,100;12145,1,1,100" /> <!-- Common Item - Demon's Staff -  -->
+		<set name="capsuled_items" val="11855,1,1,100;12135,1,1,100;12136,1,1,100;12137,1,1,100;12145,1,1,100" /> <!-- Common Item - Demon's Staff, Common Item - Drake Leather Armor, Common Item - Drake Leather Boots, Common Item - Divine Gloves, Common Item - Full Plate Helmet -->
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<set name="is_auctionable" val="false" />
@@ -1179,11 +1182,11 @@
 		<set name="weapon_type" val="BOW" />
 		<set name="weight" val="550" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="132" />
-			<set stat="pAtk" val="581" />
 			<set stat="pAtkSpd" val="293" />
+			<set stat="pAtk" val="581" />
+			<set stat="mAtk" val="132" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="37377" name="Steel Dynasty Bow (60-day)" type="Weapon">
@@ -1206,11 +1209,11 @@
 		<set name="weapon_type" val="BOW" />
 		<set name="weight" val="510" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="151" />
-			<set stat="pAtk" val="654" />
 			<set stat="pAtkSpd" val="293" />
+			<set stat="pAtk" val="654" />
+			<set stat="mAtk" val="151" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="37378" name="Emerald Weapon Appearance Stone" type="EtcItem">

@@ -32,6 +32,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
@@ -41,6 +42,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
@@ -50,6 +52,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
@@ -59,6 +62,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
@@ -68,6 +72,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
@@ -77,6 +82,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
@@ -86,6 +92,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
@@ -95,6 +102,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
@@ -104,6 +112,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
@@ -401,7 +410,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="200" />
 		<for>
-			<add order="0" stat="pDef" val="58" />
+			<add stat="pDef" val="58" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -421,7 +430,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="3493" />
 		<for>
-			<add order="0" stat="pDef" val="239" />
+			<add stat="pDef" val="239" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -440,7 +449,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="400" />
 		<for>
-			<add order="0" stat="pDef" val="39" />
+			<add stat="pDef" val="39" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -459,7 +468,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="200" />
 		<for>
-			<add order="0" stat="pDef" val="39" />
+			<add stat="pDef" val="39" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -477,10 +486,10 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="407" />
 		<for>
-			<sub stat="rEvas" val="-8" />
 			<set stat="rShld" val="20" />
 			<set stat="sDef" val="203" />
-			<enchant val="0" stat="sDef" />
+			<sub stat="rEvas" val="8" />
+			<enchant stat="sDef" val="0" />
 		</for>
 	</item>
 	<item id="37140" name="Steel Karmian Tunic (60-day)" type="Armor">
@@ -499,7 +508,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="660" />
 		<for>
-			<add order="0" stat="pDef" val="60" />
+			<add stat="pDef" val="60" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -519,7 +528,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="323" />
 		<for>
-			<add order="0" stat="pDef" val="37" />
+			<add stat="pDef" val="37" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -538,7 +547,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="207" />
 		<for>
-			<add order="0" stat="pDef" val="32" />
+			<add stat="pDef" val="32" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -557,7 +566,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="410" />
 		<for>
-			<add order="0" stat="pDef" val="32" />
+			<add stat="pDef" val="32" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -577,7 +586,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="1483" />
 		<for>
-			<add order="0" stat="pDef" val="94" />
+			<add stat="pDef" val="94" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -597,7 +606,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="520" />
 		<for>
-			<add order="0" stat="pDef" val="59" />
+			<add stat="pDef" val="59" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -616,7 +625,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="407" />
 		<for>
-			<add order="0" stat="pDef" val="32" />
+			<add stat="pDef" val="32" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -635,7 +644,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="203" />
 		<for>
-			<add order="0" stat="pDef" val="33" />
+			<add stat="pDef" val="33" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -654,7 +663,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="193" />
 		<for>
-			<add order="0" stat="pDef" val="66" />
+			<add stat="pDef" val="66" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -673,7 +682,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="193" />
 		<for>
-			<add order="0" stat="pDef" val="44" />
+			<add stat="pDef" val="44" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -692,7 +701,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="377" />
 		<for>
-			<add order="0" stat="pDef" val="44" />
+			<add stat="pDef" val="44" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -712,7 +721,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="3327" />
 		<for>
-			<add order="0" stat="pDef" val="270" />
+			<add stat="pDef" val="270" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -730,10 +739,10 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="400" />
 		<for>
-			<sub stat="rEvas" val="-8" />
 			<set stat="rShld" val="20" />
 			<set stat="sDef" val="230" />
-			<enchant val="0" stat="sDef" />
+			<sub stat="rEvas" val="8" />
+			<enchant stat="sDef" val="0" />
 		</for>
 	</item>
 	<item id="37153" name="Steel Avadon Robe (60-day)" type="Armor">
@@ -752,7 +761,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="847" />
 		<for>
-			<add order="0" stat="pDef" val="127" />
+			<add stat="pDef" val="127" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -771,7 +780,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="197" />
 		<for>
-			<add order="0" stat="pDef" val="62" />
+			<add stat="pDef" val="62" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -791,7 +800,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="197" />
 		<for>
-			<add order="0" stat="pDef" val="41" />
+			<add stat="pDef" val="41" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -811,7 +820,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="393" />
 		<for>
-			<add order="0" stat="pDef" val="41" />
+			<add stat="pDef" val="41" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -829,10 +838,10 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="403" />
 		<for>
-			<sub stat="rEvas" val="-8" />
 			<set stat="rShld" val="20" />
 			<set stat="sDef" val="216" />
-			<enchant val="0" stat="sDef" />
+			<sub stat="rEvas" val="8" />
+			<enchant stat="sDef" val="0" />
 		</for>
 	</item>
 	<item id="37158" name="Steel Leather Armor of Doom (60-day)" type="Armor">
@@ -851,7 +860,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="1833" />
 		<for>
-			<add order="0" stat="pDef" val="202" />
+			<add stat="pDef" val="202" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -870,7 +879,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="193" />
 		<for>
-			<add order="0" stat="pDef" val="44" />
+			<add stat="pDef" val="44" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -889,7 +898,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="377" />
 		<for>
-			<add order="0" stat="pDef" val="44" />
+			<add stat="pDef" val="44" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -909,7 +918,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="3193" />
 		<for>
-			<add order="0" stat="pDef" val="293" />
+			<add stat="pDef" val="293" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -928,7 +937,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="187" />
 		<for>
-			<add order="0" stat="pDef" val="73" />
+			<add stat="pDef" val="73" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -947,7 +956,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="183" />
 		<for>
-			<add order="0" stat="pDef" val="49" />
+			<add stat="pDef" val="49" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -966,7 +975,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="370" />
 		<for>
-			<add order="0" stat="pDef" val="49" />
+			<add stat="pDef" val="49" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -984,10 +993,10 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="393" />
 		<for>
-			<sub stat="rEvas" val="-8" />
 			<set stat="rShld" val="20" />
 			<set stat="sDef" val="256" />
-			<enchant val="0" stat="sDef" />
+			<sub stat="rEvas" val="8" />
+			<enchant stat="sDef" val="0" />
 		</for>
 	</item>
 	<item id="37166" name="Steel Dark Crystal Robe (60-day)" type="Armor">
@@ -1006,7 +1015,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="817" />
 		<for>
-			<add order="0" stat="pDef" val="139" />
+			<add stat="pDef" val="139" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1025,7 +1034,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="190" />
 		<for>
-			<add order="0" stat="pDef" val="69" />
+			<add stat="pDef" val="69" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1045,7 +1054,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="193" />
 		<for>
-			<add order="0" stat="pDef" val="46" />
+			<add stat="pDef" val="46" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1065,7 +1074,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="370" />
 		<for>
-			<add order="0" stat="pDef" val="46" />
+			<add stat="pDef" val="46" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1083,10 +1092,10 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="397" />
 		<for>
-			<sub stat="rEvas" val="-8" />
 			<set stat="rShld" val="20" />
 			<set stat="sDef" val="243" />
-			<enchant val="0" stat="sDef" />
+			<sub stat="rEvas" val="8" />
+			<enchant stat="sDef" val="0" />
 		</for>
 	</item>
 	<item id="37171" name="Steel Dark Crystal Leather Armor (60-day)" type="Armor">
@@ -1105,7 +1114,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="1433" />
 		<for>
-			<add order="0" stat="pDef" val="128" />
+			<add stat="pDef" val="128" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1125,7 +1134,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="493" />
 		<for>
-			<add order="0" stat="pDef" val="80" />
+			<add stat="pDef" val="80" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1144,7 +1153,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="193" />
 		<for>
-			<add order="0" stat="pDef" val="46" />
+			<add stat="pDef" val="46" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1163,7 +1172,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="370" />
 		<for>
-			<add order="0" stat="pDef" val="46" />
+			<add stat="pDef" val="46" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1183,7 +1192,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="2540" />
 		<for>
-			<add order="0" stat="pDef" val="205" />
+			<add stat="pDef" val="205" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1203,7 +1212,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="1087" />
 		<for>
-			<add order="0" stat="pDef" val="128" />
+			<add stat="pDef" val="128" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1222,7 +1231,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="180" />
 		<for>
-			<add order="0" stat="pDef" val="55" />
+			<add stat="pDef" val="55" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1241,7 +1250,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="370" />
 		<for>
-			<add order="0" stat="pDef" val="55" />
+			<add stat="pDef" val="55" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1260,7 +1269,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="183" />
 		<for>
-			<add order="0" stat="pDef" val="83" />
+			<add stat="pDef" val="83" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1278,10 +1287,10 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="390" />
 		<for>
-			<sub stat="rEvas" val="-8" />
 			<set stat="rShld" val="20" />
 			<set stat="sDef" val="290" />
-			<enchant val="0" stat="sDef" />
+			<sub stat="rEvas" val="8" />
+			<enchant stat="sDef" val="0" />
 		</for>
 	</item>
 	<item id="37181" name="Steel Major Arcana Robe (60-day)" type="Armor">
@@ -1300,7 +1309,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="767" />
 		<for>
-			<add order="0" stat="pDef" val="166" />
+			<add stat="pDef" val="166" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1319,7 +1328,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="180" />
 		<for>
-			<add order="0" stat="pDef" val="55" />
+			<add stat="pDef" val="55" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1338,7 +1347,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="370" />
 		<for>
-			<add order="0" stat="pDef" val="55" />
+			<add stat="pDef" val="55" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1357,7 +1366,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="183" />
 		<for>
-			<add order="0" stat="pDef" val="83" />
+			<add stat="pDef" val="83" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1376,9 +1385,9 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="940" />
 		<for>
+			<add stat="pDef" val="13" order="0" />
+			<sub stat="rEvas" val="8" />
 			<enchant stat="pDef" val="0" />
-			<add order="0" stat="pDef" val="13" />
-			<sub stat="rEvas" val="-8" />
 		</for>
 	</item>
 	<item id="37186" name="Steel Draconic Leather Armor (60-day)" type="Armor">
@@ -1397,7 +1406,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="1650" />
 		<for>
-			<add order="0" stat="pDef" val="249" />
+			<add stat="pDef" val="249" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1416,7 +1425,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="180" />
 		<for>
-			<add order="0" stat="pDef" val="55" />
+			<add stat="pDef" val="55" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1435,7 +1444,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="370" />
 		<for>
-			<add order="0" stat="pDef" val="55" />
+			<add stat="pDef" val="55" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1454,7 +1463,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="183" />
 		<for>
-			<add order="0" stat="pDef" val="83" />
+			<add stat="pDef" val="83" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1474,7 +1483,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="2520" />
 		<for>
-			<add order="0" stat="pDef" val="226" />
+			<add stat="pDef" val="226" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1494,7 +1503,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="1070" />
 		<for>
-			<add order="0" stat="pDef" val="141" />
+			<add stat="pDef" val="141" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1513,7 +1522,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="180" />
 		<for>
-			<add order="0" stat="pDef" val="92" />
+			<add stat="pDef" val="92" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1532,7 +1541,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="170" />
 		<for>
-			<add order="0" stat="pDef" val="61" />
+			<add stat="pDef" val="61" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1551,7 +1560,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="360" />
 		<for>
-			<add order="0" stat="pDef" val="61" />
+			<add stat="pDef" val="61" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1569,10 +1578,10 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="380" />
 		<for>
-			<sub stat="rEvas" val="-8" />
 			<set stat="rShld" val="20" />
 			<set stat="sDef" val="321" />
-			<enchant val="0" stat="sDef" />
+			<sub stat="rEvas" val="8" />
+			<enchant stat="sDef" val="0" />
 		</for>
 	</item>
 	<item id="37196" name="Steel Dynasty Tunic (60-day)" type="Armor">
@@ -1591,7 +1600,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="590" />
 		<for>
-			<add order="0" stat="pDef" val="113" />
+			<add stat="pDef" val="113" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1611,7 +1620,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="290" />
 		<for>
-			<add order="0" stat="pDef" val="71" />
+			<add stat="pDef" val="71" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1630,7 +1639,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="180" />
 		<for>
-			<add order="0" stat="pDef" val="92" />
+			<add stat="pDef" val="92" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1649,7 +1658,7 @@
 		<set name="time" val="86400" />
 		<set name="weight" val="170" />
 		<for>
-			<add order="0" stat="pDef" val="61" />
+			<add stat="pDef" val="61" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>

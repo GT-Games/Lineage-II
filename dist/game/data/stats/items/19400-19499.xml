@@ -5,6 +5,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="643100" />
@@ -15,6 +16,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="1715100" />
@@ -25,6 +27,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="1071900" />
@@ -35,6 +38,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="428700" />
@@ -45,6 +49,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="428700" />
@@ -55,6 +60,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="450200" />
@@ -65,6 +71,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="446600" />
@@ -75,6 +82,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="334900" />
@@ -85,6 +93,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="223300" />
@@ -95,6 +104,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="7234200" />
@@ -105,6 +115,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="7234200" />
@@ -115,6 +126,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="7234200" />
@@ -125,6 +137,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="7234200" />
@@ -135,6 +148,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="7234200" />
@@ -145,6 +159,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="7234200" />
@@ -155,6 +170,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="7234200" />
@@ -165,6 +181,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="7234200" />
@@ -175,6 +192,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="7234200" />
@@ -185,6 +203,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="7234200" />
@@ -195,6 +214,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="7234200" />
@@ -205,6 +225,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="1417300" />
@@ -215,6 +236,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="3779500" />
@@ -225,6 +247,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="2362200" />
@@ -235,6 +258,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="944800" />
@@ -245,6 +269,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="944800" />
@@ -255,6 +280,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="992100" />
@@ -265,6 +291,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="1417300" />
@@ -275,6 +302,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="3779500" />
@@ -285,6 +313,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="2362200" />
@@ -295,6 +324,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="944800" />
@@ -305,6 +335,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="944800" />
@@ -315,6 +346,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="1417300" />
@@ -325,6 +357,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="3779500" />
@@ -335,6 +368,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="2362200" />
@@ -345,6 +379,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="944800" />
@@ -355,6 +390,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="944800" />
@@ -365,6 +401,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="992100" />
@@ -375,6 +412,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="984200" />
@@ -385,6 +423,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="738100" />
@@ -395,6 +434,7 @@
 		<set name="icon" val="icon.etc_recipe_gold_i00" />
 		<set name="commissionItemType" val="RECIPE" />
 		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="price" val="492100" />
@@ -545,7 +585,8 @@
 		<set name="price" val="46311000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="103" />
+			<add stat="accCombat" val="3" />
+			<add stat="mDef" val="103" order="0" />
 			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
@@ -564,9 +605,9 @@
 		<set name="price" val="69466000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="154" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="56" />
+			<add stat="mDef" val="154" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="19453" name="Istina's Necklace" type="Armor">
@@ -584,9 +625,9 @@
 		<set name="price" val="92622000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="205" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="74" />
+			<add stat="mDef" val="205" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="19454" name="Istina's Belt" type="Armor">
@@ -604,7 +645,7 @@
 		<set name="price" val="1917000" />
 		<set name="weight" val="440" />
 		<for>
-			<add order="0" stat="pDef" val="32" />
+			<add stat="pDef" val="32" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -621,7 +662,6 @@
 		<set name="material" val="SILVER" />
 		<set name="price" val="3556000" />
 		<set name="weight" val="150" />
-		<for/>
 	</item>
 	<item id="19456" name="Istina's Shirt" type="Armor">
 		<!-- When equipped with Istina's Shirt, STR + 2, DEX + 1, CON + 2, INT + 2, WIT + 1, MEN + 2 , Speed + 7 and Water Resistance + 30. -->
@@ -638,7 +678,7 @@
 		<set name="price" val="2540000" />
 		<set name="weight" val="130" />
 		<for>
-			<add order="0" stat="pDef" val="48" />
+			<add stat="pDef" val="48" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -657,7 +697,7 @@
 		<set name="price" val="46311000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="103" />
+			<add stat="mDef" val="103" order="0" />
 			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
@@ -676,9 +716,9 @@
 		<set name="price" val="69466000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="154" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="56" />
+			<add stat="mDef" val="154" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="19459" name="Octavis' Necklace" type="Armor">
@@ -696,9 +736,9 @@
 		<set name="price" val="92622000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="205" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="74" />
+			<add stat="mDef" val="205" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="19460" name="Octavis' Belt" type="Armor">
@@ -716,7 +756,7 @@
 		<set name="price" val="1917000" />
 		<set name="weight" val="440" />
 		<for>
-			<add order="0" stat="pDef" val="32" />
+			<add stat="pDef" val="32" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -733,7 +773,6 @@
 		<set name="material" val="SILVER" />
 		<set name="price" val="3556000" />
 		<set name="weight" val="150" />
-		<for/>
 	</item>
 	<item id="19462" name="Octavis' Shirt" type="Armor">
 		<!-- When equipped with Octavis' Shirt, STR + 2, DEX + 1, CON + 2, INT + 2, WIT + 1, MEN + 2 , Speed + 7 and Dark Resistance + 30. -->
@@ -750,7 +789,7 @@
 		<set name="price" val="2540000" />
 		<set name="weight" val="130" />
 		<for>
-			<add order="0" stat="pDef" val="48" />
+			<add stat="pDef" val="48" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -769,9 +808,9 @@
 		<set name="price" val="3700000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="170" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="59" />
+			<add stat="mDef" val="170" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="19464" name="Blessed Valakas' Necklace" type="Armor">
@@ -789,9 +828,9 @@
 		<set name="price" val="4940000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="226" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="79" />
+			<add stat="mDef" val="226" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="19465" name="Bottle of Antharas' Soul" type="EtcItem">
@@ -852,7 +891,7 @@
 		<set name="price" val="1999000" />
 		<set name="weight" val="440" />
 		<for>
-			<add order="0" stat="pDef" val="19" />
+			<add stat="pDef" val="19" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -869,7 +908,6 @@
 		<set name="material" val="SILVER" />
 		<set name="price" val="10668000" />
 		<set name="weight" val="150" />
-		<for/>
 	</item>
 	<item id="19472" name="Immortal Shirt" type="Armor">
 		<set name="icon" val="icon.r1_shirt_i00" />
@@ -884,7 +922,7 @@
 		<set name="price" val="3997000" />
 		<set name="weight" val="130" />
 		<for>
-			<add order="0" stat="pDef" val="38" />
+			<add stat="pDef" val="38" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -901,7 +939,7 @@
 		<set name="price" val="5970000" />
 		<set name="weight" val="440" />
 		<for>
-			<add order="0" stat="pDef" val="21" />
+			<add stat="pDef" val="21" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -918,7 +956,6 @@
 		<set name="material" val="SILVER" />
 		<set name="price" val="11735000" />
 		<set name="weight" val="150" />
-		<for/>
 	</item>
 	<item id="19475" name="Twilight Shirt" type="Armor">
 		<set name="icon" val="icon.r2_shirt_i00" />
@@ -933,7 +970,7 @@
 		<set name="price" val="11941000" />
 		<set name="weight" val="130" />
 		<for>
-			<add order="0" stat="pDef" val="42" />
+			<add stat="pDef" val="42" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -950,7 +987,7 @@
 		<set name="price" val="13648000" />
 		<set name="weight" val="440" />
 		<for>
-			<add order="0" stat="pDef" val="23" />
+			<add stat="pDef" val="23" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -967,7 +1004,6 @@
 		<set name="material" val="SILVER" />
 		<set name="price" val="12322000" />
 		<set name="weight" val="150" />
-		<for/>
 	</item>
 	<item id="19478" name="Seraph Shirt" type="Armor">
 		<set name="icon" val="icon.r95_shirt_i00" />
@@ -982,7 +1018,7 @@
 		<set name="price" val="27296000" />
 		<set name="weight" val="130" />
 		<for>
-			<add order="0" stat="pDef" val="46" />
+			<add stat="pDef" val="46" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -999,7 +1035,7 @@
 		<set name="price" val="35570000" />
 		<set name="weight" val="440" />
 		<for>
-			<add order="0" stat="pDef" val="24" />
+			<add stat="pDef" val="24" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>
@@ -1016,7 +1052,6 @@
 		<set name="material" val="SILVER" />
 		<set name="price" val="12938000" />
 		<set name="weight" val="150" />
-		<for/>
 	</item>
 	<item id="19481" name="Eternal Shirt" type="Armor">
 		<set name="icon" val="icon.r991_shirt_i00" />
@@ -1031,7 +1066,7 @@
 		<set name="price" val="71132000" />
 		<set name="weight" val="130" />
 		<for>
-			<add order="0" stat="pDef" val="48" />
+			<add stat="pDef" val="48" order="0" />
 			<enchant stat="pDef" val="0" />
 		</for>
 	</item>

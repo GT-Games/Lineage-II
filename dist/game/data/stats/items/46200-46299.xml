@@ -59,11 +59,11 @@
 		<set name="weapon_type" val="DAGGER" />
 		<set name="weight" val="500" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="414" />
-			<set stat="pAtk" val="685" />
 			<set stat="pAtkSpd" val="433" />
+			<set stat="pAtk" val="685" />
+			<set stat="mAtk" val="414" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="46205" name="Halloween Cutter" type="Weapon">
@@ -80,9 +80,9 @@
 		<set name="weight" val="500" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="414" />
 			<set stat="pAtk" val="752" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="46206" name="Halloween Slasher" type="Weapon">
@@ -99,9 +99,9 @@
 		<set name="weight" val="500" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="414" />
 			<set stat="pAtk" val="916" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="46207" name="Halloween Avenger" type="Weapon">
@@ -119,9 +119,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="414" />
 			<set stat="pAtk" val="752" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="46208" name="Halloween Fighter" type="Weapon">
@@ -139,9 +139,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="414" />
 			<set stat="pAtk" val="916" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="46209" name="Halloween Stormer" type="Weapon">
@@ -157,11 +157,11 @@
 		<set name="weapon_type" val="POLE" />
 		<set name="weight" val="500" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="8" />
-			<set stat="mAtk" val="414" />
-			<set stat="pAtk" val="752" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="752" />
+			<set stat="mAtk" val="414" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="46210" name="Halloween Thrower" type="Weapon">
@@ -177,11 +177,11 @@
 		<set name="weapon_type" val="BOW" />
 		<set name="weight" val="500" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="414" />
-			<set stat="pAtk" val="1481" />
 			<set stat="pAtkSpd" val="293" />
+			<set stat="pAtk" val="1481" />
+			<set stat="mAtk" val="414" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="46211" name="Halloween Shooter" type="Weapon">
@@ -197,11 +197,11 @@
 		<set name="weapon_type" val="CROSSBOW" />
 		<set name="weight" val="500" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="414" />
-			<set stat="pAtk" val="1333" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="1333" />
+			<set stat="mAtk" val="414" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="46212" name="Halloween Buster" type="Weapon">
@@ -218,9 +218,9 @@
 		<set name="weight" val="500" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="486" />
 			<set stat="pAtk" val="602" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="46213" name="Halloween Caster" type="Weapon">
@@ -238,9 +238,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="379" />
 			<set stat="mAtk" val="486" />
 			<set stat="pAtk" val="602" />
-			<set stat="pAtkSpd" val="379" />
 		</for>
 	</item>
 	<item id="46214" name="Halloween Retributer" type="Weapon">
@@ -258,9 +258,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="535" />
 			<set stat="pAtk" val="733" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="46215" name="Halloween Dualsword" type="Weapon">
@@ -277,9 +277,9 @@
 		<set name="weight" val="500" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="414" />
 			<set stat="pAtk" val="916" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="46216" name="Halloween Dual Dagger" type="Weapon">
@@ -295,11 +295,11 @@
 		<set name="weapon_type" val="DUALDAGGER" />
 		<set name="weight" val="500" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="12" />
-			<set stat="mAtk" val="414" />
-			<set stat="pAtk" val="752" />
 			<set stat="pAtkSpd" val="433" />
+			<set stat="pAtk" val="752" />
+			<set stat="mAtk" val="414" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="46217" name="Halloween Dual Blunt Weapon" type="Weapon">
@@ -317,9 +317,9 @@
 		<for>
 			<add stat="accCombat" val="8" />
 			<add stat="critRate" val="6" />
+			<set stat="pAtkSpd" val="325" />
 			<set stat="mAtk" val="414" />
 			<set stat="pAtk" val="916" />
-			<set stat="pAtkSpd" val="325" />
 		</for>
 	</item>
 	<item id="46218" name="Magic Number Cube" additionalName="Event" type="EtcItem">
@@ -333,6 +333,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
 	</item>
 	<item id="46219" name="Summon Scroll: Piero" additionalName="Event" type="EtcItem">
 		<!-- Scroll that summons Market Eleven's mascot, Piero. Use it to play 'Win Against Piero'. Will be deleted once the event ends. -->
@@ -358,6 +359,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
 	</item>
 	<item id="46221" name="L2 Market R99 Armor Enhancement Stone Pack" additionalName="Event" type="EtcItem">
 		<!-- 1st place prize for the L2 Market giveaway. Get a Bloody or Dark Eternal Enhancement Stones. Will be deleted once the event ends. -->
@@ -667,6 +669,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
 	</item>
 	<item id="46245" name="Piero's Victory Box" additionalName="Event" type="EtcItem">
 		<!-- Piero's victory box. Will be deleted once the event ends. -->
@@ -702,9 +705,9 @@
 		<set name="material" val="DAMASCUS" />
 		<set name="weight" val="1130" />
 		<for>
-			<sub stat="rEvas" val="-8" />
 			<set stat="rShld" val="20" />
 			<set stat="sDef" val="546" />
+			<sub stat="rEvas" val="8" />
 		</for>
 	</item>
 	<item id="46248" name="Halloween Sigil" type="Armor">
@@ -714,8 +717,9 @@
 		<set name="immediate_effect" val="true" />
 		<set name="is_auctionable" val="false" />
 		<set name="material" val="STEEL" />
+		<set name="weight" val="920" />
 		<for>
-			<add stat="pDef" val="150" />
+			<add stat="pDef" val="150" order="0" />
 		</for>
 	</item>
 	<item id="46249" name="Dual Candle Sword" additionalName="Event" type="Weapon">
@@ -733,9 +737,9 @@
 		<set name="weight" val="2530" />
 		<for>
 			<add stat="critRate" val="8" />
+			<set stat="pAtkSpd" val="200" />
 			<set stat="mAtk" val="6" />
 			<set stat="pAtk" val="8" />
-			<set stat="pAtkSpd" val="200" />
 		</for>
 	</item>
 	<item id="46250" name="Blessed Venezia Rune" type="EtcItem">
@@ -833,6 +837,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
 	</item>
 	<item id="46258" name="Nymph Stamen" type="EtcItem">
 		<!-- Nymph Stamen obtained from defeating the Nymphs in the Enchanted Valley. Take it to Mimyu to receive a reward. -->
@@ -871,7 +876,7 @@
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="BRONZE" />
 		<for>
-			<add stat="pDef" val="400" />
+			<add stat="pDef" val="400" order="0" />
 		</for>
 	</item>
 	<item id="46261" name="Ninja Outfit" type="Armor">
@@ -883,7 +888,7 @@
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="BRONZE" />
 		<for>
-			<add stat="pDef" val="400" />
+			<add stat="pDef" val="400" order="0" />
 		</for>
 	</item>
 	<item id="46262" name="Metal Suit" type="Armor">
@@ -895,7 +900,7 @@
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="BRONZE" />
 		<for>
-			<add stat="pDef" val="400" />
+			<add stat="pDef" val="400" order="0" />
 		</for>
 	</item>
 	<item id="46263" name="Freya's Wish Stick" type="EtcItem">
@@ -914,9 +919,11 @@
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="immediate_effect" val="true" />
 		<set name="is_auctionable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
+		<set name="weight" val="1" />
 	</item>
 	<item id="46265" name="Freya's Wish-filled Gift" type="EtcItem">
 		<!-- Wrapped Pack containing 1 random rare item. -->
@@ -1018,6 +1025,7 @@
 		<set name="default_action" val="CALL_SKILL" />
 		<set name="immediate_effect" val="true" />
 		<set name="is_auctionable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
@@ -1092,6 +1100,7 @@
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
 		<set name="is_auctionable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
@@ -1165,10 +1174,10 @@
 		<set name="weapon_type" val="FISHINGROD" />
 		<set name="weight" val="1000" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
-			<set stat="mAtk" val="1" />
-			<set stat="pAtk" val="1" />
 			<set stat="pAtkSpd" val="325" />
+			<set stat="pAtk" val="1" />
+			<set stat="mAtk" val="1" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="46287" name="Fish Gift Box" type="EtcItem">
@@ -1196,6 +1205,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
 	</item>
 	<item id="46289" name="Miraculous Christmas Gift Box" type="EtcItem">
 		<!-- Santa's gift for bringing back Santa's Small Gift Boxes. Double-click to get the reward. Will be deleted after the event. -->
@@ -1225,6 +1235,7 @@
 		<set name="immediate_effect" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
 	</item>
 	<item id="46292" name="Christmas Talisman" additionalName="ALL STAT +1" type="Armor">
 		<!-- Event item. All Stats + 1 when equipped. Effect does not stack with additional Talismans of the same type. -->
@@ -1235,6 +1246,7 @@
 		<set name="immediate_effect" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
 	</item>
 	<item id="46293" name="Christmas Talisman: P. Skill Critical Damage" additionalName="1-hour" type="Armor">
 		<!-- Event item. P. Skill Critical Damage + 7% when equipped. Effect does not stack with additional Talismans of the same type. 1-hour. -->
@@ -1249,6 +1261,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="GOLD" />
 		<set name="time" val="60" />
+		<set name="weight" val="150" />
 	</item>
 	<item id="46294" name="Christmas Talisman: M. Skill Critical Damage" additionalName="1-hour" type="Armor">
 		<!-- Event item. M. Skill Critical Damage + 7% when equipped. Effect does not stack with additional Talismans of the same type. 1-hour. -->
@@ -1263,6 +1276,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="GOLD" />
 		<set name="time" val="60" />
+		<set name="weight" val="150" />
 	</item>
 	<item id="46295" name="Christmas Talisman: Ultimate Defense" additionalName="1-hour" type="Armor">
 		<!-- Event item. P. Atk. + 5000 and M. Def. + 5000 for 15 seconds. Cooldown is 10 min. Effect does not stack with additional Talismans of the same type. 1-hour. -->
@@ -1277,6 +1291,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="GOLD" />
 		<set name="time" val="60" />
+		<set name="weight" val="150" />
+		<for>
+			<add stat="mDef" val="5000" />
+			<set stat="pAtk" val="5000" />
+		</for>
 	</item>
 	<item id="46296" name="Christmas Talisman: Debuff Resistance" additionalName="1-hour" type="Armor">
 		<!-- Event Item. Defends against Debuffs 5 times for 15 seconds. Cooldown is 10 min. Effect does not stack with additional Talismans of the same type. 1-hour. -->
@@ -1291,6 +1310,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="GOLD" />
 		<set name="time" val="60" />
+		<set name="weight" val="150" />
 	</item>
 	<item id="46297" name="Christmas Talisman: P. Atk." additionalName="1-hour" type="Armor">
 		<!-- Event item. P. Atk. + 5% when equipped. Effect does not stack with additional Talismans of the same type. 1-hour. -->
@@ -1305,6 +1325,10 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="GOLD" />
 		<set name="time" val="60" />
+		<set name="weight" val="150" />
+		<for>
+			<mul stat="pAtk" val="1.05" />
+		</for>
 	</item>
 	<item id="46298" name="Christmas Talisman: M. Atk." additionalName="1-hour" type="Armor">
 		<!-- Event item. M. Atk. + 5% when equipped. Effect does not stack with additional Talismans of the same type. 1-hour. -->
@@ -1319,6 +1343,10 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="GOLD" />
 		<set name="time" val="60" />
+		<set name="weight" val="150" />
+		<for>
+			<mul stat="mAtk" val="1.05" />
+		</for>
 	</item>
 	<item id="46299" name="Christmas Talisman: P. Def." additionalName="1-hour" type="Armor">
 		<!-- Event item. P. Def. + 7% when equipped. Effect does not stack with additional Talismans of the same type. 1-hour. -->
@@ -1333,5 +1361,9 @@
 		<set name="is_tradable" val="false" />
 		<set name="material" val="GOLD" />
 		<set name="time" val="60" />
+		<set name="weight" val="150" />
+		<for>
+			<mul stat="pDef" val="1.07" />
+		</for>
 	</item>
 </list>

@@ -271,7 +271,7 @@
 		<set name="material" val="CRYSTAL" />
 		<set name="weight" val="130" />
 		<for>
-			<add order="0" stat="pDef" val="28" />
+			<add stat="pDef" val="28" order="0" />
 		</for>
 	</item>
 	<item id="34624" name="Sayha's Shirt" type="Armor">
@@ -287,7 +287,7 @@
 		<set name="material" val="CRYSTAL" />
 		<set name="weight" val="130" />
 		<for>
-			<add order="0" stat="pDef" val="28" />
+			<add stat="pDef" val="28" order="0" />
 		</for>
 	</item>
 	<item id="34625" name="Eva's Shirt" type="Armor">
@@ -303,7 +303,7 @@
 		<set name="material" val="CRYSTAL" />
 		<set name="weight" val="130" />
 		<for>
-			<add order="0" stat="pDef" val="28" />
+			<add stat="pDef" val="28" order="0" />
 		</for>
 	</item>
 	<item id="34626" name="Maphr's Shirt" type="Armor">
@@ -319,7 +319,7 @@
 		<set name="material" val="CRYSTAL" />
 		<set name="weight" val="130" />
 		<for>
-			<add order="0" stat="pDef" val="28" />
+			<add stat="pDef" val="28" order="0" />
 		</for>
 	</item>
 	<item id="34627" name="Scroll: Enchant Elemental Shirt" type="EtcItem">
@@ -401,7 +401,8 @@
 	<item id="34634" name="Refined Devil Horn" type="Armor">
 		<!-- Refined Devil Horn -->
 		<set name="icon" val="icon.accessory_devil_horn_i00" />
-		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="bodypart" val="hairall" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
 		<set name="default_action" val="EQUIP" />
 		<set name="material" val="WOOD" />
 		<set name="price" val="500000" />

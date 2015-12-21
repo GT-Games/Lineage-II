@@ -39,8 +39,8 @@
 		<set name="time" val="4320" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="94" />
 			<add stat="maxMp" val="37" />
+			<add stat="mDef" val="94" order="0" />
 		</for>
 	</item>
 	<item id="22303" name="Antharas' Earring" additionalName="7-day (Event)" type="Armor">
@@ -58,8 +58,8 @@
 		<set name="time" val="10080" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="94" />
 			<add stat="maxMp" val="37" />
+			<add stat="mDef" val="94" order="0" />
 		</for>
 	</item>
 	<item id="22304" name="Baium's Ring" additionalName="3-day (Event)" type="Armor">
@@ -77,7 +77,7 @@
 		<set name="time" val="4320" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="48" />
+			<add stat="mDef" val="48" order="0" />
 		</for>
 	</item>
 	<item id="22305" name="Baium's Ring" additionalName="7-day (Event)" type="Armor">
@@ -95,7 +95,7 @@
 		<set name="time" val="10080" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="48" />
+			<add stat="mDef" val="48" order="0" />
 		</for>
 	</item>
 	<item id="22306" name="Scroll: Enchant Weapon (S-grade)" additionalName="Event" type="EtcItem">
@@ -188,7 +188,8 @@
 		<set name="material" val="CLOTH" />
 		<set name="weight" val="500" />
 		<for>
-			<add order="0" stat="pDef" val="10" />
+			<add stat="weightLimit" val="6000" />
+			<add stat="pDef" val="10" order="0" />
 		</for>
 	</item>
 	<item id="22313" name="Top-grade Magic Pouch Cloth Belt" type="Armor">
@@ -205,7 +206,8 @@
 		<set name="material" val="CLOTH" />
 		<set name="weight" val="500" />
 		<for>
-			<add order="0" stat="pDef" val="10" />
+			<add stat="inventoryLimit" val="18" />
+			<add stat="pDef" val="10" order="0" />
 		</for>
 	</item>
 	<item id="22314" name="Blessed Scroll: Enchant Weapon (S-grade)" type="EtcItem">
@@ -1253,9 +1255,9 @@
 		<set name="weapon_type" val="POLE" />
 		<set name="weight" val="2040" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="8" />
 			<set stat="pAtkSpd" val="325" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="22388" name="Halloween Scythe" additionalName="Event" type="Weapon">
@@ -1274,15 +1276,16 @@
 		<set name="weapon_type" val="POLE" />
 		<set name="weight" val="2040" />
 		<for>
-			<add stat="accCombat" val="-3.75" />
 			<add stat="critRate" val="8" />
 			<set stat="pAtkSpd" val="325" />
+			<sub stat="accCombat" val="3.75" />
 		</for>
 	</item>
 	<item id="22389" name="Halloween Cloak" additionalName="7-day (Event)" type="Armor">
 		<!-- Cloak that gives off charisma. It is a Halloween event reward item that 7-day. -->
 		<set name="icon" val="BranchSys3.Icon.g_halloween_cloack_i00" />
-		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="bodypart" val="back" />
+		<set name="commissionItemType" val="CLOAK" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_depositable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1292,13 +1295,14 @@
 		<set name="time" val="10080" />
 		<set name="weight" val="220" />
 		<for>
-			<add stat="pDef" val="20" />
+			<add stat="pDef" val="20" order="0" />
 		</for>
 	</item>
 	<item id="22390" name="Halloween Cloak" additionalName="Event" type="Armor">
 		<!-- Cloak that gives off charisma. It is a Halloween event reward item. -->
 		<set name="icon" val="BranchSys3.Icon.g_halloween_cloack_i00" />
-		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="bodypart" val="back" />
+		<set name="commissionItemType" val="CLOAK" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_depositable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1307,7 +1311,7 @@
 		<set name="material" val="CLOTH" />
 		<set name="weight" val="220" />
 		<for>
-			<add stat="pDef" val="20" />
+			<add stat="pDef" val="20" order="0" />
 		</for>
 	</item>
 	<item id="22391" name="Halloween Pumpkin Hat" additionalName="7-day (Event)" type="Armor">

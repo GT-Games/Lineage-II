@@ -120,7 +120,8 @@
 		<set name="price" val="46311000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="103" />
+			<add stat="critRate" val="10" />
+			<add stat="mDef" val="103" order="0" />
 			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
@@ -139,9 +140,9 @@
 		<set name="price" val="69466000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="154" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="56" />
+			<add stat="mDef" val="154" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="37509" name="Enhanced Octavis' Necklace" additionalName="Warrior" type="Armor">
@@ -159,9 +160,9 @@
 		<set name="price" val="92622000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="205" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="74" />
+			<add stat="mDef" val="205" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="37510" name="Enhanced Istina's Ring" additionalName="Warrior" type="Armor">
@@ -179,7 +180,8 @@
 		<set name="price" val="46311000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="103" />
+			<add stat="critRate" val="10" />
+			<add stat="mDef" val="103" order="0" />
 			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
@@ -198,9 +200,9 @@
 		<set name="price" val="69466000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="154" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="56" />
+			<add stat="mDef" val="154" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="37512" name="Enhanced Istina's Necklace" additionalName="Warrior" type="Armor">
@@ -218,9 +220,9 @@
 		<set name="price" val="92622000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="205" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="74" />
+			<add stat="mDef" val="205" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="37513" name="Enhanced Octavis' Ring" additionalName="Wizard" type="Armor">
@@ -238,7 +240,8 @@
 		<set name="price" val="46311000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="103" />
+			<add stat="critRate" val="10" />
+			<add stat="mDef" val="103" order="0" />
 			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
@@ -257,9 +260,9 @@
 		<set name="price" val="69466000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="154" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="56" />
+			<add stat="mDef" val="154" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="37515" name="Enhanced Octavis' Necklace" additionalName="Wizard" type="Armor">
@@ -277,9 +280,9 @@
 		<set name="price" val="92622000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="205" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="74" />
+			<add stat="mDef" val="205" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="37516" name="Enhanced Istina's Ring" additionalName="Wizard" type="Armor">
@@ -297,7 +300,8 @@
 		<set name="price" val="46311000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="103" />
+			<add stat="critRate" val="10" />
+			<add stat="mDef" val="103" order="0" />
 			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
@@ -316,9 +320,9 @@
 		<set name="price" val="69466000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="154" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="56" />
+			<add stat="mDef" val="154" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="37518" name="Enhanced Istina's Necklace" additionalName="Wizard" type="Armor">
@@ -336,9 +340,9 @@
 		<set name="price" val="92622000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="205" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="74" />
+			<add stat="mDef" val="205" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="37519" name="Bottle of Frintezza's Soul" type="EtcItem">
@@ -370,7 +374,8 @@
 		<set name="price" val="1730000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="79" />
+			<add stat="accCombat" val="4" />
+			<add stat="mDef" val="79" order="0" />
 			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
@@ -389,9 +394,9 @@
 		<set name="price" val="3450000" />
 		<set name="weight" val="150" />
 		<for>
-			<add order="0" stat="mDef" val="158" />
-			<enchant stat="mDef" val="0" />
 			<add stat="maxMp" val="62" />
+			<add stat="mDef" val="158" order="0" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="37523" name="Summon Scroll: Pomona" type="EtcItem">
@@ -537,6 +542,7 @@
 		<set name="icon" val="icon.etc_pi_box_wish_pack" />
 		<set name="default_action" val="PEEL" />
 		<set name="is_auctionable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
@@ -547,6 +553,7 @@
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="PEEL" />
 		<set name="is_auctionable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
@@ -557,16 +564,18 @@
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="PEEL" />
 		<set name="is_auctionable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
 		<set name="weight" val="10" />
 	</item>
-	<item id="37541" name="Blessed Enchant Scroll Pack" type="EtcItem">
+	<item id="37541" name="Blessed Enchant Scroll Pack " type="EtcItem">
 		<!-- Double-click to receive 1 Blessed Scroll: Enchant Armor (R-grade) and 1 Blessed Scroll: Enchant Weapon (R-grade). Cannot be used in the Olympiad. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="PEEL" />
 		<set name="is_auctionable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
@@ -685,6 +694,7 @@
 		<set name="is_auctionable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_dropable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
@@ -722,6 +732,7 @@
 		<set name="is_depositable" val="false" />
 		<set name="is_destroyable" val="false" />
 		<set name="is_dropable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
@@ -733,6 +744,7 @@
 		<set name="icon" val="icon.etc_box_of_adventure_3_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="is_auctionable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
@@ -751,6 +763,7 @@
 		<set name="icon" val="icon.etc_recall_potion3" />
 		<set name="default_action" val="CALL_SKILL" />
 		<set name="is_auctionable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
@@ -760,6 +773,7 @@
 		<set name="icon" val="icon.etc_recall_potion2" />
 		<set name="default_action" val="CALL_SKILL" />
 		<set name="is_auctionable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
@@ -769,6 +783,7 @@
 		<set name="icon" val="icon.etc_recall_potion1" />
 		<set name="default_action" val="CALL_SKILL" />
 		<set name="is_auctionable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LIQUID" />
@@ -778,6 +793,7 @@
 		<set name="icon" val="icon.etc_recall_exp_scroll" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="is_auctionable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="PAPER" />
@@ -798,6 +814,7 @@
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="PEEL" />
 		<set name="is_auctionable" val="false" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
