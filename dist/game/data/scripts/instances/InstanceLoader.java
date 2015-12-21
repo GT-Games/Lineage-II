@@ -90,6 +90,7 @@ public final class InstanceLoader
 		JiniaGuildHideout4.class,
 		Kamaloka.class,
 		KaraphonHabitat.class,
+		KartiasLabyrinth.class,
 		LabyrinthOfBelis.class,
 		LibraryOfSages.class,
 		MithrilMine.class,

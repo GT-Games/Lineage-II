@@ -1,20 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list enabled="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/zones.xsd">
+
 	<!-- Peace Zones -->
-	<zone name="talking_island_town_peace_zone" type="PeaceZone" shape="NPoly" minZ="-2000" maxZ="-1300"> <!-- [16_25] -->
+    <zone name="talking_island_town_peace_zone" type="PeaceZone" shape="NPoly" minZ="-2000" maxZ="-1300"> 
+		<node X="-114584" Y="252104"/>
+		<node X="-115400" Y="252120"/>
 		<node X="-116682" Y="251916" />
-		<node X="-112129" Y="251952" />
-		<node X="-110861" Y="251493" />
-		<node X="-110258" Y="251440" />
-		<node X="-109750" Y="251761" />
-		<node X="-109772" Y="255021" />
-		<node X="-108960" Y="255768" />
-		<node X="-110067" Y="258267" />
-		<node X="-112865" Y="260707" />
-		<node X="-115879" Y="260724" />
-		<node X="-118301" Y="256907" />
-		<node X="-119012" Y="255316" />
-		<node X="-117201" Y="252300" />
+		<node X="-117000" Y="252216"/>
+		<node X="-117000" Y="253320"/>
+		<node X="-117560" Y="253336"/>
+		<node X="-117592" Y="254008"/>
+		<node X="-117816" Y="254376"/>
+		<node X="-118328" Y="254568"/>
+		<node X="-118792" Y="255016"/>
+		<node X="-118968" Y="255352"/>
+		<node X="-118600" Y="256216"/>
+		<node X="-118520" Y="256216"/>
+		<node X="-118200" Y="256936"/>
+		<node X="-117608" Y="256696"/>
+		<node X="-117368" Y="257128"/>
+		<node X="-117400" Y="258552"/>
+		<node X="-117224" Y="258776"/>
+		<node X="-116296" Y="259832"/>
+		<node X="-115816" Y="259816"/>
+		<node X="-115816" Y="260680"/>
+		<node X="-112920" Y="260696"/>
+		<node X="-112920" Y="259976"/>
+		<node X="-112392" Y="259944"/>
+		<node X="-111688" Y="259352"/>
+		<node X="-111192" Y="258984"/>
+		<node X="-110696" Y="258744"/>
+		<node X="-110104" Y="258264"/>
+		<node X="-109064" Y="255768"/>
+		<node X="-109704" Y="254760"/>
+		<node X="-109720" Y="254088"/>
+		<node X="-109992" Y="253528"/>
+		<node X="-109656" Y="252904"/>
+		<node X="-109608" Y="252168"/>
+		<node X="-109624" Y="251832"/>
+		<node X="-109720" Y="251672"/>
+		<node X="-110200" Y="251304"/>
+		<node X="-110760" Y="251288"/>
+		<node X="-111464" Y="251928"/>
+		<node X="-111832" Y="252216"/>
+		<node X="-112072" Y="251992"/>
+	</zone>
+	<zone name="talking_island_town_peace_zone2" type="PeaceZone" shape="NPoly" minZ="-8050" maxZ="-7050">
+		    <!--Museum-->
+		<node X="-113500" Y="246000"/>
+		<node X="-113500" Y="243350"/>
+		<node X="-115930" Y=" 243350"/> 
+		<node X="-115930" Y=" 246000"/>
 	</zone>
 	<zone name="faeron_town_peace_zone" type="PeaceZone" shape="NPoly" minZ="-3866" maxZ="-2866"> <!-- [17_25] -->
 		<node X="-82791" Y="248383" />
@@ -704,7 +740,7 @@
 	<zone name="tamiel_hug" type="PeaceZone" shape="Cylinder" minZ="200" maxZ="1000" rad="2000">
 		<node X="214800" Y="80360" />
 	</zone>	
-	<zone name="arcan_city_center" type="PeaceZone" shape="Cylinder" minZ="-2000" maxZ="-200" rad="4500">
+	<zone name="arcan_city_center" type="PeaceZone" shape="Cylinder" minZ="-1300" maxZ="4500" rad="4500">
 		<node X="207096" Y="88696" />
 	</zone>
 	<zone name="arcan_city_enter" type="PeaceZone" shape="NPoly" minZ="-2000" maxZ="-200">
