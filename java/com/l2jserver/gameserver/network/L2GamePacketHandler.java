@@ -59,6 +59,7 @@ import com.l2jserver.gameserver.network.clientpackets.crystalization.RequestCrys
 import com.l2jserver.gameserver.network.clientpackets.dailymission.RequestOneDayRewardReceive;
 import com.l2jserver.gameserver.network.clientpackets.dailymission.RequestTodoList;
 import com.l2jserver.gameserver.network.clientpackets.dailymission.RequestTodoListHTML;
+import com.l2jserver.gameserver.network.clientpackets.fortuneteller.RequestLuckyGamePlay;
 import com.l2jserver.gameserver.network.clientpackets.friend.RequestAnswerFriendInvite;
 import com.l2jserver.gameserver.network.clientpackets.friend.RequestFriendDel;
 import com.l2jserver.gameserver.network.clientpackets.friend.RequestFriendDetailInfo;
@@ -1630,7 +1631,7 @@ public final class L2GamePacketHandler implements IPacketHandler<L2GameClient>, 
 								msg = new ExPCCafeRequestOpenWindowWithoutNPC();
 								break;
 							case 0xF2:
-								// msg = new RequestLuckyGamePlay();
+								msg = new RequestLuckyGamePlay();
 								break;
 							case 0xF3:
 								// msg = new NotifyTrainingRoomEnd();
