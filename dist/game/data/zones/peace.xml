@@ -2,7 +2,7 @@
 <list enabled="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/zones.xsd">
 
 	<!-- Peace Zones -->
-    <zone name="talking_island_town_peace_zone" type="PeaceZone" shape="NPoly" minZ="-2000" maxZ="-1300"> 
+    <zone name="talking_island_town_peace_zone" type="PeaceZone" shape="NPoly" minZ="-2000" maxZ="-1000"> 
 		<node X="-114584" Y="252104"/>
 		<node X="-115400" Y="252120"/>
 		<node X="-116682" Y="251916" />

@@ -54,7 +54,7 @@
 			</effect>
 		</for>
 	</skill>
-	<skill id="10609" levels="1" name="Critical Chances">
+	<skill id="10609" levels="1" name="Critical Chances - Othell Wind Rider">
 		<set name="icon" val="icon.skill10878" />
 		<set name="magicLvl" val="85" />
 		<set name="abnormalTime" val="300" />
@@ -68,7 +68,7 @@
 		</cond>
 		<for>
 		<effect name="Buff">
-				<add stat="critDmg" val="304" />
+				<add stat="critDmgAdd" val="304" />
 				<mul stat="blowRate" val="1.15" />
 				<mul stat="critDmg" val="0.7">
 					<player front="true" />
@@ -94,7 +94,7 @@
 			</effect>
 		</for>
 	</skill>
-	<skill id="10610" levels="1" name="Critical Expansions">
+	<skill id="10610" levels="1" name="Critical Expansions - Othell Wind Rider">
 		<set name="icon" val="icon.skill0819" />
 		<set name="magicLvl" val="85" />
 		<set name="operateType" val="PASSIVE" />
@@ -157,23 +157,26 @@
 			</effect>
 		</for>
 	</skill>
-	<skill id="10656" levels="1" name="Critical Prowess">
-		<set name="icon" val="icon.skill10656" />
-		<set name="magicLvl" val="85" />
-		<set name="abnormalTime" val="300" />
-		<set name="operateType" val="ACTIVE_CONTINUOUS" />
-		<set name="mpConsume" val="36" />
-		<set name="hitTime" val="2000" />
-		<set name="reuseDelay" val="30000" />
-		<set name="targetType" val="SELF" />
-		<cond msgId="113" addName="1">
-			<using kind="DAGGER, DUALDAGGER" />
-		</cond>
-		<for>
-		<effect name="Buff">
-				<add stat="critDmg" val="304" />
-				<mul stat="blowRate" val="1.05" />
-				<mul stat="critDmg" val="0.7">
+
+	<skill id="10656" levels="1" name="Critical Prowess - Ghost Hunter">
+    <!-- For 5 minutes, Critical Damage + 608 and vital spot attack success rate + 5%.
+         Front Critical Damage - 30%, Side Critical Rate + 30% and Critical Damage + 30%.
+         Rear Critical Rate + 50% and Critical Damage + 50%. Requires a dagger or dual dagger. -->
+         <set name="icon" val="icon.skill10656"/>
+         <set name="abnormalLvl" val="1"/>
+         <set name="abnormalTime" val="300"/>
+         <set name="operateType" val="ACTIVE_CONTINUOUS" />
+         <set name="hitTime" val="2000"/>
+         <set name="reuseDelay" val="30000"/>
+         <set name="mpConsume" val="36"/>  
+         <cond msgId="113" addName="1">
+           <using kind="DAGGER, DUALDAGGER"/>
+         </cond>
+         <for>
+              <effect name="Buff">
+                <add stat="critDmgAdd" val="608"/>
+                <mul stat="blowRate" val="1.05" />
+                <mul stat="critDmg" val="0.7">
 					<player front="true" />
 				</mul>
 				<mul stat="critRate" val="1.3">
@@ -194,7 +197,8 @@
 				<mul stat="critDmg" val="1.5">
 					<player behind="true" />
 				</mul>
-			</effect>
-		</for>
+              </effect>
+         </for>
 	</skill>
+
 </list>
