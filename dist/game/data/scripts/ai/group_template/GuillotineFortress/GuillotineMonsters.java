@@ -22,10 +22,12 @@ package ai.group_template.GuillotineFortress;
 import ai.npc.AbstractNpcAI;
 
 import com.l2jserver.gameserver.datatables.SkillData;
+import com.l2jserver.gameserver.model.Location;
 import com.l2jserver.gameserver.model.actor.L2Npc;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jserver.gameserver.network.NpcStringId;
 import com.l2jserver.gameserver.network.serverpackets.ExShowScreenMessage;
+import com.l2jserver.util.Rnd;
 
 /**
  * GuillotineMonsters
@@ -34,7 +36,7 @@ import com.l2jserver.gameserver.network.serverpackets.ExShowScreenMessage;
 
 public class GuillotineMonsters extends AbstractNpcAI
 {
-	private boolean _isChaosShieldActive = true;
+	private boolean _isChaosShieldActive = false;
 	
 	// Other
 	private static final int CHAOS_SHIELD = 15208;
@@ -46,7 +48,6 @@ public class GuillotineMonsters extends AbstractNpcAI
 	private static final int HAKAL_THE_BUTCHERED = 23208;
 	
 	// Special Mob
-	@SuppressWarnings("unused")
 	private static final int SCALDISECT_THE_FURIOUS = 23212;
 	
 	private static final int[] NPCS =
@@ -62,20 +63,33 @@ public class GuillotineMonsters extends AbstractNpcAI
 		registerMobs(NPCS);
 	}
 	
+	public void spawnMob(int npcId, final Location loc, L2PcInstance target)
+	{
+		L2Npc npc = new L2Npc(npcId);
+		
+		npc.setHeading(loc.getHeading() < 0 ? Rnd.get(65535) : loc.getHeading());
+		npc.spawnMe(loc.getX(), loc.getY(), loc.getZ());
+		npc.setCurrentHpMp(npc.getMaxHp(), npc.getMaxMp());
+		npc.setTarget(target);
+		npc.addAttackerToAttackByList(target);
+		
+	}
+	
 	@Override
 	public String onKill(L2Npc npc, L2PcInstance killer, boolean isSummon)
 	{
 		if ((killer != null) && killer.isPlayer())
 		{
-			if (killer.getInventory().getItemByItemId(PROOF_OF_SURVIVAL) != null) // TODO Apply Random Chance
+			if ((killer.getInventory().getItemByItemId(PROOF_OF_SURVIVAL) != null) && Rnd.chance(5)) // TODO Apply Random Chance
 			{
-				// TODO SPAWN SCALDISECT_THE_FURIOUS in player's loc and make player get a reflect dmg
-				killer.getInventory().destroyItemByItemId("Proof of Survival", PROOF_OF_SURVIVAL, 1, killer, null);
+				spawnMob(SCALDISECT_THE_FURIOUS, killer.getLocation(), killer);
 				
-				return super.onKill(npc, killer, isSummon);
+				killer.getInventory().destroyItemByItemId("Proof of Survival", PROOF_OF_SURVIVAL, 1, killer, null);
 			}
-			
-			killer.getInventory().addItem("Proof of Survival", PROOF_OF_SURVIVAL, 1, killer, null);
+			else if (Rnd.chance(1))
+			{
+				killer.getInventory().addItem("Proof of Survival", PROOF_OF_SURVIVAL, 1, killer, null);
+			}
 		}
 		
 		return super.onKill(npc, killer, isSummon);

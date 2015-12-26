@@ -352,6 +352,16 @@ public final class Rnd
 		return rnd.get(min, max);
 	}
 	
+	public static boolean chance(final int chance)
+	{
+		return (chance >= 1) && ((chance > 99) || ((rnd.nextInt() + 1) <= chance));
+	}
+	
+	public static boolean chance(final double chance)
+	{
+		return rnd.nextDouble() <= (chance / 100.0);
+	}
+	
 	public static final RandomContainer newInstance(final RandomType type)
 	{
 		switch (type)
