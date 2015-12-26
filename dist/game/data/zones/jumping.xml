@@ -128,4 +128,8 @@
 		<stat name="trackId" val="44" />
 		<node X="-25342" Y="254455" />
 	</zone>
+	<zone name="Enchanted Valley Entrance" type="JumpZone" shape="Cylinder" minZ="-4676" maxZ="-4600" rad="50">
+		<stat name="trackId" val="45"/>
+		<node X="113569" Y="46879"/>
+	</zone>
 </list>

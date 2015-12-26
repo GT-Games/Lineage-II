@@ -45,7 +45,7 @@
 		<acquire exp="12348772" sp="33498" />
 		<stats> <!-- str="88" int="79" dex="55" wit="78" con="82" men="78" -->
 			<vitals hp="650630" hpRegen="7.5" mp="22058" mpRegen="2.7" />
-			<attack physical="40000" magical="30000" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<attack physical="40000" magical="30000" random="30" critical="4" accuracy="6.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="1280" magical="1650" />
 			<attribute>
 				<defence fire="260" water="260" wind="260" earth="260" holy="207" dark="293" />
@@ -85,7 +85,7 @@
 		<acquire exp="12663060" sp="34626" />
 		<stats> <!-- str="88" int="79" dex="55" wit="78" con="82" men="78" -->
 			<vitals hp="651824" hpRegen="7.5" mp="22428" mpRegen="2.7" />
-			<attack physical="41000" magical="30750" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<attack physical="41000" magical="30750" random="30" critical="4" accuracy="6.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="1968" magical="1680" />
 			<attribute>
 				<defence fire="260" water="260" wind="260" earth="260" holy="260" dark="260" />

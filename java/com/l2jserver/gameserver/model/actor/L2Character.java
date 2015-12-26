@@ -6438,12 +6438,12 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 		reduceCurrentHp(i, attacker, !skill.isToggle(), true, skill);
 	}
 	
-        //This is used to make Active Skills DOT Work Against Players (Going Directly Into HP Ignoring CP) Properly - added by Thonygez
-        public void reduceCurrentHpByDOT(double value, L2Character attacker, boolean awake, boolean isDOT, boolean isHPConsumption, boolean ignoreCP)
+	// This is used to make Active Skills DOT Work Against Players (Going Directly Into HP Ignoring CP) Properly - added by Thonygez
+	public void reduceCurrentHpByDOT(double value, L2Character attacker, boolean awake, boolean isDOT, boolean isHPConsumption, boolean ignoreCP)
 	{
 		getStatus().reduceHp(value, attacker, awake, isDOT, isHPConsumption, ignoreCP);
 	}
-        
+	
 	public void reduceCurrentHp(double i, L2Character attacker, boolean awake, boolean isDOT, Skill skill)
 	{
 		// Damage modifier
@@ -6488,6 +6488,11 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 	public final double getCurrentHp()
 	{
 		return getStatus().getCurrentHp();
+	}
+	
+	public final double getCurrentHpPercentage(L2Npc npc)
+	{
+		return ((getStatus().getCurrentHp() * 100) / npc.getMaxHp());
 	}
 	
 	public final void setCurrentHp(double newHp)

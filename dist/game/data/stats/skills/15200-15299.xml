@@ -75,14 +75,22 @@
 		<set name="operateType" val="PASSIVE" />
 		<set name="targetType" val="SELF" />
 	</skill>
-	<skill id="15208" levels="9" name="Weakened Chaos Shield">
-		<!-- AUTO GENERATED SKILL -->
+	<skill id="15208" levels="9" name="Weakened Chaos Shield"> 
 		<!-- Lethal Strike Resistance is weakened through the armor destruction skill. -->
 		<table name="#icons"> icon.skill0035 icon.skill0035 icon.skill0035 icon.skill0035 icon.skill0035 icon.skill0035 icon.skill0035 icon.skill0035 icon.skill1418 </table>
+		<table name="#Def">1.2 1.4 1.6 1.8 2 2.3 2.5 2.8 3</table>
 		<set name="icon" val="#icons" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
 		<set name="targetType" val="SELF" />
 		<set name="isMagic" val="1" />
+        <set name="abnormalTime" val="86400"/>   
+        <set name="abnormalVisualEffect" val="INVINCIBILITY"/>
+		<for>
+		<effect name="Buff">
+		    <mul stat="pDef" val="#Def"/>
+		    <mul stat="mDef" val="#Def"/>
+		</effect>  
+		</for>
 	</skill>
 	<skill id="15209" levels="1" name="Pa'agrio's Gift 1">
 		<!-- AUTO GENERATED SKILL -->

@@ -138,24 +138,24 @@ public class CharStat
 	}
 	
 	/**
-	 * @return the Accuracy (base+modifier) of the L2Character in function of the Weapon Expertise Penalty.
+	 * @return the Accuracy of the L2Character in function of the Weapon Expertise Penalty
 	 */
 	public int getAccuracy()
 	{
-		return (int) Math.round(calcStat(Stats.ACCURACY_COMBAT, 0, null, null));
+	    return (int) Math.round(calcStat(Stats.ACCURACY_COMBAT, _activeChar.getTemplate().getBaseAccuracy(), _activeChar, null));
 	}
 	
 	/**
-	 * @return the Magic Accuracy (base+modifier) of the L2Character
+	 * @return the Magic Accuracy of the L2Character
 	 */
 	public int getMagicAccuracy()
 	{
-		return (int) Math.round(calcStat(Stats.ACCURACY_MAGIC, 0, null, null));
+            return (int) Math.round(calcStat(Stats.ACCURACY_MAGIC, _activeChar.getTemplate().getBaseAccuracy(), _activeChar, null));
 	}
 	
 	public L2Character getActiveChar()
 	{
-		return _activeChar;
+            return _activeChar;
 	}
 	
 	/**
@@ -163,7 +163,7 @@ public class CharStat
 	 */
 	public final float getAttackSpeedMultiplier()
 	{
-		return (float) (((1.1) * getPAtkSpd()) / _activeChar.getTemplate().getBasePAtkSpd());
+	    return (float) (((1.1) * getPAtkSpd()) / _activeChar.getTemplate().getBasePAtkSpd());
 	}
 	
 	/**
