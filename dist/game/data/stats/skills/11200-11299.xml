@@ -357,6 +357,7 @@
 		<set name="icon" val="icon.skill11259" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="10" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="effectRange" val="900" />
 		<set name="hitTime" val="1200" />
@@ -364,7 +365,7 @@
 		<set name="reuseDelay" val="5000" />
 		<set name="isMagic" val="1" />
 		<set name="isDebuff" val="true" />
-		<set name="targetType" val="SELF" />
+		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Buff">
 				<mul stat="mDef" val="1.3" />
@@ -380,6 +381,7 @@
 		<set name="icon" val="icon.skill11260" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="10" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="effectRange" val="900" />
 		<set name="hitTime" val="1490" />
@@ -387,7 +389,7 @@
 		<set name="reuseDelay" val="5000" />
 		<set name="isMagic" val="1" />
 		<set name="isDebuff" val="true" />
-		<set name="targetType" val="SELF" />
+		<set name="targetType" val="ONE" />
 	</skill>
 	<skill id="11261" levels="9" name="Mark of Plague">
 	<!-- Source: https://l2wiki.com/Mark_of_Plague_-_Wynn_Arcana_Lord -->
@@ -396,6 +398,7 @@
 		<set name="icon" val="icon.skill11261" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="10" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="effectRange" val="900" />
 		<set name="hitTime" val="1500" />
@@ -403,7 +406,7 @@
 		<set name="reuseDelay" val="5000" />
 		<set name="isMagic" val="1" />
 		<set name="isDebuff" val="true" />
-		<set name="targetType" val="SELF" />
+		<set name="targetType" val="ONE" />
 	</skill>
 	<skill id="11262" levels="9" name="Mark of Trick">
 	<!-- Source: https://l2wiki.com/Mark_of_Trick_-_Wynn_Spectral_Master -->
@@ -412,6 +415,7 @@
 		<set name="icon" val="icon.skill11262" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
+		<set name="abnormalTime" val="10" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="effectRange" val="900" />
 		<set name="hitTime" val="1500" />
@@ -419,7 +423,7 @@
 		<set name="reuseDelay" val="5000" />
 		<set name="isMagic" val="1" />
 		<set name="isDebuff" val="true" />
-		<set name="targetType" val="SELF" />
+		<set name="targetType" val="ONE" />
 	</skill>
 	<skill id="11263" levels="10" name="Invoke">
 	<!-- Source: https://l2wiki.com/Invoke_-_Wynn_Elemental_Master -->
@@ -688,7 +692,7 @@
 		<set name="coolTime" val="300" />
 		<set name="reuseDelay" val="5000" />
 		<set name="isMagic" val="1" />
-		<set name="targetType" val="SELF" />
+		<set name="targetType" val="ONE" />
 	</skill>
 	<!-- Level 1 : Switches locations with target servitor. -->
 	<!-- Level 101 : Trades places with targeted servitor. Enchant Cost: Decreases MP Consumption. (+ 1 Cost | Decreases MP Consumption.) -->
@@ -737,7 +741,7 @@
 		<set name="reuseDelay" val="60000" />
 		<set name="isMagic" val="1" />
 		<set name="isDebuff" val="true" />
-		<set name="targetType" val="SELF" />
+		<set name="targetType" val="ONE" />
 	</skill>
 	<!-- Level 1 : Becomes invincible with energy from your servitor. Increases HP Recovery Bonus while skill is in effect. Requires a servitor. -->
 	<!-- Level 2 : Becomes invincible with energy from your servitor. Increases HP Recovery Bonus while skill is in effect. Requires a servitor. -->
@@ -1219,7 +1223,7 @@
 		<set name="reuseDelay" val="5000" />
 		<set name="isMagic" val="1" />
 		<set name="isDebuff" val="true" />
-		<set name="targetType" val="SELF" />
+		<set name="targetType" val="ONE" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
 		<enchant1 name="power" val="#enchPower" />
 		<enchant2 name="pvpPower" val="#enchPower" />
