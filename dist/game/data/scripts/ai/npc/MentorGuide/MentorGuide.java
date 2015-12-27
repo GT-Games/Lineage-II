@@ -154,7 +154,7 @@ public class MentorGuide extends AbstractNpcAI implements IXmlReader
 		
 		if (event.equalsIgnoreCase("exchange"))
 		{
-			if (hasQuestItems(player, MENTEE_CERT) && (player.getLevel() >= MAX_LEVEL) && (player.getClassId().level() == ClassLevel.AWAKEN.ordinal()))
+			if (hasQuestItems(player, MENTEE_CERT) && (player.getLevel() >= MAX_LEVEL) && player.isAwaken())
 			{
 				takeItems(player, MENTEE_CERT, 1);
 				giveItems(player, DIPLOMA, 40);

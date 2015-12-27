@@ -2857,26 +2857,32 @@ public abstract class AbstractScript implements INamable
 	 */
 	public static boolean takeItems(L2PcInstance player, int itemId, long amount)
 	{
-		final List<L2ItemInstance> items = player.getInventory().getItemsByItemId(itemId);
-		if (amount < 0)
-		{
-			items.forEach(i -> takeItem(player, i, i.getCount()));
-		}
-		else
-		{
-			long currentCount = 0;
-			for (L2ItemInstance i : items)
-			{
-				long toDelete = i.getCount();
-				if ((currentCount + toDelete) > amount)
-				{
-					toDelete = amount - currentCount;
-				}
-				takeItem(player, i, toDelete);
-				currentCount += toDelete;
-			}
-		}
-		return true;
+            final List<L2ItemInstance> items = player.getInventory().getItemsByItemId(itemId);
+          
+            if (amount < 0)
+            {
+                    items.forEach(i -> takeItem(player, i, i.getCount()));
+            }
+            else
+            {
+                long currentCount = 0;
+
+                for (L2ItemInstance i : items)
+                {
+                    long toDelete = i.getCount();
+
+                    if ((currentCount + toDelete) > amount)
+                    {
+                        toDelete = amount - currentCount;
+                    }
+                    if (toDelete > 0)
+                    {
+                        takeItem(player, i, toDelete);
+                    }
+                    currentCount += toDelete;
+                }
+            }
+            return true;
 	}
 	
 	private static boolean takeItem(L2PcInstance player, L2ItemInstance item, long toDelete)
