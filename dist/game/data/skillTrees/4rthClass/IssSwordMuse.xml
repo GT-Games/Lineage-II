@@ -23,15 +23,6 @@
 		<skill skillName="Song of Protection" skillId="11613" skillLvl="1" getLevel="85" levelUpSp="10000" />
 		<skill skillName="Song of Silence" skillId="437" skillLvl="4" getLevel="85" levelUpSp="10000" />
 		<skill skillName="Shield Song" skillId="11605" skillLvl="1" getLevel="85" levelUpSp="10000" />
-		<skill skillName="Prevailing Sonata" skillId="11529" skillLvl="1" getLevel="85" levelUpSp="10000">
-			<removeSkill id="1001" />
-			<removeSkill id="276" />
-			<removeSkill id="275" />
-			<removeSkill id="1591" />
-			<removeSkill id="304" />
-			<removeSkill id="1592" />
-			<removeSkill id="363" />
-		</skill>
 		<skill skillName="Lute Melody" skillId="11522" skillLvl="1" getLevel="85" levelUpSp="10000">
 			<removeSkill id="1002" />
 			<removeSkill id="1251" />
@@ -67,14 +58,6 @@
 		</skill>
 		<skill skillName="Quick Return" skillId="11563" skillLvl="1" getLevel="85" levelUpSp="10000">
 			<removeSkill id="1050" />
-		</skill>
-		<skill skillName="Refreshing Sonata" skillId="11532" skillLvl="1" getLevel="85" levelUpSp="10000">
-			<removeSkill id="1073" />
-			<removeSkill id="272" />
-			<removeSkill id="265" />
-			<removeSkill id="268" />
-			<removeSkill id="266" />
-			<removeSkill id="364" />
 		</skill>
 		<skill skillName="Transform" skillId="11537" skillLvl="1" getLevel="85" levelUpSp="10000">
 			<removeSkill id="1092" />
@@ -155,13 +138,6 @@
 			<removeSkill id="1589" />
 			<removeSkill id="264" />
 			<removeSkill id="1590" />
-		</skill>
-		<skill skillName="Daring Sonata" skillId="11530" skillLvl="1" getLevel="85" levelUpSp="10000">
-			<removeSkill id="1284" />
-			<removeSkill id="310" />
-			<removeSkill id="1593" />
-			<removeSkill id="305" />
-			<removeSkill id="1594" />
 		</skill>
 		<skill skillName="Recovery Melody" skillId="11571" skillLvl="1" getLevel="85" levelUpSp="10000">
 			<removeSkill id="1306" />
@@ -252,17 +228,26 @@
 			<removeSkill id="407" />
 		</skill>
 		<skill skillName="Refreshing Song" skillId="11609" skillLvl="1" getLevel="85" levelUpSp="10000">
+			<removeSkill id="1073" />
+			<removeSkill id="272" />
 			<removeSkill id="265" />
-			<removeSkill id="266" />
 			<removeSkill id="268" />
+			<removeSkill id="266" />
 			<removeSkill id="364" />
 		</skill>
 		<skill skillName="Prevailing Song" skillId="11607" skillLvl="1" getLevel="85" levelUpSp="10000">
+			<removeSkill id="1001" />
+			<removeSkill id="276" />
+			<removeSkill id="275" />
+			<removeSkill id="1591" />
 			<removeSkill id="304" />
-			<removeSkill id="363" />
 			<removeSkill id="1592" />
+			<removeSkill id="363" />
 		</skill>
 		<skill skillName="Daring Song" skillId="11608" skillLvl="1" getLevel="85" levelUpSp="10000">
+			<removeSkill id="1284" />
+			<removeSkill id="310" />
+			<removeSkill id="1593" />
 			<removeSkill id="305" />
 			<removeSkill id="1594" />
 		</skill>
