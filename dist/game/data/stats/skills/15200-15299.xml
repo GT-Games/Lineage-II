@@ -84,7 +84,7 @@
 		<set name="targetType" val="SELF" />
 		<set name="isMagic" val="1" />
         <set name="abnormalTime" val="86400"/>   
-        <set name="abnormalVisualEffect" val="INVINCIBILITY"/>
+        <set name="abnormalVisualEffect" val="SEIZURE1"/>
 		<for>
 		<effect name="Buff">
 		    <mul stat="pDef" val="#Def"/>

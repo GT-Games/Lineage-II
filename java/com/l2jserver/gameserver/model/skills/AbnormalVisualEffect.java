@@ -154,8 +154,8 @@ public enum AbnormalVisualEffect
 	CHANGE_AR5(133),
 	CHANGE_AR6(134),
 	CHANGE_WP1(135),
-	CHANGE_WP2(136),
-	CHANGE_HALLOWEEN(1000),
+	CHANGE_WP2(136), 
+	CHANGE_HALLOWEEN(1000), 
         FACEOFF(10320);
 	
 	private final int _clientId;

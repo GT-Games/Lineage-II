@@ -24,6 +24,7 @@ import ai.npc.AbstractNpcAI;
 import com.l2jserver.gameserver.datatables.SkillData;
 import com.l2jserver.gameserver.model.Location;
 import com.l2jserver.gameserver.model.actor.L2Npc;
+import com.l2jserver.gameserver.model.actor.instance.L2MonsterInstance;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jserver.gameserver.network.NpcStringId;
 import com.l2jserver.gameserver.network.serverpackets.ExShowScreenMessage;
@@ -36,7 +37,7 @@ import com.l2jserver.util.Rnd;
 
 public class GuillotineMonsters extends AbstractNpcAI
 {
-	private boolean _isChaosShieldActive = false;
+	private boolean _isChaosShieldActive = true;
 	
 	// Other
 	private static final int CHAOS_SHIELD = 15208;
@@ -45,7 +46,8 @@ public class GuillotineMonsters extends AbstractNpcAI
 	
 	// Normal Mobs
 	private static final int NAGDU_THE_DEFORMED_MERMAN = 23201;
-	private static final int HAKAL_THE_BUTCHERED = 23208;
+	private static final int HAKAL_THE_BUTCHERED = 23202;
+	private static final int ROSENIA_DIVINE_SPIRIT = 23208;
 	
 	// Special Mob
 	private static final int SCALDISECT_THE_FURIOUS = 23212;
@@ -54,6 +56,7 @@ public class GuillotineMonsters extends AbstractNpcAI
 	{
 		NAGDU_THE_DEFORMED_MERMAN,
 		HAKAL_THE_BUTCHERED,
+		ROSENIA_DIVINE_SPIRIT,
 	};
 	
 	public GuillotineMonsters()
@@ -67,12 +70,21 @@ public class GuillotineMonsters extends AbstractNpcAI
 	{
 		L2Npc npc = new L2Npc(npcId);
 		
-		npc.setHeading(loc.getHeading() < 0 ? Rnd.get(65535) : loc.getHeading());
-		npc.spawnMe(loc.getX(), loc.getY(), loc.getZ());
-		npc.setCurrentHpMp(npc.getMaxHp(), npc.getMaxMp());
-		npc.setTarget(target);
-		npc.addAttackerToAttackByList(target);
+		L2MonsterInstance mob = new L2MonsterInstance(npc.getTemplate());
 		
+		mob.setHeading(loc.getHeading() < 0 ? Rnd.get(65535) : loc.getHeading());
+		mob.spawnMe(loc.getX(), loc.getY(), loc.getZ());
+		mob.setCurrentHpMp(npc.getMaxHp(), npc.getMaxMp());
+		mob.setTarget(target);
+		mob.doAttack(target);
+	}
+	
+	@Override
+	public String onSpawn(L2Npc npc)
+	{
+		npc.doCast(SkillData.getInstance().getSkill(CHAOS_SHIELD, 9));
+		
+		return super.onSpawn(npc);
 	}
 	
 	@Override
@@ -105,7 +117,7 @@ public class GuillotineMonsters extends AbstractNpcAI
 		
 		double npcHpPercent = npc.getCurrentHpPercentage(npc);
 		
-		if (((npcHpPercent < 85) && _isChaosShieldActive) || npc.isAffectedBySkill(ARMOR_DESTRUCTION))
+		if (((npcHpPercent < 85) && _isChaosShieldActive) || ((npcHpPercent >= 85) && npc.isAffectedBySkill(ARMOR_DESTRUCTION)))
 		{
 			_isChaosShieldActive = false;
 			
@@ -122,15 +134,12 @@ public class GuillotineMonsters extends AbstractNpcAI
 					partyMembers.sendPacket(new ExShowScreenMessage(NpcStringId.CHAOS_SHIELD_BREAKTHROUGH, ExShowScreenMessage.BOTTOM_CENTER, 10000));
 				}
 			}
-			return super.onAttack(npc, player, damage, isSummon);
 		}
-		else if ((npcHpPercent > 85) && !npc.getEffectList().isAffectedBySkill((CHAOS_SHIELD)) && !_isChaosShieldActive)
+		else if ((npcHpPercent > 85) && !npc.isAffectedBySkill(ARMOR_DESTRUCTION) && !_isChaosShieldActive)
 		{
 			_isChaosShieldActive = true;
 			
 			npc.doCast(SkillData.getInstance().getSkill(CHAOS_SHIELD, 9));
-			
-			return super.onAttack(npc, player, damage, isSummon);
 		}
 		
 		return super.onAttack(npc, player, damage, isSummon);

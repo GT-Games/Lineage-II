@@ -499,6 +499,7 @@
 			<skill id="5467" level="1" />
 			<skill id="4416" level="1" />
 			<skill id="4414" level="1" />
+			<skill id="16547" level="10"/>
 		</skillList>
 		<collision>
 			<radius normal="35" />
