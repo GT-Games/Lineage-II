@@ -114,7 +114,7 @@ public final class AttackRequest extends L2GameClientPacket
 			activeChar.sendPacket(ActionFailed.STATIC_PACKET);
 			return;
 		}
-		
+                
 		if (activeChar.getTarget() != target)
 		{
 			target.onAction(activeChar);

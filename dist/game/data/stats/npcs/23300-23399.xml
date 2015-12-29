@@ -736,7 +736,7 @@
 		<acquire exp="103650867" sp="202345" />
 		<stats> <!-- str="88" int="79" dex="55" wit="78" con="82" men="78" -->
 			<vitals hp="663228" hpRegen="7.5" mp="663228" mpRegen="2.7" />
-			<attack physical="26600" magical="10000" random="30" critical="8" accuracy="4.75" attackSpeed="398" type="SWORD" range="900" distance="80" width="120" />
+			<attack physical="26600" magical="10000" random="30" critical="8" accuracy="4.75" attackSpeed="398" type="BOW" range="900" distance="80" width="120" />
 			<defence physical="9000" magical="8700" />
 			<attribute>
 				<defence fire="150" water="150" wind="150" earth="300" holy="150" dark="150" />
@@ -860,7 +860,7 @@
 		<acquire exp="104493557" sp="203990" />
 		<stats> <!-- str="88" int="79" dex="55" wit="78" con="82" men="78" -->
 			<vitals hp="882477" hpRegen="7.5" mp="882477" mpRegen="2.7" />
-			<attack physical="24000" magical="500000" random="30" critical="8" accuracy="4.75" attackSpeed="698" type="SWORD" range="40" distance="80" width="120" />
+			<attack physical="24000" magical="500000" random="30" critical="8" accuracy="4.75" attackSpeed="698" type="DAGGER" range="40" distance="80" width="120" />
 			<defence physical="10000" magical="10000" />
 			<attribute>
 				<defence fire="150" water="150" wind="150" earth="300" holy="150" dark="150" />
@@ -901,7 +901,7 @@
 		<acquire exp="88903792" sp="173556" />
 		<stats> <!-- str="88" int="79" dex="55" wit="78" con="82" men="78" -->
 			<vitals hp="548122" hpRegen="7.5" mp="548122" mpRegen="2.7" />
-			<attack physical="24000" magical="10000" random="30" critical="4" accuracy="4.75" attackSpeed="698" type="SWORD" range="40" distance="80" width="120" />
+			<attack physical="24000" magical="10000" random="30" critical="4" accuracy="4.75" attackSpeed="698" type="DAGGER" range="40" distance="80" width="120" />
 			<defence physical="9000" magical="8900" />
 			<attribute>
 				<defence fire="150" water="150" wind="150" earth="300" holy="150" dark="150" />

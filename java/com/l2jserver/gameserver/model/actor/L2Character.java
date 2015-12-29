@@ -1568,6 +1568,10 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 		// Recharge AutoSoulShot
 		// this method should not used with L2Playable
 		
+                final MagicSkillUse msu = new MagicSkillUse(this, target, skill.getDisplayId(), skill.getLevel(), skill.getHitTime(), skill.getReuseDelay());
+                msu.setReuseSkillId(skill.getReuseSkillId());
+                broadcastPacket(msu);
+                
 		beginCast(skill, false, target, targets);
 	}
 	
@@ -1794,6 +1798,10 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 			setLastSkillCast(skill);
 		}
 		
+                final MagicSkillUse msu = new MagicSkillUse(this, target, skill.getDisplayId(), skill.getLevel(), skill.getHitTime(), skill.getReuseDelay());
+                msu.setReuseSkillId(skill.getReuseSkillId());
+                broadcastPacket(msu);
+                 
 		// Calculate the Reuse Time of the Skill
 		int reuseDelay;
 		if (skill.isStaticReuse() || skill.isStatic())
@@ -3216,7 +3224,7 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 		}
 		resetCurrentAbnormalVisualEffects();
 	}
-	
+           
 	/**
 	 * Removes the abnormal visual and sends packet for updating them in client.
 	 * @param aves the abnormal visual effects

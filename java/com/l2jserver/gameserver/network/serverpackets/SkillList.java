@@ -76,7 +76,7 @@ public final class SkillList extends L2GameServerPacket
 				writeH(temp.level);
 			}
 			writeD(temp.id);
-			writeD(-1); // GOD ReuseDelayShareGroupID
+			writeD(SkillData.getInstance().getSkill(temp.id, temp.level).getReuseSkillId()); // GOD ReuseDelayShareGroupID
 			writeC(temp.disabled ? 1 : 0); // iSkillDisabled
 			writeC(temp.enchanted ? 1 : 0); // CanEnchant
 		}

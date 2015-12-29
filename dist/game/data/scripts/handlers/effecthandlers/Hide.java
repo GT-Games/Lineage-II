@@ -24,11 +24,12 @@ import com.l2jserver.gameserver.model.actor.L2Character;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jserver.gameserver.model.conditions.Condition;
 import com.l2jserver.gameserver.model.effects.AbstractEffect;
+import com.l2jserver.gameserver.model.skills.AbnormalVisualEffect;
 import com.l2jserver.gameserver.model.skills.BuffInfo;
 
 /**
  * Hide effect implementation.
- * @author ZaKaX, nBd
+ * @author ZaKaX, nBd, Thonygez
  */
 public final class Hide extends AbstractEffect
 {
@@ -46,6 +47,8 @@ public final class Hide extends AbstractEffect
 			if (!activeChar.inObserverMode())
 			{
 				activeChar.setInvisible(false);
+				activeChar.broadcastUserInfo();
+				activeChar.stopAbnormalVisualEffect(AbnormalVisualEffect.STEALTH);
 			}
 		}
 	}
@@ -55,8 +58,15 @@ public final class Hide extends AbstractEffect
 	{
 		if (info.getEffected().isPlayer())
 		{
+			System.out.println("INVISIBLE MADAFAKA!");
+			
 			L2PcInstance activeChar = info.getEffected().getActingPlayer();
+			
 			activeChar.setInvisible(true);
+			activeChar.broadcastUserInfo();
+			activeChar.decayMe();
+			activeChar.spawnMe();
+			activeChar.startAbnormalVisualEffect(AbnormalVisualEffect.STEALTH);
 			
 			if ((activeChar.getAI().getNextIntention() != null) && (activeChar.getAI().getNextIntention().getCtrlIntention() == CtrlIntention.AI_INTENTION_ATTACK))
 			{

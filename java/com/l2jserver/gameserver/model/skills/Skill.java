@@ -39,6 +39,7 @@ import com.l2jserver.gameserver.handler.ITargetTypeHandler;
 import com.l2jserver.gameserver.handler.TargetHandler;
 import com.l2jserver.gameserver.instancemanager.HandysBlockCheckerManager;
 import com.l2jserver.gameserver.model.ArenaParticipantsHolder;
+import com.l2jserver.gameserver.model.Elementals;
 import com.l2jserver.gameserver.model.L2AlchemySkill;
 import com.l2jserver.gameserver.model.L2ExtractableProductItem;
 import com.l2jserver.gameserver.model.L2ExtractableSkill;
@@ -59,6 +60,7 @@ import com.l2jserver.gameserver.model.effects.AbstractEffect;
 import com.l2jserver.gameserver.model.effects.L2EffectType;
 import com.l2jserver.gameserver.model.entity.TvTEvent;
 import com.l2jserver.gameserver.model.holders.ItemHolder;
+import com.l2jserver.gameserver.model.holders.SkillHolder;
 import com.l2jserver.gameserver.model.interfaces.IIdentifiable;
 import com.l2jserver.gameserver.model.skills.targets.L2TargetType;
 import com.l2jserver.gameserver.model.stats.BaseStats;
@@ -132,6 +134,7 @@ public final class Skill implements IIdentifiable
 	private final int _hitTime;
 	// private final int _skillInterruptTime;
 	private final int _coolTime;
+         private final int _reuseSkillId;
 	private final int _reuseHashCode;
 	private final int _reuseDelay;
 	
@@ -224,6 +227,14 @@ public final class Skill implements IIdentifiable
 	// Mentoring
 	private final boolean _isMentoring;
 	
+        private final int _fireSkillId;
+        private final int _waterSkillId;
+        private final int _windSkillId;
+        private final int _earthSkillId;
+        private final int _holySkillId;
+        private final int _unholySkillId;
+        private final int _multiElementalSkillId;
+    
 	public Skill(StatsSet set)
 	{
 		_id = set.getInt("skill_id");
@@ -274,7 +285,8 @@ public final class Skill implements IIdentifiable
 		_isDebuff = set.getBoolean("isDebuff", false);
 		_isRecoveryHerb = set.getBoolean("isRecoveryHerb", false);
 		_feed = set.getInt("feed", 0);
-		_reuseHashCode = SkillData.getSkillHashCode(_id, _level);
+                _reuseSkillId = set.getInt("reuse_skill_id", _id);
+		_reuseHashCode = SkillData.getSkillHashCode(_reuseSkillId, _level);
 		
 		if (Config.ENABLE_MODIFY_SKILL_REUSE && Config.SKILL_REUSE_LIST.containsKey(_id))
 		{
@@ -403,6 +415,14 @@ public final class Skill implements IIdentifiable
 		_channelingTickInitialDelay = set.getInt("channelingTickInitialDelay", _channelingTickInterval / 1000) * 1000;
 		
 		_isMentoring = set.getBoolean("isMentoring", false);
+                
+                _fireSkillId = set.getInt("fireSkillId", _id);
+                _waterSkillId = set.getInt("waterSkillId", _id);
+                _windSkillId = set.getInt("windSkillId", _id);
+                _earthSkillId = set.getInt("earthSkillId", _id);
+                _holySkillId = set.getInt("holySkillId", _id);
+                _unholySkillId = set.getInt("unholySkillId", _id);
+                _multiElementalSkillId = set.getInt("multiElementalSkillId", _id);
 	}
 	
 	public TraitType getTraitType()
@@ -498,6 +518,73 @@ public final class Skill implements IIdentifiable
 		return isPvE ? _pvePower : isPvP ? _pvpPower : _power;
 	}
 	
+        public Skill getElementalSkill(final L2PcInstance player)
+        {
+            final int SkillElementId = player.getSkillsElementID();
+            
+            if (SkillElementId < 0)
+            {
+                return this;
+            }
+            
+            int SkillId = 0;
+            
+            switch (SkillElementId)
+            {
+                case Elementals.FIRE:
+                {
+                    SkillId = _fireSkillId;
+                    break;
+                }
+                case Elementals.WATER:
+                {
+                    SkillId = _waterSkillId;
+                    break;
+                }
+                case Elementals.WIND:
+                {
+                    SkillId = _windSkillId;
+                    break;
+                }
+                case Elementals.EARTH: 
+                {
+                    SkillId = _earthSkillId;
+                    break;
+                }
+                case Elementals.HOLY:
+                {
+                    SkillId = _holySkillId;
+                    break;
+                }
+                case Elementals.DARK:
+                {
+                    SkillId = _unholySkillId;
+                    break;
+                }
+                case Elementals.DOUBLE_CAST:
+                {
+                    SkillId = _multiElementalSkillId;
+                    break;
+                }
+                default:
+                {
+                    return this;
+                }
+            }
+            if (SkillId == getId())
+            {
+                return this;
+            }
+            
+            final Skill ElementalSkill = SkillData.getInstance().getSkill(SkillId, Math.max(getLevel(), 1));
+          
+            if (ElementalSkill == null) 
+            {
+                return this;
+            }
+            
+        return ElementalSkill;
+    }
 	/**
 	 * Verify if this skill is abnormal instant.<br>
 	 * Herb buff skills yield {@code true} for this check.
@@ -809,6 +896,11 @@ public final class Skill implements IIdentifiable
 		return _reuseDelay;
 	}
 	
+        public int getReuseSkillId()
+        {
+                return _reuseSkillId;
+        }
+            
 	public int getReuseHashCode()
 	{
 		return _reuseHashCode;

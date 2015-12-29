@@ -38,6 +38,7 @@ public final class MagicSkillUse extends L2GameServerPacket
 	private final int _maxLevel;
 	private final int _hitTime;
 	private final int _reuseDelay;
+        private int _reuseSkillId;
 	private final L2Character _activeChar;
 	private final L2Character _target;
 	private List<Integer> _unknown = Collections.emptyList();
@@ -52,6 +53,7 @@ public final class MagicSkillUse extends L2GameServerPacket
 		_maxLevel = SkillData.getInstance().getMaxLevel(_skillId);
 		_hitTime = hitTime;
 		_reuseDelay = reuseDelay;
+                _reuseSkillId = skillId;
 		_groundLocations = cha.isPlayer() && (cha.getActingPlayer().getCurrentSkillWorldPosition() != null) ? Arrays.asList(cha.getActingPlayer().getCurrentSkillWorldPosition()) : Collections.<Location> emptyList();
 	}
 	
@@ -78,12 +80,17 @@ public final class MagicSkillUse extends L2GameServerPacket
 		}
 		
 	}
+        
+        public void setReuseSkillId(final int id)
+        {
+            _reuseSkillId = id;
+        }
 	
 	@Override
 	protected final void writeImpl()
 	{
 		writeC(0x48);
-		writeD(0x00); // TODO: Find me!
+		writeD(1); // _isDoubleCasting ? 1 : 0
 		writeD(_activeChar.getObjectId());
 		writeD(_target.getObjectId());
 		writeD(_skillId);
@@ -97,7 +104,7 @@ public final class MagicSkillUse extends L2GameServerPacket
 			writeH(_skillLevel);
 		}
 		writeD(_hitTime);
-		writeD(-1); // TODO: Find me!
+		writeD(_reuseSkillId);
 		writeD(_reuseDelay);
 		writeLoc(_activeChar);
 		writeH(_unknown.size()); // TODO: Implement me!

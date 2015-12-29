@@ -68,9 +68,18 @@ public final class RequestMagicSkillUse extends L2GameClientPacket
 			activeChar.sendPacket(ActionFailed.STATIC_PACKET);
 			return;
 		}
-		
-		// Get the level of the used skill
-		Skill skill = activeChar.getKnownSkill(_magicId);
+		 
+                Skill skill = null;
+                
+                if(isComboSkill(this._magicId))
+                {
+                    skill = SkillData.getInstance().getSkill(this._magicId, 1);
+                }
+                else 
+                {
+                    skill = SkillData.getInstance().getSkill(this._magicId, activeChar.getSkillLevel(this._magicId));
+                }     
+                
 		if (skill == null)
 		{
 			// Player doesn't know this skill, maybe it's the display Id.
@@ -125,26 +134,49 @@ public final class RequestMagicSkillUse extends L2GameClientPacket
 		{
 			activeChar.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, activeChar.getLocation());
 		}
-   
-                // Assign Player's Stance Id Active 
-                int StanceId = activeChar.getEffectList().FeohStanceId(activeChar);              
-                
-                // Assign an Elemental Skill To Be Cast
-                int ElementSkillId = activeChar.getEffectList().getCastElementSkill(StanceId, activeChar, skill); 
-       
-                // Manage Feoh Wizard's Element Stance Skills.
-                if(StanceId > 0 && ElementSkillId > 0) 
-                {   
-                    activeChar.useMagic(SkillData.getInstance().getSkill(skill.getId(), skill.getLevel()), _ctrlPressed, _shiftPressed);
-                    activeChar.abortCast(); // Don't remove it
-                    activeChar.sendPacket(ActionFailed.STATIC_PACKET); // Don't remove it
-                    activeChar.useMagic(SkillData.getInstance().getSkill(ElementSkillId, skill.getLevel()), _ctrlPressed, _shiftPressed);
-                    return;
-                } 
-                
+                 
+                skill = skill.getElementalSkill(activeChar);
+                  
                 activeChar.useMagic(skill, _ctrlPressed, _shiftPressed);
+                
+                // Stop Shadow Hide If Cast Skill
+                if(activeChar.isAffectedBySkill(10517))
+                { 
+                    activeChar.stopSkillEffects(SkillData.getInstance().getSkill(10517, 1));
+                }
 	}
 	
+        private static final boolean isComboSkill(final int magicId) 
+        {
+            switch (magicId)
+            {
+                case 10249:
+                case 10250:
+                case 10499:
+                case 10500:
+                case 10749:
+                case 10750:
+                case 10999:
+                case 11000:
+                case 11249:
+                case 11250:
+                case 11499:
+                case 11500:
+                case 11749:
+                case 11750:
+                case 11999:
+                case 12000:
+                case 15606: 
+                {
+                    return true;
+                }
+                default:
+                {
+                    return false;
+                }
+            }
+       }
+            
 	@Override
 	public String getType()
 	{

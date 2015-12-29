@@ -145,6 +145,8 @@ public enum Stats
 	HOLY_POWER("holyPower"),
 	DARK_POWER("darkPower"),
 	WEAPON_ELEMENT_POWER("weaponElementPower"),
+        
+        SKILLS_ELEMENT_ID("SkillsElementId", 0.0, 0.0, 100.0), 
 	
 	// PROFICIENCY
 	CANCEL_PROF("cancelProf"),
@@ -218,31 +220,74 @@ public enum Stats
 	// Hp restore on kill enemy
 	HP_RESTORE_ON_KILL("hpRestoreOnKill");
 	
-	public static final int NUM_STATS = values().length;
+	public static final int NUM_STATS;
 	
 	private String _value;
-	
+        private double _min;
+        private double _max;
+        private double _init;
+    
 	public String getValue()
 	{
-		return _value;
+	    return _value;
 	}
 	
-	private Stats(String s)
-	{
-		_value = s;
-	}
+        public double getInit()
+        {
+            return _init;
+        }
+
+        private Stats(final String s)
+        {
+            this(s, 0.0, Double.POSITIVE_INFINITY, 0.0);
+        }
+       
+        private Stats(final String s, final double min, final double max)
+        {
+            this(s, min, max, 0.0);
+        }
+            
+        private Stats(final String s, final double min, final double max, final double init)
+        {
+            _value = s;
+            _min = min;
+            _max = max;
+            _init = init;
+        }
+       
+        public double validate(final double val) 
+        {
+            if (val < _min)
+            {
+                return _min;
+            }
+            if (val > _max) 
+            {
+                return _max;
+            }
+            return val;
+        }
 	
-	public static Stats valueOfXml(String name)
-	{
-		name = name.intern();
-		for (Stats s : values())
-		{
-			if (s.getValue().equals(name))
-			{
-				return s;
-			}
-		}
-		
-		throw new NoSuchElementException("Unknown name '" + name + "' for enum " + Stats.class.getSimpleName());
-	}
+        public static Stats valueOfXml(final String name)
+        {
+            for (final Stats s : values()) 
+            {
+                if (s.getValue().equals(name))
+                {
+                    return s;
+                }
+            }
+            throw new NoSuchElementException("Unknown name '" + name + "' for enum Stats");
+        }
+    
+        @Override
+        public String toString()
+        {
+            return _value;
+        }
+
+        static 
+        {
+            NUM_STATS = values().length;
+        }
 }

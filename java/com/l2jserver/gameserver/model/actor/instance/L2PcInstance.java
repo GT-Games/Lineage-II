@@ -15434,4 +15434,9 @@ public final class L2PcInstance extends L2Playable
 		}
 		return _servitorShare.get(stat);
 	}
+
+        public int getSkillsElementID()
+        {
+            return (int)calcStat(Stats.SKILLS_ELEMENT_ID, 0.0, null, null);
+        }
 }
