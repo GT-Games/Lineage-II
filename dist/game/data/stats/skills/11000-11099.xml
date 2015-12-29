@@ -1088,7 +1088,7 @@
 		</for>
 	</skill>
 	<skill id="11035" levels="8" name="Elemental Blast (Fire)">
-		<table name="#power">210 213 219 226 231 238 243 250</table>value
+		<table name="#power">210 213 219 226 231 238 243 250</table>
 		<table name="#enchPower">255 259 262 264 267 271 274 276 279 283</table>
 		<table name="#mpConsume">171 174 183 189 198 204 213 222</table>
 		<table name="#mpInitialConsume">42 42 45 45 48 51 51 54</table>
@@ -2273,7 +2273,7 @@
 		<set name="isMagic" val="1" />
 		<set name="targetType" val="SELF" />
 		<set name="abnormalTime" val="30" />
-		<set name="effectPoint" value="417"/>
+		<set name="effectPoint" val="417"/>
 		<effect name="DamOverTime">
 				<add stat="SkillsElementId" val="100" />
 		</effect>
