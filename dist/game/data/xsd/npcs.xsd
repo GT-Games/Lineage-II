@@ -115,6 +115,7 @@
 		<xs:attribute name="chest" type="xs:nonNegativeInteger" />
 		<xs:attribute name="rhand" type="xs:nonNegativeInteger" />
 		<xs:attribute name="lhand" type="xs:nonNegativeInteger" />
+		<xs:attribute name="lrhand" type="xs:nonNegativeInteger" />
 		<xs:attribute name="weaponEnchant" type="xs:nonNegativeInteger" />
 	</xs:complexType>
 	

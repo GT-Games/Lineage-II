@@ -90,7 +90,7 @@ public final class MagicSkillUse extends L2GameServerPacket
 	protected final void writeImpl()
 	{
 		writeC(0x48);
-		writeD(1); // _isDoubleCasting ? 1 : 0
+		writeD(0x00); // _isDoubleCasting ? 1 : 0
 		writeD(_activeChar.getObjectId());
 		writeD(_target.getObjectId());
 		writeD(_skillId);

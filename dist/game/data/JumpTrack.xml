@@ -586,10 +586,18 @@
 	</track>
 
    <!-- <FlyToLocation ToX="211824" ToY="82800" ToZ="1456" Type="2" /> -->
-	<track trackId="43" zone="Enchanted Valley -> Western Enchanted / Eastern Enchanted" ToX="211824" ToY="82800" ToZ="1456"> 
+	<track trackId="45" zone="Enchanted Valley -> Western Enchanted / Eastern Enchanted" ToX="211824" ToY="82800" ToZ="1456"> 
+
 		<way id="0">
-			<jumpLoc next="-1" x="111441" y="45541" z="-3114" />
-			<!--<jumpLoc next="1" x="115143" y="44419" z="-3425" /> -->
-		</way>
+			<jumpLoc next="3" x="113561" y="46886" z="-4656" />
+	        <jumpLoc next="2" x="112884" y="45536" z="-3279" />
+	    </way>
+
+        <way id="3"><jumpLoc next="4" x="111830" y="45893" z="-2984" /></way>
+        <way id="4"><jumpLoc next="-1" x="111441" y="45541" z="-3114" /></way>
+
+        <way id="2"><jumpLoc next="5" x="115268" y="45368" z="-2908" /></way>	
+        <way id="5"><jumpLoc next="-1" x="115143" y="44419" z="-3425" /></way>	
+        
 	</track>
 </list>

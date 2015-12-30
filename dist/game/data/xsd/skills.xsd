@@ -42,6 +42,7 @@
 							<xs:enumeration value="dmgDirectlyToHp" />
 							<xs:enumeration value="effectPoint" />
 							<xs:enumeration value="effectRange" />
+							<xs:enumeration value="reuse_skill_id" />
 							<xs:enumeration value="element" />
 							<xs:enumeration value="elementPower" />
 							<xs:enumeration value="excludedFromCheck" />
@@ -453,6 +454,12 @@
 			<xs:enumeration value="waterPower" />
 			<xs:enumeration value="windPower" />
 			<xs:enumeration value="firePower" />
+			<xs:enumeration value="earthSkillId" />
+			<xs:enumeration value="fireSkillId" />
+			<xs:enumeration value="waterSkillId" />
+			<xs:enumeration value="windSkillId" />
+			<xs:enumeration value="multiElementalSkillId" />
+			<xs:enumeration value="SkillsElementId" />
 			<xs:enumeration value="bonusSp" />
 			<xs:enumeration value="defCritRateAdd" />
 			<xs:enumeration value="bonusExp" />
@@ -722,6 +729,7 @@
 					<xs:enumeration value="TriggerSkillByAvoid" />
 					<xs:enumeration value="TriggerSkillByDamage" />
 					<xs:enumeration value="TriggerSkillBySkill" />
+					<xs:enumeration value="TriggerSkillByCast" />
 					<xs:enumeration value="Unsummon" />
 					<xs:enumeration value="UnsummonAgathion" />
 					<xs:enumeration value="VitalityPointUp" />

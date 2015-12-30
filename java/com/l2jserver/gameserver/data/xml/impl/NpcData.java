@@ -172,6 +172,7 @@ public class NpcData implements IXmlReader
 									set.set("chestId", parseInteger(attrs, "chest"));
 									set.set("rhandId", parseInteger(attrs, "rhand"));
 									set.set("lhandId", parseInteger(attrs, "lhand"));
+                                                                        set.set("lrhandId",  parseInteger(attrs, "lrhand"));
 									set.set("weaponEnchant", parseInteger(attrs, "weaponEnchant"));
 									break;
 								}

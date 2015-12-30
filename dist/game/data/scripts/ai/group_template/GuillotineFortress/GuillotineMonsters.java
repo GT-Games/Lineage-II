@@ -92,7 +92,7 @@ public class GuillotineMonsters extends AbstractNpcAI
 	{
 		if ((killer != null) && killer.isPlayer())
 		{
-			if ((killer.getInventory().getItemByItemId(PROOF_OF_SURVIVAL) != null) && Rnd.chance(5)) // TODO Apply Random Chance
+			if ((killer.getInventory().getItemByItemId(PROOF_OF_SURVIVAL) != null) && Rnd.chance(5))
 			{
 				spawnMob(SCALDISECT_THE_FURIOUS, killer.getLocation(), killer);
 				

@@ -1971,6 +1971,11 @@
 		<acquire exp="24981655" sp="59955" />
 		<stats>
 			<vitals hp="55815" hpRegen="10.5" mp="23928" mpRegen="3.6" />
+			<attack physical="25000" magical="10000" random="30" critical="4" accuracy="4.75" attackSpeed="398" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="9250" magical="9000" />
+			<attribute>
+				<defence fire="150" water="150" wind="150" earth="300" holy="150" dark="150" />
+			</attribute>
 			<speed>
 				<walk ground="60" /> <!-- Need retail value -->
 				<run ground="120" /> <!-- Need retail value -->
@@ -2005,6 +2010,11 @@
 		<acquire exp="24981655" sp="59955" />
 		<stats>
 			<vitals hp="55815" hpRegen="10.5" mp="23928" mpRegen="3.6" />
+			<attack physical="25000" magical="10000" random="30" critical="4" accuracy="4.75" attackSpeed="398" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="9250" magical="9000" />
+			<attribute>
+				<defence fire="150" water="150" wind="150" earth="300" holy="150" dark="150" />
+			</attribute>
 			<speed>
 				<walk ground="60" /> <!-- Need retail value -->
 				<run ground="120" /> <!-- Need retail value -->
@@ -2038,6 +2048,11 @@
 		<acquire exp="24981655" sp="59955" />
 		<stats>
 			<vitals hp="55815" hpRegen="10.5" mp="23928" mpRegen="3.6" />
+			<attack physical="25000" magical="10000" random="30" critical="4" accuracy="4.75" attackSpeed="398" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="9250" magical="9000" />
+			<attribute>
+				<defence fire="150" water="150" wind="150" earth="300" holy="150" dark="150" />
+			</attribute>
 			<speed>
 				<walk ground="60" /> <!-- Need retail value -->
 				<run ground="120" /> <!-- Need retail value -->
@@ -2072,6 +2087,11 @@
 		<acquire exp="69350056" sp="166440" />
 		<stats>
 			<vitals hp="77986" hpRegen="11.5" mp="25074" mpRegen="3.9" />
+			<attack physical="25000" magical="10000" random="30" critical="4" accuracy="4.75" attackSpeed="398" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="9250" magical="9000" />
+			<attribute>
+				<defence fire="150" water="150" wind="150" earth="300" holy="150" dark="150" />
+			</attribute>
 			<speed>
 				<walk ground="60" /> <!-- Need retail value -->
 				<run ground="120" /> <!-- Need retail value -->
@@ -2110,7 +2130,12 @@
 		<race>PLANT</race>
 		<acquire exp="24981655" sp="59955" />
 		<stats>
-			<vitals hp="55815" hpRegen="10.5" mp="23928" mpRegen="3.6" />
+			<vitals hp="55815" hpRegen="10.5" mp="23928" mpRegen="3.6" /> 
+			<attack physical="25000" magical="10000" random="30" critical="4" accuracy="4.75" attackSpeed="398" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="9250" magical="9000" />
+			<attribute>
+				<defence fire="150" water="150" wind="150" earth="300" holy="150" dark="150" />
+			</attribute>
 			<speed>
 				<walk ground="60" /> <!-- Need retail value -->
 				<run ground="120" /> <!-- Need retail value -->
@@ -2143,6 +2168,11 @@
 		<acquire exp="69350056" sp="166440" />
 		<stats>
 			<vitals hp="77986" hpRegen="11.5" mp="25074" mpRegen="3.9" />
+			<attack physical="25000" magical="10000" random="30" critical="4" accuracy="4.75" attackSpeed="398" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="9250" magical="9000" />
+			<attribute>
+				<defence fire="150" water="150" wind="150" earth="300" holy="150" dark="150" />
+			</attribute>
 			<speed>
 				<walk ground="60" /> <!-- Need retail value -->
 				<run ground="120" /> <!-- Need retail value -->
@@ -2182,6 +2212,11 @@
 		<acquire exp="24981655" sp="59955" />
 		<stats>
 			<vitals hp="55815" hpRegen="10.5" mp="23928" mpRegen="3.6" />
+			<attack physical="25000" magical="10000" random="30" critical="4" accuracy="4.75" attackSpeed="398" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="9250" magical="9000" />
+			<attribute>
+				<defence fire="150" water="150" wind="150" earth="300" holy="150" dark="150" />
+			</attribute>
 			<speed>
 				<walk ground="60" /> <!-- Need retail value -->
 				<run ground="120" /> <!-- Need retail value -->
@@ -2214,6 +2249,11 @@
 		<acquire exp="69350056" sp="166440" />
 		<stats>
 			<vitals hp="77986" hpRegen="11.5" mp="25074" mpRegen="3.9" />
+			<attack physical="25000" magical="10000" random="30" critical="4" accuracy="4.75" attackSpeed="398" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="9250" magical="9000" />
+			<attribute>
+				<defence fire="150" water="150" wind="150" earth="300" holy="150" dark="150" />
+			</attribute>
 			<speed>
 				<walk ground="60" /> <!-- Need retail value -->
 				<run ground="120" /> <!-- Need retail value -->
@@ -2253,6 +2293,11 @@
 		<acquire exp="69350056" sp="166440" />
 		<stats>
 			<vitals hp="77986" hpRegen="10.5" mp="25074" mpRegen="3.6" />
+			<attack physical="25000" magical="10000" random="30" critical="4" accuracy="4.75" attackSpeed="398" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="9250" magical="9000" />
+			<attribute>
+				<defence fire="150" water="150" wind="150" earth="300" holy="150" dark="150" />
+			</attribute>
 			<speed>
 				<walk ground="60" /> <!-- Need retail value -->
 				<run ground="120" /> <!-- Need retail value -->
@@ -2290,6 +2335,11 @@
 		<acquire exp="37812025" sp="90748" />
 		<stats>
 			<vitals hp="60447" hpRegen="11.5" mp="24308" mpRegen="3.9" />
+			<attack physical="25000" magical="10000" random="30" critical="4" accuracy="4.75" attackSpeed="398" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="9250" magical="9000" />
+			<attribute>
+				<defence fire="150" water="150" wind="150" earth="300" holy="150" dark="150" />
+			</attribute>
 			<speed>
 				<walk ground="60" /> <!-- Need retail value -->
 				<run ground="120" /> <!-- Need retail value -->
@@ -2322,6 +2372,11 @@
 		<acquire exp="37812025" sp="90748" />
 		<stats>
 			<vitals hp="60447" hpRegen="11.5" mp="24308" mpRegen="3.9" />
+			<attack physical="25000" magical="10000" random="30" critical="4" accuracy="4.75" attackSpeed="398" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="9250" magical="9000" />
+			<attribute>
+				<defence fire="150" water="150" wind="150" earth="300" holy="150" dark="150" />
+			</attribute>
 			<speed>
 				<walk ground="60" /> <!-- Need retail value -->
 				<run ground="120" /> <!-- Need retail value -->
@@ -2354,6 +2409,11 @@
 		<acquire exp="37812025" sp="90748" />
 		<stats>
 			<vitals hp="60447" hpRegen="11.5" mp="24308" mpRegen="3.9" />
+			<attack physical="25000" magical="10000" random="30" critical="4" accuracy="4.75" attackSpeed="398" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="9250" magical="9000" />
+			<attribute>
+				<defence fire="150" water="150" wind="150" earth="300" holy="150" dark="150" />
+			</attribute>
 			<speed>
 				<walk ground="60" /> <!-- Need retail value -->
 				<run ground="120" /> <!-- Need retail value -->
@@ -2386,6 +2446,11 @@
 		<acquire exp="112355490" sp="269653" />
 		<stats>
 			<vitals hp="196391" hpRegen="11.5" mp="24690" mpRegen="3.9" />
+			<attack physical="25000" magical="10000" random="30" critical="4" accuracy="4.75" attackSpeed="398" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="9250" magical="9000" />
+			<attribute>
+				<defence fire="150" water="150" wind="150" earth="300" holy="150" dark="150" />
+			</attribute>
 			<speed>
 				<walk ground="60" /> <!-- Need retail value -->
 				<run ground="120" /> <!-- Need retail value -->
@@ -2422,6 +2487,11 @@
 		<acquire exp="24981655" sp="59955" />
 		<stats>
 			<vitals hp="55815" hpRegen="10.5" mp="23928" mpRegen="3.6" />
+			<attack physical="25000" magical="10000" random="30" critical="4" accuracy="4.75" attackSpeed="398" range="40" distance="80" width="120" />
+			<defence physical="9250" magical="9000" />
+			<attribute>
+				<defence fire="150" water="150" wind="150" earth="300" holy="150" dark="150" />
+			</attribute>
 			<speed>
 				<walk ground="60" /> <!-- Need retail value -->
 				<run ground="120" /> <!-- Need retail value -->
@@ -2455,6 +2525,11 @@
 		<acquire exp="24981655" sp="59955" />
 		<stats>
 			<vitals hp="55815" hpRegen="10.5" mp="23928" mpRegen="3.6" />
+			<attack physical="25000" magical="10000" random="30" critical="4" accuracy="4.75" attackSpeed="398" range="40" distance="80" width="120" />
+			<defence physical="9250" magical="9000" />
+			<attribute>
+				<defence fire="150" water="150" wind="150" earth="300" holy="150" dark="150" />
+			</attribute>
 			<speed>
 				<walk ground="60" /> <!-- Need retail value -->
 				<run ground="120" /> <!-- Need retail value -->
@@ -2487,6 +2562,11 @@
 		<acquire exp="32981655" sp="71155" />
 		<stats>
 			<vitals hp="93023" hpRegen="10.5" mp="30928" mpRegen="3.6" />
+			<attack physical="25000" magical="10000" random="30" critical="4" accuracy="4.75" attackSpeed="398" range="40" distance="80" width="120" />
+			<defence physical="9250" magical="9000" />
+			<attribute>
+				<defence fire="150" water="150" wind="150" earth="300" holy="150" dark="150" />
+			</attribute>
 			<speed>
 				<walk ground="60" /> <!-- Need retail value -->
 				<run ground="120" /> <!-- Need retail value -->
@@ -2548,6 +2628,11 @@
 		<acquire exp="37812025" sp="90748" />
 		<stats>
 			<vitals hp="60447" hpRegen="10.5" mp="24308" mpRegen="3.6" />
+			<attack physical="25000" magical="10000" random="30" critical="4" accuracy="4.75" attackSpeed="398" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="9250" magical="9000" />
+			<attribute>
+				<defence fire="150" water="150" wind="150" earth="300" holy="150" dark="150" />
+			</attribute>
 			<speed>
 				<walk ground="60" /> <!-- Need retail value -->
 				<run ground="120" /> <!-- Need retail value -->
@@ -2612,6 +2697,11 @@
 		<acquire exp="37812025" sp="90748" />
 		<stats>
 			<vitals hp="60447" hpRegen="11.5" mp="24308" mpRegen="3.9" />
+			<attack physical="25000" magical="10000" random="30" critical="4" accuracy="4.75" attackSpeed="398" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="9250" magical="9000" />
+			<attribute>
+				<defence fire="150" water="150" wind="150" earth="300" holy="150" dark="150" />
+			</attribute>
 			<speed>
 				<walk ground="60" /> <!-- Need retail value -->
 				<run ground="120" /> <!-- Need retail value -->
@@ -2644,6 +2734,11 @@
 		<acquire exp="37812025" sp="90748" />
 		<stats>
 			<vitals hp="60447" hpRegen="11.5" mp="24308" mpRegen="3.9" />
+			<attack physical="25000" magical="10000" random="30" critical="4" accuracy="4.75" attackSpeed="398" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="9250" magical="9000" />
+			<attribute>
+				<defence fire="150" water="150" wind="150" earth="300" holy="150" dark="150" />
+			</attribute>
 			<speed>
 				<walk ground="60" /> <!-- Need retail value -->
 				<run ground="120" /> <!-- Need retail value -->
