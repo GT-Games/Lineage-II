@@ -232,7 +232,7 @@ public final class Skill implements IIdentifiable
         private final int _windSkillId;
         private final int _earthSkillId;
         private final int _holySkillId;
-        private final int _unholySkillId;
+        private final int _darkSkillId;
         private final int _multiElementalSkillId;
     
 	public Skill(StatsSet set)
@@ -421,7 +421,7 @@ public final class Skill implements IIdentifiable
                 _windSkillId = set.getInt("windSkillId", _id);
                 _earthSkillId = set.getInt("earthSkillId", _id);
                 _holySkillId = set.getInt("holySkillId", _id);
-                _unholySkillId = set.getInt("unholySkillId", _id);
+                _darkSkillId = set.getInt("darkSkillId", _id);
                 _multiElementalSkillId = set.getInt("multiElementalSkillId", _id);
 	}
 	
@@ -558,7 +558,7 @@ public final class Skill implements IIdentifiable
                 }
                 case Elementals.DARK:
                 {
-                    SkillId = _unholySkillId;
+                    SkillId = _darkSkillId;
                     break;
                 }
                 case Elementals.DOUBLE_CAST:
