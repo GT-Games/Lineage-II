@@ -26,6 +26,7 @@ import com.l2jserver.gameserver.data.sql.impl.OfflineTradersTable;
 import com.l2jserver.gameserver.data.xml.impl.AdminData;
 import com.l2jserver.gameserver.data.xml.impl.BeautyShopData;
 import com.l2jserver.gameserver.data.xml.impl.SkillTreesData;
+import com.l2jserver.gameserver.datatables.SkillData;
 import com.l2jserver.gameserver.enums.Race;
 import com.l2jserver.gameserver.enums.SubclassInfoType;
 import com.l2jserver.gameserver.instancemanager.CHSiegeManager;
@@ -47,6 +48,7 @@ import com.l2jserver.gameserver.model.PcCondOverride;
 import com.l2jserver.gameserver.model.TeleportWhereType;
 import com.l2jserver.gameserver.model.actor.instance.L2ClassMasterInstance;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
+import com.l2jserver.gameserver.model.effects.EffectFlag;
 import com.l2jserver.gameserver.model.entity.Castle;
 import com.l2jserver.gameserver.model.entity.Couple;
 import com.l2jserver.gameserver.model.entity.Fort;
@@ -60,6 +62,7 @@ import com.l2jserver.gameserver.model.items.instance.L2ItemInstance;
 import com.l2jserver.gameserver.model.quest.Quest;
 import com.l2jserver.gameserver.model.quest.QuestState;
 import com.l2jserver.gameserver.model.quest.State;
+import com.l2jserver.gameserver.model.skills.AbnormalType;
 import com.l2jserver.gameserver.model.skills.AbnormalVisualEffect;
 import com.l2jserver.gameserver.model.zone.ZoneId;
 import com.l2jserver.gameserver.network.SystemMessageId;
@@ -273,7 +276,13 @@ public class EnterWorld extends L2GameClientPacket
 		// Send EtcStatusUpdate
 		activeChar.sendPacket(new EtcStatusUpdate(activeChar));
 		
-		// Clan packets
+                // TMP FIX To Save Feoh Wizard Stances it must be improved.
+                if(!activeChar.isAffectedBySkill(11007) && SkillData.getInstance().getSkill(11007, 1).isSaveable())
+                { 
+                    activeChar.doCast(SkillData.getInstance().getSkill(11007, 1)); // Fire Stance
+                }
+                
+                // Clan packets
 		if (activeChar.getClan() != null)
 		{
 			final L2Clan clan = activeChar.getClan();

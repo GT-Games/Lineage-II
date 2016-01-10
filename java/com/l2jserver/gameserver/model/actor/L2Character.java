@@ -202,6 +202,7 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 	private boolean _isPendingRevive = false;
 	private boolean _isRunning = false;
 	private boolean _isNoRndWalk = false; // Is no random walk
+	private boolean _isDualCastActive = false;
 	protected boolean _showSummonAnimation = false;
 	protected boolean _isTeleporting = false;
 	private boolean _isInvul = false;
@@ -1568,10 +1569,10 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 		// Recharge AutoSoulShot
 		// this method should not used with L2Playable
 		
-                final MagicSkillUse msu = new MagicSkillUse(this, target, skill.getDisplayId(), skill.getLevel(), skill.getHitTime(), skill.getReuseDelay());
-                msu.setReuseSkillId(skill.getReuseSkillId());
-                broadcastPacket(msu);
-                
+		final MagicSkillUse msu = new MagicSkillUse(this, target, skill.getDisplayId(), skill.getLevel(), skill.getHitTime(), skill.getReuseDelay());
+		msu.setReuseSkillId(skill.getReuseSkillId());
+		broadcastPacket(msu);
+		
 		beginCast(skill, false, target, targets);
 	}
 	
@@ -1798,10 +1799,10 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 			setLastSkillCast(skill);
 		}
 		
-                final MagicSkillUse msu = new MagicSkillUse(this, target, skill.getDisplayId(), skill.getLevel(), skill.getHitTime(), skill.getReuseDelay());
-                msu.setReuseSkillId(skill.getReuseSkillId());
-                broadcastPacket(msu);
-                 
+		final MagicSkillUse msu = new MagicSkillUse(this, target, skill.getDisplayId(), skill.getLevel(), skill.getHitTime(), skill.getReuseDelay());
+		msu.setReuseSkillId(skill.getReuseSkillId());
+		broadcastPacket(msu);
+		
 		// Calculate the Reuse Time of the Skill
 		int reuseDelay;
 		if (skill.isStaticReuse() || skill.isStatic())
@@ -2707,6 +2708,16 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 		return isAffected(EffectFlag.FEAR);
 	}
 	
+	public final void isDualCastActive(boolean tmp)
+	{
+		_isDualCastActive = tmp;
+	}
+	
+	public final boolean isDualCastActive()
+	{
+		return _isDualCastActive;
+	}
+	
 	/**
 	 * @return True if the L2Character can't use its skills (ex : stun, sleep...).
 	 */
@@ -3224,7 +3235,7 @@ public abstract class L2Character extends L2Object implements ISkillsHolder, IDe
 		}
 		resetCurrentAbnormalVisualEffects();
 	}
-           
+	
 	/**
 	 * Removes the abnormal visual and sends packet for updating them in client.
 	 * @param aves the abnormal visual effects

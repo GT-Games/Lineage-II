@@ -97,8 +97,7 @@ public final class CharEffectList
 	private final L2Character _owner;
 	/** Hidden buffs count, prevents iterations. */
 	private final AtomicInteger _hiddenBuffs = new AtomicInteger();
-
-             
+	
 	private ScheduledFuture<?> _effectIconsUpdate;
 	
 	/**
@@ -314,89 +313,89 @@ public final class CharEffectList
 	{
 		if (hasBuffs())
 		{
-                    for (BuffInfo info : getBuffs())
-                    {
-                        if (info != null)
-                        {
-                            for (AbstractEffect effect : info.getEffects())
-                            {
-                                if ((effect != null) && (effect.getEffectType() == type))
-                                {
-                                    return info;
-                                }
-                            }
-                        }
-                    }
+			for (BuffInfo info : getBuffs())
+			{
+				if (info != null)
+				{
+					for (AbstractEffect effect : info.getEffects())
+					{
+						if ((effect != null) && (effect.getEffectType() == type))
+						{
+							return info;
+						}
+					}
+				}
+			}
 		}
 		
 		if (hasTriggered())
 		{
-                    for (BuffInfo info : getTriggered())
-                    {
-                        if (info != null)
-                        {
-                            for (AbstractEffect effect : info.getEffects())
-                            {
-                                if ((effect != null) && (effect.getEffectType() == type))
-                                {
-                                    return info;
-                                }
-                            }
-                        }
-                    }
+			for (BuffInfo info : getTriggered())
+			{
+				if (info != null)
+				{
+					for (AbstractEffect effect : info.getEffects())
+					{
+						if ((effect != null) && (effect.getEffectType() == type))
+						{
+							return info;
+						}
+					}
+				}
+			}
 		}
 		
 		if (hasDances())
 		{
-                    for (BuffInfo info : getDances())
-                    {
-                        if (info != null)
-                        {
-                            for (AbstractEffect effect : info.getEffects())
-                            {
-                                if ((effect != null) && (effect.getEffectType() == type))
-                                {
-                                    return info;
-                                }
-                            }
-                        }
-                    }
+			for (BuffInfo info : getDances())
+			{
+				if (info != null)
+				{
+					for (AbstractEffect effect : info.getEffects())
+					{
+						if ((effect != null) && (effect.getEffectType() == type))
+						{
+							return info;
+						}
+					}
+				}
+			}
 		}
 		
 		if (hasToggles())
 		{
-                    for (BuffInfo info : getToggles())
-                    {
-                        if (info != null)
-                        {
-                            for (AbstractEffect effect : info.getEffects())
-                            {
-                                if ((effect != null) && (effect.getEffectType() == type))
-                                {
-                                    return info;
-                                }
-                            }
-                        }
-                    }
+			for (BuffInfo info : getToggles())
+			{
+				if (info != null)
+				{
+					for (AbstractEffect effect : info.getEffects())
+					{
+						if ((effect != null) && (effect.getEffectType() == type))
+						{
+							return info;
+						}
+					}
+				}
+			}
 		}
 		
 		if (hasDebuffs())
 		{
-                    for (BuffInfo info : getDebuffs())
-                    {
-                        if (info != null)
-                        {
-                            for (AbstractEffect effect : info.getEffects())
-                            {
-                                if ((effect != null) && (effect.getEffectType() == type))
-                                {
-                                        return info;
-                                }
-                            }
-                        }
-                    }
+			for (BuffInfo info : getDebuffs())
+			{
+				if (info != null)
+				{
+					for (AbstractEffect effect : info.getEffects())
+					{
+						if ((effect != null) && (effect.getEffectType() == type))
+						{
+							return info;
+						}
+					}
+				}
+			}
 		}
-	    return null;
+		return null;
 	}
 	
 	/**
@@ -407,43 +406,8 @@ public final class CharEffectList
 	 */
 	public boolean isAffectedBySkill(int skillId)
 	{
-	    return getBuffInfoBySkillId(skillId) != null;
+		return getBuffInfoBySkillId(skillId) != null;
 	}
-        
-        /**
-         * Verifies if a Toggle Skill is being used by the Player
-         * @author Thonygez
-         * @param skillid
-         * @return 
-         */
-        public boolean isSkillToggleActive(int skillid)
-        {
-            return getFeohStanceInfoBySkillId(skillid) != null;
-        }
-        
-        /**
-         * @author Thonygez
-         * @param tmp
-         * @return 
-         */ 
-        public BuffInfo getFeohStanceInfoBySkillId(int tmp)
-        {
-            BuffInfo info = null;
-		
-            if (hasToggles() && info == null)
-	    {
-                info = getToggles().stream().filter(b -> b.getSkill().getId() == tmp).findFirst().orElse(null);
-	    } 
-            return info;
-        }
-    
-        /**
-         * Verifies if Player is Under Double Cast Effect
-        public boolean isDoubleCasting(L2PcInstance activeChar)
-        {
-            //TODO
-        }
-        * /
 	
 	/**
 	 * Gets the buff info by skill ID.<br>
@@ -984,7 +948,9 @@ public final class CharEffectList
 	 */
 	public boolean stopSkillEffects(boolean removed, AbnormalType type)
 	{
-		if (_stackedEffects != null)
+            int DoubleCastSkillId = 11068;
+            
+		if (_stackedEffects != null && (type == AbnormalType.FEOH_STANCE && !this.isAffectedBySkill(DoubleCastSkillId))) // Must be Improved
 		{
 			final BuffInfo old = _stackedEffects.remove(type);
 			if (old != null)
@@ -1800,5 +1766,5 @@ public final class CharEffectList
 	{
 		return (_effectFlags & flag.getMask()) != 0;
 	}
-       
+	
 }

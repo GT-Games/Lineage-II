@@ -251,6 +251,7 @@ import com.l2jserver.gameserver.model.punishment.PunishmentType;
 import com.l2jserver.gameserver.model.quest.Quest;
 import com.l2jserver.gameserver.model.quest.QuestState;
 import com.l2jserver.gameserver.model.skills.AbnormalType;
+import static com.l2jserver.gameserver.model.skills.AbnormalType.FEOH_STANCE;
 import com.l2jserver.gameserver.model.skills.BuffInfo;
 import com.l2jserver.gameserver.model.skills.CommonSkill;
 import com.l2jserver.gameserver.model.skills.Skill;
@@ -15437,6 +15438,6 @@ public final class L2PcInstance extends L2Playable
 
         public int getSkillsElementID()
         {
-            return (int)calcStat(Stats.SKILLS_ELEMENT_ID, 0.0, null, null);
+            return (int) calcStat(Stats.SKILLS_ELEMENT_ID, 0.0, null, null);
         }
 }

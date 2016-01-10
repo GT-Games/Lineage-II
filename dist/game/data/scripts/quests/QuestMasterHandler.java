@@ -225,6 +225,7 @@ import quests.Q10364_ObligationsOfTheSeeker.Q10364_ObligationsOfTheSeeker;
 import quests.Q10365_SeekerEscort.Q10365_SeekerEscort;
 import quests.Q10366_RuinsStatusUpdate.Q10366_RuinsStatusUpdate;
 import quests.Q10368_RebellionOfMonsters.Q10368_RebellionOfMonsters;
+import quests.Q10385_RedThreadofFate.Q10385_RedThreadofFate;
 import quests.Q10390_KekropusLetter.Q10390_KekropusLetter;
 import quests.Q10393_KekropusLetter_AClueCompleted.Q10393_KekropusLetter_AClueCompleted;
 import quests.Q10397_KekropusLetter_ASuspiciousBadge.Q10397_KekropusLetter_ASuspiciousBadge;
@@ -470,6 +471,7 @@ public class QuestMasterHandler
 		Q10365_SeekerEscort.class,
 		Q10366_RuinsStatusUpdate.class,
 		Q10368_RebellionOfMonsters.class,
+		Q10385_RedThreadofFate.class,
 		Q10390_KekropusLetter.class,
 		Q10393_KekropusLetter_AClueCompleted.class,
 		Q10397_KekropusLetter_ASuspiciousBadge.class,

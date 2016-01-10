@@ -189,7 +189,9 @@
 		<set name="element" val="0" /> 
 		<set name="abnormalTime" val="3" />
 		<set name="canBeDispeled" val="false" />
+		<set name="isSaveable" val="true"/>
 		<set name="stayAfterDeath" val="true" />
+		<set name="isSaveable" val="true"/>
 		<for>
 			<effect name="DamOverTime">
 				<add stat="SkillsElementId" val="0" />
@@ -206,6 +208,7 @@
 		<set name="abnormalTime" val="3" />
 		<set name="canBeDispeled" val="false" />
 		<set name="stayAfterDeath" val="true" />
+		<set name="isSaveable" val="true"/>
 		<for>
 			<effect name="DamOverTime">
 				<add stat="SkillsElementId" val="1" />
@@ -222,6 +225,7 @@
 		<set name="abnormalTime" val="3" />
 		<set name="canBeDispeled" val="false" />
 		<set name="stayAfterDeath" val="true" />
+		<set name="isSaveable" val="true"/>
 		<for>
 			<effect name="DamOverTime">
 				<add stat="SkillsElementId" val="2" />
@@ -238,6 +242,7 @@
 		<set name="abnormalTime" val="3" />
 		<set name="canBeDispeled" val="false" />
 		<set name="stayAfterDeath" val="true" />
+		<set name="isSaveable" val="true"/>
 		<for>
 			<effect name="DamOverTime">
 				<add stat="SkillsElementId" val="3" />

@@ -24,6 +24,7 @@ import com.l2jserver.gameserver.data.xml.impl.SkillTreesData;
 import com.l2jserver.gameserver.datatables.SkillData;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jserver.gameserver.model.effects.L2EffectType;
+import com.l2jserver.gameserver.model.skills.AbnormalType;
 import com.l2jserver.gameserver.model.skills.CommonSkill;
 import com.l2jserver.gameserver.model.skills.Skill;
 import com.l2jserver.gameserver.model.skills.targets.L2TargetType;
@@ -140,15 +141,15 @@ public final class RequestMagicSkillUse extends L2GameClientPacket
                 activeChar.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, activeChar.getLocation());
             }
 
-            SkillInUse = SkillInUse.getElementalSkill(activeChar);
-
-            activeChar.useMagic(SkillInUse, _ctrlPressed, _shiftPressed);
-
-            // Stop Shadow Hide Buff If Player Cast Skill tmp fix.
-            if(activeChar.isAffectedBySkill(10517))
-            { 
-                activeChar.stopSkillEffects(SkillData.getInstance().getSkill(10517, 1));
+            // Avoid of leave all elemental stances disabled.
+            if(SkillInUse.getAbnormalType() == AbnormalType.FEOH_STANCE && activeChar.isAffectedBySkill(SkillInUse.getId()))
+            {
+                return;
             }
+           
+            SkillInUse = SkillInUse.getElementalSkill(activeChar);
+            
+            activeChar.useMagic(SkillInUse, _ctrlPressed, _shiftPressed);
 	}
 	
         public int getMagicSkillUseId()

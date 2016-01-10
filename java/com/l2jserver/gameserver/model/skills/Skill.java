@@ -124,6 +124,9 @@ public final class Skill implements IIdentifiable
 	private Set<AbnormalVisualEffect> _abnormalVisualEffects;
 	/** If {@code true} this skill's effect should stay after death. */
 	private final boolean _stayAfterDeath;
+        
+        private final boolean _isSaveable;
+        
 	/** If {@code true} this skill's effect should stay after class-subclass change. */
 	private final boolean _stayOnSubclassChange;
 	/** If {@code true} this skill's effect recovery HP/MP or CP from herb. */
@@ -279,6 +282,7 @@ public final class Skill implements IIdentifiable
 		
 		_stayAfterDeath = set.getBoolean("stayAfterDeath", false);
 		_stayOnSubclassChange = set.getBoolean("stayOnSubclassChange", true);
+                _isSaveable = set.getBoolean("isSaveable", false); //TODO CHECK
 		
 		_hitTime = set.getInt("hitTime", 0);
 		_coolTime = set.getInt("coolTime", 0);
@@ -1778,6 +1782,11 @@ public final class Skill implements IIdentifiable
 	{
 		return _canBeDispeled;
 	}
+        
+        public boolean isSaveable()
+        {
+            return _isSaveable;
+        }
 	
 	/**
 	 * Verify if the skill can be stolen.

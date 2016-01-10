@@ -442,6 +442,7 @@
 		<set name="rideState" val="NONE" />
 		<set name="targetType" val="ONE" />
 		<set name="isDebuff" val="true" />
+		<set name="nextActionAttack" val="true" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="mpConsume" val="#ench2MpConsume" />
 		<enchant1 name="power" val="#enchPower" />

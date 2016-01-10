@@ -58,8 +58,6 @@ public final class Hide extends AbstractEffect
 	{
 		if (info.getEffected().isPlayer())
 		{
-			System.out.println("INVISIBLE MADAFAKA!");
-			
 			L2PcInstance activeChar = info.getEffected().getActingPlayer();
 			
 			activeChar.setInvisible(true);

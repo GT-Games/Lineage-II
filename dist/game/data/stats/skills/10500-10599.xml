@@ -598,9 +598,11 @@
 		<set name="coolTime" val="400" />
 		<set name="reuseDelay" val="180000" />
 		<set name="mpConsume" val="38" />
+		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="50" /> 
-		<set name="effectPoint" val="679"/>
+		<set name="abnormalType" val="HIDE" />
 		<set name="magicLvl" val="85" />
+		<set name="effectPoint" val="679"/>
 		<set name="operateType" val="ACTIVE_CONTINUOUS" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="SELF" />
