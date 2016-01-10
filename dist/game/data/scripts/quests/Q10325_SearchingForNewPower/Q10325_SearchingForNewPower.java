@@ -1,14 +1,12 @@
 /*
- * Copyright (C) 2004-2015 L2J DataPack
+ * This file is part of the L2J Server project.
  * 
- * This file is part of L2J DataPack.
- * 
- * L2J DataPack is free software: you can redistribute it and/or modify
+ * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  * 
- * L2J DataPack is distributed in the hope that it will be useful,
+ * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
  * General Public License for more details.
@@ -18,8 +16,6 @@
  */
 package quests.Q10325_SearchingForNewPower;
 
-import quests.Q10324_FindingMagisterGallint.Q10324_FindingMagisterGallint;
-
 import com.l2jserver.gameserver.enums.Race;
 import com.l2jserver.gameserver.model.actor.L2Npc;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
@@ -28,9 +24,11 @@ import com.l2jserver.gameserver.model.quest.Quest;
 import com.l2jserver.gameserver.model.quest.QuestState;
 import com.l2jserver.gameserver.model.quest.State;
 
+import quests.Q10324_FindingMagisterGallint.Q10324_FindingMagisterGallint;
+
 /**
  * Searching For New Power (10325)
- * @author Gladicek, Neanrakyr
+ * @author Gladicek, Neanrakyr, gyo
  */
 public class Q10325_SearchingForNewPower extends Quest
 {
@@ -39,9 +37,15 @@ public class Q10325_SearchingForNewPower extends Quest
 	private static final int TALBOT = 32156;
 	private static final int CIDNET = 32148;
 	private static final int BLACK = 32161;
-	private static final int HERTZ = 32151;
+	private static final int HERZ = 32151;
 	private static final int KINCAID = 32159;
 	private static final int XONIA = 32144;
+	private static final String Talbot = "Talbot";
+	private static final String Cidnet = "Cidnet";
+	private static final String Black = "Black";
+	private static final String Herz = "Herz";
+	private static final String Kincaid = "Kincaid";
+	private static final String Xonia = "Xonia";
 	// Items
 	private static final ItemHolder SPIRITSHOTS = new ItemHolder(2509, 1000);
 	private static final ItemHolder SOULSHOTS = new ItemHolder(1835, 1000);
@@ -52,9 +56,9 @@ public class Q10325_SearchingForNewPower extends Quest
 	{
 		super(10325, Q10325_SearchingForNewPower.class.getSimpleName(), "Searching For New Power");
 		addStartNpc(GALLINT);
-		addTalkId(GALLINT, TALBOT, CIDNET, BLACK, HERTZ, KINCAID, XONIA);
-		addCondMaxLevel(MAX_LEVEL, "32980-12.html");
-		addCondCompletedQuest(Q10324_FindingMagisterGallint.class.getSimpleName(), "32980-12.html");
+		addTalkId(GALLINT, TALBOT, CIDNET, BLACK, HERZ, KINCAID, XONIA);
+		addCondMaxLevel(MAX_LEVEL, "32980-07.htm");
+		addCondCompletedQuest(Q10324_FindingMagisterGallint.class.getSimpleName(), "32980-07.htm");
 	}
 	
 	@Override
@@ -70,53 +74,44 @@ public class Q10325_SearchingForNewPower extends Quest
 		
 		if (event.equals("check_race"))
 		{
+			qs.startQuest();
+			qs.setMemoState(1);
+			htmltext = getHtm(player.getHtmlPrefix(), "32980-06.html");
 			switch (player.getRace())
 			{
 				case HUMAN:
 				{
-					qs.startQuest();
-					qs.setMemoState(1);
-					htmltext = "32980-06.html";
+					htmltext = htmltext.replace("%MASTER%", Talbot);
 					qs.setCond(2);
 					break;
 				}
 				case ELF:
 				{
-					qs.startQuest();
-					qs.setMemoState(1);
-					htmltext = "32980-07.html";
+					htmltext = htmltext.replace("%MASTER%", Cidnet);
 					qs.setCond(3);
 					break;
 				}
 				case DARK_ELF:
 				{
-					qs.startQuest();
-					qs.setMemoState(1);
-					htmltext = "32980-08.html";
+					htmltext = htmltext.replace("%MASTER%", Black);
 					qs.setCond(4);
 					break;
 				}
 				case ORC:
 				{
-					qs.startQuest();
-					qs.setMemoState(1);
-					htmltext = "32980-09.html";
+					htmltext = htmltext.replace("%MASTER%", Herz);
 					qs.setCond(5);
 					break;
 				}
 				case DWARF:
 				{
-					qs.startQuest();
-					qs.setMemoState(1);
-					htmltext = "32980-10.html";
+					htmltext = htmltext.replace("%MASTER%", Kincaid);
 					qs.setCond(6);
 					break;
 				}
 				case KAMAEL:
 				{
-					qs.startQuest();
-					qs.setMemoState(1);
-					htmltext = "32980-11.html";
+					htmltext = htmltext.replace("%MASTER%", Xonia);
 					qs.setCond(7);
 					break;
 				}
@@ -133,7 +128,7 @@ public class Q10325_SearchingForNewPower extends Quest
 	public String onTalk(L2Npc npc, L2PcInstance player)
 	{
 		final QuestState qs = getQuestState(player, true);
-		String htmltext = null;
+		String htmltext = getNoQuestMsg(player);
 		
 		switch (qs.getState())
 		{
@@ -147,6 +142,7 @@ public class Q10325_SearchingForNewPower extends Quest
 			}
 			case State.STARTED:
 			{
+				int cond = qs.getCond();
 				switch (npc.getId())
 				{
 					case GALLINT:
@@ -177,96 +173,120 @@ public class Q10325_SearchingForNewPower extends Quest
 					{
 						if (player.getRace() == Race.HUMAN)
 						{
-							if ((qs.isCond(2)))
+							if (qs.isCond(2))
 							{
 								htmltext = "32156-01.html";
 								qs.setCond(8);
-								break;
 							}
-							htmltext = "32156-02.html";
-							break;
+							else if (qs.isCond(8))
+							{
+								htmltext = "32156-02.html";
+							}
 						}
-						htmltext = "32156-04.html";
+						else if ((cond > 1) && (cond < 8))
+						{
+							htmltext = "32156-04.html";
+						}
 						break;
 					}
 					case CIDNET:
 					{
 						if (player.getRace() == Race.ELF)
 						{
-							if ((qs.isCond(3)))
+							if (qs.isCond(3))
 							{
 								htmltext = "32148-01.html";
 								qs.setCond(8);
-								break;
 							}
-							htmltext = "32148-02.html";
-							break;
+							else if (qs.isCond(8))
+							{
+								htmltext = "32148-02.html";
+							}
 						}
-						htmltext = "32148-04.html";
+						else if ((cond > 1) && (cond < 8))
+						{
+							htmltext = "32148-04.html";
+						}
 						break;
 					}
 					case BLACK:
 					{
 						if (player.getRace() == Race.DARK_ELF)
 						{
-							if ((qs.isCond(4)))
+							if (qs.isCond(4))
 							{
 								htmltext = "32161-01.html";
 								qs.setCond(8);
-								break;
 							}
-							htmltext = "32161-02.html";
-							break;
+							else if (qs.isCond(8))
+							{
+								htmltext = "32161-02.html";
+							}
 						}
-						htmltext = "32161-04.html";
+						else if ((cond > 1) && (cond < 8))
+						{
+							htmltext = "32161-04.html";
+						}
 						break;
 					}
-					case HERTZ:
+					case HERZ:
 					{
 						if (player.getRace() == Race.ORC)
 						{
-							if ((qs.isCond(5)))
+							if (qs.isCond(5))
 							{
 								htmltext = "32151-01.html";
 								qs.setCond(8);
-								break;
 							}
-							htmltext = "32151-02.html";
-							break;
+							else if (qs.isCond(8))
+							{
+								htmltext = "32151-02.html";
+							}
 						}
-						htmltext = "32151-04.html";
+						else if ((cond > 1) && (cond < 8))
+						{
+							htmltext = "32151-04.html";
+						}
 						break;
 					}
 					case KINCAID:
 					{
 						if (player.getRace() == Race.DWARF)
 						{
-							if ((qs.isCond(6)))
+							if (qs.isCond(6))
 							{
 								htmltext = "32159-01.html";
 								qs.setCond(8);
-								break;
 							}
-							htmltext = "32159-02.html";
-							break;
+							else if (qs.isCond(8))
+							{
+								htmltext = "32159-02.html";
+							}
 						}
-						htmltext = "32159-04.html";
+						else if ((cond > 1) && (cond < 8))
+						{
+							htmltext = "32159-04.html";
+						}
 						break;
 					}
 					case XONIA:
 					{
 						if (player.getRace() == Race.KAMAEL)
 						{
-							if ((qs.isCond(7)))
+							if (qs.isCond(7))
 							{
 								htmltext = "32144-01.html";
 								qs.setCond(8);
-								break;
 							}
-							htmltext = "32144-02.html";
-							break;
+							else if (qs.isCond(8))
+							{
+								htmltext = "32144-02.html";
+							}
 						}
-						htmltext = "32144-04.html";
+						else if ((cond > 1) && (cond < 8))
+						{
+							htmltext = "32144-04.html";
+						}
 						break;
 					}
 				}
@@ -284,7 +304,7 @@ public class Q10325_SearchingForNewPower extends Quest
 					case TALBOT:
 					case CIDNET:
 					case BLACK:
-					case HERTZ:
+					case HERZ:
 					case KINCAID:
 					case XONIA:
 					{

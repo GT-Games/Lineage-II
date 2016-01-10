@@ -1,14 +1,12 @@
 /*
- * Copyright (C) 2004-2015 L2J DataPack
+ * This file is part of the L2J Server project.
  * 
- * This file is part of L2J DataPack.
- * 
- * L2J DataPack is free software: you can redistribute it and/or modify
+ * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  * 
- * L2J DataPack is distributed in the hope that it will be useful,
+ * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
  * General Public License for more details.
@@ -17,8 +15,6 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 package quests.Q10326_RespectYourElders;
-
-import quests.Q10325_SearchingForNewPower.Q10325_SearchingForNewPower;
 
 import com.l2jserver.gameserver.enums.ChatType;
 import com.l2jserver.gameserver.model.Location;
@@ -31,6 +27,8 @@ import com.l2jserver.gameserver.network.NpcStringId;
 import com.l2jserver.gameserver.network.serverpackets.ExRotation;
 import com.l2jserver.gameserver.network.serverpackets.NpcSay;
 import com.l2jserver.gameserver.util.Util;
+
+import quests.Q10325_SearchingForNewPower.Q10325_SearchingForNewPower;
 
 /**
  * Respect Your Elders (10326)
@@ -65,8 +63,8 @@ public class Q10326_RespectYourElders extends Quest
 		addTalkId(GALLINT, PANTHEON);
 		addSpawnId(HANDERMONKEY);
 		addMoveFinishedId(HANDERMONKEY);
-		addCondMaxLevel(MAX_LEVEL, "32980-04.html");
-		addCondCompletedQuest(Q10325_SearchingForNewPower.class.getSimpleName(), "32980-05.html");
+		addCondMaxLevel(MAX_LEVEL, "32980-05.html");
+		addCondCompletedQuest(Q10325_SearchingForNewPower.class.getSimpleName(), "32980-06.htm");
 	}
 	
 	@Override
@@ -81,7 +79,7 @@ public class Q10326_RespectYourElders extends Quest
 		String htmltext = null;
 		switch (event)
 		{
-			case "32980-03.html":
+			case "32980-03.htm":
 			{
 				qs.startQuest();
 				htmltext = event;
@@ -195,21 +193,17 @@ public class Q10326_RespectYourElders extends Quest
 		{
 			case State.CREATED:
 			{
-				if (npc.getId() == GALLINT)
-				{
-					htmltext = "32980-01.htm";
-					break;
-				}
+				htmltext = npc.getId() == GALLINT ? "32980-01.htm" : getNoQuestMsg(player);
 				break;
 			}
 			case State.STARTED:
 			{
-				htmltext = npc.getId() == GALLINT ? "32980-03.html" : "32972-01.html";
+				htmltext = npc.getId() == GALLINT ? "32980-04.html" : "32972-01.html";
 				break;
 			}
 			case State.COMPLETED:
 			{
-				htmltext = npc.getId() == GALLINT ? "32980-04.html" : "32972-03.html";
+				htmltext = npc.getId() == GALLINT ? "32980-05.html" : "32972-03.html";
 				break;
 			}
 		}
